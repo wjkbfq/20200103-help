@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>容器实例服务-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="容器实例服务-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" fill="#7C848E">
+            <path d="M31.7193022,13.0004945 L29.6779284,13.0004945 C28.3047737,6.70988283 22.7024129,2 16,2 C8.2680135,2 2,8.2680135 2,16 C2,23.7319865 8.2680135,30 16,30 C23.0527724,30 28.8874794,24.7848417 29.8581515,18.0004945 L31.8761508,18.0004945 C30.8917351,25.8928783 24.1590649,32 16,32 C7.163444,32 -2.0250468e-13,24.836556 -2.0250468e-13,16 C-2.0250468e-13,7.163444 7.163444,0 16,0 C23.8113418,0 30.3152783,5.59766728 31.7193022,13.0004945 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            <path d="M8,14.1606785 L8,11.5892152 L15.7886906,7 L24,11.8382287 L24,14.1606785 L8,14.1606785 Z M10.9698718,12.1606785 L20.6075093,12.1606785 L15.7886906,9.32135702 L10.9698718,12.1606785 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            <path d="M8,25.1606785 L8,22.5892152 L15.7886906,18 L24,22.8382287 L24,25.1606785 L8,25.1606785 Z M10.9698718,23.1606785 L20.6075093,23.1606785 L15.7886906,20.321357 L10.9698718,23.1606785 Z" id="Combined-Shape-Copy-8" fill-rule="nonzero" transform="translate(16.000000, 21.580339) scale(1, -1) translate(-16.000000, -21.580339) "></path>
+            <rect id="Rectangle-147" x="8" y="15" width="16" height="2"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>未标题-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0117158%" y1="99.9995826%" x2="50.0117158%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#999999" offset="50%"></stop>
+            <stop stop-color="#737373" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="个人中心pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="账号资料-初始态" transform="translate(-470.000000, -165.000000)" fill-rule="nonzero">
+            <g id="未标题-1" transform="translate(470.000000, 165.000000)">
+                <circle id="Oval" fill="#DDDDDD" cx="40" cy="40" r="40"></circle>
+                <path d="M40.0125,15.3375 C28.5125,15.3375 24.675,24.8375 24.675,34.3375 C24.675,43.8375 32.3375,53.3375 40.0125,53.3375 C47.6875,53.3375 55.35,43.8375 55.35,34.3375 C55.35,24.8375 51.5,15.3375 40.0125,15.3375 Z" id="Shape" fill="#999999"></path>
+                <path d="M59.4875,58.5625 L47.625,53.8125 L47.625,50.3375 C45.4977531,52.1743652 42.808595,53.2323946 40,53.3375 C37.191405,53.2323946 34.5022469,52.1743652 32.375,50.3375 L32.375,53.8125 L20.5125,58.5625 C16.1711119,60.2963791 13.324018,64.5001752 13.325,69.175 L13.325,69.8125 C28.5096774,83.3959984 51.4778226,83.3959984 66.6625,69.8125 L66.6625,69.175 C66.6655259,64.5032618 63.823978,60.3003451 59.4875,58.5625 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

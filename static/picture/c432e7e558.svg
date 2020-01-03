@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>物联网-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="物联网-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="image-3" transform="translate(1.000000, 1.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M13.5801418,17.8198582 L10.8,15 L12.2,13.6 L17.8,19.2 L22.1,15 L17.8,10.8 L16.4198582,12.1801418 L19.2,15 L17.8,16.4 L12.2,10.8 L7.9,15 L12.2,19.2 L13.5801418,17.8198582 Z M14.9707317,19.2303136 L12.2,22.1 L5.1,15 L12.2,7.9 L15.0292683,10.7696864 L17.8,7.9 L24.9,15 L17.8,22.1 L14.9707317,19.2303136 Z M15,28 C21.5,28 26.9,23.2 27.9,17 L29.9,17 C28.9,24.3 22.6,30 15,30 C6.7,30 4.61852778e-14,23.3 4.61852778e-14,15 C4.61852778e-14,6.7 6.7,0 15,0 C22.6,0 28.9,5.7 29.8,13 L27.8,13 C26.9,6.8 21.5,2 15,2 C7.8,2 2,7.8 2,15 C2,22.2 7.8,28 15,28 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

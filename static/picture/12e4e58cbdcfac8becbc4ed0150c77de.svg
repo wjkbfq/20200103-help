@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" fill-rule="evenodd" transform="translate(2 5)">
+    <rect width="40" height="2" x="2" y="7" fill="#334966" fill-rule="nonzero"/>
+    <rect width="42" height="36" x="1" y="1" stroke="#334966" stroke-width="2"/>
+    <rect width="9" height="2" x="25" y="29" fill="#334966" fill-rule="nonzero"/>
+    <polygon fill="#334966" points="17.619 16 16 17.726 21.254 23.33 16 28.933 17.619 30.659 24.487 23.335 24.482 23.33 24.487 23.325"/>
+    <polygon fill="#00A4FF" fill-rule="nonzero" points="13.365 15 21.73 23.365 13.365 31.73 5 23.365"/>
+  </g>
+</svg>

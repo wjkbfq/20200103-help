@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>接入安全简单</title>
+    <desc>Created with Sketch.</desc>
+    <g id="接入安全简单" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24,0 L21.822,1.187 C16,4.363 9.6,6.34 3,7 L3,28.529 C3,33.736 5.891,38.514 10.504,40.931 L24,48 L37.496,40.931 C42.109,38.514 45,33.736 45,28.529 L45,7 C38.4,6.34 32,4.363 26.178,1.187 L24,0 Z M24,2.278 L25.22,2.943 C30.777,5.976 36.752,7.935 43,8.778 L43,28.529 C43,33.008 40.535,37.081 36.568,39.159 L24,45.742 L11.432,39.159 C7.465,37.081 5,33.008 5,28.529 L5,8.778 C11.248,7.935 17.223,5.976 22.78,2.943 L24,2.278 Z" id="Fill-6-Copy" fill="#334966"></path>
+        <path d="M27,18 L27,14 L31,18 L33,20 L11,20 L11,18 L27,18 Z" id="Combined-Shape" fill="#334966"></path>
+        <path d="M31,32 L31,28 L35,32 L37,34 L15,34 L15,32 L31,32 Z" id="Combined-Shape-Copy" fill="#334966" transform="translate(26.000000, 31.000000) scale(-1, -1) translate(-26.000000, -31.000000) "></path>
+        <rect id="Rectangle-81-Copy" fill="#00A4FF" x="11" y="20" width="26" height="8"></rect>
+    </g>
+</svg>

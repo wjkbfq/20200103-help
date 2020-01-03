@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#00A4FF" stroke-width="2" fill-rule="nonzero" cx="24" cy="24" r="21"></circle>
+        <path d="M21,31 L21,33 L18,33 C14.6862915,33 12,30.3137085 12,27 C12,24.3849288 13.6729831,22.1606038 16.0070496,21.3389247 C16.0023654,21.2265333 16,21.1135429 16,21 C16,16.581722 19.581722,13 24,13 C28.418278,13 32,16.581722 32,21 C32,21.1135429 31.9976346,21.2265333 31.9929504,21.3389247 C34.3270169,22.1606038 36,24.3849288 36,27 C36,30.3137085 33.3137085,33 30,33 L27,33 L27,31 L30,31 C32.209139,31 34,29.209139 34,27 C34,25.2891503 32.9159183,23.7841558 31.3288262,23.2254398 L29.9330671,22.7340801 L29.9946851,21.2556414 C29.9982245,21.17072 30,21.0854965 30,21 C30,17.6862915 27.3137085,15 24,15 C20.6862915,15 18,17.6862915 18,21 C18,21.0854965 18.0017755,21.17072 18.0053149,21.2556414 L18.0669329,22.7340801 L16.6711738,23.2254398 C15.0840817,23.7841558 14,25.2891503 14,27 C14,29.209139 15.790861,31 18,31 L21,31 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#00A4FF" fill-rule="nonzero" x="23" y="31" width="2" height="2"></rect>
+        <rect id="Rectangle" fill="#00A4FF" fill-rule="nonzero" x="19" y="26" width="10" height="2"></rect>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>专属TVP身份卡</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-788.000000, -3497.000000)">
+            <g id="专属TVP身份卡" transform="translate(788.000000, 3497.000000)">
+                <rect id="Rectangle-23" stroke="#A99159" stroke-width="2" x="1" y="1" width="46" height="38"></rect>
+                <polygon id="Rectangle-57" fill="#A99159" points="28 22 33 23 38 22 38 34 33 31 28 34"></polygon>
+                <circle id="Oval-21" stroke="#A99159" stroke-width="2" cx="33" cy="15" r="8"></circle>
+                <rect id="Rectangle-58" fill="#A99159" x="8" y="11" width="10" height="2"></rect>
+                <rect id="Rectangle-58-Copy" fill="#A99159" x="8" y="19" width="10" height="2"></rect>
+                <rect id="Rectangle-58-Copy-2" fill="#A99159" x="8" y="27" width="10" height="2"></rect>
+                <circle id="Oval-24" fill="#A99159" cx="33" cy="15" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

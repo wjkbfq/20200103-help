@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>安全加速-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="安全加速-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(2.000000, 0.000000)">
+            <polygon id="Shape" stroke="#00A4FF" stroke-width="2" points="7.959 10.03 7.959 20.68 13.959 23.873 19.985 20.803 19.985 10.03"></polygon>
+            <polygon id="Shape" fill="#00A4FF" fill-rule="nonzero" points="13.934 18.518 7.619 15.219 8.545 13.446 13.984 16.287 19.316 13.795 20.164 15.606"></polygon>
+            <polygon id="Shape" fill="#00A4FF" fill-rule="nonzero" points="13.935 21.673 7.619 18.374 8.545 16.601 13.984 19.442 19.316 16.949 20.164 18.762"></polygon>
+            <polygon id="Shape" fill="#00A4FF" points="26.097 12.334 26.097 23.143 14.097 30 2.096 23.143 2.096 8.857 14.097 2 25.673 8.615 27.288 7.539 14.097 0 0.096 8 0.096 10 0.096 22 0.096 24 14.097 32 28.097 24 28.097 22 28.097 11"></polygon>
+        </g>
+    </g>
+</svg>

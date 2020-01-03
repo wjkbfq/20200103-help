@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="781px" height="722px" viewBox="0 0 781 722" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>znxf</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="znxf">
+            <rect id="Rectangle-path-Copy-14" fill="#EAEBEC" x="0.632812" y="0.49609375" width="780" height="99.4263795"></rect>
+            <g id="Group-Copy-16" transform="translate(10.697328, 6.344704)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                <g id="应用">
+                    <text>
+                        <tspan x="0" y="15">应用</tspan>
+                    </text>
+                </g>
+            </g>
+            <rect id="Rectangle-path-Copy-15" fill="#EAEBEC" x="0.632812" y="591.671875" width="780" height="130"></rect>
+            <g id="Group-Copy-17" transform="translate(10.632812, 600.671875)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                <g id="智能终端">
+                    <text>
+                        <tspan x="0" y="15">智能终端</tspan>
+                    </text>
+                </g>
+            </g>
+            <rect id="Rectangle-path-Copy-16" fill="#EAEBEC" x="395.632812" y="127.671875" width="385" height="230"></rect>
+            <g id="物联云平台-copy-2" transform="translate(405.632812, 137.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                <text id="物联云平台">
+                    <tspan x="0" y="15.671875">物联云平台</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-path-Copy-17" fill="#CEE3FF" x="0.632812" y="127.671875" width="385" height="230"></rect>
+            <g id="Group-Copy-18" transform="translate(10.764391, 139.155129)" fill="#00A4FF">
+                <g id="Group">
+                    <path d="M7.59868421,0 C6.78815789,0 6.07894737,0.669856459 6.07894737,1.4354067 C6.07894737,2.10526316 6.48421053,2.58373206 7.09210526,2.77511962 L7.09210526,4.784689 L8.10526316,4.784689 L8.10526316,2.77511962 C8.71315789,2.58373206 9.11842105,2.00956938 9.11842105,1.4354067 C9.11842105,0.669856459 8.40921053,0 7.59868421,0 Z" id="Shape"></path>
+                    <ellipse id="Oval" cx="7.59868421" cy="12.9186603" rx="1.51973684" ry="1.4354067"></ellipse>
+                    <path d="M3.34342105,3.06220096 C2.53289474,2.67942584 1.62105263,2.8708134 1.21578947,3.63636364 C0.810526316,4.3062201 1.01315789,5.16746411 1.82368421,5.55023923 C1.925,5.55023923 2.02631579,5.64593301 2.02631579,5.64593301 L2.02631579,7.65550239 L3.03947368,7.65550239 L3.03947368,5.64593301 C3.14078947,5.64593301 3.34342105,5.55023923 3.44473684,5.45454545 L5.16710526,6.41148325 L5.67368421,5.55023923 L3.95131579,4.68899522 C4.15394737,4.01913876 3.85,3.3492823 3.34342105,3.06220096 Z" id="Shape"></path>
+                    <ellipse id="Oval" transform="translate(12.664575, 10.048421) rotate(-59.999272) translate(-12.664575, -10.048421) " cx="12.6645751" cy="10.0484211" rx="1.51970341" ry="1.43537512"></ellipse>
+                    <ellipse id="Oval" transform="translate(2.533097, 10.047560) rotate(-30.000728) translate(-2.533097, -10.047560) " cx="2.53309722" cy="10.0475596" rx="1.51970341" ry="1.43537512"></ellipse>
+                    <path d="M12.1578947,5.64593301 L12.1578947,7.65550239 L13.1710526,7.65550239 L13.1710526,5.64593301 C13.2723684,5.64593301 13.3736842,5.55023923 13.3736842,5.55023923 C14.0828947,5.16746411 14.3868421,4.3062201 13.8802632,3.63636364 C13.475,2.96650718 12.5631579,2.67942584 11.8539474,3.15789474 C11.2460526,3.44497608 10.9421053,4.11483254 11.1447368,4.784689 L9.52368421,5.55023923 L10.0302632,6.41148325 L11.7526316,5.45454545 C11.8539474,5.55023923 12.0565789,5.64593301 12.1578947,5.64593301 Z" id="Shape"></path>
+                    <path d="M7.59868421,5.74162679 C6.78815789,5.74162679 6.07894737,6.41148325 6.07894737,7.17703349 C6.07894737,7.84688995 6.48421053,8.32535885 7.09210526,8.51674641 L7.09210526,10.5263158 L8.10526316,10.5263158 L8.10526316,8.51674641 C8.71315789,8.32535885 9.11842105,7.75119617 9.11842105,7.17703349 C9.11842105,6.41148325 8.40921053,5.74162679 7.59868421,5.74162679 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="网络管理-copy-2" transform="translate(31.632812, 136.000000)" fill="#00A4FF" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                <text id="物联网络管理">
+                    <tspan x="0.4078947" y="15.284315">物联网络管理</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-path-Copy-18" fill="#CEE3FF" x="0.632812" y="384.671875" width="780" height="180"></rect>
+            <g id="Group-Copy-19" transform="translate(10.632812, 396.671875)" fill="#00A4FF">
+                <g id="Group">
+                    <path d="M7.5,0 C6.7,0 6,0.7 6,1.5 C6,2.2 6.4,2.7 7,2.9 L7,5 L8,5 L8,2.9 C8.6,2.7 9,2.1 9,1.5 C9,0.7 8.3,0 7.5,0 Z" id="Shape"></path>
+                    <circle id="Oval" cx="7.5" cy="13.5" r="1.5"></circle>
+                    <path d="M3.3,3.2 C2.5,2.8 1.6,3 1.2,3.8 C0.8,4.5 1,5.4 1.8,5.8 C1.9,5.8 2,5.9 2,5.9 L2,8 L3,8 L3,5.9 C3.1,5.9 3.3,5.8 3.4,5.7 L5.1,6.7 L5.6,5.8 L3.9,4.9 C4.1,4.2 3.8,3.5 3.3,3.2 Z" id="Shape"></path>
+                    <circle id="Oval" transform="translate(12.500100, 10.500600) rotate(-59.999272) translate(-12.500100, -10.500600) " cx="12.5001" cy="10.5006" r="1.499967"></circle>
+                    <circle id="Oval" transform="translate(2.500200, 10.499700) rotate(-30.000728) translate(-2.500200, -10.499700) " cx="2.5002" cy="10.4997" r="1.499967"></circle>
+                    <path d="M12,5.9 L12,8 L13,8 L13,5.9 C13.1,5.9 13.2,5.8 13.2,5.8 C13.9,5.4 14.2,4.5 13.7,3.8 C13.3,3.1 12.4,2.8 11.7,3.3 C11.1,3.6 10.8,4.3 11,5 L9.4,5.8 L9.9,6.7 L11.6,5.7 C11.7,5.8 11.9,5.9 12,5.9 Z" id="Shape"></path>
+                    <path d="M7.5,6 C6.7,6 6,6.7 6,7.5 C6,8.2 6.4,8.7 7,8.9 L7,11 L8,11 L8,8.9 C8.6,8.7 9,8.1 9,7.5 C9,6.7 8.3,6 7.5,6 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="网络连接-copy-2" transform="translate(31.632812, 393.000000)" fill="#00A4FF" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                <text id="物联网络连接">
+                    <tspan x="0" y="15.671875">物联网络连接</tspan>
+                </text>
+            </g>
+            <g id="Group-36" transform="translate(583.632812, 100.587891)">
+                <path d="M4.5,3.40820312 L4.5,24.4082031" id="Shape-Copy-5" stroke="#888888"></path>
+                <g id="Group-Copy-20" transform="translate(0.000000, 19.408203)" fill="#888888">
+                    <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+                </g>
+                <g id="Group-Copy-21" transform="translate(4.500000, 3.908203) scale(-1, 1) rotate(-180.000000) translate(-4.500000, -3.908203) translate(0.000000, 0.408203)" fill="#888888">
+                    <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+                </g>
+            </g>
+            <path d="M588.132812,361.171875 L588.132812,382.171875" id="Shape-Copy-6" stroke="#888888"></path>
+            <g id="Group-Copy-22" transform="translate(583.632812, 377.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <g id="Group-Copy-23" transform="translate(588.132812, 361.671875) scale(-1, 1) rotate(-180.000000) translate(-588.132812, -361.671875) translate(583.632812, 358.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <path d="M390.632812,568.171875 L390.632812,589.171875" id="Shape-Copy-7" stroke="#888888"></path>
+            <g id="Group-Copy-24" transform="translate(386.132812, 584.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <g id="Group-Copy-25" transform="translate(390.632812, 568.671875) scale(-1, 1) rotate(-180.000000) translate(-390.632812, -568.671875) translate(386.132812, 565.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <path d="M193.132812,361.171875 L193.132812,382.171875" id="Shape-Copy-8" stroke="#888888"></path>
+            <g id="Group-Copy-26" transform="translate(188.632812, 377.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <g id="Group-Copy-27" transform="translate(193.132812, 361.671875) scale(-1, 1) rotate(-180.000000) translate(-193.132812, -361.671875) translate(188.632812, 358.171875)" fill="#888888">
+                <polygon id="Shape" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+            </g>
+            <g id="Group-29-Copy" transform="translate(122.632812, 23.755859)">
+                <g id="Group-6">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.5" y="2.74023438" width="138" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.5" y="0.740234375" width="138" height="50"></rect>
+                </g>
+                <g id="火灾预警" transform="translate(41.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.3476562" y="15.7402344">火灾预警</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-8-Copy-2" transform="translate(320.632812, 23.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.74023438" width="138" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.740234375" width="138" height="50"></rect>
+                <g id="消防水监测" transform="translate(32.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.8945312" y="15.7402344">消防水监测</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-7-Copy-3" transform="translate(517.632812, 23.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.171875" y="2.74023438" width="138" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.171875" y="0.740234375" width="138" height="50"></rect>
+                <g id="火警研判" transform="translate(39.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.7480469" y="15.7402344">火警研判</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-41" transform="translate(61.632812, 185.000000)">
+                <g id="Group-10-Copy-2" transform="translate(0.000000, 0.755859)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.5859375" y="2.09570312" width="124" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.5859375" y="0.095703125" width="124" height="50"></rect>
+                    <g id="通信网关管理" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.5859375" y="15.0957031">通信网关管理</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-9-Copy-2" transform="translate(136.000000, 0.755859)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.5859375" y="2.09570312" width="124" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.5859375" y="0.095703125" width="124" height="50"></rect>
+                    <g id="云核心网管理" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.5859375" y="15.0957031">云核心网管理</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-11-Copy-2" transform="translate(0.000000, 62.755859)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.5859375" y="2.09570312" width="124" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.5859375" y="0.095703125" width="124" height="50"></rect>
+                    <g id="位置服务" transform="translate(34.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.5859375" y="15.0957031">位置服务</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-12-Copy-2" transform="translate(136.000000, 62.755859)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.5859375" y="2.09570312" width="124" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.5859375" y="0.095703125" width="124" height="50"></rect>
+                    <g id="网络监控" transform="translate(34.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.5859375" y="15.0957031">网络监控</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-13-Copy-2" transform="translate(503.632812, 154.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.171875" y="2.09570312" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.171875" y="0.095703125" width="166" height="50"></rect>
+                <g id="服务器接口连接管理" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.171875" y="15.0957031">服务器接口连接管理</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-14-Copy-2" transform="translate(503.632812, 216.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.171875" y="2.09570312" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.171875" y="0.095703125" width="166" height="50"></rect>
+                <g id="应用注册及数据分发" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.171875" y="15.0957031">应用注册及数据分发</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-15-Copy-2" transform="translate(503.632812, 278.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.171875" y="2.09570312" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.171875" y="0.095703125" width="166" height="50"></rect>
+                <g id="数据加解密及缓存" transform="translate(27.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.171875" y="15.0957031">数据加解密及缓存</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-16-Copy-2" transform="translate(128.632812, 417.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.271484375" width="166" height="50"></rect>
+                <g id="会话密钥生成与发放" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="15.2714844">会话密钥生成与发放</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-21-Copy-2" transform="translate(128.632812, 479.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.271484375" width="166" height="50"></rect>
+                <g id="通信网关连接管理" transform="translate(27.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="15.2714844">通信网关连接管理</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-17-Copy-2" transform="translate(306.632812, 417.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.271484375" width="166" height="50"></rect>
+                <g id="报文管理" transform="translate(55.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="15.2714844">报文管理</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-18-Copy-2" transform="translate(486.632812, 417.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.05263158" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.0526315789" y="0.271484375" width="166" height="50"></rect>
+                <g id="鉴权认证" transform="translate(55.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.0526316" y="15.2714844">鉴权认证</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-20-Copy-2" transform="translate(306.632812, 479.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.271484375" width="166" height="50"></rect>
+                <g id="连接控制" transform="translate(55.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="15.2714844">连接控制</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-19-Copy-2" transform="translate(486.632812, 479.755859)">
+                <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2.05263158" y="2.27148438" width="166" height="50"></rect>
+                <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0.0526315789" y="0.271484375" width="166" height="50"></rect>
+                <g id="设备注册" transform="translate(55.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text>
+                        <tspan x="0.0526316" y="15.2714844">设备注册</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-31" transform="translate(95.632812, 634.671875)">
+                <g id="Group-24-Copy-2" transform="translate(0.000000, 0.583984)">
+                    <rect id="Rectangle-path-Copy-7" fill="#BBBBBB" opacity="0.6" x="2" y="2.91601562" width="138" height="50"></rect>
+                    <rect id="Rectangle-path-Copy-8" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.916015625" width="138" height="50"></rect>
+                    <g id="独立式烟感" transform="translate(33.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.3496094" y="15.9160156">独立式烟感</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-23-Copy-2" transform="translate(150.000000, 0.583984)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.91601562" width="138" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.916015625" width="138" height="50"></rect>
+                    <g id="可燃气体探测器" transform="translate(20.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0" y="15.9160156">可燃气体探测器</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-22-Copy-2" transform="translate(300.000000, 0.583984)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.91601562" width="138" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.916015625" width="138" height="50"></rect>
+                    <g id="温湿度传感器" transform="translate(26.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.1640625" y="15.9160156">温湿度传感器</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-22-Copy-3" transform="translate(450.000000, 0.583984)">
+                    <rect id="Rectangle-path" fill="#BBBBBB" opacity="0.6" x="2" y="2.91601562" width="138" height="50"></rect>
+                    <rect id="Rectangle-path" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0.916015625" width="138" height="50"></rect>
+                    <g id="压力采集器" transform="translate(33.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text>
+                            <tspan x="0.4765625" y="15.9160156">压力采集器</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

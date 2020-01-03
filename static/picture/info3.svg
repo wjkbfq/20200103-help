@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>视频无缝集成</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视频无缝集成" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="d7c015fe25fd184f1729e0f601dd5928-copy" transform="translate(2.000000, 2.000000)">
+            <rect id="Rectangle-94-Copy" fill="#00A4FF" x="28" y="28" width="16" height="16"></rect>
+            <polygon id="Rectangle-95-Copy" fill="#334966" points="4 35 40 35 37.5172414 37 4 37"></polygon>
+            <polygon id="Rectangle-96-Copy" fill="#334966" points="4 21 6 22 6 37 4 37"></polygon>
+            <polygon id="Rectangle-97-Copy" fill="#334966" transform="translate(37.000000, 38.000000) rotate(180.000000) translate(-37.000000, -38.000000) " points="40 35 40 41 34 41"></polygon>
+            <polygon id="Polygon-2" fill="#00A4FF" points="8.6028857 0 17 4.84807621 17 14.5442286 8.6028857 19.3923048 0.20577137 14.5442286 0.20577137 4.84807621"></polygon>
+            <polygon id="Rectangle-95" fill="#334966" points="6.48275862 8 40 8 40 10 4 10"></polygon>
+            <rect id="Rectangle-96" fill="#334966" x="38" y="8" width="2" height="15"></rect>
+            <polygon id="Rectangle-97" fill="#334966" points="10 4 10 10 4 10"></polygon>
+        </g>
+    </g>
+</svg>

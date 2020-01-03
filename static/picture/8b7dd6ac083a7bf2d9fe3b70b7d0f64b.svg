@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>计划性</title>
+    <desc>Created with Sketch.</desc>
+    <g id="计划性" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M43,20.575107 C42.3605809,20.1753159 41.6926672,19.8168593 41.0000006,19.5034789 L41,2 L5,2 L5,46 L21.0380648,46 C21.6504561,46.7209046 22.3219167,47.3900646 23.0449665,48 L3,48 L3,0 L43,0 L43,20.575107 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        <rect id="Rectangle-60" fill="#334966" x="8" y="7" width="29" height="2"></rect>
+        <rect id="Rectangle-60-Copy" fill="#334966" x="8" y="16" width="29" height="2"></rect>
+        <path d="M19.4987183,25 C19.0220576,25.6345923 18.5875342,26.3026436 18.1993022,27 L8,27 L8,25 L19.4987183,25 Z" id="Combined-Shape" fill="#334966"></path>
+        <circle id="Oval-29" fill="#00A4FF" cx="34" cy="35" r="11"></circle>
+        <path d="M35,34 L40,34 C40.5522847,34 41,34.4477153 41,35 C41,35.5522847 40.5522847,36 40,36 L35,36 L33,36 L33,29 C33,28.4477153 33.4477153,28 34,28 C34.5522847,28 35,28.4477153 35,29 L35,34 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <path d="M34,48 C26.8202983,48 21,42.1797017 21,35 C21,27.8202983 26.8202983,22 34,22 C41.1797017,22 47,27.8202983 47,35 C47,42.1797017 41.1797017,48 34,48 Z M34,46 C40.0751322,46 45,41.0751322 45,35 C45,28.9248678 40.0751322,24 34,24 C27.9248678,24 23,28.9248678 23,35 C23,41.0751322 27.9248678,46 34,46 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+    </g>
+</svg>

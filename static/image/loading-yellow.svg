@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="a" data-name="未命名的渐变 172" x1="32.248" y1="27.071" x2="-0.655" y2="8.075" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9700" stop-opacity="0.05"/>
+      <stop offset="0.13" stop-color="#fd9607" stop-opacity="0.298"/>
+      <stop offset="0.258" stop-color="#fc950e" stop-opacity="0.512"/>
+      <stop offset="0.383" stop-color="#fa9413" stop-opacity="0.687"/>
+      <stop offset="0.503" stop-color="#f99417" stop-opacity="0.824"/>
+      <stop offset="0.616" stop-color="#f9931a" stop-opacity="0.921"/>
+      <stop offset="0.721" stop-color="#f8931b" stop-opacity="0.98"/>
+      <stop offset="0.809" stop-color="#f8931c"/>
+      <stop offset="1" stop-color="#ff9700"/>
+    </linearGradient>
+  </defs>
+  <title>02橙色</title>
+  <path d="M20,39A19,19,0,1,1,39,20,19.021,19.021,0,0,1,20,39ZM20,4A16,16,0,1,0,36,20,16.019,16.019,0,0,0,20,4Z" style="fill: url(#a)"/>
+</svg>

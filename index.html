@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="Keywords" content="Git,Svn,代码托管,Pages,WebIDE,Cloud Studio,持续集成,开发协作,团队协作,项目管理,敏捷开发,缺陷管理,在线IDE,CI,代码管理,CODING,腾讯云开发者平台">
+    <meta name="Description" content="腾讯云开发者平台是腾讯云为开发者提供的在线研发管理工具，提供 Git/Svn 代码托管，项目管理，持续集成，云端开发工具 Cloud Studio 等一整套 SaaS 产品。">
+    
+    
+
+    <title>腾讯云开发者平台 | 技术助力开发</title>
+<link href="static/css/home.334fb411.chunk.css" rel="stylesheet"></head>
+<body>
+<div class="abs">
+    <div class="abs-title">重要公告：腾讯云开发者平台将于 12 月 28 日至 1 月 10 日每日的凌晨进行升级合并至全新 CODING，升级后您将前往全新 CODING 使用服务。请合理避开升级时间，以免影响您的工作。
+        <a href="javascript:;" target="_blank">
+            点击查看详情>>
+        </a>
+    </div>
+</div>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                            <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="cs.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+            <div class="loading" id="loading">
+                <div class="loader-inner line-spin-fade-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right-zone" id="right-zone" style="display: none">
+                <div class="login-zone">
+                    <div class="register js-register">
+                        <a href="register.html">注册</a>
+                    </div>
+                    <div class="login js-login">
+                        <a href="register.html">登录</a>
+                    </div>
+                    <a class="avatar" title="进入工作台">
+                        <img>
+                    </a>
+                </div>
+                <div class="icon" id="show-header-icon">
+                    <i></i><i></i><i></i>
+                </div>
+                <div class="icon-hide" id="hide-header-icon">
+                    <i class="left"></i><i class="right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <span class="item trigger active" scroll-id="project-trigger">项目管理</span>
+        <span class="item trigger" scroll-id="code-trigger">代码托管</span>
+    </div>
+    <div class="mobile-header" id="mobile-header" style="display: none">
+        <div class="nav">
+            <div class="nav-item">
+                <span class="grey">产品</span>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="production.html" target="_blank">CODING 个人版</a>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="cs.html" target="_blank">Cloud Studio</a>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="javascript:;" target="_blank">CODING 企业版</a>
+            </div>
+            <div class="nav-item">
+                <a href="help.html" target="_blank">文档</a>
+            </div>
+            <div class="nav-item nav-out js-login" style="margin: 30px 0 20px;">
+                <a href="register.html">登录</a>
+            </div>
+            <div class="nav-item nav-out js-register">
+                <a href="register.html">注册</a>
+            </div>
+            <div class="nav-item nav-avatar" id="mobile-header-avatar" style="display: none;">
+                <a href="register.html">
+                    <img src="static/picture/xxxHTMLLINKxxx0.8758357129096039.jpg" alt="头像">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="display: none" id="iframe-waring-modal">
+        <div class="cuk-modal-backdrop"></div>
+        <div tabindex="-1" class="cuk-modal-container" role="document">
+            <div class="cuk-modal">
+                <div class="cuk-modal-header">升级公告</div>
+                <div class="cuk-modal-body"><p class="text-indent">
+                    为了给您提供更稳定更高效的服务，系统现进行全面升级。当您遇到点击未响应等问题时，您仅需在当前页面进行刷新操作便可解决。给您带来的不便敬请谅解。 具体刷新操作：</p>
+                    <div>
+                        <ul>
+                            <li>若您是<strong> Windows </strong>或<strong> Linux </strong>用户，请按<strong> ctrl + F5 </strong>或者 浏览器刷新按钮<strong class="fresh-btn"> ⟳ </strong></li>
+                            <li>若您是<strong> Mac </strong>用户，请按<strong> command + R </strong>或者 浏览器刷新按钮<strong class="fresh-btn"> ⟳ </strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cuk-modal-footer">
+                    <button id="iframe-waring-btn" class="cuk-button" type="button">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container index-container">
+    <div class="content layout">
+        <section class="section index-section">
+            <div id="motion-bg"></div>
+            <div class="section-content">
+                <div class="layout-content">
+                    <div class="title">
+                        技术助力开发
+                    </div>
+                    <div class="title mobile-title">
+                        <div>技术</div>
+                        <div>助力开发</div>
+                    </div>
+                    <div class="desc">
+                        <p class="desc-top">
+                            腾讯云开发者平台是腾讯云与 CODING 共同为开发者打造的云端工具平台，旨在为更多的开发者带去便捷、高效的
+                        </p>
+                        <p class="desc-bottom">
+                            开发体验，提供包括需求管理、代码编写、代码管理、代码运行的整套系统。
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <a id="entrance">
+                            <button>
+                                <div class="loading loading-btn" id="loading-btn">
+                                    <div class="loader-inner line-spin-fade-loader">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section team-section">
+            <div class="section-content">
+                <div class="layout-content">
+                    <div class="left">
+                        <div class="title">
+                            <p>
+                                CODING 个人版
+                            </p>
+                        </div>
+                        <p class="desc">
+                            CODING 个人版为开发者提供了高效便捷的开发工具，包括 Git/SVN 代码托管、Pages 服务、任务管理、文件 Wiki 管理等模块，是绝佳的个人代码管理工具。
+                        </p>
+                        <div class="btn">
+                            <a href="production.html" target="_blank">
+                                <button>了解更多</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right js-image-container" id="dev-container">
+                        <img class="out" src="static/picture/ed890d5e-501d-4fdd-912b-5b8b4580.png" srcset="static/picture/839270dd-9ff1-479a-90ee-ae0afaeb.png 2x" alt="工作流程示意图">
+                        <img class="inner" src="static/picture/c859fefd-c38e-4be8-b33c-54b8bb5c.png" srcset="static/picture/4ba18ace-ccc9-45a7-a802-655283eb.png 2x" alt="工作流程示意图">
+                    </div>
+                    <div class="mobile-btn">
+                        <div class="btn">
+                            <a href="production.html" target="_blank">
+                                <button>了解更多</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dev-section">
+            <div class="section-content">
+                <div class="layout-content">
+                    <div class="mobile-btn">
+                        <div class="btn">
+                            <a href="cs.html" target="_blank">
+                                <button>了解更多</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <img src="static/picture/a96aeca2-e6e2-4963-8683-81f318cb.png" srcset="static/picture/7445eabe-a3bc-4bb6-b2d5-e1cf0b64.png 2x" alt="最极客的云端开发体验">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <p>Cloud Studio</p>
+                        </div>
+                        <p class="desc">
+                            Cloud Studio 是一款基于浏览器的云端 IDE，拥有不输于本地 IDE 的完整功能，并提供了强大的云端特性：实时保存、协同编辑、快速部署、预制环境快速切换等。
+                        </p>
+                        <div class="btn">
+                            <a href="cs.html" target="_blank">
+                                <button>了解更多</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section zoology-section">
+            <div class="section-content">
+                <div class="layout-content">
+                    <div class="left">
+                        <div class="title">
+                            <p>​CODING 企业版</p>
+                        </div>
+                        <p class="desc">
+                            CODING 企业版是专为企业/团队/组织打造的软件开发协作平台，提供全流程的 DevOps
+                            工具，涵盖需求管理、代码管理，测试管理、构建物管理、部署管理、知识管理等模块。可以更好地管理项目成员，便捷而深入地把握开发进度，让开发流程高效可控。
+                        </p>
+                        <div class="btn">
+                            <a href="javascript:;" target="_blank">
+                                <button>了解更多</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="static/picture/coding-enterprise.4187964a.png" srcset="static/picture/coding-enterprise@2x.ed290afa.png 2x" alt="完善强大的腾讯云生态">
+                    </div>
+                    <div class="mobile-btn">
+                        <a href="javascript:;" target="_blank">
+                            <button>了解更多</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-connect" scroll-id="service-container">
+            <div class="section-content">
+                <div class="title">联系我们</div>
+                <div class="content-container">
+                    <div class="item">
+                        <div class="dec">电话</div>
+                        <a class="detail" href="tel:4008306861">400-830-6861</a>
+                    </div>
+                    <div class="item">
+                        <div class="dec">邮箱</div>
+                        <a href="mailto:support@coding.net" class="detail">support@coding.net</a>
+                    </div>
+                    <div class="item">
+                        <div class="dec">在线反馈</div>
+                        <a href="javascript:;" target="_blank" class="detail">https://feedback.coding.net/</a>
+                    </div>
+                </div>
+                <div class="statement">
+                    腾讯云开发者平台由腾讯云及 CODING 共同运营，目前由 CODING 团队提供运营服务。
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<footer class="footer-container">
+    <iframe id="report_iframe" name="report_iframe" style="position:absolute;height:1px;width:1px;bottom:-250px;left:-250px;" src="thirdpartyreport.html"></iframe>
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" target="_blank" class="item" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<script type="text/javascript" src="static/js/tcss.ping.https.js"></script>
+<script type="text/javascript">
+    var Utils = (function () {
+        var protocol = window.location.protocol,
+            tencentDomain = 'dev.tencent.com',
+            newReportIframeUrl = 'https://cloud.tencent.com/act/thirdpartyreport';
+
+        return {
+            // 准备新上报的 iframe
+            getReportIframeUrl: function(url) {
+                var queryStr = '';
+                var originUrlStr = protocol + '//' + tencentDomain;
+
+                url = url.replace(/(\w+)\/\//g, '$1/');
+
+                if (url.indexOf('?') > -1) {
+                    var execData = /^(.*)\?(.*)$/.exec(url);
+                    if (execData !== null && execData[1]) {
+                        originUrlStr = execData[1];
+                    }
+                    if (execData !== null && execData[2]) {
+                        queryStr = execData[2];
+                    }
+                } else {
+                    originUrlStr = url;
+                }
+
+                var iframeSrcUrl = newReportIframeUrl;
+                if (queryStr) {
+                    iframeSrcUrl += '?' + encodeURI(queryStr) + '&url=' + encodeURIComponent(originUrlStr);
+                } else {
+                    iframeSrcUrl += '?url=' + encodeURIComponent(originUrlStr);
+                }
+                return iframeSrcUrl;
+            },
+
+            changeReportSrc: function(url) {
+                if (window.frames['report_iframe']) {
+                    window.frames['report_iframe'].location.href = url;
+                }
+            },
+
+            tcssReport: function() {
+                if (typeof(pgvMain) === 'function') {
+                    pgvMain({repeatApplay: 'true', virtualDomain: 'qcloud.dev.qq.com'});
+                }
+            },
+
+            onLoadDo: function() {
+                window.onload = function() {
+                    Utils.tcssReport();
+                    var reportIframeSrcUrl = Utils.getReportIframeUrl(window.location.href);
+                    Utils.changeReportSrc(reportIframeSrcUrl);
+                };
+            }
+        };
+    }());
+    Utils.onLoadDo();
+</script>
+
+<script type="text/javascript" src="static/js/runtime~home.016be604.js"></script><script type="text/javascript" src="static/js/home.23ce8331.chunk.js"></script></body>
+</html>

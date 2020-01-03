@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>专业物流</title>
+    <desc>Created with Sketch.</desc>
+    <g id="专业物流" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="23"></circle>
+        <path d="M27,30 L27,14 L12,14 L12,30 L16.0588379,30 L16.0588379,32 L23.0124512,32 L23.0124512,30 L27,30 Z M29,32 L10,32 L10,12 L29,12 L29,32 Z" id="路径" fill="#334966" fill-rule="nonzero"></path>
+        <circle id="椭圆形" stroke="#334966" stroke-width="2" cx="19.5" cy="31.5" r="3.5"></circle>
+        <rect id="Rectangle-4-Copy" fill="#00A4FF" x="13" y="14" width="10" height="10"></rect>
+        <polygon id="Rectangle-4-Copy" fill="#00A4FF" points="30 23 36.4926758 23 39.4245605 25 30 25"></polygon>
+        <path d="M38,30 L38,24.8284271 L33.1715729,20 L29,20 L29,30 L30,30 L30,32 L37.0140381,32 L37.0140381,30 L38,30 Z M40,32 L27,32 L27,18 L34,18 L40,24 L40,32 Z" id="路径" fill="#334966" fill-rule="nonzero"></path>
+        <circle id="椭圆形-copy" stroke="#334966" stroke-width="2" cx="33.5" cy="31.5" r="3.5"></circle>
+    </g>
+</svg>

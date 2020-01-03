@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>在线测试</title>
+    <desc>Created with Sketch.</desc>
+    <g id="在线测试" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+        <path d="M27.6568542,30.7279221 L36.1421356,22.2426407 L37.5563492,23.6568542 L29.0710678,32.1421356 L27.6568542,33.5563492 L22.7071068,28.6066017 L24.1213203,27.1923882 L27.6568542,30.7279221 Z M11,17 L32,17 L32,19 L11,19 L11,17 Z M11,23 L22,23 L22,25 L11,25 L11,23 Z M11,29 L19,29 L19,31 L11,31 L11,29 Z M44,37 C45.7,37 47,38.3 47,40 C47,41.7 45.7,43 44,43 C42.7,43 41.6,42.2 41.2,41 L5,41 L3,41 L3,39 L3,14 L5,14 L5,39 L41.2,39 C41.6,37.8 42.7,37 44,37 Z M6.8,9 C6.4,10.2 5.3,11 4,11 C2.3,11 1,9.7 1,8 C1,6.3 2.3,5 4,5 C5.3,5 6.4,5.8 6.8,7 L43,7 L45,7 L45,9 L45,34 L43,34 L43,9 L6.8,9 Z" id="Combined-Shape" fill="#7C848E" fill-rule="nonzero"></path>
+    </g>
+</svg>

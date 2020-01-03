@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>TPG 图片加速</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TPG-图片加速" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片加速" transform="translate(0.000000, 4.000000)" stroke="#00A4FF" stroke-width="2">
+            <path d="M31,23 L31,1 L1,1 L1,23 L31,23 Z" id="Rectangle-17"></path>
+            <path d="M19.0645432,5.3882298 L12.6275669,10.8185135 L15.6488118,13.0742474 L11.7591057,18.6634264 C11.727558,18.7087577 11.7387319,18.7710804 11.7840632,18.8026281 C11.8175775,18.8259519 11.8619058,18.8265573 11.8960446,18.8041574 L20.6287872,13.0742474 L17.9298469,10.2523189 L19.2255152,5.49092144 C19.2400166,5.43763079 19.2085718,5.38267446 19.1552811,5.36817305 C19.1235769,5.35954571 19.0896574,5.36704328 19.0645432,5.3882298 Z" id="Path-6"></path>
+        </g>
+    </g>
+</svg>

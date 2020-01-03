@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>智能钛工业AI平台_训练系统_推理系统 - 腾讯云</title>
+    <meta name="keywords" content="训练系统,推理系统,标准化,模型训练,AI,智能,智能标注,模型训练">
+    <meta name="description" content="以标准化产品形式让AI技术在企业应用中快速落地，最大化降低应用门槛。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+   <link rel="stylesheet" href="static/css/ti-insight.css">
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.ti-insight.overview.top.navigation.overview">
+						智能钛工业 AI 平台 TI-Insight 
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ti-insight.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ti-insight.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ti-insight.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.ti-insight.overview.top.nav.btn1">
+						立即申请
+					</a>
+					
+
+					
+					
+						<a href="javascript:;" class="c-btn c-nav-bm-btn-hole" hotrep="product.ti-insight.overview.top.nav.btn2">
+							开发者社区
+						</a>
+					
+					
+					
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section vast J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+			<div class="p-index-nav">
+				
+				<div class="p-index-nav-back">
+					<a href="ti.html">腾讯智能钛机器学习 </a>
+				</div>
+				
+
+				
+				<div class="p-index-nav-btn J-pdSiblingChecker">
+					<div class="p-index-nav-btn-inner">智能钛工业 AI 平台 TI-Insight</div>
+					<div class="p-index-nav-list J-pdSiblingList" style="display: none;">
+						<div class="p-index-nav-list-inner c-scrollbar">
+						
+						
+						<div class="p-index-nav-item"><a href="javascript:;">智能钛机器学习平台 TI-ONE</a></div>
+						
+						
+						
+						<div class="p-index-nav-item"><a href="ti-ems.html">智能钛弹性模型服务 TI-EMS</a></div>
+						
+						
+						
+						<div class="p-index-nav-item actived"><a href="">智能钛工业 AI 平台 TI-Insight</a></div>
+						
+						
+						</div>
+					</div>
+				</div>
+				
+
+				
+			</div>
+			
+
+            <h1 class="c-hero-section-tit">
+                智能钛工业 AI 平台 TI-Insight
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">快捷构建工业 AI 应用模型，提升工业生产效率</p>
+				<p class="m-mod">快捷构建工业 AI 应用模型</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn default  J-pdBannerBtn1" hotrep="product.ti-insight.overview.banner.btn1">
+                    立即申请
+                </a>
+
+                
+                    
+                    <a href="javascript:;" class="c-btn p-weak-btn" hotrep="product.ti-insight.overview.banner.btn2">开发者社区</a>
+                    
+                
+                    
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/9077f4a4035e48d2b861bcfbac715723.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.ti-insight.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">智能钛工业 AI 平台 TI-Insight 概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.ti-insight.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.ti-insight.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.ti-insight.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.ti-insight.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.ti-insight.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod about-mod-middle">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                            <img class="c-media-heading-img" src="static/picture/49ecb067c3260a5b78dc863fccd5e49c.svg" alt="">
+                            
+                           智能钛工业 AI 平台 TI-Insight 简介
+                        </h4>
+                        <p class="c-media-info">
+                            智能钛工业 AI 平台（Tencent Intelligence Industry Insight，TI-Insight）是基于智能钛基础功能打造的一站式工业 AI 平台方案，包含 AI 训练系统和 AI 推理系统两个功能组件。本平台提供了包含数据工厂、内置通用/行业算法库、模型迭代训练引擎、基于题库测试的模型评估引擎、多版本模型对比分析、模型微服务管理和部署、硬件资源优化调度与管理等全栈 AI 能力。支持算法工程师、及具备有限深度学习知识的业务用户可以从0到1快速构建模型、1到N快速迭代训练模型。同时，本平台提供优化调度算法微服务能力，可以帮助团队快速地部署模型，高效利用硬件计算资源，提高生产力。 &nbsp;&nbsp;&nbsp;
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                                <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" target="_blank" hotrep="product.ti-insight.overview.about.aside.media">
+                                    
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">产品简介</div>
+                                    <h3 class="c-thumbnail-tit">腾讯云 TI-Insight 产品文档</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-doc-icon"></i>
+                                    <span class="c-thumbnail-status-txt">文档</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall scenario-mod">
+      <div class="c-section-inner ti-insight-tab-block">
+        <div class="c-section-hd">
+          <h3 class="c-section-tit">智能钛工业 AI 平台</h3>
+        </div>
+        <div class="c-section-bd">
+          <div class="c-tab-normal c-tab-responsive">
+            <ul>
+              <li class="c-tab-simple actived">
+                <a href="javascript:;">
+                  <span class="c-tab-tit">AI 训练系统</span>
+                </a>
+              </li>
+              <li class="c-tab-simple ">
+                <a href="javascript:;">
+                  <span class="c-tab-tit">AI 推理系统</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- item s -->
+            <div class="c-tab-panel" style="display: block;">
+              <div class="c-tab-m-tit actived">AI 训练系统</div>
+              <div class="c-tab-panel-mod" style="display: block;">
+                <div class="p-customer-case c-grid ti-insight-tab-box J-cardWrapper" data-highestindex="1">
+                  <h3 class="ti-insight-tab-title">子模块</h3>
+
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    
+                    <div class="c-media-horiz" style="height: 166px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_1.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          主数据配置
+                        </h4>
+                        <p class="c-media-info">
+                          主数据配置是AI训练系统的业务信息和系统配置管理中心，用户可以根据自己的行业属性和组织结构来配置所需的生产环境数据，主数据决定了系统中训练模型的生产环境参数。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 166px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_2.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          数据工厂
+                        </h4>
+                        <p class="c-media-info">
+                          统筹管理训练数据集、题库集，并提供半自动标注、人工复查、数据浏览、数据清洗、数据标注等功能。企业不需要额外部署一套数据标注系统，可直接用该功能为AI项目准备数据，保障数据的可靠性、一致性。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 166px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_3.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          数据洞察
+                        </h4>
+                        <p class="c-media-info">
+                          通过可视化界面展示数据评估结果，并且提供辅助分析工具，使算法工程师和业务人员可以多维度去分析模型的结果，提供直观的改善方向和可量化数据，帮助用户提升模型性能。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 166px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_4.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          模型训练
+                        </h4>
+                        <p class="c-media-info">
+                          提供算法工程师、业务用户从0到1模型训练，以及从1到N迭代优化的功能，提供通用/业务镜像集成、数据集质量检测、训练框架优化等功能，通过标准化训练流程缩短训练时间，提升生产力。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 166px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_5.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          算法镜像
+                        </h4>
+                        <p class="c-media-info">
+                          系统预置了部分行业的算法模板，用户可以根据所在行业选择适合的算法镜来模型训练，减少重复开发成本，缩短项目周期，并且支持用户、合作伙伴根据平台规范来封装自己的算法，并导入到平台中进行模型训练。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_6.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          题库评估
+                        </h4>
+                        <p class="c-media-info">
+                          提供了模型在线预测和版本对比功能，在线预测模块可通过最新的题库数据集对模型的性能进行评估。对比模块可以分析模型不同版本在同一批题库数据上的性能差异，为用户选择最优版本上线提供可量化的评价指标。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="c-section c-p-y-tall function-mod ti-insight-tab-feature">
+                  <div class="c-section-inner">
+                    <div class="c-section-hd">
+                      <h3 class="c-section-tit">特性</h3>
+                    </div>
+                    <div class="c-section-bd">
+                      <div role="list" class="c-grid function-list J-section2List">
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/07bb2d9581107aa77f033c7cb5a14a82.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                简单易用，快速上手
+                              </h4>
+                              <p class="c-media-info">
+                                功能界面简洁清晰，操作流程方便易用，基于内置的算法工具集和直观的操作指导，使业务专家无需具备编程或深度学习的专业知识就可以创建出业务模型。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/770b1a0bd7545d0749c14136ce3abdb4.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                全面提高线上生产能力
+                              </h4>
+                              <p class="c-media-info">
+                                内置一体化训练集和题库集管理工具，以及自动化模型迭代环境，可以将原有模型快速迭代更新，紧密贴合实际生产业务的需求，大幅提高生产能力。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/3ceceb63955d635c3810eac4238f877d.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                强大的算法通用化能力
+                              </h4>
+                              <p class="c-media-info">
+                                提供多种通用算法镜像，可适应不同行业客户需求。用户可基于此进行模型训练，为算法工程师免除定制化模型开发之苦。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/453d6f512a62b18b4b37391bf48a9a44.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                开放式平台
+                              </h4>
+                              <p class="c-media-info">
+                                在内置的算法包不满足用户需求情况下，用户或实施合作伙伴可以根据软件提供的算法包封装文档，短短数周内即可封装出一个定制算法，并导入到平台中来训练出新的业务模型。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/7f9bc62d9651c5733dd7acac9ebc60f2.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                集成方便，部署灵活
+                              </h4>
+                              <p class="c-media-info">
+                                可将模型一键部署至 AI 推理系统，用户可以脱离线下人工部署的繁琐流程和操作，只需关注于模型的优化迭代，快速集成，灵活部署。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/a97e243f28268f6a03e76db338efe7f8.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                系统可靠，维护成本低
+                              </h4>
+                              <p class="c-media-info">
+                                采用腾讯云 TKE 容器服务技术，具备稳定的运行性能，可进行服务架构的快速升级，安全可靠，维护成本低，产品性价比高。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="c-tab-panel">
+              <div class="c-tab-m-tit">AI 推理系统</div>
+              <div class="c-tab-panel-mod">
+                <div class="p-customer-case c-grid ti-insight-tab-box J-cardWrapper" data-highestindex="3">
+                  <h3 class="ti-insight-tab-title">子模块</h3>
+
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 60px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/practice-tab_1.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          主数据配置
+                        </h4>
+                        <p class="c-media-info">
+                          主数据配置提供业务信息和系统配置的管理，用户可以根据自己的行业属性和组织结构来配置所需的生产环境数据，通过绑定配置的主数据信息，用户可以直接定位、更新已部署的模型微服务。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 60px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/logic-tab_2.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          模型配置仓库
+                        </h4>
+                        <p class="c-media-info">
+                          将算法模型服务包、业务标签、所需计算资源、扩缩容策略进行预配置整合，用户可直接启动和停止不同业务场景的模型服务，实现高效地运维所有的在线模型服务。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 60px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/logic-tab_3.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          微服务管理
+                        </h4>
+                        <p class="c-media-info">
+                          AI推理系统的模型服务运行模块，包含计算资源的虚拟化，服务智能启停，负载均衡，弹性扩缩容能力，最大化用户的硬件投资收益，同时为用户的线上生产业务提供服务高可用的保障。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz">
+                      <div class="c-media-img">
+                        <img src="static/picture/logic-tab_4.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          资源监控
+                        </h4>
+                        <p class="c-media-info">
+                          资源监控提供了AI推理系统的系统资源和单个微服务的业务请求监控信息，客户可以多维度查看线上微服务运行情况及系统资源消耗情况，为服务配置的更新、新增系统硬件资源提供量化指标作为参考。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 60px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/logic-tab_5.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          在线测试
+                        </h4>
+                        <p class="c-media-info">
+                          在线测试提供模型服务在线测试功能，客户可以针对线上服务进行推理结果及性能验证，支持通过A/B测试进行在线服务的灰度发布。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="c-g-12 s-24 xs-24 ti-insight-tab-grid J-cardItem">
+                    <div class="c-media-horiz" style="height: 60px;">
+                      <div class="c-media-img">
+                        <img src="static/picture/logic-tab_6.svg" alt="" class="ico64">
+                      </div>
+                      <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                          推理服务市场
+                        </h4>
+                        <p class="c-media-info">
+                          预置了业内常用的AI算法推理服务，客户可根据自身需求直接启用该服务，避免重复开发，缩短项目实施周期，直接使用所需的推理服务。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+
+                <div class="c-section c-p-y-tall function-mod ti-insight-tab-feature">
+                  <div class="c-section-inner">
+                    <div class="c-section-hd">
+                      <h3 class="c-section-tit">特性</h3>
+                    </div>
+                    <div class="c-section-bd">
+                      <div role="list" class="c-grid function-list J-section2List">
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/5d8a445383f2fb1e78d4dcf6ba6341c0.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                异构算力虚拟化
+                              </h4>
+                              <p class="c-media-info">
+                                CPU、GPU 算力虚拟化，一键部署不同类型的机器学习模型和深度学习模型，充分利用硬件计算资源，为用户提供最佳推理服务。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/6487985f3f38b61f98fc0a60fe5f2686.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                自动弹性扩缩容
+                              </h4>
+                              <p class="c-media-info">
+                                用户可以选择手动或自动调整弹性实例扩展策略，AI 推理系统会根据业务负载情况，动态实时自动管理实例数量，可靠应对不同的业务场景。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/9e79db9fbd9a327b573bcc7f2d5a2439.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                模型服务 QoS 保障
+                              </h4>
+                              <p class="c-media-info">
+                                可以帮助及时发掘用户的线上模型服务的瓶颈，并提供可靠的应对扩展策略，从而保障用户线上服务健康运行。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/b6c3b27d36ebeba5cd99ddf71051a3b0.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                服务智能启停
+                              </h4>
+                              <p class="c-media-info">
+                                高效利用CPU/GPU的计算资源，通过业务策略和请求的波动趋势，智能的启动和停止无任务运行的微服务，让企业有限计算资源实现分时段资源自动共享。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/31f31b3a933511723807b8a0ce5cab99.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                优化加速
+                              </h4>
+                              <p class="c-media-info">
+                                支持模型和框架的优化加速，提升模型服务运行效率，为用户提供极致推理性能。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div role="listitem" class="c-g-8 J-section2Item">
+                          <div class="c-media">
+                            <div class="c-media-img">
+                              <img class="ico64" src="static/picture/29c84bf54a4aab4b327ab51d17a5fcee.svg" alt="">
+                            </div>
+                            <div class="c-media-body">
+                              <h4 class="c-media-heading">
+                                功能完善
+                              </h4>
+                              <p class="c-media-info">
+                                AI 推理平台提供丰富的多模型支持、版本管理和灰度升级等使用功能，为用户的各类业务保驾护航。
+                              </p>
+                
+                            </div>
+                          </div>
+                        </div>
+                
+                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- item e -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="4frbtajmxd8">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="缺陷检测" data-target="4frbtajmxd8">
+                        <a href="javascript:;" id="tab_4frbtajmxd8" role="tab" hotrep="product.ti-insight.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="4frbtajmxd8">
+                            <span class="c-tab-tit">缺陷检测</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="视频检测" data-target="rmksb6yqgab">
+                        <a href="javascript:;" id="tab_rmksb6yqgab" role="tab" hotrep="product.ti-insight.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="rmksb6yqgab">
+                            <span class="c-tab-tit">视频检测</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="质量监控" data-target="nq2qnbpjimo">
+                        <a href="javascript:;" id="tab_nq2qnbpjimo" role="tab" hotrep="product.ti-insight.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="nq2qnbpjimo">
+                            <span class="c-tab-tit">质量监控</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="预测性维护" data-target="uz8z3gyi81m">
+                        <a href="javascript:;" id="tab_uz8z3gyi81m" role="tab" hotrep="product.ti-insight.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="uz8z3gyi81m">
+                            <span class="c-tab-tit">预测性维护</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="良率预测" data-target="kpzt76o75pa">
+                        <a href="javascript:;" id="tab_kpzt76o75pa" role="tab" hotrep="product.ti-insight.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="kpzt76o75pa">
+                            <span class="c-tab-tit">良率预测</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.ti-insight.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_4frbtajmxd8" data-panel="4frbtajmxd8" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="4frbtajmxd8" hotrep="product..overview.scene.1.tab">
+                        缺陷检测
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>根据工业生产制造过程中 AOI 设配拍摄的产品质量的检测图像，识别出产品中所存在的质量缺陷，并依照设定的业务规则对缺陷进行编码分类。通过 AI 技术可以替代目前使用人力进行重复性劳动、大幅降低人力成本、提升缺陷识别的速度和准确性，从而缩短检测时间，提高产品质量和产能。<br><img src="static/picture/18eedd117e2efa8bd1057e219a87c41e.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_rmksb6yqgab" data-panel="rmksb6yqgab" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="rmksb6yqgab" hotrep="product..overview.scene.2.tab">
+                        视频检测
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>对用户上传、摄像头传输的视频和图片等多媒体文件进行实时或离线批处理分析，检测图像或者多媒体文件中的内容，包含场景识别、人物检测、目标检测等一系列任务。<br><img src="static/picture/e9fc38845c07639d9aec65d895a58e5f.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_nq2qnbpjimo" data-panel="nq2qnbpjimo" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="nq2qnbpjimo" hotrep="product..overview.scene.3.tab">
+                        质量监控
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>根据工业生产制造过程中的历史数据构建阈值模型，对产线质量进行实时监控。<br><img src="static/picture/3539c91123fe0c483cd15b55105e3884.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_uz8z3gyi81m" data-panel="uz8z3gyi81m" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="uz8z3gyi81m" hotrep="product..overview.scene.4.tab">
+                        预测性维护
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>根据工业生产制造过程中企业设备资产和售后产品的历史数据、实时物联网数据构建设备的生命周期预测模型，提高企业设备有效利用率（OEE）和设备健康管理水平，创新增值服务。 <br><img src="static/picture/3464a3a1395fe3b23f14d156470066e4.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_kpzt76o75pa" data-panel="kpzt76o75pa" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="kpzt76o75pa" hotrep="product..overview.scene.5.tab">
+                        良率预测
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>根据工业生产制造过程中的产品检测历史数据，预测产品的良率。<br><img src="static/picture/9420c91a308aaf895f97865e02c39957.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall customer-mod J-cardWrapper">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户案例</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="p-customer-case c-grid">
+                
+                <div class="c-g-12 s-24 xs-24 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.ti-insight.overview.customer.1">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/2a7e9be1e7389423deee0fcbbe597ea3.png" alt="华星光电 ">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                华星光电 
+                                <span>高科技制造</span>
+                            </h4>
+                            <p class="c-media-info">
+                                华星光电技术有限公司是全球最重要的显示面板设计、制造商之一，同时也是 TCL 集团股份有限公司旗下子公司。腾讯协助华星光电利用工业机器视觉技术为液晶面板的产品质量管理带来新突破，在智能制造领域树立样板项目和行业方向。  
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="c-g-12 s-24 xs-24 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.ti-insight.overview.customer.2">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/fe45c1167cca2506d1b6befb6006a120.png" alt="格创东智">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                格创东智
+                                <span>工业互联网</span>
+                            </h4>
+                            <p class="c-media-info">
+                                格创东智（深圳）科技有限公司是 TCL 集团下属全资子公司，其使命是为 TCL、华星光电、及其他伙伴提供工业物联网服务、AI 技术、云计算技术、智能制造项目、协助企业用数据和业务价值来驱动高科技制造行业向云化、智能化、数字化转型。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用腾讯云 TI-Insight</h4>
+                <div class="home-recommend-con">
+                    <p>腾讯云 TI-Insight 目前已开放申请，请点击下方按钮来申请接入。</p>
+<p>申请审核通过后将会有专人负责与您联系，并进行商务洽谈。 &nbsp;&nbsp;</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.ti-insight.overview.guide.btn">
+                           立即申请
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.ti-insight.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'ti-insight',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012107310, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "BJZQ0pW3yI";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+<script src="static/js/ti-insight.js"></script>
+
+
+</body>
+</html>

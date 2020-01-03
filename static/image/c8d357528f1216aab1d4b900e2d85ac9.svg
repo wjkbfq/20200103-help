@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>数据安全</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="数据安全" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24,0 L21.822,1.187 C16,4.363 9.6,6.34 3,7 L3,28.529 C3,33.736 5.891,38.514 10.504,40.931 L24,48 L37.496,40.931 C42.109,38.514 45,33.736 45,28.529 L45,7 C38.4,6.34 32,4.363 26.178,1.187 L24,0 Z M24,2.278 L25.22,2.943 C30.777,5.976 36.752,7.935 43,8.778 L43,28.529 C43,33.008 40.535,37.081 36.568,39.159 L24,45.742 L11.432,39.159 C7.465,37.081 5,33.008 5,28.529 L5,8.778 C11.248,7.935 17.223,5.976 22.78,2.943 L24,2.278 Z" id="Fill-6" fill="#334966"></path>
+        <rect id="Rectangle-74" fill="#00A4FF" transform="translate(18.000000, 25.000000) scale(1, -1) translate(-18.000000, -25.000000) " x="15" y="17" width="6" height="16"></rect>
+        <rect id="Rectangle-74-Copy" fill="#00A4FF" transform="translate(30.000000, 23.000000) scale(1, -1) translate(-30.000000, -23.000000) " x="27" y="13" width="6" height="20"></rect>
+        <polyline id="Path-5-Copy" stroke="#334966" stroke-width="2" points="10 23 18 29 30.6666667 19 38 19"></polyline>
+    </g>
+</svg>

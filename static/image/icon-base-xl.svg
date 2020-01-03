@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>认证基地</title>
+    <desc>Created with Sketch.</desc>
+    <g id="认证基地" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1547107054949-48x48" transform="translate(1.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Fill-1" fill="#00A4FF" points="24 47 24 10 13 15.28 13 47"></polygon>
+            <path d="M25.0002,0.0003 L0.0002,12.0003 L0.0002,48.0003 L25.0002,48.0003 L25.0002,0.0003 Z M2.0002,13.2583 L23.0002,3.1793 L23.0002,46.0003 L2.0002,46.0003 L2.0002,13.2583 Z" id="Fill-2" fill="#334966"></path>
+            <polygon id="Fill-3" fill="#334966" points="41 8.0415 27 8.0415 27 9.9995 39 9.9995 39 19.0415 41 19.0415"></polygon>
+            <polygon id="Fill-4" fill="#334966" points="10.99 18 18.99 18 18.99 16 10.99 16"></polygon>
+            <polygon id="Fill-5" fill="#334966" points="7.99 28 18.99 28 18.99 26 7.99 26"></polygon>
+            <polygon id="Fill-6" fill="#334966" points="7.99 38 18.99 38 18.99 36 7.99 36"></polygon>
+            <g id="Group-11" transform="translate(26.000000, 20.000000)">
+                <path d="M16,6.9658 C16,10.2788 13.313,12.9658 10,12.9658 C6.687,12.9658 4,10.2788 4,6.9658 C4,3.6528 6.687,0.9658 10,0.9658 C13.313,0.9658 16,3.6528 16,6.9658" id="Fill-7" fill="#00A4FF"></path>
+                <path d="M10,13.9639 C4.478,13.9639 0,19.7389 0,26.8619 C0,27.2349 0.02,27.6009 0.043,27.9639 L19.957,27.9639 C19.98,27.6009 20,27.2349 20,26.8619 C20,19.7389 15.522,13.9639 10,13.9639 M10,15.9639 C14.189,15.9639 17.637,20.3729 17.973,25.9639 L2.027,25.9639 C2.363,20.3729 5.811,15.9639 10,15.9639" id="Fill-9" fill="#334966"></path>
+            </g>
+        </g>
+    </g>
+</svg>

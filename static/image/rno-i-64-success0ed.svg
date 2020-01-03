@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/成功</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="提交完成状态" transform="translate(-928.000000, -140.000000)" stroke="#00A4FF">
+            <g id="分组" transform="translate(750.000000, 140.000000)">
+                <g id="icon/成功" transform="translate(178.000000, 0.000000)">
+                    <g id="Group-5">
+                        <circle id="Oval" stroke-width="2" cx="32" cy="32" r="31"></circle>
+                        <polyline id="Line" stroke-width="3" stroke-linecap="square" points="18 30.7437285 28.2275391 42 46.6708984 21.6555572"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

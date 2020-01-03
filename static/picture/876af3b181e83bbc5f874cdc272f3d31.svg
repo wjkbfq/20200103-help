@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>自定义检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片内容安全" transform="translate(-465.000000, -518.000000)">
+            <g id="自定义检测" transform="translate(465.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <path d="M4,44 L45,44 L45,46 L2,46 L2,9.07617188 L4,9.07617188 L4,44 Z M44,4 L3.04345703,4 L3.04345703,2 L46,2 L46,39.0634766 L44,39.0634766 L44,4 Z" id="形状" fill="#334966" fill-rule="nonzero"></path>
+                <circle id="椭圆形" fill="#00A4FF" cx="24" cy="24" r="9"></circle>
+                <rect id="矩形" fill="#334966" x="10" y="23" width="28" height="2"></rect>
+                <rect id="矩形" fill="#334966" x="23" y="10" width="2" height="28"></rect>
+                <circle id="椭圆形" fill="#334966" cx="3" cy="3" r="3"></circle>
+                <circle id="椭圆形复制" fill="#334966" cx="45" cy="45" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

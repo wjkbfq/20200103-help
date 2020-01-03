@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>上报 DTMF 按键-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="上报-DTMF-按键-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-94-Copy" fill="#00A4FF" x="30" y="30" width="16" height="16"></rect>
+        <polygon id="Rectangle-95-Copy" fill="#334966" points="6 37 42 37 39.5172414 39 6 39"></polygon>
+        <polygon id="Rectangle-96-Copy" fill="#334966" points="6 23 8 24 8 39 6 39"></polygon>
+        <polygon id="Rectangle-97-Copy" fill="#334966" transform="translate(39.000000, 40.000000) scale(-1, -1) translate(-39.000000, -40.000000) " points="42 37 42 43 36 43"></polygon>
+        <polygon id="Polygon-2" fill="#00A4FF" points="10.6028857 2 19 6.84807621 19 16.5442286 10.6028857 21.3923048 2.20577137 16.5442286 2.20577137 6.84807621"></polygon>
+        <polygon id="Rectangle-95" fill="#334966" points="8.48275862 10 42 10 42 12 6 12"></polygon>
+        <rect id="Rectangle-96" fill="#334966" x="40" y="10" width="2" height="15"></rect>
+        <polygon id="Rectangle-97" fill="#334966" points="12 6 12 12 6 12"></polygon>
+    </g>
+</svg>

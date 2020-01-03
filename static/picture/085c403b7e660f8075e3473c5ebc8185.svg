@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>音视频通信质量-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="音视频通信质量-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1,5 L1,40 L9,40 L9,45 L15.6666667,40 L47,40 L47,5 L1,5 Z" id="Rectangle-7" stroke="#334966" stroke-width="2"></path>
+        <rect id="Rectangle-9" fill="#334966" x="7" y="21" width="2" height="8"></rect>
+        <rect id="Rectangle-9-Copy" fill="#334966" x="15" y="16" width="2" height="13"></rect>
+        <rect id="Rectangle-9-Copy-2" fill="#334966" x="23" y="18" width="2" height="11"></rect>
+        <polygon id="Rectangle-8" fill="#00A4FF" points="31 16 41 22.5 31 29"></polygon>
+    </g>
+</svg>

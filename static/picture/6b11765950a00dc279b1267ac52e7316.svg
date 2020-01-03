@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>多发声人</title>
+    <desc>Created with Sketch.</desc>
+    <g id="多发声人" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-15-Copy" transform="translate(0.000000, 2.000000)">
+            <path d="M11.252035,22 C11.087506,22.6392398 11,23.3094009 11,24 L4,24 C2.8954305,24 2,24.8954305 2,26 L2,40 L11,40 L11,42 L-8.34887715e-14,42 L-8.34887715e-14,26 C-8.3759313e-14,23.790861 1.790861,22 4,22 L11.252035,22 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+            <path d="M37,22 L44.0895962,22 C46.2492526,22 48,23.790861 48,26 L48,42 L37.2463896,42 L37.2463896,40 L46.0447981,40 L46.0447981,26 C46.0447981,24.8954305 45.1694244,24 44.0895962,24 L37.2463896,24 C37.2463896,23.3094009 37.1608437,22.6392398 37,22 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+            <path d="M14,43 L34,43 L34,24 C34,21.2385763 31.7614237,19 29,19 L19,19 C16.2385763,19 14,21.2385763 14,24 L14,43 Z" id="Rectangle-26" stroke="#334966" stroke-width="2"></path>
+            <circle id="Oval-14-Copy" fill="#00A4FF" cx="8" cy="15" r="5"></circle>
+            <circle id="Oval-14-Copy-2" fill="#00A4FF" cx="40" cy="15" r="5"></circle>
+            <circle id="Oval-14" stroke="#334966" stroke-width="2" cx="24" cy="8" r="7"></circle>
+        </g>
+    </g>
+</svg>

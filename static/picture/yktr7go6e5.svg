@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>画板备份 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="画板备份-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5">
+            <rect id="Rectangle-Copy-4" fill-rule="nonzero" x="0" y="0" width="28" height="28"></rect>
+            <g id="Group-4" transform="translate(1.000000, 2.000000)">
+                <path d="M2,2.297 L2,20.821 L8,21.9 L8,3.375 L2,2.297 Z M0,0 L10,1.797 L10,23.047 C10,23.574 9.552,24 9,24 C8.938,24 8.876,23.994 8.815,23.983 L0,22.4 L0,0 Z" id="Shape" fill="#334966" fill-rule="nonzero"></path>
+                <path d="M16,2.118 L16,20.795 L10,21.882 L10,3.205 L16,2.118 Z M16.815,0.017 L8,1.614 L8,23.04 C8,23.57 8.448,24 9,24 C9.062,24 9.124,23.994 9.185,23.983 L18,22.386 L18,0.96 C18,0.43 17.552,0 17,0 C16.9379497,0 16.876036,0.00582576726 16.815,0.017 Z" id="Shape" fill="#334966" fill-rule="nonzero"></path>
+                <polygon id="Path" fill="#00A4FF" points="24 5.46 20 5 20 21.081 25 22 25 5.46"></polygon>
+                <path d="M24,3.157 L18,2.1 L18,20.244 L24,21.3 L24,3.157 Z M17.185,0.017 L26,1.6 L26,24 L16.815,22.35 C16.342,22.265 16,21.872 16,21.414 L16,0.952 C16,0.426 16.448,0 17,0 C17.062,0 17.124,0.006 17.185,0.017 L17.185,0.017 Z" id="Shape" fill="#334966" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

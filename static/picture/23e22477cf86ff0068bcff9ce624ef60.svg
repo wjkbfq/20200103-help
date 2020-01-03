@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>180天日志审计，70种分析模型@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="180天日志审计，70种分析模型" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 0.000000)">
+            <polygon id="Rectangle-57" fill="#00A4FF" fill-rule="nonzero" points="16 26 21 27 26 26 26 38 21 35 16 38"></polygon>
+            <circle id="Oval-21" stroke="#334966" stroke-width="2" cx="21" cy="19" r="8"></circle>
+            <circle id="Oval-24" fill="#00A4FF" fill-rule="nonzero" cx="21" cy="19" r="4"></circle>
+            <path d="M21,0 L18.822,1.187 C13,4.363 6.6,6.34 0,7 L0,28.529 C0,33.736 2.891,38.514 7.504,40.931 L21,48 L34.496,40.931 C39.109,38.514 42,33.736 42,28.529 L42,7 C35.4,6.34 29,4.363 23.178,1.187 L21,0 Z M21,2.278 L22.22,2.943 C27.777,5.976 33.752,7.935 40,8.778 L40,28.529 C40,33.008 37.535,37.081 33.568,39.159 L21,45.742 L8.432,39.159 C4.465,37.081 2,33.008 2,28.529 L2,8.778 C8.248,7.935 14.223,5.976 19.78,2.943 L21,2.278 Z" id="Fill-6" fill="#334966" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

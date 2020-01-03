@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>应用场景右侧</title>
+    <desc>Created with Sketch.</desc>
+    <g id="应用场景右侧" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11-Copy-5" transform="translate(0.000000, 2.000000)" fill-rule="nonzero">
+            <g id="Group-7" fill="#FFFFFF">
+                <path d="M3.73243561,1 L29,1 L31,1 L31,21 L29,21 L29,3 L3.73243561,3 C3.38662619,3.59780137 2.74028236,4 2,4 C0.8954305,4 0,3.1045695 0,2 C0,0.8954305 0.8954305,0 2,0 C2.74028236,0 3.38662619,0.40219863 3.73243561,1 Z M28.2675644,27 L3,27 L1,27 L1,7 L3,7 L3,25 L28.2675644,25 C28.6133738,24.4021986 29.2597176,24 30,24 C31.1045695,24 32,24.8954305 32,26 C32,27.1045695 31.1045695,28 30,28 C29.2597176,28 28.6133738,27.5978014 28.2675644,27 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Group-8" transform="translate(7.000000, 7.000000)">
+                <path d="M7.60521902,14 L5,16 L5,13.4767355 L5,10 L7,10 L7,12 L16,12 L16,6 L13.45,6 L13.45,4 L18,4 L18,14 L7.60521902,14 Z" id="Path" fill="#FFFFFF"></path>
+                <path d="M1,1 L1,10.0627514 L2.347576,9.10526316 L13,9.10526316 L13,1 L1,1 Z" id="Rectangle-Copy-27" stroke="#FFFFFF" stroke-width="2" transform="translate(7.000000, 6.000000) scale(-1, 1) translate(-7.000000, -6.000000) "></path>
+                <circle id="Oval" fill="#FFFFFF" cx="4" cy="5" r="1"></circle>
+                <circle id="Oval-Copy-4" fill="#FFFFFF" cx="7" cy="5" r="1"></circle>
+                <circle id="Oval-Copy-5" fill="#FFFFFF" cx="10" cy="5" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>实时音视频 RTC_视频通话方案 - 腾讯云</title>
+    <meta name="keywords" content="视频通话,WebRTC,实时音视频">
+    <meta name="description" content="腾讯实时音视频（ Tencent Real-Time Communication，TRTC）是腾讯云基于 QQ 十多年来在音视频通话技术上积累，提供全平台互通高品质实时视频通话服务的一款产品；支持微信小程序、H5页面、APP、PC客户端等接入方式之间互通，通过本方案可快速从零开始搭建出实时音视频通信平台，很好的应用于在线教育、保险定损、远程医疗与微警务等场景。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+   <link rel="stylesheet" href="static/css/trtc.css">
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.trtc.overview.top.navigation.overview">
+						实时音视频 TRTC 
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.trtc.overview.top.navigation.details">
+						产品详细信息
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.trtc.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.trtc.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.trtc.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.trtc.overview.top.navigation.developer">
+						文档与资源
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.trtc.overview.top.nav.btn1">
+						Demo 体验
+					</a>
+					
+
+					
+					
+						<a href="javascript:;" class="c-btn c-nav-bm-btn-hole" hotrep="product.trtc.overview.top.nav.btn2">
+							选购套餐包
+						</a>
+					
+					
+					
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+
+            <h1 class="c-hero-section-tit">
+                实时音视频 TRTC 
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">支持跨终端、全平台之间互通，从零开始快速搭建实时音视频通信平台</p>
+				<p class="m-mod">提供多平台互通的高品质音视频通话能力</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn txt  J-pdBannerBtn1" hotrep="product.trtc.overview.banner.btn1">
+                    Demo 体验
+                </a>
+
+                
+                    
+                    <a href="javascript:;" class="c-btn p-weak-btn" hotrep="product.trtc.overview.banner.btn2">选购套餐包</a>
+                    
+                
+                    
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/62584dcb41ccee0ce1238b6b1643e848.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.trtc.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">实时音视频 TRTC 概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="details">
+                        <a href="javascript:;" hotrep="product.trtc.overview.navigation.details">
+                            
+                            <span class="c-tab-tit">产品详细信息</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.trtc.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.trtc.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.trtc.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="developer">
+                        <a href="javascript:;" hotrep="product.trtc.overview.navigation.developer">
+                            
+                            <span class="c-tab-tit">文档与资源</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.trtc.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.trtc.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-img">
+                        <img src="static/picture/c8895019127a1384919d48c3b4d20bb5.svg" alt="">
+                    </div>
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                           实时音视频 TRTC 简介
+                        </h4>
+                        <p class="c-media-info">
+                            腾讯实时音视频（Tencent Real-Time Communication，TRTC）拥有QQ十几年来在音视频技术上的积累，致力于帮助企业快速搭建低成本、高品质音视频通讯能力的完整解决方案。
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+                <div role="list" class="about-mod-list c-grid">
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    低延时
+                                </h4>
+                                <p class="c-media-info">
+                                    丰富的高带宽资源储备，全球节点布局，保证国际链路端到端平均延时＜300ms  
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    低卡顿 
+                                </h4>
+                                <p class="c-media-info">
+                                    通过智能网络质量调控和编码优化降低卡顿率，抗丢包率超过40%，抗网络抖动超过1000ms  
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                
+
+                
+                <div class="about-event">
+                    <div class="about-event-tit">
+                        活动 &amp; 公告
+                    </div>
+                    <div class="about-event-con">
+                        <ul>
+                            
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.trtc.overview.about.activity.1">
+                                    零基础30分钟搭建实时音视频通信平台，8元即可畅享1000分钟视频通话 >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.trtc.overview.about.activity.2">
+                                    实时音视频优惠活动，首次购买尊享三重大礼，套餐包折扣低至5折起 >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.trtc.overview.about.activity.3">
+                                    通信产品组合优惠购，实时音视频套餐包低至7折，IM 专业版首购尊享1折，国内短信0.036元/条起 >>
+                                    
+                                </a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                            <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" data-media="https://cloud.tencent.com/developer/edu/quick-play/1061-4842?auto=1" target="_blank" hotrep="product.trtc.overview.about.aside.media">
+                                
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">产品简介</div>
+                                    <h3 class="c-thumbnail-tit">实时音视频简介</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-play-icon"></i>
+                                    <span class="c-thumbnail-status-txt">视频</span>
+                                </div>
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-time-icon"></i>
+                                    <span class="c-thumbnail-status-txt">1:06</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall function-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">腾讯云实时音视频的特性</h3>
+        </div>
+        <div class="c-section-bd">
+            <div role="list" class="c-grid function-list J-section2List">
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/9430c9a13c999b21603d2283afd9dbdd.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                全平台互通
+                            </h4>
+                            <p class="c-media-info">
+                                可在微信、手机 QQ、QQ 浏览器通过 H5 页面或微信小程序发起/接受/断开音视频通话，也可直接在网页或通过 SDK 集成的方式在 PC、MAC、APP 中实现音视频通话，支持全平台互通。&nbsp;
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/d5ef0e4b97473c688a7b0e0ed4571f6d.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                支持即时通信 IM
+                            </h4>
+                            <p class="c-media-info">
+                                承载亿级 QQ 用户即时通信技术，安全、稳定、高触达的即时通信服务，实时音视频用户可永久免费使用有限制的腾讯云即时通信 IM 服务，超过免费范围的部分需要支付相应的费用。&nbsp;
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/326987502c354cedd50884164fc66d3c.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                互动白板
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云提供交互式白板功能，同时提供课件文档上传、转码、存储等腾讯云 COS 的能力，极大地增强了互动课堂的教学体验。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/90e6769ecc0d3e12f65e1bdfc6a0fc0d.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                支持录制
+                            </h4>
+                            <p class="c-media-info">
+                                支持云端录制，结合腾讯云点播服务及其完善的 API 可实现存储、转码、分发等功能。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/7525ee1a15194413ed226a5cb9b1c045.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                桌面分享	
+                            </h4>
+                            <p class="c-media-info">
+                                支持全屏及选定区域的桌面分享，支持清晰（1920×1200）、流畅（920×720）2种分享模式。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/1fd5792d6ad87afa9386c5db65d4c54f.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                旁路直播	
+                            </h4>
+                            <p class="c-media-info">
+                                支持旁路直播，结合腾讯云直播服务可实现 HLS、RTMP、FLV 的直播下发。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/712f19536b46a5cb0d1acf02c9e2e444.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                美颜滤镜	
+                            </h4>
+                            <p class="c-media-info">
+                                实时音视频产品免费提供基础美颜与滤镜功能；并支持与美颜特效（收费）产品配合使用，提供美颜美型、贴纸、手势识别等多种实时特效功能。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/085c403b7e660f8075e3473c5ebc8185.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                高清视频通话	
+                            </h4>
+                            <p class="c-media-info">
+                                采用腾讯云视频处理算法，配合 TBS 内核底层兼容性支持，优化视频清晰度，降低马赛克，支持 720P 高清视频通话，使用户通过 H5 页面获得客户端级别体验，默认支持10人以内视频通话。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/770b1a0bd7545d0749c14136ce3abdb4.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                网络通信稳定	
+                            </h4>
+                            <p class="c-media-info">
+                                全球端到端延时小于300ms，抗丢包率超过40%，抗网络抖动超过1000ms，即使在弱网环境下仍然能够保证高质量的音视频通信，确保视频通话过程顺畅稳定。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall trtc-demo">
+                <div class="c-section-inner">
+                    <div class="c-section-hd ">
+                        <h3 class="c-section-tit">样例展示</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="trtc-demo-desc">您可以通过&nbsp;Demo&nbsp;快速了解实时音视频，也可选择适合的方式亲身体验</div>
+                        <div class="trtc-demo-container">
+                            <div class="trtc-demo-inner">
+                                <div class="trtc-demo-item">
+                                    <div class="demo-video-box">
+                                        <!-- Hover時添加「actived」 -->
+                                        <div class="demo-video-phone">
+                                            <video muted="muted" loop="loop" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-1.png">
+                                                <source src="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-1.mp4" type="video/mp4">
+                                            </video>
+                                            <img src="static/picture/v-1.png" class="m-cover">
+                                            <div class="demo-mask"></div>
+                                            <i class="ico-play"></i>
+                                        </div>
+                                        <div class="u-name">单人聊天</div>
+                                    </div>
+                                </div>
+                                <div class="trtc-demo-item">
+                                    <div class="demo-video-box">
+                                        <div class="demo-video-phone">
+                                            <video muted="muted" loop="loop" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-2.png">
+                                                <source src="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-2.mp4" type="video/mp4">
+                                            </video>
+                                            <img src="static/picture/v-2.png" class="m-cover">
+                                            <div class="demo-mask"></div>
+                                            <i class="ico-play"></i>
+                                        </div>
+                                        <div class="u-name">多人视频</div>
+                                    </div>
+                                </div>
+                                <div class="trtc-demo-item">
+                                    <div class="demo-video-box">
+                                        <div class="demo-video-phone">
+                                            <video muted="muted" loop="loop" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-3.png">
+                                                <source src="//imgcache.qq.com/open_proj/proj_qcloud_v2/event/2018/pc/rvc/css/img/v-3.mp4" type="video/mp4">
+                                            </video>
+                                            <img src="static/picture/v-3.png" class="m-cover">
+                                            <div class="demo-mask"></div>
+                                            <i class="ico-play"></i>
+                                        </div>
+                                        <div class="u-name">小程序群组通话</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="trtc-demo-exp">
+                            <div class="platform-title">
+                                <h2 class="trtc-demo-desc">选择适合您的方式创建房间</h2>
+                            </div>
+                            <div class="platform-card">
+                                <div class="platform-card-inner">
+                                    <div class="platform-item">
+                                        <div class="card-rect">
+                                            <div class="card-hd">
+                                                <a href="##"><img class="view" src="static/picture/img-1.png"></a>
+                                            </div>
+                                            <div class="card-bd">
+                                                <div class="card-title">
+                                                    微信端
+                                                </div>
+                                                <div class="card-desc">
+                                                    微信扫码进入小程序<br>点击&nbsp;“视频通话”&nbsp;加入房间
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="platform-item">
+                                        <div class="card-rect">
+                                            <div class="card-hd">
+                                                <a href="##"><img class="view" src="static/picture/img-2.png"></a>
+                                            </div>
+                                            <div class="card-bd">
+                                                <div class="card-title">
+                                                    移动端
+                                                </div>
+                                                <div class="card-desc">
+                                                    Android&nbsp;端和&nbsp;iOS&nbsp;端都可扫描下载体验
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="platform-item">
+                                        <div class="card-rect">
+                                            <div class="card-hd">
+                                                <a href="##"><img class="view" src="static/picture/img-3.png"></a>
+                                            </div>
+                                            <div class="card-bd">
+                                                <div class="card-title">
+                                                    PC端
+                                                </div>
+                                                <div class="card-desc">
+                                                    建议使用 <a target="_blank" href="javascript:;">Chrome浏览器</a> 打开
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-trtc-demo-exp">
+                                <div class="platform-title">
+                                    <h2 class="trtc-demo-desc">扫码体验</h2>
+                                </div>
+                                <div class="trtc-wxapp">
+                                    <img class="view" src="static/picture/img-1.png">
+                                    <p class="text">长按保存后打开微信识别<br>点击&nbsp;“视频通话”&nbsp;加入房间</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="37gm73mnf8s">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="在线教育" data-target="37gm73mnf8s">
+                        <a href="javascript:;" id="tab_37gm73mnf8s" role="tab" hotrep="product.trtc.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="37gm73mnf8s">
+                            <span class="c-tab-tit">在线教育</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="视频客服" data-target="ln7tzp6iekj">
+                        <a href="javascript:;" id="tab_ln7tzp6iekj" role="tab" hotrep="product.trtc.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="ln7tzp6iekj">
+                            <span class="c-tab-tit">视频客服</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="互动游艺" data-target="cgw0e5u6ccp">
+                        <a href="javascript:;" id="tab_cgw0e5u6ccp" role="tab" hotrep="product.trtc.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="cgw0e5u6ccp">
+                            <span class="c-tab-tit">互动游艺</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="企业办公" data-target="z2228krp23m">
+                        <a href="javascript:;" id="tab_z2228krp23m" role="tab" hotrep="product.trtc.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="z2228krp23m">
+                            <span class="c-tab-tit">企业办公</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="在线招聘" data-target="2rlmvsmjkd3">
+                        <a href="javascript:;" id="tab_2rlmvsmjkd3" role="tab" hotrep="product.trtc.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="2rlmvsmjkd3">
+                            <span class="c-tab-tit">在线招聘</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="在线医疗" data-target="79j7tojbtaw">
+                        <a href="javascript:;" id="tab_79j7tojbtaw" role="tab" hotrep="product.trtc.overview.scene.6.tab" tabindex="-1" aria-selected="false" aria-controls="79j7tojbtaw">
+                            <span class="c-tab-tit">在线医疗</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.trtc.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_37gm73mnf8s" data-panel="37gm73mnf8s" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="37gm73mnf8s" hotrep="product..overview.scene.1.tab">
+                        在线教育
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>在线教育打破了线下传统教育模式受时间和空间的限制，微信小程序赋予在线教育更加碎片化学习的创新模式，进一步促进了优质师资力量资源共享最大化。针对职业教育、小班教学、K12等1v1或1v多的场景，依托腾讯云实时音视频能力和专为教育行业定制的富媒体功能，实现老师、学生间实时互动答疑，课件共享、屏幕分享、电子白板、课程录制等功能。<br><img src="static/picture/de4f48dbde0b031ae1811d5a8e608ba3.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_ln7tzp6iekj" data-panel="ln7tzp6iekj" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="ln7tzp6iekj" hotrep="product..overview.scene.2.tab">
+                        视频客服
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>单纯通过文字与语音，有时客服无法很好的理解和解决客户的问题，例如大型家电厂商的技术支持人员，通过电话或者文字，用户比较难以将家电发生的故障描述清楚。使用腾讯实时音视频，用户可以通过微信小程序/手机微信等方式便捷地向技术支持人员发起视频通话请求，技术支持人员通过视频指导用户操作，解决问题，提升厂商口碑。<br><img src="static/picture/2ad731ab531cbc33e8661df87e2c83e6.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_cgw0e5u6ccp" data-panel="cgw0e5u6ccp" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="cgw0e5u6ccp" hotrep="product..overview.scene.3.tab">
+                        互动游艺
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云强大实时互动音视频能力，为在线抓娃娃解决方案提供便捷的音视频接入，及优质的互动体验。<br><img src="static/picture/6b234eb9055d57b8af5c249fb365e325.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_z2228krp23m" data-panel="z2228krp23m" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="z2228krp23m" hotrep="product..overview.scene.4.tab">
+                        企业办公
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>大型企业在全球各地均设有办事处，通过使用腾讯实时音视频产品，不论员工身处何处，都可以便捷的通过手机 H5 页面或微信小程序接入培训与会议，不仅能够节省电话费，而且还有助于改善环境和减少业务开支中安排员工外出开会的旅差费。<br><img src="static/picture/f46fbc53e0bbe065f70fdc8906b2e6b0.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_2rlmvsmjkd3" data-panel="2rlmvsmjkd3" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="2rlmvsmjkd3" hotrep="product..overview.scene.5.tab">
+                        在线招聘
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>跨城市面试是面试者的一个痛点，现在越来越多的企业会采用电话面试，不过电话面试双方无法看到对方的表情，也给沟通和交流带来一定的障碍，视频面试越来越流行，通过腾讯实时音视频进行远程面试，更加的方便。<br><img src="static/picture/93236b67940a52742478e69a07b36bd1.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_79j7tojbtaw" data-panel="79j7tojbtaw" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="79j7tojbtaw" hotrep="product..overview.scene.6.tab">
+                        在线医疗
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>凭借腾讯云实时音视频能力，腾讯云为医患之间建立了新的视频沟通桥梁。打破传统医疗资源在地域上的限制，通过视频通话的形式，实现远程的多方医生视频会诊，极大降低了会诊时间和成本，让每个人都能享受医疗服务的便利。<br><img src="static/picture/85d002001260a96fbd8a6e1a3178aaf5.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall customer-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户案例</h3>
+        </div>
+        <div role="list" class="c-section-bd">
+            <div role="listitem" class="p-customer-list">
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.1">
+                        <img alt="" src="static/picture/42dd500ca8fe402975e74836b90d0a6d.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.2">
+                        <img alt="" src="static/picture/f8d03e548ce28ef79989a7f2eb4ac67b.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.3">
+                        <img alt="" src="static/picture/7c10d928baa60c59af90f300784add22.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.4">
+                        <img alt="" src="static/picture/de34125e322ab08e1b458a176da804e4.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.5">
+                        <img alt="" src="static/picture/8f7fa77d85200843f83d3ce29ac60de8.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.6">
+                        <img alt="" src="static/picture/7f68aee68c2e8369b84d7d3cdc7e3fcb.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.7">
+                        <img alt="" src="static/picture/a544f58370e641fe270b68e3a4662dee.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.8">
+                        <img alt="" src="static/picture/88ef82482508f3267719b896629b55c8.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.9">
+                        <img alt="" src="static/picture/cc567ffb20fe87170cf3630b965840f6.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.10">
+                        <img alt="" src="static/picture/fd76455d5f783729b78e2c36db9f1107.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.11">
+                        <img alt="" src="static/picture/0af55e2ce71bc63cc08c6f2a97e56722.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.trtc.overview.customer.12">
+                        <img alt="" src="static/picture/21f9c21512d59b31ab00fd23ab6b3730.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用腾讯云实时音视频</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的 <a href="javascript:;">入门指南</a>，即可快速创建多平台互通的实时音视频通信平台。</p>
+<p>您还可以先通过 <a href="javascript:;" target="_blank">Demo 演示</a> 体验实时音视频的功能，或者直接 <a href="javascript:;" target="_blank">购买套餐包</a> 开始使用。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.trtc.overview.guide.btn">
+                           开始使用
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.trtc.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'trtc',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012101194, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "Byf6ppb2k8";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+<script src="static/js/index1.js"></script>
+
+
+</body>
+</html>

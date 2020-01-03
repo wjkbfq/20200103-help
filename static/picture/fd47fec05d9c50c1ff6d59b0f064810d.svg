@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>性感识别-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="性感识别-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="性感识-01" transform="translate(0.000000, 4.000000)" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#00A4FF" x="37" y="29" width="2" height="2"></rect>
+            <path d="M36,18 C30.4771525,18 26,22.4771525 26,28 C26,33.5228475 30.4771525,38 36,38 C41.5228475,38 46,33.5228475 46,28 C46,25.3478351 44.9464316,22.804296 43.0710678,20.9289322 C41.195704,19.0535684 38.6521649,18 36,18 Z M33,33 L31,33 L31,23 L33,23 L33,33 Z M41,25 L41,33 L35,33 L35,23 L41,23 L41,25 Z" id="Shape" fill="#00A4FF"></path>
+            <rect id="Rectangle-path" fill="#00A4FF" x="37" y="25" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#344966" x="38" y="4" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#344966" x="34" y="4" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#344966" x="42" y="4" width="2" height="2"></rect>
+            <path d="M36,40 C29.372583,40 24,34.627417 24,28 C24,21.372583 29.372583,16 36,16 C42.627417,16 48,21.372583 48,28 C48,34.627417 42.627417,40 36,40 Z M36,38 C41.5228475,38 46,33.5228475 46,28 C46,22.4771525 41.5228475,18 36,18 C30.4771525,18 26,22.4771525 26,28 C26,33.5228475 30.4771525,38 36,38 Z" id="Shape" fill="#344966"></path>
+            <rect id="Rectangle-path" fill="#00A4FF" x="7" y="23" width="12" height="2"></rect>
+            <rect id="Rectangle-path" fill="#00A4FF" x="7" y="29" width="12" height="2"></rect>
+            <rect id="Rectangle-path" fill="#00A4FF" x="7" y="17" width="12" height="2"></rect>
+            <path d="M46,15.509 L46,2 L2,2 L2,38 L23.509,38 C24.0861719,38.7200892 24.7241881,39.38922 25.416,40 L0,40 L0,0 L48,0 L48,17.417 C47.3892381,16.7248656 46.7201082,16.0865157 46,15.509 Z" id="Shape" fill="#334966"></path>
+            <rect id="Rectangle-path" fill="#344966" x="0" y="8" width="48" height="2"></rect>
+        </g>
+    </g>
+</svg>

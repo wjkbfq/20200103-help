@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>分布式数据库_分库分表产品服务 - 腾讯云</title>
+    <meta name="keywords" content="分布式数据库,分库分表,TDSQL">
+    <meta name="description" content="分布式数据库（TencentDB for TDSQL）是一种兼容MySQL协议和语法，支持自动水平拆分的高性能分布式数据库——即业务显示为完整的逻辑表，数据却均匀的拆分到多个分片中；每个分片默认采用主备架构，提供灾备、恢复、监控、不停机扩容等全套解决方案，适用于TB或PB级的海量数据场景。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.dcdb.overview.top.navigation.overview">
+						分布式数据库 TDSQL 
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.dcdb.overview.top.navigation.details">
+						产品详细信息
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.dcdb.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.dcdb.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.dcdb.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.dcdb.overview.top.nav.btn1">
+						立即选购
+					</a>
+					
+
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+
+            <h1 class="c-hero-section-tit">
+                分布式数据库 TencentDB for TDSQL
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">高度兼容 MySQL，支持水平拆分（分表）的高性能数据库</p>
+				<p class="m-mod">支持自动水平拆分的高性能数据库服务</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn buy  J-pdBannerBtn1" hotrep="product.dcdb.overview.banner.btn1">
+                    立即选购
+                </a>
+
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/image16.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.dcdb.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">分布式数据库 TDSQL 概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="details">
+                        <a href="javascript:;" hotrep="product.dcdb.overview.navigation.details">
+                            
+                            <span class="c-tab-tit">产品详细信息</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.dcdb.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.dcdb.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.dcdb.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.dcdb.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.dcdb.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-img">
+                        <img src="static/picture/image72.svg" alt="">
+                    </div>
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                           分布式数据库 TDSQL 简介
+                        </h4>
+                        <p class="c-media-info">
+                            分布式数据库（Tencent Distributed SQL，TDSQL）是腾讯打造的一款分布式数据库产品，具备强一致高可用、全球部署架构、分布式水平扩展、高性能、企业级安全等特性，同时提供智能 DBA、自动化运营、监控告警等配套设施，为用户提供完整的分布式数据库解决方案。目前 TDSQL 已经为超过500+的政企和金融机构提供数据库的公有云及私有云服务，客户覆盖银行、保险、证券、互联网金融、计费、第三方支付、物联网、互联网+、政务等领域。TDSQL 亦凭借其高质量的产品及服务，获得了多项国际和国家认证，得到了客户及行业的一致认可。
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                <div class="about-mod-list c-grid">
+                    <div class="c-g-24">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <img src="static/picture/3b8a22649cf7c5587f3b51ef956fda1a.png" alt="">
+                            </div>
+                            <div class="c-media-body">
+                                <p class="c-media-info">
+                                    TDSQL 也是腾讯云数据库团队维护的金融级分布式架构 MySQL/MariaDB 内核分支，腾讯 90% 的金融、计费、交易类业务核心系统承载在 TDSQL 中。TDSQL 可以提供公有云、专有云两种部署方案，可以提供关系型数据库实例、分布式数据库实例、分析性数据库实例。同时 TDSQL 具备强同步复制、线程池、热点更新、内核优化等能力，能够为用户提供事前、事中、事后的全维度安全方案，获得了多项国际和国家认证。&nbsp;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="about-event">
+                    <div class="about-event-tit">
+                        活动 &amp; 公告
+                    </div>
+                    <div class="about-event-con">
+                        <ul>
+                            
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.dcdb.overview.about.activity.1">
+                                    分布式数据库 DCDB 更名为 TencentDB for TDSQL >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.dcdb.overview.about.activity.2">
+                                    在线接入指导，欢迎加入“分布式数据交流 QQ 群：571438378” >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.dcdb.overview.about.activity.3">
+                                    参与腾讯云数据库用户行为调研，免费赠送七节《迪B课堂》云数据库教程！>>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.dcdb.overview.about.activity.4">
+                                     移动端一键管理数据库，学最牛技术，享最新优惠！>>
+                                    
+                                </a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                            <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" data-media="https://cloud.tencent.com/developer/edu/quick-play/1116-2356?auto=1" target="_blank" hotrep="product.dcdb.overview.about.aside.media">
+                                
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">产品简介</div>
+                                    <h3 class="c-thumbnail-tit">云数据库 TDSQL 开发指南</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-play-icon"></i>
+                                    <span class="c-thumbnail-status-txt">视频</span>
+                                </div>
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-time-icon"></i>
+                                    <span class="c-thumbnail-status-txt">45:18</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+                <div class="about-doc">
+                    <div class="c-media-horiz d-card-hover">
+                        <div class="c-media-img">
+                           <i class="p-icon-pdf"></i>
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                <a href="javascript:;" hotrep="product.dcdb.overview.about.aside.pdf.1">《腾讯分布式数据库 TDSQL 解决方案白皮书》</a>
+                            </h4>
+                            <p class="c-media-info">
+                                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall function-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">分布式数据库 TencentDB for TDSQL 的特性</h3>
+        </div>
+        <div class="c-section-bd">
+            <div role="list" class="c-grid function-list J-section2List">
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/eb69e5e9204f83de21d4bbc15f43c49c.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                自动水平拆分
+                            </h4>
+                            <p class="c-media-info">
+                                只需在建表的时候设定 shardkey，即支持对数据库中大表自动水平拆分（分表），系统将基于 Hash 方案自动将写入数据均匀的分布到不同物理分片中，查询也自动聚合返回；分表对业务系统透明，业务实际所见为一张逻辑完整的表，无需感知后端的物理架构。
+                            </p>
+                            
+                                <a href="javascript:;" hotrep="product.dcdb.overview.feature.1.link" class="c-media-link">查看分表简单原理 >></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/d2c211c09faa942df76e4898c374a75b.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                高度兼容 MySQL 语法
+                            </h4>
+                            <p class="c-media-info">
+                                TDSQL 兼容大多数常用的 MySQL 语法，包括 MySQL 的语言结构、字符集和时区、数据类型、常用函数、预处理协议、排序、联合（JOIN）、索引、分区、事务、控制指令、等常用的 DDL、DML、DCL 和数据库访问接口。
+                            </p>
+                            
+                                <a href="javascript:;" hotrep="product.dcdb.overview.feature.2.link" class="c-media-link">查看 TDSQL 开发指南 >></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/5bfe15ea0247fc497989246d9af8d16b.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                领先的分布式架构
+                            </h4>
+                            <p class="c-media-info">
+                                因分布式架构的特殊性，在数据库高级功能与性能之间不能两全；TDSQL 为此提供三种建表方案，提供（分布式）事务特性，提供全局唯一数字序列，支持 JSON 等能力，有效的弥补了分布式架构的不足，为开发者提供更加灵活的开发方案。<a href="javascript:;">查看三种建表方案 &gt;&gt;</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/b6c3b27d36ebeba5cd99ddf71051a3b0.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                不停机弹性扩展
+                            </h4>
+                            <p class="c-media-info">
+                                目前单一分片最大可支持6TB存储，如果性能或容量不足以支撑业务发展时，在控制台点击，即可自动升级完成。升级过程中，您无需关心分布式系统内的数据迁移，均衡和路由切换。升级完成后访问 IP 不变，仅在自动切换时存在秒级闪断，您仅需确保有重连机制即可。
+                            </p>
+                            
+                                <a href="javascript:;" hotrep="product.dcdb.overview.feature.4.link" class="c-media-link">查看弹性扩展 >></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/f6198638ba4930b1e8d5ec63aad15ddb.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                强同步复制
+                            </h4>
+                            <p class="c-media-info">
+                                TDSQL 默认采用主从架构，可确保99.95%以上可用性；系统支持强同步复制以提供数据强一致，业务系统写入数据后，只有当数据库从机同步后才给予应用事务应答，确保主从数据完全一致，不会因故障导致数据丢失、错乱，目前强同步复制性能已基本等于异步复制。
+                            </p>
+                            
+                                <a href="javascript:;" hotrep="product.dcdb.overview.feature.5.link" class="c-media-link">查看强同步性能对比数据 >></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/3ceceb63955d635c3810eac4238f877d.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                超高性能
+                            </h4>
+                            <p class="c-media-info">
+                                TDSQL 深度定制开发 MySQL 内核，性能远超基于开源 MySQL；支持三种方案的读写分离，有效提供读扩展的同时提供开发灵活性；对线程池调度算法进行了优化，在重负载时表现更佳；并配置 PCI-E SSD 的硬盘，提供高于 SATA 三倍以上的 IO 配置，帮助您更轻松满足业务性能需求。<a href="javascript:;">查看读写分离方案 &gt;&gt;</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/25294dc9dd04fe00988a51a97a8d5da9.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                易于使用的托管部署
+                            </h4>
+                            <p class="c-media-info">
+                                只需在腾讯云 TDSQL 管理控制台中单击几下，即可在几分钟内启动并连接到一个可以立即投入生产的 TDSQL 数据库。控制台提供常见的数据库运维操作，为您精细管理数据库提供便利；提供常见的系统监控数据和性能分析数据，助您迅速识别运行异常的数据库。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/3a43ee735336e4d96d6ebe7cc801b0d4.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                支持 JSON
+                            </h4>
+                            <p class="c-media-info">
+                                支持原生的 JSON 类型，JSON 值将不再以字符串的形式存储，而是采用一种允许快速读取文本元素（document elements）的内部二进制格式，在 JSON 列插入或者更新的时候将会自动验证 JSON 文本，即您可以将 TDSQL 看做一个兼容 MySQL 协议的 NoSQL 数据库。&nbsp;
+                            </p>
+                            
+                                <a href="javascript:;" hotrep="product.dcdb.overview.feature.8.link" class="c-media-link">查看 TDSQL与 MongoDB 的 JSON 能力对比 >></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/0d8015ec3fe3f6f965c22298289c4e48.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                支持 RocksDB
+                            </h4>
+                            <p class="c-media-info">
+                                RocksDB 是一种基于 LSM 树的存储引擎，其数据压缩率领先 InnoDB 引擎60%以上，通常压缩后每1000万行数据仅需1GB左右存储空间，极大节省数据库使用成本；而且 RocksDB 的写入性能也有较大提升，适合物联网、日志等“写多读少”，且对容量比较敏感的业务场景，RocksDB 目前正在公测中。&nbsp;
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="2rdmrmz6gan">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="电子商务类应用" data-target="2rdmrmz6gan">
+                        <a href="javascript:;" id="tab_2rdmrmz6gan" role="tab" hotrep="product.dcdb.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="2rdmrmz6gan">
+                            <span class="c-tab-tit">电子商务类应用</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="金融类应用" data-target="7gdrca1ltql">
+                        <a href="javascript:;" id="tab_7gdrca1ltql" role="tab" hotrep="product.dcdb.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="7gdrca1ltql">
+                            <span class="c-tab-tit">金融类应用</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="IoT 类应用" data-target="f2j2w29arlt">
+                        <a href="javascript:;" id="tab_f2j2w29arlt" role="tab" hotrep="product.dcdb.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="f2j2w29arlt">
+                            <span class="c-tab-tit">IoT 类应用</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="游戏应用" data-target="lw585iqzt08">
+                        <a href="javascript:;" id="tab_lw585iqzt08" role="tab" hotrep="product.dcdb.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="lw585iqzt08">
+                            <span class="c-tab-tit">游戏应用</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.dcdb.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_2rdmrmz6gan" data-panel="2rdmrmz6gan" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="2rdmrmz6gan" hotrep="product..overview.scene.1.tab">
+                        电子商务类应用
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <div class="d-split-mod">
+    <div class="d-split-con">
+        <h3>业务类型</h3>
+<p>适用于电子商务类业务</p>
+<h3>上云建议</h3>
+<p>几乎所有大型电子商务平台都是基于分布式数据库，其中性能是最重要的考虑；当大流量推广的时候，只有分布式架构的数据库可免受物理硬件性能限制，性能线性扩展。2017年，鹅漫 U 品上线不足一年，每个月都保持着高速的增长，到中期的日均单超过1万单时，普通数据库性能和扩展问题就显现出来了，经过1个月不到的改造，成功迁移到 TDSQL，最后顺利通过双11、双12等各类大型推广活动。</p>
+        
+    </div>
+    <div class="d-split-aside">
+        <div class="d-p-show-card hasparam">
+            <div class="d-p-show-card-icon">
+                <img src="static/picture/image73.svg" alt="">
+                <h3 class="d-p-show-card-tit">电子商务类应用</h3>
+            </div>
+            <div class="d-p-show-card-param">
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片配置</label>
+                    <span>16GB 内存/ 200G 磁盘</span>
+                </div>
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片数量</label>
+                    <span>4~16</span>
+                </div>
+                
+            </div>
+            <div class="d-p-show-card-txt">
+                <div class="d-p-show-card-link">
+                    <a href="javascript:;" hotrep="product.dcdb.changjing1">前往购买 >></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_7gdrca1ltql" data-panel="7gdrca1ltql" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="7gdrca1ltql" hotrep="product..overview.scene.2.tab">
+                        金融类应用
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <div class="d-split-mod">
+    <div class="d-split-con">
+        <h3><strong>业务类型</strong></h3>
+<p>适用于金融类业务&nbsp;</p>
+<h3><strong>上云建议</strong></h3>
+<p>随着手机银行、网上理财、区块链等等具有互联网特色的金融业务兴起，单笔交易变小，交易次数变多等情况；传统架构逐渐不足以支撑业务发展，网络安全风险逐渐增加； TDSQL 不仅在性能容易扩展，强同步能力也确保数据不错不丢，是国内第一个将分布式事务应用于金融系统的产品，同时支持部署在腾讯金融云，支持物理独享，加密，审计等系列安全方案。</p>
+        
+    </div>
+    <div class="d-split-aside">
+        <div class="d-p-show-card hasparam">
+            <div class="d-p-show-card-icon">
+                <img src="static/picture/image73.svg" alt="">
+                <h3 class="d-p-show-card-tit">金融类应用</h3>
+            </div>
+            <div class="d-p-show-card-param">
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片配置</label>
+                    <span>64GB 内存/ 500G 磁盘</span>
+                </div>
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片数量</label>
+                    <span>2~4</span>
+                </div>
+                
+            </div>
+            <div class="d-p-show-card-txt">
+                <div class="d-p-show-card-link">
+                    <a href="javascript:;" hotrep="product.dcdb.changjing2">前往购买 >></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_f2j2w29arlt" data-panel="f2j2w29arlt" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="f2j2w29arlt" hotrep="product..overview.scene.3.tab">
+                        IoT 类应用
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <div class="d-split-mod">
+    <div class="d-split-con">
+        <h3><strong>业务类型</strong></h3>
+<p>适用于 IoT 类业务</p>
+<h3><strong>上云建议</strong></h3>
+<p>在工业监控和远程控制、智慧城市的延展、智能家居、车联网等物联网场景下，传感监控设备多，采样率高，数据存储要求高，数据规模存储规模问题凸显； TDSQL 容量的线性扩展不仅可有效解决容量问题；其支持 MySQL 协议和 JSON 也能让开发者用自己熟悉的协议开发系统；同时可扩展 RocksDB，让数据压缩率低至20%以下，二级分区让冷热数据有效快速的分离处理，极大的降低了数据存储成本和冷数据处理效率。</p>
+        
+    </div>
+    <div class="d-split-aside">
+        <div class="d-p-show-card hasparam">
+            <div class="d-p-show-card-icon">
+                <img src="static/picture/image73.svg" alt="">
+                <h3 class="d-p-show-card-tit">IoT 类应用</h3>
+            </div>
+            <div class="d-p-show-card-param">
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片配置</label>
+                    <span>32GB 内存/ 2000G 磁盘</span>
+                </div>
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片数量</label>
+                    <span>4~16</span>
+                </div>
+                
+            </div>
+            <div class="d-p-show-card-txt">
+                <div class="d-p-show-card-link">
+                    <a href="javascript:;" hotrep="product.dcdb.changjing3">前往购买 >></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_lw585iqzt08" data-panel="lw585iqzt08" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="lw585iqzt08" hotrep="product..overview.scene.4.tab">
+                        游戏应用
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <div class="d-split-mod">
+    <div class="d-split-con">
+        <h3><strong>业务类型</strong></h3>
+<p>适用于游戏业务</p>
+<h3><strong>上云建议</strong></h3>
+<p>全区全服的 SNS 游戏，新进 IO 等游戏品类，PCU 很容易到达10万甚至1000万都是有可能的，所以在设计之初就要考虑所有的功能模块都要具有可平滑扩展的能力。GameSvr、MatchSvr 等无状态服务器扩展相对容易，但记录游戏中全部好友关系链，全部历史战绩，游戏交易记录的 DBSvr 扩展就成为难题。而 TDSQL 能比较友好的解决类似全区全服的扩展问题。</p>
+        
+    </div>
+    <div class="d-split-aside">
+        <div class="d-p-show-card hasparam">
+            <div class="d-p-show-card-icon">
+                <img src="static/picture/image73.svg" alt="">
+                <h3 class="d-p-show-card-tit">游戏应用</h3>
+            </div>
+            <div class="d-p-show-card-param">
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片配置</label>
+                    <span>64GB 内存/ 200G 磁盘</span>
+                </div>
+                
+                <div class="d-p-show-card-param-item">
+                    <label>分片数量</label>
+                    <span>2~8</span>
+                </div>
+                
+            </div>
+            <div class="d-p-show-card-txt">
+                <div class="d-p-show-card-link">
+                    <a href="javascript:;" hotrep="product.dcdb.changjing4">前往购买 >></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall customer-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户案例</h3>
+        </div>
+        <div role="list" class="c-section-bd">
+            <div role="listitem" class="p-customer-list">
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.1">
+                        <img alt="中国银行" src="static/picture/5d1b5865415b61daa48be4676c04c087.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item p-cursor">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.2" target="_blank">
+                        <img alt="微众银行" src="static/picture/webank.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.3">
+                        <img alt="威富通" src="static/picture/0f8439edbc3b058f320fdb4958903ff7.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.4">
+                        <img alt="众惠相互" src="static/picture/13503870972756e5b74e3e3a888e9329.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.5">
+                        <img alt="鹅漫 U 品" src="static/picture/29af0b2f550607d0c20ef838a57f4df1.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.6">
+                        <img alt="深圳地铁" src="static/picture/a1617eee6b580d3316471cf226d5e7b8.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.7">
+                        <img alt="荷包金融" src="static/picture/6ccda7f14fac50076635c30e5f0dfbd1.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.8">
+                        <img alt="和泰金融" src="static/picture/1cdf82583b7b6fe327a3d65af51347f6.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.9">
+                        <img alt="汇通天下" src="static/picture/67050b40e55f5619bca2726906b758a2.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.10">
+                        <img alt="三一重工" src="static/picture/ace28f4aa97d00ed6058d2af3a385982.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.11">
+                        <img alt="前海通" src="static/picture/fc67aa876c37e5f8cace0a627736a39f.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.dcdb.overview.customer.12">
+                        <img alt="乐逗游戏" src="static/picture/a1eff53ca7469f7e176608fdb952375c.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用分布式数据库 TencentDB for TDSQL</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的 <a href="javascript:;">入门指南</a>，只需点几次鼠标，即可</p>
+<p>创建您的首个腾讯云分布式数据库。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.dcdb.overview.guide.btn">
+                           开始使用
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.dcdb.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'dcdb',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012114277, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "rJg9Apb3y8";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+
+</body>
+</html>

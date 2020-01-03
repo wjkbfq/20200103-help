@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>人脸支付-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="人脸支付-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(1.000000, 3.000000)" fill="#00A4FF">
+            <g id="Group-15">
+                <rect id="Rectangle-78" x="3" y="1" width="26" height="2"></rect>
+                <rect id="Rectangle-78-Copy" x="1" y="23" width="28" height="2"></rect>
+                <rect id="Rectangle-79" x="1" y="8" width="2" height="17"></rect>
+                <rect id="Rectangle-79-Copy" x="27" y="1" width="2" height="17"></rect>
+                <circle id="Oval-30" cx="2" cy="2" r="2"></circle>
+                <circle id="Oval-30-Copy" cx="28" cy="24" r="2"></circle>
+            </g>
+        </g>
+        <path d="M10,23 L8,23 C8,20.239 10.239,18 13,18 L13,20 C11.346,20 10,21.346 10,23 Z M18,19 L18,17 L18,19 Z M16,20 L13,20 L13,18 L16,18 L16,20 Z M10,13 C10,10.791 11.791,9 14,9 C16.209,9 18,10.791 18,13 C18,15.209 16.209,17 14,17 C11.791,17 10,15.209 10,13 Z M14,15 C15.105,15 16,14.105 16,13 C16,11.895 15.105,11 14,11 C12.895,11 12,11.895 12,13 C12,14.105 12.895,15 14,15 Z" id="Combined-Shape" fill="#00A4FF"></path>
+        <polygon id="XMLID_124_" fill="#00A4FF" fill-rule="nonzero" points="22 15 23.4142136 16.4142136 20.4142136 19.4142136 19 18"></polygon>
+        <polygon id="XMLID_124_" fill="#00A4FF" fill-rule="nonzero" transform="translate(19.207107, 17.207107) scale(-1, 1) translate(-19.207107, -17.207107) " points="20 15 21.4142136 16.4142136 18.4142136 19.4142136 17 18"></polygon>
+        <rect id="Rectangle" fill="#00A4FF" fill-rule="nonzero" x="17" y="18" width="6" height="2"></rect>
+        <rect id="Rectangle" fill="#00A4FF" fill-rule="nonzero" x="17" y="21" width="6" height="2"></rect>
+        <rect id="Rectangle" fill="#00A4FF" fill-rule="nonzero" x="19" y="18" width="2" height="6"></rect>
+    </g>
+</svg>

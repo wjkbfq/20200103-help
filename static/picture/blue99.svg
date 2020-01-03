@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>web漏洞扫描-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="web漏洞扫描-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#00A4FF">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape" fill-rule="nonzero"></path>
+            <path d="M17.4271826,11 L22,11 L22,13 L18.1551174,13 L18.1584592,13.0091817 L16.0276456,13.0024281 L15.2867607,10.9648438 L12.5760045,18.4125854 L11.9507947,20.1303351 L11.515625,21.3289795 L11.515074,21.3274679 L11.5142877,21.3296282 L10.4493006,18.4080475 L10.4501156,18.4058083 L8.47967341,13 L4,13 L4,11 L9.88,11 L9.88,11.0016925 L11.5108211,15.4915437 L15.2879452,5.1139806 L16.3508585,8.04125932 L17.4271826,11 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

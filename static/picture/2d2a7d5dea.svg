@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>云缴费-32px备份灰</title>
+    <desc>Created with Sketch.</desc>
+    <g id="云缴费-32px备份灰" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <path d="M28.8471036,18 L30.8678287,18 C29.8900443,25.3387189 23.6061537,31 16,31 C7.71572875,31 1,24.2842712 1,16 C1,7.71572875 7.71572875,1 16,1 C23.6061537,1 29.8900443,6.66128108 30.8678287,14 L28.8471036,14 C27.8850933,7.76981987 22.4995722,3 16,3 C8.82029825,3 3,8.82029825 3,16 C3,23.1797017 8.82029825,29 16,29 C22.4995722,29 27.8850933,24.2301801 28.8471036,18 Z" id="Combined-Shape" fill="#7C848E" fill-rule="nonzero"></path>
+        <polygon id="路径备份" stroke="#7C848E" stroke-width="2" fill-rule="nonzero" points="12 17.883756 16 17.883756 16 23 20 15.0653785 16 15.0653785 16 10"></polygon>
+    </g>
+</svg>

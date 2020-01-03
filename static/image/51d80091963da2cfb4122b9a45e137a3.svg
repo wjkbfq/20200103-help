@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>分布式架构</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="分布式架构" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Polygon" fill="#00A4FF" points="24 10 37.8564065 18 37.8564065 34 24 42 10.1435935 34 10.1435935 18"></polygon>
+        <path d="M24,2.15470054 L14.6076952,7.57735027 L14.6076952,18.4226497 L24,23.8452995 L33.3923048,18.4226497 L33.3923048,7.57735027 L24,2.15470054 Z" id="Polygon" stroke="#334966" stroke-width="2"></path>
+        <path d="M12,24.1547005 L2.60769515,29.5773503 L2.60769515,40.4226497 L12,45.8452995 L21.3923048,40.4226497 L21.3923048,29.5773503 L12,24.1547005 Z" id="Polygon-Copy" stroke="#334966" stroke-width="2"></path>
+        <path d="M36,24.1547005 L26.6076952,29.5773503 L26.6076952,40.4226497 L36,45.8452995 L45.3923048,40.4226497 L45.3923048,29.5773503 L36,24.1547005 Z" id="Polygon-Copy-2" stroke="#334966" stroke-width="2"></path>
+    </g>
+</svg>

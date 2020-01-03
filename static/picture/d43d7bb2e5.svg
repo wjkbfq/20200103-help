@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>物联网开发平台-32px-灰</title>
+    <desc>Created with Sketch.</desc>
+    <g id="物联网开发平台-32px-灰" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="物联网开发平台32" transform="translate(1.000000, 1.000000)" fill="#7C848E">
+            <path d="M27.8,17 C26.8,23.2 21.5,28 15,28 C7.8,28 2,22.2 2,15 C2,7.8 7.8,2 15,2 C21.5,2 27,6.8 27.8,13 L29.8,13 C29,5.7 22.6,0 15,0 C6.8,0 0,6.7 0,15 C0,23.3 6.7,30 15,30 C22.6,30 29,24.3 30,17 L27.8,17 Z" id="Path"></path>
+            <polygon id="Path" points="15.3 12 12.7 18 14.7 18 17.3 12"></polygon>
+            <polyline id="Path" points="13 14 10 12.3 10 12.3 15 9.4 19.9 12.3 19.9 13.4 21.9 14.5 21.9 11.1 15 7.1 8 11.1 8 13.4 10 14.6 10 14.6 11 15.2"></polyline>
+            <polyline id="Path" points="16.9 16.2 19.9 18 15 20.8 10 18 10 16.9 8 15.7 8 19.1 15 23.2 21.9 19.1 21.9 16.8 19.9 15.7 19.9 15.7 18.9 15.1"></polyline>
+        </g>
+    </g>
+</svg>

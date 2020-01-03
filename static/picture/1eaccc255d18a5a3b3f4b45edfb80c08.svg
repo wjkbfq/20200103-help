@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="45px" viewBox="0 0 44 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>广告检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文本内容安全" transform="translate(-389.000000, -520.000000)">
+            <g id="广告检测" transform="translate(387.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <polygon id="路径" stroke="#334966" stroke-width="2" points="3 46 3 3 45 3 45 46"></polygon>
+                <text id="AD" stroke="#334966" stroke-width="0.8" font-family="ArialMT, Arial" font-size="18" font-weight="normal" letter-spacing="1.384615" fill="#334966">
+                    <tspan x="11" y="23">AD</tspan>
+                </text>
+                <rect id="矩形复制-4" fill="#00A4FF" x="11" y="27" width="26" height="6"></rect>
+                <rect id="矩形复制-5" fill="#334966" x="11" y="37" width="11" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

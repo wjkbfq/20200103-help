@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>7X24 小时@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="7X24-小时" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-28" stroke="#334966" stroke-width="2" x="3" y="21" width="6" height="12" rx="3"></rect>
+        <path d="M3,31 L3,23 L2,23 C1.44771525,23 1,23.4477153 1,24 L1,30 C1,30.5522847 1.44771525,31 2,31 L3,31 Z" id="Rectangle-28-Copy-2" stroke="#334966" stroke-width="2"></path>
+        <path d="M45,23 L45,31 L46,31 C46.5522847,31 47,30.5522847 47,30 L47,24 C47,23.4477153 46.5522847,23 46,23 L45,23 Z" id="Rectangle-28-Copy-3" stroke="#334966" stroke-width="2"></path>
+        <rect id="Rectangle-28-Copy" stroke="#334966" stroke-width="2" x="39" y="21" width="6" height="12" rx="3"></rect>
+        <path d="M2,22 C2,9.8497355 11.8497355,0 24,0 C36.1502645,0 46,9.8497355 46,22 L44,22 C44,10.954305 35.045695,2 24,2 C12.954305,2 4,10.954305 4,22 L2,22 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        <path d="M28.8739825,45 C28.956247,44.6803801 29,44.3452996 29,44 C29,43.6547004 28.956247,43.3196199 28.8739825,43 L29,43 L34,43 C39.5228475,43 44,38.5228475 44,33 L44,24 L44,22 L46,22 L46,33 C46,39.627417 40.627417,45 34,45 L28.8739825,45 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        <path d="M23,40 L25,40 C27.209139,40 29,41.790861 29,44 C29,46.209139 27.209139,48 25,48 L23,48 C20.790861,48 19,46.209139 19,44 C19,41.790861 20.790861,40 23,40 Z M23,42 C21.8954305,42 21,42.8954305 21,44 C21,45.1045695 21.8954305,46 23,46 L25,46 C26.1045695,46 27,45.1045695 27,44 C27,42.8954305 26.1045695,42 25,42 L23,42 Z" id="Rectangle" fill="#334966" fill-rule="nonzero"></path>
+        <rect id="Rectangle-66" fill="#00A4FF" x="13" y="14" width="22" height="20"></rect>
+        <path d="M17,29 L23,29 L23,31 L17,31 L15,31 L15,23 L17,23 L21,23 L21,19 L15,19 L15,17 L23,17 L23,19 L23,25 L21,25 L17,25 L17,29 Z M31,25 L27,25 L25,25 L25,17 L27,17 L27,23 L31,23 L31,17 L33,17 L33,31 L31,31 L31,25 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="160px" viewBox="0 0 330 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="330" height="160" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9">
+            <path d="M2,0 L328,0 L328,0 C329.104569,-2.02906125e-16 330,0.8954305 330,2 L330,160 L0,160 L0,2 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Rectangle-2-Copy-58" fill="#222733"></path>
+            <g id="Looper_Group-Copy-14" opacity="0.15" transform="translate(165.000000, 80.000000) scale(-1, 1) translate(-165.000000, -80.000000) ">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Looper_Group" mask="url(#mask-2)">
+                    <g transform="translate(-219.000000, 376.000000) rotate(-115.000000) translate(219.000000, -376.000000) translate(-1122.000000, -842.000000)" id="original_Oval-4_71768822-Group">
+                        <g transform="translate(0.000000, 0.000000)">
+                            <ellipse id="duplicate_50_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(30.328864) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="334.861467" ry="1214.19351"></ellipse>
+                            <ellipse id="duplicate_49_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(29.330837) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="328.966019" ry="1192.90894"></ellipse>
+                            <ellipse id="duplicate_48_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(28.335275) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="323.07057" ry="1171.62442"></ellipse>
+                            <ellipse id="duplicate_47_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(27.343161) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="317.175122" ry="1150.33998"></ellipse>
+                            <ellipse id="duplicate_46_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(26.355472) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="311.279673" ry="1129.0556"></ellipse>
+                            <ellipse id="duplicate_45_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(25.373185) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="305.384225" ry="1107.77129"></ellipse>
+                            <ellipse id="duplicate_44_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(24.397268) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="299.488777" ry="1086.48707"></ellipse>
+                            <ellipse id="duplicate_43_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(23.428685) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="293.593328" ry="1065.20292"></ellipse>
+                            <ellipse id="duplicate_42_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(22.468391) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="287.69788" ry="1043.91886"></ellipse>
+                            <ellipse id="duplicate_41_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(21.517335) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="281.802432" ry="1022.63489"></ellipse>
+                            <ellipse id="duplicate_40_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(20.576454) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="275.906983" ry="1001.35102"></ellipse>
+                            <ellipse id="duplicate_39_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(19.646678) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="270.011535" ry="980.067259"></ellipse>
+                            <ellipse id="duplicate_38_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(18.728923) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="264.116087" ry="958.783607"></ellipse>
+                            <ellipse id="duplicate_37_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(17.824096) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="258.220638" ry="937.500076"></ellipse>
+                            <ellipse id="duplicate_36_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(16.933089) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="252.32519" ry="916.216673"></ellipse>
+                            <ellipse id="duplicate_35_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(16.056783) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="246.429741" ry="894.933409"></ellipse>
+                            <ellipse id="duplicate_34_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(15.196041) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="240.534293" ry="873.650293"></ellipse>
+                            <ellipse id="duplicate_33_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(14.351713) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="234.638845" ry="852.367338"></ellipse>
+                            <ellipse id="duplicate_32_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(13.524632) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="228.743396" ry="831.084555"></ellipse>
+                            <ellipse id="duplicate_31_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(12.715615) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="222.847948" ry="809.801959"></ellipse>
+                            <ellipse id="duplicate_30_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(11.925460) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="216.9525" ry="788.519566"></ellipse>
+                            <ellipse id="duplicate_29_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(11.154947) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="211.057051" ry="767.237393"></ellipse>
+                            <ellipse id="duplicate_28_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(10.404836) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="205.161603" ry="745.95546"></ellipse>
+                            <ellipse id="duplicate_27_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(9.675867) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="199.266155" ry="724.673788"></ellipse>
+                            <ellipse id="duplicate_26_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(8.968761) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="193.370706" ry="703.392403"></ellipse>
+                            <ellipse id="duplicate_25_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(8.284213) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="187.475258" ry="682.111331"></ellipse>
+                            <ellipse id="duplicate_24_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(7.622902) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="181.579809" ry="660.830606"></ellipse>
+                            <ellipse id="duplicate_23_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(6.985478) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="175.684361" ry="639.550262"></ellipse>
+                            <ellipse id="duplicate_22_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(6.372571) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="169.788913" ry="618.270341"></ellipse>
+                            <ellipse id="duplicate_21_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(5.784785) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="163.893464" ry="596.99089"></ellipse>
+                            <ellipse id="duplicate_20_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(5.222702) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="157.998016" ry="575.711964"></ellipse>
+                            <ellipse id="duplicate_19_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(4.686875) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="152.102568" ry="554.433627"></ellipse>
+                            <ellipse id="duplicate_18_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(4.177834) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="146.207119" ry="533.155953"></ellipse>
+                            <ellipse id="duplicate_17_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(3.696080) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="140.311671" ry="511.879028"></ellipse>
+                            <ellipse id="duplicate_16_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(3.242089) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="134.416223" ry="490.602957"></ellipse>
+                            <ellipse id="duplicate_15_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(2.816310) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="128.520774" ry="469.327861"></ellipse>
+                            <ellipse id="duplicate_14_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(2.419162) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="122.625326" ry="448.05389"></ellipse>
+                            <ellipse id="duplicate_13_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(2.051038) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="116.729878" ry="426.781221"></ellipse>
+                            <ellipse id="duplicate_12_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(1.712300) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="110.834429" ry="405.510076"></ellipse>
+                            <ellipse id="duplicate_11_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(1.403283) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="104.938981" ry="384.240726"></ellipse>
+                            <ellipse id="duplicate_10_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(1.124292) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="99.0435325" ry="362.973512"></ellipse>
+                            <ellipse id="duplicate_9_original_Oval-4_71768822" stroke="#FFFFFF" transform="translate(903.000000, 1218.000000) rotate(0.875602) translate(-903.000000, -1218.000000) " cx="903" cy="1218" rx="93.1480841" ry="341.708866"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>小游戏联机对战引擎 MGOBE-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="小游戏联机对战引擎-MGOBE-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group-20" transform="translate(1.000000, 3.000000)" fill="#7C848E">
+            <g id="Group-15">
+                <rect id="Rectangle-78" x="2" y="1" width="27" height="2"></rect>
+                <rect id="Rectangle-78-Copy" x="1" y="23" width="28" height="2"></rect>
+                <rect id="Rectangle-79" x="1" y="8" width="2" height="17"></rect>
+                <rect id="Rectangle-79-Copy" x="27" y="1" width="2" height="17"></rect>
+                <circle id="Oval-30" cx="2" cy="2" r="2"></circle>
+                <circle id="Oval-30-Copy" cx="29" cy="24" r="2"></circle>
+            </g>
+        </g>
+        <g id="326f9575307fc0c9137c33173778261d" transform="translate(7.000000, 8.000000)">
+            <polygon id="Path" stroke="#7C848E" stroke-width="2" points="7.76470588 13 14 5.35849057 4 4"></polygon>
+            <circle id="Oval" fill="#7C848E" transform="translate(3.278196, 3.265328) rotate(-12.838297) translate(-3.278196, -3.265328) " cx="3.27819574" cy="3.26532756" r="2"></circle>
+            <circle id="Oval" fill="#7C848E" cx="15" cy="5" r="2"></circle>
+            <circle id="Oval" fill="#7C848E" transform="translate(7.361529, 13.874023) rotate(-12.838297) translate(-7.361529, -13.874023) " cx="7.36152908" cy="13.8740232" r="2"></circle>
+        </g>
+    </g>
+</svg>

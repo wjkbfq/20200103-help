@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="844px" height="195px" viewBox="0 0 844 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="147" height="44"></rect>
+        <filter x="-2.4%" y="-5.7%" width="104.8%" height="115.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="150" height="44"></rect>
+        <filter x="-2.3%" y="-5.7%" width="104.7%" height="115.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="0 32 32 32 32 0 0 0"></polygon>
+        <rect id="path-7" x="0" y="0" width="130" height="44"></rect>
+        <filter x="-2.7%" y="-5.7%" width="105.4%" height="115.9%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="130" height="44"></rect>
+        <filter x="-2.7%" y="-5.7%" width="105.4%" height="115.9%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="0" y="0" width="130" height="44"></rect>
+        <filter x="-2.7%" y="-5.7%" width="105.4%" height="115.9%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-13" points="24 11.4997 24 0 0 0 0 11.4997 0 22.9994 24 22.9994"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-3" transform="translate(-538.000000, -1972.000000)">
+            <g id="Group-16" transform="translate(540.000000, 1973.000000)">
+                <g id="Group-14" transform="translate(174.000000, 0.000000)">
+                    <g id="Rectangle-5-Copy-25">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Page-1" transform="translate(39.000000, 10.000000)" fill="#878787">
+                        <path d="M12,0 C8.687,0 6,2.687 6,6 C6,9.313 8.687,12 12,12 C15.313,12 18,9.313 18,6 C18,2.687 15.313,0 12,0 M12,2 C14.205,2 16,3.795 16,6 C16,8.205 14.205,10 12,10 C9.795,10 8,8.205 8,6 C8,3.795 9.795,2 12,2 Z M16.0039,14 C20.4199,14 23.9999,17.58 23.9999,21.996 L23.9999,25 L-9.99999993e-05,25 L-9.99999993e-05,21.996 C-9.99999993e-05,17.58 3.5799,14 7.9959,14 L16.0039,14 Z M16.0039,16 L7.9959,16 C4.6899,16 1.9999,18.689 1.9999,21.996 L1.9999,23 L21.9999,23 L21.9999,21.996 C21.9999,18.689 19.3109,16 16.0039,16 Z M24.998,14 C28.312,14 31,16.688 31,20.002 L31,23 L26,23 L26,21.996 C26,21.66 25.982,21.328 25.949,21 L29,21 L29,20.002 C29,17.795 27.205,16 24.998,16 L23.982,16 C23.412,15.242 22.737,14.569 21.977,14 L24.998,14 Z M21,1 C23.762,1 26,3.238 26,6 C26,8.762 23.762,11 21,11 C20.155,11 19.371,10.771 18.674,10.4 C19.039,9.849 19.333,9.247 19.554,8.611 C19.984,8.852 20.473,9 21,9 C22.654,9 24,7.654 24,6 C24,4.346 22.654,3 21,3 C20.473,3 19.984,3.148 19.554,3.389 C19.333,2.753 19.039,2.151 18.674,1.6 C19.371,1.229 20.155,1 21,1 Z" id="Combined-Shape"></path>
+                    </g>
+                    <text id="用户" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#444444">
+                        <tspan x="80" y="27">用户</tspan>
+                    </text>
+                </g>
+                <g id="Group-17" transform="translate(340.000000, 147.000000)">
+                    <g id="Rectangle-5-Copy-28">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <text id="DTS数据迁移" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#444444">
+                        <tspan x="53" y="27">DTS数据迁移</tspan>
+                    </text>
+                    <g id="Page-1" transform="translate(13.000000, 8.000000)">
+                        <path d="M2,23 L0,23 C0,25.762 5.373,28 12,28 C12.171,28 12.337,27.992 12.506,27.989 C12.001,27.376 11.569,26.702 11.205,25.988 C6.055,25.866 2,24.576 2,23 Z M12,2 C6.478,2 2,3.343 2,5 C2,6.657 6.478,8 12,8 C17.522,8 22,6.657 22,5 C22,3.343 17.522,2 12,2 Z M2,16.762 L2,23 L0,23 L0,5 C0,2.238 5.373,0 12,0 C18.627,0 24,2.238 24,5 L24,10.425 C23.354,10.242 22.687,10.112 22,10.051 L22,7.762 C19.851,9.11 16.176,10 12,10 C7.824,10 4.149,9.11 2,7.762 L2,14 C2,15.531 5.829,16.793 10.771,16.975 C10.522,17.604 10.329,18.259 10.2,18.938 C6.781,18.723 3.834,17.912 2,16.762 Z M21,27 C24.313,27 27,24.313 27,21 C27,17.687 24.313,15 21,15 C17.687,15 15,17.687 15,21 C15,24.313 17.687,27 21,27 Z M21,13 C25.418,13 29,16.582 29,21 C29,25.418 25.418,29 21,29 C16.582,29 13,25.418 13,21 C13,16.582 16.582,13 21,13 Z" id="Fill-1" fill="#00A4FF"></path>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <polygon id="Fill-3" fill="#00A4FF" mask="url(#mask-6)" points="18 20 21 20 21 18 18 18"></polygon>
+                        <polygon id="Fill-5" fill="#00A4FF" mask="url(#mask-6)" points="25 20 21 20 21 16"></polygon>
+                        <polygon id="Fill-6" fill="#00A4FF" mask="url(#mask-6)" points="21 24 24 24 24 22 21 22"></polygon>
+                        <polygon id="Fill-7" fill="#00A4FF" mask="url(#mask-6)" points="17 22 21 22 21 26"></polygon>
+                    </g>
+                </g>
+                <g id="Group-Copy" transform="translate(72.000000, 54.000000)" fill="#878787">
+                    <polygon id="Fill-3" transform="translate(175.500000, 23.500000) rotate(90.000000) translate(-175.500000, -23.500000) " points="152 24 199 24 199 23 152 23"></polygon>
+                    <polygon id="Fill-3-Copy" transform="translate(175.500000, 47.500000) rotate(90.000000) translate(-175.500000, -47.500000) " points="175 219 176 219 176 -124 175 -124"></polygon>
+                    <g id="Page-1-Copy-18" transform="translate(4.500000, 64.500000) rotate(90.000000) translate(-4.500000, -64.500000) translate(-13.000000, 60.000000)">
+                        <polygon id="Fill-1" points="30.0004 0 30.0004 9 35.0004 4.5"></polygon>
+                        <polygon id="Fill-3" points="0 5 31 5 31 3.999 0 3.999"></polygon>
+                    </g>
+                    <g id="Page-1-Copy-19" transform="translate(346.500000, 65.500000) rotate(90.000000) translate(-346.500000, -65.500000) translate(329.000000, 61.000000)">
+                        <polygon id="Fill-1" points="30 0 30 9 35 4.5"></polygon>
+                        <polygon id="Fill-3" points="0 5 31 5 31 4 0 4"></polygon>
+                    </g>
+                </g>
+                <g id="Group-12" transform="translate(710.000000, 147.000000)">
+                    <g id="Rectangle-5-Copy-28">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                    <text id="云数据库" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#444444">
+                        <tspan x="53" y="27">云数据库</tspan>
+                    </text>
+                    <g id="云数据库CDB" transform="translate(15.000000, 8.000000)" fill-rule="nonzero" fill="#00A4FF">
+                        <path d="M12.6,17 L12,17 C6.48,17 2,15.64 2,14 L2,7.74 C4.15,9.09 7.82,10 12,10 C16.18,10 19.85,9.11 22,7.76 L22,12.25 C22.7010089,12.430646 23.3739414,12.7065483 24,13.07 L24,5 C24,2.24 18.63,0 12,0 C5.37,0 0,2.22 0,5 L0,23 L2,23 L2,16.74 C4,18 7.34,18.85 11.16,19 C11.4880094,18.6793979 11.8463553,18.3913815 12.23,18.14 C12.3246544,17.7512828 12.4483348,17.3702137 12.6,17 Z M12,2 C17.52,2 22,3.34 22,5 C22,6.66 17.52,8 12,8 C6.48,8 2,6.64 2,5 C2,3.36 6.48,2 12,2 Z M2,23 L0,23 C0,25.51 4.44,27.58 10.23,27.94 C9.78585132,27.3128792 9.44799849,26.6169024 9.23,25.88 C5.08,25.51 2,24.35 2,23 Z M25,20.14 C25,20.14 25,20 25,20 C25,17.2385763 22.7614237,15 20,15 C17.2385763,15 15,17.2385763 15,20 C15,20 15,20.09 15,20.14 C13.0739923,20.6628481 11.8280497,22.5253678 12.0799271,24.5051238 C12.3318044,26.4848798 14.004429,27.9760805 16,28 L24,28 C25.995571,27.9760805 27.6681956,26.4848798 27.9200729,24.5051238 C28.1719503,22.5253678 26.9260077,20.6628481 25,20.14 L25,20.14 Z M24,26 L16,26 C15.0170527,25.9674339 14.2036566,25.2250582 14.0816701,24.2491662 C13.9596836,23.2732742 14.5653135,22.3535203 15.51,22.08 L17.06,21.68 L17.06,20.08 C17.06,20.02 17.06,19.96 17.06,19.91 C17.06,18.2531458 18.4031458,16.91 20.06,16.91 C21.7168542,16.91 23.06,18.2531458 23.06,19.91 C23.06,19.97 23.06,20.03 23.06,20.08 L23.06,21.68 L24.61,22.08 C25.5758382,22.3604179 26.1832128,23.3144464 26.0285712,24.3082088 C25.8739296,25.3019712 25.0053778,26.0263274 24,26 Z" id="_复合路径_"></path>
+                    </g>
+                </g>
+                <g id="Group-12-Copy-2" transform="translate(710.000000, 0.000000)">
+                    <g id="Rectangle-5-Copy-28">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <text id="应用服务器" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#444444">
+                        <tspan x="50" y="27">应用服务器</tspan>
+                    </text>
+                    <g id="Page-1-Copy-15" transform="translate(10.000000, 6.000000)" fill="#00A4FF">
+                        <path d="M15,15.6965 L10.281,12.9995 L15,10.3035 L19.719,12.9995 L15,15.6965 Z M22,11.9995 L15,7.9995 L8,11.9995 L8,19.9995 L11.195,21.8255 C11.398,21.1685 11.753,20.5815 12.237,20.1175 L10,18.8395 L10,15.1425 L15,17.9995 L20,15.1425 L20,18.8395 L15.863,21.2035 C15.601,21.0765 15.311,20.9995 15,20.9995 C13.896,20.9995 13,21.8955 13,22.9995 C13,24.1045 13.896,24.9995 15,24.9995 C16.104,24.9995 17,24.1045 17,22.9995 C17,22.9535 16.99,22.9105 16.986,22.8645 L22,19.9995 L22,11.9995 Z M15,28.9995 C7.82,28.9995 2,23.1795 2,15.9995 C2,8.8205 7.82,2.9995 15,2.9995 C21.498,2.9995 26.866,7.7725 27.831,13.9995 L29.851,13.9995 C28.871,6.6635 22.604,0.9995 15,0.9995 C6.716,0.9995 0,7.7155 0,15.9995 C0,24.2845 6.716,30.9995 15,30.9995 C22.604,30.9995 28.871,25.3365 29.851,17.9995 L27.831,17.9995 C26.866,24.2275 21.498,28.9995 15,28.9995 L15,28.9995 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+                <g id="Page-1-Copy-19" transform="translate(775.500000, 95.500000) rotate(90.000000) translate(-775.500000, -95.500000) translate(734.000000, 91.000000)" fill="#878787">
+                    <polygon id="Fill-1" points="78 0 78 9 83 4.5"></polygon>
+                    <polygon id="Fill-3" points="0 5 79 5 79 4 0 4"></polygon>
+                </g>
+                <g id="Group-8-Copy-4" transform="translate(0.000000, 147.000000)">
+                    <g id="Rectangle-5-Copy-30">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="Page-1" transform="translate(13.000000, 9.000000)">
+                        <g id="Group-3">
+                            <mask id="mask-14" fill="white">
+                                <use xlink:href="#path-13"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M2,7.7614 C4.149,9.1104 7.824,9.9994 12,9.9994 C16.176,9.9994 19.851,9.1104 22,7.7614 L22,14.0014 C21.998,15.6574 17.521,16.9994 12,16.9994 C6.478,16.9994 2,15.6574 2,13.9994 L2,7.7614 Z M12,1.9994 C17.522,1.9994 22,3.3434 22,4.9994 C22,6.6574 17.522,7.9994 12,7.9994 C6.478,7.9994 2,6.6574 2,4.9994 C2,3.3434 6.478,1.9994 12,1.9994 L12,1.9994 Z M2,16.7614 C4.149,18.1104 7.824,18.9994 12,18.9994 C16.176,18.9994 19.851,18.1104 22,16.7614 L22,22.9994 L24,22.9994 L24,14.0004 L24,13.9994 L24,4.9994 C24,2.2394 18.627,-0.0006 12,-0.0006 C5.373,-0.0006 0,2.2394 0,4.9994 L0,22.9994 L2,22.9994 L2,16.7614 Z" id="Fill-1" fill="#00A4FF" mask="url(#mask-14)"></path>
+                        </g>
+                        <path d="M12,25.9996 C6.478,25.9996 2,24.6566 2,22.9996 L0,22.9996 C0,25.7616 5.373,27.9996 12,27.9996 C18.628,27.9996 24,25.7616 24,22.9996 L22,22.9996 C22,24.6566 17.523,25.9996 12,25.9996" id="Fill-4" fill="#00A4FF"></path>
+                    </g>
+                    <text id="本地数据库" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#444444">
+                        <tspan x="47" y="27">本地数据库</tspan>
+                    </text>
+                </g>
+                <g id="Page-1-Copy-16" transform="translate(503.000000, 164.000000)" fill="#878787">
+                    <polygon id="Fill-1" points="192 0 192 9 197 4.5"></polygon>
+                    <polygon id="Fill-3" points="0 5 194 5 194 4 0 4"></polygon>
+                </g>
+                <g id="Page-1-Copy-20" transform="translate(140.000000, 164.000000)" fill="#878787">
+                    <polygon id="Fill-1" points="188 0 188 9 193 4.5"></polygon>
+                    <polygon id="Fill-3" points="0 5 189 5 189 4 0 4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

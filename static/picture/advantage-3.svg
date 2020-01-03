@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>音视频通信质量 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="音视频通信质量-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-10" stroke="#334966" stroke-width="2" x="1" y="11" width="34" height="32"></rect>
+        <path d="M35,19.7543014 L35,34.2456986 L47,37.67427 L47,16.32573 L35,19.7543014 Z" id="Rectangle-10-Copy" stroke="#334966" stroke-width="2"></path>
+        <rect id="Rectangle-14" fill="#334966" x="6" y="4" width="24" height="2"></rect>
+        <rect id="Rectangle-14-Copy" fill="#334966" x="28" y="4" width="2" height="8"></rect>
+        <rect id="Rectangle-15" fill="#00A4FF" x="2" y="27" width="32" height="15"></rect>
+        <path d="M8,26 L14,26 L14,20 L16,20 L16,34 L14,34 L14,28 L8,28 L8,34 L6,34 L6,20 L8,20 L8,26 Z" id="Combined-Shape" fill="#334966"></path>
+        <path d="M22,22 L22,32 L26,32 C27.1045695,32 28,31.1045695 28,30 L28,24 C28,22.8954305 27.1045695,22 26,22 L22,22 Z M20,20 L26,20 C28.209139,20 30,21.790861 30,24 L30,30 C30,32.209139 28.209139,34 26,34 L20,34 L20,20 Z" id="Rectangle-12" fill="#334966" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="777px" height="553px" viewBox="0 0 777 553" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone XR</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iPhone-XR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-19" transform="translate(73.000000, 28.000000)">
+            <g id="DashRectGroup7-Copy-2" transform="translate(0.187500, 258.796875)">
+                <rect id="Rectangle" fill="#000000" opacity="0" x="2" y="8" width="189" height="229"></rect>
+                <path d="M169,4.54747351e-13 L169,237 L4.54747351e-13,237 L4.54747351e-13,4.54747351e-13 L169,4.54747351e-13 Z" id="Path" stroke="#BABABA" stroke-dasharray="5"></path>
+            </g>
+            <g id="DashRectGroup7-Copy-3" transform="translate(0.187500, 0.820312)">
+                <rect id="Rectangle" fill="#000000" opacity="0" x="2" y="8" width="189" height="229"></rect>
+                <path d="M169,4.54747351e-13 L169,237.109375 L4.54747351e-13,237.109375 L4.54747351e-13,4.54747351e-13 L169,4.54747351e-13 Z" id="Path" stroke="#BABABA" stroke-dasharray="5"></path>
+            </g>
+            <g id="Group-18-Copy-3" transform="translate(250.591797, 111.296875)">
+                <g id="BlueRectGroup8-Copy" transform="translate(0.251953, 0.921875)" fill="#CEE3FF">
+                    <polygon id="Rectangle" points="-7.01756887e-15 9.20135279e-15 169.439453 0 169.439453 256.988281 -4.54747351e-13 256.988281"></polygon>
+                </g>
+                <g id="RectEndPoint12-Copy-2" transform="translate(21.691406, 184.992188)">
+                    <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                    <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                    <g id="Group" transform="translate(35.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text id="算法仓库">
+                            <tspan x="0" y="15">算法仓库</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="RectEndPoint13-Copy-2" transform="translate(21.691406, 112.992188)">
+                    <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="125" height="50"></rect>
+                    <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="125" height="50"></rect>
+                    <g id="Group" transform="translate(32.500000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text id="AI-工作室">
+                            <tspan x="0" y="15">AI 工作室</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="RectEndPoint14-Copy-2" transform="translate(21.691406, 40.992188)">
+                    <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                    <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                    <g id="Group" transform="translate(35.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                        <text id="设备中心">
+                            <tspan x="0" y="15">设备中心</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Textbasic21-Copy" transform="translate(32.125000, 10.462979)">
+                    <rect id="Rectangle" fill="#CEE3FF" opacity="0" x="0" y="0" width="80" height="20"></rect>
+                    <g id="Group" transform="translate(0.000000, 1.000000)" fill="#00A4FF" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal">
+                        <text id="云智天枢平台">
+                            <tspan x="0" y="13">云智天枢平台</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-19-Copy" transform="translate(8.087891, 11.872070)" fill-rule="nonzero">
+                    <g id="Group-2" transform="translate(8.123202, 8.766055) rotate(-45.000000) translate(-8.123202, -8.766055) translate(2.395929, 3.038782)">
+                        <path d="M1.75454502,10.0249023 L1.75454502,4.29762962 C1.75454502,2.18890603 3.46400324,0.479447798 5.57272683,0.479447798 L5.57272683,0.479447798 C7.68145042,0.479447798 9.39090865,2.18890603 9.39090865,4.29762962 L9.39090865,10.0249023" id="Path-Copy-8" stroke="#00A4FF" stroke-width="1.6"></path>
+                        <circle id="Oval-Copy-14" fill="#00A4FF" cx="1.75454502" cy="9.51654523" r="1.59090909"></circle>
+                        <circle id="Oval-Copy-15" fill="#00A4FF" cx="9.39090865" cy="9.51654523" r="1.59090909"></circle>
+                    </g>
+                    <g id="Group-2-Copy" transform="translate(12.612948, 8.237548) scale(-1, -1) rotate(-45.000000) translate(-12.612948, -8.237548) translate(6.885675, 2.510276)">
+                        <path d="M1.75454502,10.0249023 L1.75454502,4.29762962 C1.75454502,2.18890603 3.46400324,0.479447798 5.57272683,0.479447798 L5.57272683,0.479447798 C7.68145042,0.479447798 9.39090865,2.18890603 9.39090865,4.29762962 L9.39090865,10.0249023" id="Path-Copy-8" stroke="#00A4FF" stroke-width="1.6"></path>
+                        <circle id="Oval-Copy-14" fill="#00A4FF" cx="1.75454502" cy="9.51654523" r="1.59090909"></circle>
+                        <circle id="Oval-Copy-15" fill="#00A4FF" cx="9.39090865" cy="9.51654523" r="1.59090909"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="GrayRectGroup9-Copy-4" transform="translate(460.812500, 28.375000)" fill="#EAEBEC">
+                <polygon id="Rectangle" points="1.76247905e-15 0 168.496094 0 168.496094 410.926758 -5.96855898e-13 410.926758"></polygon>
+            </g>
+            <g id="Link17-Copy-3" transform="translate(170.187500, 107.796875)">
+                <polyline id="Path" stroke="#888888" points="0.5 0.5 39.5 0.5 39.5 141.5 78.5 141.5"></polyline>
+                <g id="Group" transform="translate(73.500000, 137.000000)" fill="#888888">
+                    <polygon id="Path" points="0.5 9 6.5 4.5 0.5 0"></polygon>
+                </g>
+                <path d="M0.5,0.5 L39.5,0.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+                <path d="M39.5,0.5 L39.5,141.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+                <path d="M39.5,141.5 L78.5,141.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+            </g>
+            <g id="Link18-Copy" transform="translate(170.187500, 244.796875)">
+                <polyline id="Path" stroke="#888888" points="0.5 145.5 39.5 145.5 39.5 4.5 78.5 4.5"></polyline>
+                <g id="Group" transform="translate(73.500000, 0.000000)" fill="#888888">
+                    <polygon id="Path" points="0.5 9 6.5 4.5 0.5 0"></polygon>
+                </g>
+                <path d="M0.5,145.5 L39.5,145.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+                <path d="M39.5,145.5 L39.5,4.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+                <path d="M39.5,4.5 L78.5,4.5" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+            </g>
+            <g id="Group-19-Copy-4" transform="translate(419.591797, 244.875000)">
+                <path d="M0.138671875,5.421875 L39.1386719,5.421875" id="Path" stroke="#888888"></path>
+                <g id="Group" transform="translate(34.138672, 0.921875)" fill="#888888">
+                    <polygon id="Path" points="0.5 9 6.5 4.5 0.5 0"></polygon>
+                </g>
+                <path d="M0.138671875,5.421875 L39.1386719,5.421875" id="Path" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+            </g>
+            <path d="M442.015625,390.296875 L481.015625,390.296875" id="Path-Copy-16" stroke-opacity="0" stroke="#FF0000" stroke-width="15"></path>
+            <g id="RectEndPoint12-Copy-4" transform="translate(21.187500, 423.796875)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(21.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="其他智能算法">
+                        <tspan x="0" y="15">其他智能算法</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint12-Copy-5" transform="translate(21.187500, 165.929688)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(35.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="其他终端">
+                        <tspan x="0" y="15">其他终端</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint12-Copy-8" transform="translate(481.308594, 222.243164)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(35.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="禁区检测">
+                        <tspan x="0" y="15">禁区检测</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint13-Copy-5" transform="translate(21.187500, 351.796875)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="125" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="125" height="50"></rect>
+                <g id="Group" transform="translate(20.500000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="车辆识别算法">
+                        <tspan x="0" y="15">车辆识别算法</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint13-Copy-6" transform="translate(21.187500, 93.875000)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="125" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="125" height="50"></rect>
+                <g id="Group" transform="translate(27.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="人脸抓拍机">
+                        <tspan x="0" y="15">人脸抓拍机</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint13-Copy-12" transform="translate(481.308594, 150.188477)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="125" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="125" height="50"></rect>
+                <g id="Group" transform="translate(32.500000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="用户画像">
+                        <tspan x="0" y="15">用户画像</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint13-Copy-17" transform="translate(481.308594, 367.301758)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="125" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="125" height="50"></rect>
+                <g id="Group" transform="translate(19.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="其他更多功能">
+                        <tspan x="0" y="15">其他更多功能</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint14-Copy-5" transform="translate(21.187500, 279.796875)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(21.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="人脸识别算法">
+                        <tspan x="0" y="15">人脸识别算法</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint14-Copy-6" transform="translate(21.187500, 21.820312)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(41.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="摄像机">
+                        <tspan x="0" y="15">摄像机</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint14-Copy-22" transform="translate(481.308594, 78.133789)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(35.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="人流统计">
+                        <tspan x="0" y="15">人流统计</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="RectEndPoint14-Copy-23" transform="translate(481.308594, 295.247070)">
+                <rect id="Rectangle" fill="#BBBBBB" opacity="0.6" x="2" y="2" width="126" height="50"></rect>
+                <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="126" height="50"></rect>
+                <g id="Group" transform="translate(22.000000, 15.000000)" fill="#444444" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal">
+                    <text id="危险人员告警">
+                        <tspan x="0" y="15">危险人员告警</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Textbasic22-Copy-4" transform="translate(478.812500, 38.133789)">
+                <rect id="Rectangle" fill="#CEE3FF" opacity="0" x="0" y="0" width="102" height="20"></rect>
+                <g id="Group" transform="translate(0.000000, 1.000000)" fill="#878787" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal">
+                    <text id="智慧楼宇/园区应用">
+                        <tspan x="0" y="13">智慧楼宇/园区应用</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

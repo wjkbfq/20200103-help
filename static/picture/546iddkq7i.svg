@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>直播</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-131.000000, -123.000000)">
+            <g id="视频服务" transform="translate(83.000000, 121.000000)">
+                <g id="直播" transform="translate(48.000000, 1.000000)">
+                    <rect id="Rectangle-15" fill="#00A4FF" x="0" y="1" width="31" height="2"></rect>
+                    <rect id="Rectangle-15-Copy" fill="#00A4FF" x="0" y="29" width="31" height="2"></rect>
+                    <rect id="Rectangle-15-Copy-2" fill="#00A4FF" x="0" y="23" width="31" height="2"></rect>
+                    <rect id="Rectangle-16" fill="#00A4FF" x="0" y="1" width="2" height="30"></rect>
+                    <rect id="Rectangle-16-Copy" fill="#00A4FF" x="29" y="6" width="2" height="25"></rect>
+                    <path d="M13.2378961,17.8899547 L20.5876981,13.7049777 C20.8458407,13.5578165 21,13.2944241 21,13.0001018 C21,12.7057794 20.8458407,12.4427126 20.587368,12.2952258 L13.2378961,8.11024882 C12.9794234,7.96341323 12.6707746,7.96308765 12.412632,8.11024882 C12.1541593,8.25740998 12,8.52080242 12,8.81512475 L12,17.1847532 C12,17.4787499 12.1541593,17.742468 12.412632,17.8896291 C12.5420335,17.9632097 12.6836488,18 12.8252641,18 C12.9672095,18 13.1088248,17.9632097 13.2378961,17.8899547 Z" id="XMLID_1_-path" stroke="#00A4FF" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

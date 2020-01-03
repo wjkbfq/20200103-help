@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g>
+	<defs>
+		<polygon id="SVGID_2_" points="9.035,12.03 16.036,8 20.916,10.781 13.917,14.813 13.911,16.168 19.911,12.713 19.886,18.215 
+			14.886,21.093 15.959,21.704 20.957,18.826 20.988,12.093 22.097,11.455 23,11.969 22.963,19.969 15.964,24 11.082,21.218 
+			18.082,17.187 18.089,15.83 12.088,19.285 12.112,13.784 17.113,10.905 16.041,10.294 11.041,13.173 11.01,19.906 9.901,20.544 
+			9,20.031 		"/>
+	</defs>
+	<use xlink:href="#SVGID_2_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#00A4FF;"/>
+	<clipPath id="SVGID_3_">
+		<use xlink:href="#SVGID_2_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_22_" points="28,22.84 16,29.7 4,22.84 4,9.16 16,2.3 28,9.16 28,9.14 30,8 16,0 2,8 2,24 16,32 30,24 30,12 
+			28,13.14 		"/>
+	</defs>
+	<use xlink:href="#SVGID_22_"  style="overflow:visible;fill:#00A4FF;"/>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_22_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>活动防刷-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="活动防刷-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#7C848E">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape" fill-rule="nonzero"></path>
+            <rect id="Rectangle-49" transform="translate(17.853553, 7.853553) rotate(-45.000000) translate(-17.853553, -7.853553) " x="16.8535534" y="-2.25304833" width="2" height="20.2132034"></rect>
+            <polygon id="Rectangle-49-Copy" transform="translate(12.103553, 11.103553) rotate(-45.000000) translate(-12.103553, -11.103553) " points="11.1035534 -3.5992424 13.1035534 -3.5992424 13.1035534 25.8063492 11.1035534 25.8063492"></polygon>
+            <polygon id="Rectangle-49-Copy-2" transform="translate(9.404252, 17.404252) rotate(-45.000000) translate(-9.404252, -17.404252) " points="8.40425234 5.10463114 10.4042523 5.10463114 10.4042523 29.7038735 8.40425234 29.7038735"></polygon>
+        </g>
+    </g>
+</svg>

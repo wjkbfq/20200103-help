@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>存储服务-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="存储服务-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24,1.15175111 L4,12.5803225 L4,35.4196775 L24,46.8482489 L44,35.4196775 L44,12.5803225 L24,1.15175111 Z" id="Polygon-3" stroke="#334966" stroke-width="2"></path>
+        <polygon id="Polygon-3" fill="#00A4FF" points="24 11 35 17.5 35 30.5 24 37 13 30.5 13 17.5"></polygon>
+        <path d="M44.0077221,12.2635137 L43,12.8393549 L43,13.1606451 L44.0077221,13.7364863 L44.4285714,13 L44.0077221,12.2635137 Z M42.7188711,13 L24,2.30350221 L5.28112887,13 L24,23.6964978 L42.7188711,13 Z M5,13.1606451 L5,12.8393549 L3.99227788,12.2635137 L3.57142857,13 L3.99227788,13.7364863 L5,13.1606451 Z M25,25.4285714 L25,47 L23,47 L23,25.4285714 L3,14 L3,12 L24,0 L45,12 L45,14 L25,25.4285714 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+    </g>
+</svg>

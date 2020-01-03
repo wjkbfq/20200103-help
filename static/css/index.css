@@ -1,0 +1,1094 @@
+body, a {
+    box-sizing: border-box;
+    
+}
+
+div.container, div.row, div.row > div {
+    
+    text-align: center;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav, main {
+    width: 100%;
+    background-color: #3A0680;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.btn-blue {
+    background-color: #00E8FF;
+}
+
+.time-bar {
+    position: relative;
+
+    color: #FFFFFF;
+
+}
+
+.time-bar-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.time-bar-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+
+    display: flex;
+}
+
+.time-bar-detail-time-1,
+.time-bar-detail-time-2,
+.time-bar-detail-time-3,
+.time-bar-detail-time-4 {
+    font-size: 18px;
+    color: #FF46D1;
+}
+
+.time-bar-detail-txt-1,
+.time-bar-detail-txt-2,
+.time-bar-detail-txt-3,
+.time-bar-detail-txt-4 {
+    margin-top: 60px;
+}
+
+.time-bar-detail-1,
+.time-bar-detail-2,
+.time-bar-detail-3,
+.time-bar-detail-4 {
+    position: absolute;
+}
+
+.circle-outer-1,
+.circle-outer-2,
+.circle-outer-3,
+.circle-outer-4,
+.circle-inner-1,
+.circle-inner-2,
+.circle-inner-3,
+.circle-inner-4 {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(-90deg, #DC6AFF 0%, #FF45AF 100%);
+}
+
+.circle-outer-1,
+.circle-outer-2,
+.circle-outer-3,
+.circle-outer-4 {
+    opacity: .3;
+}
+
+.time-bar-detail-1 {
+    left: 22%;
+}
+
+.time-bar-detail-2 {
+    left: 37%;
+}
+
+.time-bar-detail-3 {
+    left: 60%;
+}
+
+.time-bar-detail-4 {
+    left: 72%;
+}
+
+.img-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-awards-img {
+    background: url("../image/special-awards.png");
+}
+
+.special-awards-item-1 {
+    background: url("../image/gift03@2x.png");
+}
+
+.special-awards-item-2 {
+    background: url("../image/tb01@2x.png");
+}
+
+.special-awards-item-3 {
+    background: url("../image/tb03@2x.png");
+}
+
+.special-awards-item-4 {
+    background: url("../image/tb04@2x.png");
+}
+
+.special-awards-item-5 {
+    background: url("../image/tb05@2x.png");
+}
+
+.special-awards-item-6 {
+    background: url("../image/tb02@2x.png");
+}
+.today-awards-img{
+    background: url("../image/today-award.png");
+}
+.already-awards-img{
+    background: url("../image/title04.png") no-repeat;
+}
+
+.active-item{    
+    
+    height: 180px;
+    margin: 0 auto;
+    background: linear-gradient(-135deg, #5E369F 0%, #3937B1 100%);
+    border-radius: 6px 6px 6px 6px;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 47px;
+    text-align: left;
+    position: relative;
+}
+.active-tip{      
+    font-size: 24px;
+    margin-top:70px;
+    margin-bottom: 0;
+}
+.already{   
+    opacity:0.5;
+}
+.ready{
+    color: #FF2EBB;
+}
+.active-img-1111{
+    background: url("../image/1201@2x.png") no-repeat;
+}
+
+.active-img-1112{
+    background: url("../image/1202@2x.png") no-repeat;
+}
+.active-img-1113{
+    background: url("../image/1203@2x.png") no-repeat;
+}
+.active-img-1114{
+    background: url("../image/1204@2x.png") no-repeat;
+}
+.active-img-1115{
+    background: url("../image/1205@2x.png") no-repeat;
+}
+
+.active-img-1116{
+    background: url("../image/1206@2x.png") no-repeat;
+}
+.active-img-1117{
+    background: url("../image/1207@2x.png") no-repeat;
+}
+.active-img-1118{
+    background: url("../image/1208@2x.png") no-repeat;
+}
+.active-img-1119{
+    background: url("../image/1209@2x.png") no-repeat;
+}
+
+.active-img-1120{
+    background: url("../image/1210@2x.png") no-repeat;
+}
+.active-img-1121{
+    background: url("../image/1211@2x.png") no-repeat;
+}
+.active-img-1122{
+    background: url("../image/1207@2x.png") no-repeat;
+}
+.active-img-1123{
+    background: url("../image/1213@2x.png") no-repeat;
+}
+
+.active-img-1124{
+    background: url("../image/1214@2x.png") no-repeat;
+}
+.active-img-1125{
+    background: url("../image/1203@2x.png") no-repeat;
+}
+.active-img-1126{
+    background: url("../image/1208@2x.png") no-repeat;
+}
+.active-img-1127{
+    background: url("../image/1217@2x.png") no-repeat;
+}
+
+.active-img-1128{
+    background: url("../image/1205@2x.png") no-repeat;
+}
+.active-img-1129{
+    background: url("../image/1213@2x.png") no-repeat;
+}
+.active-img-1130{
+    background: url("../image/1220@2x.png") no-repeat;
+}
+.active-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    top:-30px;
+    right: 0;
+}
+#load-gift{
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: bold;
+}
+#load-gift:hover{
+    color:#00A4FF ;
+}
+.down-logo{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../image/down.png') no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.up-logo{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../image/up.png') no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.timeout-tip{
+    color: #4A36A8;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.competition-plugs{
+    transition: all 0.4s;
+}
+.competition-plugs:hover {
+    box-shadow: 0 5px 18px 0 rgba(138, 59, 255, 0.15);
+}
+.competition-plugs-context-img{
+    width: 44px;
+    height: 44px;
+    vertical-align: top;
+    
+    margin-right: 10px;
+}
+.competition-plugs-context{
+     position: absolute;
+     top:29px;
+     left: 32px;
+
+ }
+.competition-plugs-font{
+    text-align: left;
+    display: inline-block;
+}
+
+@media screen and (min-width: 769px) {
+    .nav-container {
+        width: 95%;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    .nav-detail {
+        display: inline-block;
+    }
+
+    .nav-detail li {
+        display: inline-block;
+        margin-left: 30px;
+        line-height: 80px;
+    }
+
+    .nav-logo {
+        display: inline-block;
+        background: url('/campaign/favorite-plugins-assets/logo copy.png') no-repeat;
+        width: 176px;
+        height: 24px;
+        margin-top: 23px;
+    }
+
+    .nav-hum {
+        display: none;
+    }
+        
+    .time-bar {
+
+    }
+    .main-tip{
+        margin-top:190px;
+    }
+    .btn {
+        display: inline-block;
+        width: 200px;
+        border-radius: 23px;
+        border: 1px solid #fff;
+        padding: 8px 0;
+        text-align: center;
+        margin: 10px 5px;
+    }
+
+    .time-bar-detail-time-1,
+    .time-bar-detail-time-2,
+    .time-bar-detail-time-3,
+    .time-bar-detail-time-4
+     {
+        font-size: 18px;
+    }
+    .time-bar-detail-txt-1,
+    .time-bar-detail-txt-2,
+    .time-bar-detail-txt-3,
+    .time-bar-detail-txt-4{
+        font-size: 14px;
+    }
+
+    .circle-outer-1 {
+        top: 42px;
+        left: 32px;
+    }
+
+    .circle-inner-1 {
+        top: 47px;
+        left: 37px;
+    }
+
+    .circle-outer-2 {
+    top: 42px;
+    left: 32px;
+    }
+    .circle-inner-2 {
+    top: 47px;
+    left: 37px;
+    }
+    .circle-outer-3 {
+    top: 42px;
+    left: 35px;
+    }
+    .circle-inner-3 {
+    top: 47px;
+    left: 40px;
+    }
+    .circle-outer-4 {
+    top: 42px;
+    left: 51px;
+    }
+    .circle-inner-4 {
+    top: 47px;
+    left: 56px;
+    }
+
+    .circle-outer-1,
+    .circle-outer-2,
+    .circle-outer-3,
+    .circle-outer-4 {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .circle-inner-1,
+    .circle-inner-2,
+    .circle-inner-3,
+    .circle-inner-4 {
+        font-size: 14px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .time-bar {
+        height: 90px;
+        margin-top: 40px;
+    }
+
+    .time-bar-line {
+        margin-top: 55px;
+    }
+
+    .competition-prizes-img {
+        width: 255px;
+        height: 59px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        background: url("/campaign/favorite-plugins-assets/competition-prizes-title.png");
+    }
+
+    .gif-1,
+    .gif-2 {
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .gif-1 {
+        background-image: url("/campaign/favorite-plugins-assets/pt01@2x.png");
+    }
+
+    .gif-2 {
+        background-image: url("/campaign/favorite-plugins-assets/pt02@2x.png");
+    }
+
+    .competition-plugs {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: #F9F7FC;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .competition-plugs-box {
+        margin-top: 69px;
+    }
+
+    .section-tip {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .competition-prizes-tip {
+        font-size: 16px;
+        color: #202D40;
+        
+        height: 56px;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+
+    .competition-prizes-img, .special-awards-img , .today-awards-img,.already-awards-img{
+        height: 59px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .competition-prizes-img ,.already-awards-img{
+        width: 255px;
+    }
+
+    .special-awards-img , .today-awards-img{
+        width: 195px;
+    }
+    .special-awards-item-1 {
+        background: url("../image/gift03@2x.png");
+    }
+
+    .special-awards-item-2 {
+        background: url("../image/tb01@2x.png");
+    }
+
+    .special-awards-item-3 {
+        background: url("../image/tb03@2x.png");
+    }
+
+    .special-awards-item-4 {
+        background: url("../image/tb04@2x.png");
+    }
+
+    .special-awards-item-5 {
+        background: url("../image/tb05@2x.png");
+    }
+
+    .special-awards-item-6 {
+        background: url("../image/tb02@2x.png");
+    }
+    .special-awards-item-1,
+    .special-awards-item-2,
+    .special-awards-item-3,
+    .special-awards-item-4,
+    .special-awards-item-5,
+    .special-awards-item-6 {
+        padding-bottom: 53%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        margin-bottom: 40px;
+    }
+    .special-awards-tip {
+        color: #202D40;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .view-details-1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .view-details-2 {
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    .view-details-3 {
+        color: #fff;
+        display: inline-block;
+        background: linear-gradient(-90deg, #006EFF 0%, #00A4FF 50.56%, #00E8FF 100%);
+        border-radius: 18px 18px 18px 18px;
+        box-shadow: 0 8px 16px 0 rgba(0,194,255,0.10);
+        height: 36px;
+        line-height: 36px;
+        width: 120px;
+        margin-bottom:36px;
+        transition: box-shadow 0.4s;
+    }
+    .view-details-3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 194, 255, 0.60);
+    }
+    .active-container{
+        padding: 30px 0;
+        height: 220px;
+        overflow: hidden;
+        transition: all linear .4s;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .showAll{
+        height:1580px;
+    }
+    .lottery-not-start-img-container{
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 719px;
+        height: 473px;
+
+    }
+    .lottery-not-start-img-container img{
+        display: block;
+        width: 100%;
+    }
+    .lottery-not-start-tip{
+        color: #606C80;
+        font-size: 30px;
+        height: 42px;
+        letter-spacing: 0;
+        
+    }
+    .lottery-not-start-detail{
+        color: #4A36A8;
+        font-size: 14px;
+        height: 20px;
+        font-weight: bold;
+    }
+    .already-awards-tip{
+        color: #202D40;
+        font-size: 16px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+    }
+    .competition-plugs-title{
+        display: block;
+        height: 22px;
+        color: #202D40;
+        font-size: 16px;
+    }
+    .competition-plugs-guest{
+        height: 17px;
+        color: #606C80;
+        font-size: 12px;
+    }
+    .weChat-block{
+        position: fixed;
+        
+        bottom: 70px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .weChat-img{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 120px;
+        height: 170px;
+        background: url("/campaign/favorite-plugins-assets/Qr code@2x.png") no-repeat;
+        background-size: cover;
+        top:-90%;
+        left:-35%;
+        transition: opacity 0.4s;
+    }
+    .weChat-thunk{
+        width:100px;
+        height: 150px;
+        background: url("/campaign/favorite-plugins-assets/share-default@2x.png") no-repeat;
+        background-size: cover;
+    }
+    .weChat-block .weChat-thunk{
+        background-image: url("/campaign/favorite-plugins-assets/share-hover@2x.png");
+    }
+    .weChat-block .weChat-img{
+        visibility: visible;
+        opacity: 1;
+    }
+    .weChat-share-modal{
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:1200px){
+    .active-img{
+        width: 180px;
+        height: 170px;
+        background-size: contain;
+        position: absolute;
+        top:-30px;
+        right: -5%;
+    }
+    .showAll{
+        height:2275px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1202px) {
+    .circle-outer-1,
+    .circle-outer-2,
+    .circle-outer-3,
+    .circle-outer-4 {
+        top: 42px;
+        left: 32px;
+    }
+
+    .circle-inner-1,
+    .circle-inner-2,
+    .circle-inner-3,
+    .circle-inner-4 {
+        top: 47px;
+        left: 37px;
+    }
+
+
+    .time-bar-detail-1,
+    .time-bar-detail-2,
+    .time-bar-detail-3,
+    .time-bar-detail-4 {
+        width: 90px;
+    }
+    .main-tip{
+        margin-top:30px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    .competition-plugs-context{
+        position: absolute;
+        top:29px;
+        left: 15px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+        margin: 0 auto;
+        height: 60px;
+    }
+
+    .nav-detail {
+        display: none;
+    }
+
+    .nav-logo {
+        display: inline-block;
+        background: url('/campaign/favorite-plugins-assets/logo copy.png') no-repeat;
+        background-size: 100%;
+        width: 146px;
+        height: 19px;
+        margin-top: 18px;
+    }
+
+    .nav-hum { 
+        padding: 0 5px;
+        float: right;
+        font-weight: bold;
+        line-height: 60px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 120px;
+        border-radius: 23px;
+        border: 1px solid #fff;
+        padding: 5px 5px;
+        text-align: center;
+        margin: 10px 5px;
+    }
+    .main-tip{
+        margin-top:43px;
+    }
+    .line {
+        height: 1px;
+        margin: 50px 0;
+        background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    .circle {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-image: linear-gradient(-90deg, #DC6AFF 0%, #FF45AF 100%);
+
+    }
+
+    .schema-detail > li {
+        display: inline-block;
+        padding-right: 5px;
+        font-size: 0.8rem;
+    }
+
+    .time-bar-detail-time-1,
+    .time-bar-detail-time-2,
+    .time-bar-detail-time-3,
+    .time-bar-detail-time-4,
+    .time-bar-detail-txt-1,
+    .time-bar-detail-txt-2,
+    .time-bar-detail-txt-3,
+    .time-bar-detail-txt-4 {
+        font-size: 12px;
+    }
+
+    .circle-outer-1,
+    .circle-outer-2,
+    .circle-outer-3,
+    .circle-outer-4 {
+        font-size: 14px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .circle-inner-1,
+    .circle-inner-2,
+    .circle-inner-3,
+    .circle-inner-4 {
+        font-size: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .time-bar {
+        margin-top: 30px;
+        height: 94px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .time-bar-line {
+        margin-top: 45px;
+    }
+
+    .time-bar-detail-1,
+    .time-bar-detail-2,
+    .time-bar-detail-3,
+    .time-bar-detail-4 {
+        width: 60px;
+    }
+
+    .time-bar-detail-1 {
+        left: 8%;
+    }
+
+    .time-bar-detail-2 {
+        left: 30%;
+    }
+
+    .time-bar-detail-3 {
+        left: 58%;
+    }
+
+    .time-bar-detail-4 {
+        left: 78%;
+    }
+
+    .circle-outer-1,
+    .circle-outer-2,
+    .circle-outer-3,
+    .circle-outer-4 {
+        top: 38px;
+        left: 23px;
+    }
+
+    .circle-inner-1,
+    .circle-inner-2,
+    .circle-inner-3,
+    .circle-inner-4 {
+        top: 41px;
+        left: 26px;
+    }
+    .competition-plugs-box {
+        margin-top: 40px;
+    }
+    .competition-plugs {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: #F9F7FC;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        
+        
+    }
+    .view-details-1 {
+        overflow: hidden;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .view-details-2 {
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .view-details-3 {
+        color: #fff;
+        margin: 0 auto;
+        line-height: 36px;
+        width: 120px;
+        height: 36px;
+        background: linear-gradient(-90deg, #006EFF 0%, #00A4FF 50.56%, #00E8FF 100%);
+        box-shadow: 0 4px 13px 0 rgba(0,194,255,0.60);
+        border-radius: 18px 18px 18px 18px;
+        margin-bottom:30px;
+    }
+    .hide-P{
+        display:none;
+        margin: 0;
+    }
+    .competition-prizes-img {
+        width: 153px;
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url("/campaign/favorite-plugins-assets/competition-prizes-title.png") no-repeat;
+        background-size: contain;
+    }
+    .competition-prizes-tip {
+        color: #202D40;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+    }
+    .special-awards-img{
+        width: 117px;
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        background: url("../image/special-awards.png") no-repeat;
+        background-size: contain;
+    }
+    .today-awards-img{
+        width: 117px;
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url("../image/today-award.png") no-repeat;
+        background-size: contain;
+    }
+    .already-awards-img{
+        width: 117px;
+        height: 35px;
+        margin-top: 50px;
+        margin-bottom: 16px;
+        background: url("../image/title04.png") no-repeat;
+        background-size: contain;
+    }
+    .section-tip{
+        color: #202D40;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+    }
+
+
+    .gif-1,
+    .gif-2 {
+        width: 100%;
+        height: 186px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center
+    }
+
+    .gif-1 {
+        background-image: url("/campaign/favorite-plugins-assets/pt01.png");
+    }
+
+    .gif-2 {
+        background-image: url("/campaign/favorite-plugins-assets/pt02.png");
+    }
+    .special-awards-item-1 {
+        background: url("/campaign/favorite-plugins-assets/gift03.png");
+    }
+
+    .special-awards-item-2 {
+        background: url("/campaign/favorite-plugins-assets/tb01.png");
+    }
+
+    .special-awards-item-3 {
+        background: url("/campaign/favorite-plugins-assets/tb03.png");
+    }
+
+    .special-awards-item-4 {
+        background: url("/campaign/favorite-plugins-assets/tb04.png");
+    }
+
+    .special-awards-item-5 {
+        background: url("/campaign/favorite-plugins-assets/tb05.png");
+    }
+
+    .special-awards-item-6 {
+        background: url("/campaign/favorite-plugins-assets/tb02.png");
+    }
+    .special-awards-item-1,
+    .special-awards-item-2,
+    .special-awards-item-3,
+    .special-awards-item-4,
+    .special-awards-item-5,
+    .special-awards-item-6 {
+        padding-bottom: 53%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 30px;
+    }
+    .active-container{
+        padding: 30px 0;
+        height: 690px;
+        overflow: hidden;
+    }
+    .showAll{
+        height:4550px;
+    }
+    .special-awards-tip{
+        color: #202D40;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+    .lottery-not-start-img-container{
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 40px;
+
+    }
+    .lottery-not-start-img-container img{
+        display: block;
+        width: 100%;
+    }
+    .lottery-not-start-tip{
+        color: #606C80;
+        font-size: 18px;
+        height: 22px;
+        letter-spacing: 0;
+        
+    }
+    .lottery-not-start-detail{
+        color: #4A36A8;
+        font-size: 12px;
+        height: 20px;
+        font-weight: bold;
+    }
+    .competition-plugs-title{
+        display: block;
+        height: 22px;
+        color: #202D40;
+        font-size: 14px;
+    }
+    .competition-plugs-guest{
+        height: 17px;
+        color: #606C80;
+        font-size: 12px;
+    }
+    .already-awards-tip{
+        color: #202D40;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .weChat-block{
+        position: fixed;
+        bottom:30px;
+        right: 5px;
+        z-index: 10;
+    }
+    .weChat-thunk{
+        width:60px;
+        height: 132px;
+        background: url("/campaign/favorite-plugins-assets/share-hover.png") no-repeat;
+        background-size: cover;
+    }
+    .weChat-share-modal{
+        display: none;
+        position: fixed;
+        z-index: 11;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background-color: rgba(0,0,0,.6);
+    }
+    .arrow-logo{
+        float: right;
+        padding-top:20px;
+        padding-right: 25px;
+        width: 85px;
+        height: 100px;
+    }
+    .arrow-logo img{
+        width: 100%;
+    }
+    .weChat-share-modal-context{
+        width: 280px;
+        margin: 0 auto;
+        clear: both;
+        padding-top: 10px;
+    }
+    .weChat-share-modal-font{
+        margin: 0;
+        color: #FFFFFF;
+        font-size: 17px;
+        text-align: center;
+        line-height: 26px;
+    }
+    .weChat-share-modal-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .weChat-share-modal-readMore{
+        display: block;
+        color: #00A4FF;
+        font-size: 17px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    
+}

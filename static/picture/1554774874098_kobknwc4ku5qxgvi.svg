@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>腾讯云 TSF</title>
+    <desc>Created with Sketch.</desc>
+    <g id="腾讯云-TSF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-20-Copy-4">
+            <rect id="Rectangle-Copy-5" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+            <g id="1521199259416-32" transform="translate(2.000000, 2.000000)" fill="#00A4FF">
+                <rect id="Rectangle" x="4" y="0" width="24" height="2"></rect>
+                <rect id="Rectangle" x="0" y="4" width="2" height="15"></rect>
+                <polygon id="Path" points="4 0 0 4 2 5 5 2"></polygon>
+                <rect id="Rectangle" x="4" y="26" width="20" height="2"></rect>
+                <rect id="Rectangle" x="0" y="19" width="2" height="5"></rect>
+                <rect id="Rectangle" x="26" y="5" width="2" height="19"></rect>
+                <polygon id="Path" points="4 28 0 24 2 23 5 26"></polygon>
+                <polygon id="Path" points="24 28 28 24 26 23 23 26"></polygon>
+                <polygon id="Path" points="6 12 14 16 14 14 6 10"></polygon>
+                <polygon id="Path" points="14 14 22 10 22 12 14 16"></polygon>
+                <polygon id="Path" points="6 16 14 12 14 14 6 18"></polygon>
+                <polygon id="Path" points="14 14 22 18 22 16 14 12"></polygon>
+                <circle id="Oval" cx="14" cy="7" r="2"></circle>
+                <path d="M11,7.5 L6,10 L6,12 L11.8,9.1 C11.3978865,8.64588158 11.1220266,8.09416185 11,7.5 Z" id="Path"></path>
+                <path d="M17,7.5 C16.8993632,8.10134306 16.6206924,8.65868473 16.2,9.1 L22,12 L22,10 L17,7.5 Z" id="Path"></path>
+                <circle id="Oval" cx="14" cy="21" r="2"></circle>
+                <path d="M11.8,18.9 L6,16 L6,18 L11,20.5 C11.1220266,19.9058382 11.3978865,19.3541184 11.8,18.9 Z" id="Path"></path>
+                <path d="M16.2,18.9 C16.6207432,19.3412796 16.8994223,19.8986377 17,20.5 L22,18 L22,16 L16.2,18.9 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

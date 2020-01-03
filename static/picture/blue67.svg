@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>基础通信-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础通信-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <path d="M27,25 L25,25 L25,3 L7,3 L7,29 L27,29 L27,31 L5,31 L5,1 L27,1 L27,25 Z M23,11 L23,17 L13,17 L13,19 L9,15 L21,15 L21,11 L23,11 Z M19,5 L23,9 L11,9 L11,13 L9,13 L9,7 L19,7 L19,5 Z M18,24 L14,24 L14,22 L18,22 L18,24 Z M13,11 L15,11 L15,13 L13,13 L13,11 Z M17,11 L19,11 L19,13 L17,13 L17,11 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>腾讯智能对话平台-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="腾讯智能对话平台-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="32" transform="translate(1.000000, 3.000000)" fill="#7C848E">
+            <g id="Group-7" fill-rule="nonzero">
+                <path d="M3.73243561,1 L27,1 L29,1 L29,19 L27,19 L27,3 L3.73243561,3 C3.38662619,3.59780137 2.74028236,4 2,4 C0.8954305,4 0,3.1045695 0,2 C0,0.8954305 0.8954305,0 2,0 C2.74028236,0 3.38662619,0.40219863 3.73243561,1 Z M26.2675644,25 L3,25 L1,25 L1,7 L3,7 L3,23 L26.2675644,23 C26.6133738,22.4021986 27.2597176,22 28,22 C29.1045695,22 30,22.8954305 30,24 C30,24.5041725 29.8134462,24.964773 29.5056016,25.3165385 C29.1390029,25.7354408 28.600397,26 28,26 C27.2597176,26 26.6133738,25.5978014 26.2675644,25 Z" id="Combined-Shape"></path>
+            </g>
+            <path d="M8,14.6153846 L8.78431373,14 L9.1764706,14 L18,14 L18,8 L8,8 L8,14.6153846 Z M6,6 L20,6 L20,16 L8.66666667,16 L6,18 L6,6 Z" id="Rectangle-Copy-27" fill-rule="nonzero" transform="translate(13.000000, 12.000000) scale(-1, 1) translate(-13.000000, -12.000000) "></path>
+            <polygon id="Combined-Shape" points="20 12 20 10 25 10 25 20 13.6666667 20 11 22 11 16 13 16 13 18.6153846 13.7843137 18 14.1764706 18 23 18 23 12"></polygon>
+            <circle id="Oval" cx="10" cy="11" r="1"></circle>
+            <circle id="Oval-Copy-4" cx="13" cy="11" r="1"></circle>
+            <circle id="Oval-Copy-5" cx="16" cy="11" r="1"></circle>
+        </g>
+    </g>
+</svg>

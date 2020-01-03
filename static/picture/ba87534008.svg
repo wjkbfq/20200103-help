@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>物联卡-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="物联卡-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(1.000000, 1.000000)" fill="#7C848E">
+            <rect id="Rectangle-71" x="7" y="9" width="2" height="13"></rect>
+            <rect id="Rectangle-71-Copy-2" x="15" y="13" width="2" height="9"></rect>
+            <rect id="Rectangle-71-Copy-4" x="11" y="13" width="2" height="4"></rect>
+            <rect id="Rectangle-71-Copy-3" x="18" y="13" width="2" height="9"></rect>
+            <polygon id="Rectangle-71-Copy" points="22 12 24 12.5934109 24 22 22 22"></polygon>
+            <rect id="Rectangle-74" x="7" y="20" width="16" height="2"></rect>
+            <rect id="Rectangle-74-Copy-3" x="12" y="13" width="7" height="2"></rect>
+            <polygon id="Rectangle-74-Copy" points="7 9 20.411026 9 20 11 7 11"></polygon>
+            <polygon id="Rectangle-74-Copy-2" transform="translate(21.603553, 11.603553) rotate(45.000000) translate(-21.603553, -11.603553) " points="18.9215729 10.6035534 23.9885492 10.6035534 24.2814336 10.8964378 24.2855339 12.6035534 18.9215729 12.6035534"></polygon>
+            <circle id="Oval-28" cx="12" cy="18" r="2"></circle>
+            <path d="M15.0360687,28.0004791 C8.11442647,28.0085887 2.40020596,22.5918552 2.03859105,15.6796607 C1.67697614,8.76746629 6.79479207,2.78404937 13.6794961,2.06987306 C20.5642002,1.35569675 26.8011952,6.16123631 27.8660687,13.0004791 L29.8660687,13.0004791 C28.8133703,5.17573571 21.8753549,-0.493528697 13.9977603,0.0339993612 C6.12016569,0.561527419 -4.34097203e-14,7.10524111 -4.4408921e-14,15.0004791 C-4.54081217e-14,22.8957171 6.12016569,29.4394308 13.9977603,29.9669588 C21.8753549,30.4944869 28.8133703,24.8252225 29.8660687,17.0004791 L27.8660687,17.0004791 C26.8811903,23.3260041 21.4378026,27.9929773 15.0360687,28.0004791 Z" id="_复合路径_-path"></path>
+        </g>
+    </g>
+</svg>

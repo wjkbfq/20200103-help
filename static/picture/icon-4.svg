@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>教学白板</title>
+    <desc>Created with Sketch.</desc>
+    <g id="教学白板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-40" transform="translate(1.000000, 1.000000)">
+            <rect id="矩形-copy-97" stroke="#7B848E" x="0.5" y="0.5" width="13" height="8"></rect>
+            <rect id="矩形-copy-98" fill="#7B848E" opacity="0.293247768" x="2" y="2" width="10" height="5"></rect>
+            <rect id="矩形-copy-99" fill="#7B848E" x="0" y="10" width="14" height="1"></rect>
+            <g id="分组-39-copy" transform="translate(4.000000, 10.000000)" fill="#7B848E">
+                <rect id="矩形-copy-94" transform="translate(5.153887, 2.050395) rotate(70.000000) translate(-5.153887, -2.050395) " x="3.1538866" y="1.55039531" width="4" height="1"></rect>
+                <rect id="矩形-copy-95" transform="translate(1.153887, 2.050395) scale(-1, 1) rotate(70.000000) translate(-1.153887, -2.050395) " x="-0.846113403" y="1.55039531" width="4" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

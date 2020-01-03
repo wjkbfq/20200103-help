@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>11安全预警32x32白色</title>
+  <g>
+    <path d="M29,1.5H3V16.7s.1,10.8,13,13.8c12.9-3,13-13.8,13-13.8V7.5H27v9.2a11.583,11.583,0,0,1-1.4,4.8c-1.8,3.4-5.1,5.7-9.6,6.9C5.3,25.8,5,17.1,5,16.7V3.5H29Z" style="fill: #fff"/>
+    <rect x="14.905" y="7.768" width="2" height="10" style="fill: #fff"/>
+    <rect x="14.905" y="20.329" width="2" height="2" style="fill: #fff"/>
+  </g>
+</svg>

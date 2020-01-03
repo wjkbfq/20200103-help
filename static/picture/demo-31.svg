@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>demo-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="91.3232422%" y2="92.7856445%" id="linearGradient-1">
+            <stop stop-color="#00C6DE" offset="0%"></stop>
+            <stop stop-color="#00ABF9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="短视频完稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="短视频产品介绍页3-1" transform="translate(-892.000000, -828.000000)" stroke="#00A4FF" stroke-width="2">
+            <g id="demo-3" transform="translate(892.000000, 828.000000)">
+                <circle id="Oval-5-Copy-2" cx="40" cy="40" r="39"></circle>
+                <g id="Group-17" transform="translate(21.000000, 23.000000)">
+                    <g id="Group-16-Copy" transform="translate(19.000000, 17.500000) scale(-1, 1) translate(-19.000000, -17.500000) ">
+                        <g id="Group-13" transform="translate(8.000000, 0.000000)">
+                            <path d="M1,1 L16.875,29.3125" id="Line-2" stroke-linecap="square"></path>
+                            <circle id="Oval-3" cx="23" cy="28" r="6"></circle>
+                        </g>
+                        <g id="Group-13-Copy" transform="translate(15.000000, 17.500000) scale(-1, 1) translate(-15.000000, -17.500000) ">
+                            <path d="M1,1 L16.875,29.3125" id="Line-2" stroke-linecap="square"></path>
+                            <circle id="Oval-3" cx="23" cy="28" r="6"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

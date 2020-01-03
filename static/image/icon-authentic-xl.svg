@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>认证考试</title>
+    <desc>Created with Sketch.</desc>
+    <g id="认证考试" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy" transform="translate(0.000000, 3.000000)">
+            <rect id="Rectangle-23" stroke="#334966" stroke-width="2" x="1" y="1" width="46" height="40"></rect>
+            <polygon id="Rectangle-57" fill="#00A4FF" points="28 23 33 24 38 23 38 35 33 32 28 35"></polygon>
+            <circle id="Oval-21" stroke="#334966" stroke-width="2" cx="33" cy="16" r="8"></circle>
+            <rect id="Rectangle-58" fill="#334966" x="8" y="12" width="10" height="2"></rect>
+            <rect id="Rectangle-58-Copy" fill="#334966" x="8" y="20" width="10" height="2"></rect>
+            <rect id="Rectangle-58-Copy-2" fill="#334966" x="8" y="28" width="10" height="2"></rect>
+            <circle id="Oval-24" fill="#00A4FF" cx="33" cy="16" r="4"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>云智大数据平台-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="云智大数据平台-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="image-3-01" transform="translate(0.000000, 3.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M4.72,3 L28,3 L28,18 L30,18 L30,1 L4.72,1 C4.26739432,0.216063969 3.34467813,-0.166137592 2.4703111,0.0681483474 C1.59594407,0.302434286 0.987949192,1.09478864 0.987949192,2 C0.987949192,2.90521136 1.59594407,3.69756571 2.4703111,3.93185165 C3.34467813,4.16613759 4.26739432,3.78393603 4.72,3 Z M20,10 L18,10 L18,12 L20,12 L20,10 Z M24,20 L24,6 L8,6 L8,20 L24,20 Z M10,12 L16,12 L16,10 L10,10 L10,8 L22,8 L22,14 L16,14 L16,16 L22,16 L22,18 L10,18 L10,12 Z M29,22 C28.2897779,22.0042869 27.6351046,22.3849109 27.28,23 L4,23 L4,8 L2,8 L2,25 L27.28,25 C27.7660656,25.8418497 28.7870648,26.2122842 29.6998631,25.8779642 C30.6126615,25.5436442 31.1528813,24.6014004 30.9802345,23.6447584 C30.8075876,22.6881165 29.9720785,21.9941529 29,22 Z M12,16 L14,16 L14,14 L12,14 L12,16 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

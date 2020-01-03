@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>验证码-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="验证码-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="dac12c04ddfc693a490081f535ed3d95" transform="translate(3.000000, 2.000000)" fill="#00A4FF">
+            <path d="M26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 L24,15.2 C23.8883505,16.8828428 23.4105534,18.5210042 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L26,2 L26,0 Z" id="Path"></path>
+            <polygon id="Path" points="12.8733398 16.2602136 20.262767 8.87078644 18.926767 7.53478644 12.8693398 13.5922136 10.573233 11.2961068 9.23723305 12.6311068 12.6163398 16.0102136"></polygon>
+            <path d="M20,10.8492424 L20,19 L6,19 L6,5 L17.363961,5 L15.363961,7 L8,7 L8,17 L18,17 L18,12.8492424 L20,10.8492424 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

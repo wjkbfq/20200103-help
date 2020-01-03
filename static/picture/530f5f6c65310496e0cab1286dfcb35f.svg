@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>多格式预览</title>
+    <desc>Created with Sketch.</desc>
+    <g id="多格式预览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1541160466561-48x48" transform="translate(0.000000, 3.000000)">
+            <path d="M2,2 L2,36 L46,36 L46,2 L2,2 Z M0,0 L48,0 L48,38 L0,38 L0,0 Z" id="Rectangle-16" fill="#334966" fill-rule="nonzero"></path>
+            <path d="M24,27 C29.0152317,27 33.6818983,24.3333333 38,19 C33.6818983,13.6666667 29.0152317,11 24,11 C18.9847683,11 14.3181017,13.6666667 10,19 C14.3181017,24.3333333 18.9847683,27 24,27 Z M24,13 C27.9592209,13 31.7358282,14.9548863 35.3730346,19 C31.7358282,23.0451137 27.9592209,25 24,25 C20.0407791,25 16.2641718,23.0451137 12.6269654,19 C16.2641718,14.9548863 20.0407791,13 24,13 Z" id="椭圆形" fill="#334966" fill-rule="nonzero"></path>
+            <circle id="椭圆形" fill="#00A4FF" cx="24" cy="19" r="5"></circle>
+            <rect id="Rectangle-17" fill="#334966" fill-rule="nonzero" x="12" y="40" width="24" height="2"></rect>
+            <circle id="Oval-5" fill="#00A4FF" fill-rule="nonzero" cx="5" cy="5" r="1"></circle>
+            <circle id="Oval-5-Copy" fill="#334966" fill-rule="nonzero" cx="8" cy="5" r="1"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>使用调试功能进行 Java debug &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='Cloud Studio 简介' href='about-new-cloud-studio.html'>
+<link rel='next' title='如何将 Cloud Studio 的 SSH 公钥添加到其它 Git 平台？' href='how-to-add-ssh.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6162'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Fjava-debug">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Fjava-debug&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6162 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="cloud-studio.html" title="View all posts in Cloud Studio">
+                        <span itemprop="name">Cloud Studio</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="使用调试功能进行 Java debug">
+                        <span itemprop="name">使用调试功能进行 Java debug</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6162" class="post-6162 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-cloud-studio" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				使用调试功能进行 Java debug			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/cloud-studio/java-debug" rel="bookmark" itemprop="url"><time datetime="2018-10-11" itemprop="datePublished">2018年10月11日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/lijun" title="李, 俊" rel="me" itemprop="author">李, 俊</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/cloud-studio" rel="tag">Cloud Studio</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div class="markdown-here-wrapper" data-md-url="https://dev.tencent.com/help/wp-admin/post.php?post=6162&amp;action=edit">
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">Cloud Studio 提供 Java Debug 功能，帮助开发者调试 Java 代码。这篇文章将介绍如何使用 Cloud Studio 进行 Java Debug。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">首先，进入<a href="workspace.html">工作空间创建页面</a>，选择「从模板创建」并选择「JavaDemo」，来创建一个 Java 工作空间。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/e91d046a-7216-4b9c-a4c4-edab9af3.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">Cloud Studio 会自动识别到这是 Java 项目并将语言服务设置为 Java，你可以点击左上角 logo ，进入设置-语言服务器来选择项目类型和源代码目录。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/8a2343f0-6626-49b1-89a0-4f0ace08.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">接下来，我们要在终端运行 <code style="font-size: 0.85em; font-family: 'Roboto Mono', Menlo, Monaco, Courier, monospace; margin: 0px 0.15em; padding: 1px 5px; border: 1px solid #eaeaea; background-color: #f8f8f8; border-radius: 0px; display: inline;">mvn dependency:resolve</code> 解析项目依赖。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/68d9edda-0013-432a-ac44-a9ac9ffd.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">现在，将鼠标移动到要调试的行左侧，会出现红色的断点，点击它则在此行打上断点。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/f5e98b51-ed4f-4784-8e2c-2a869c98.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">打开右侧的「调试」面板，点击绿色的三角形按钮开始调试。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/2d4add42-c350-4e95-9fa4-c2aeb9e3.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">此时，Cloud Studio 会自动打开终端，将应用运行起来。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/5f8f171d-1fa9-4c1c-93d2-34fbbb5c.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">上一步我们已经启动了这个 Java 应用，现在选中右侧「访问链接」面板，点击上面的“＋”，创建一个访问链接。我们点击这个链接，去访问这个应用的网页。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/8bdb5a7c-c82e-465e-a05f-9a82dbc3.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">此时，可以看到左侧断点处变成了一个小箭头，说明程序运行到这里暂停了，访问链接的网页也停在那里。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/5ae1d216-8e67-4204-ba23-bfc2c2bf.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">与此同时，在右侧的调试面板中出现了本地变量和调用栈列表，你就可以通过上面的一系列按钮操作和这些信息来调试代码，找出错误所在了。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/58c342ca-c522-4e3c-8ccb-f0cac66a.jpg" alt=""></p>
+<div style="height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; font-size: 0em; padding: 0; margin: 0;" title="MDH:PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEt
+b2Zmc2V0LWtleT0iM2gzYzUtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIz
+aDNjNS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iM2gzYzUtMC0wIj5DbG91ZCBTdHVkaW8g
+5o+Q5L6bIEphdmEgRGVidWcg5Yqf6IO977yM5biu5Yqp5byA5Y+R6ICF6LCD6K+VIEphdmEg5Luj
+56CB44CC6L+Z56+H5paH56ug5bCG5LuL57uN5aaC5L2V5L2/55SoIENsb3VkIFN0dWRpbyDov5vo
+oYwgSmF2YSBEZWJ1Z+OAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxv
+Y2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSI2cnMwcC0wLTAi
+PjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRT
+dHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjZyczBwLTAtMCI+PHNwYW4gZGF0YS1v
+ZmZzZXQta2V5PSI2cnMwcC0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIg
+ZGF0YS1vZmZzZXQta2V5PSJkaWFpZC0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9ImRpYWlkLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJkaWFpZC0wLTAiPummluWFiO+8
+jOi/m+WFpVvlt6XkvZznqbrpl7TliJvlu7rpobXpnaJdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5j
+ZW50LmNvbS9kYXNoYm9hcmQvd29ya3NwYWNlL2NyZWF0ZSnvvIzpgInmi6njgIzku47mqKHmnb/l
+iJvlu7rjgI3lubbpgInmi6njgIxKYXZhRGVtb+OAje+8jOadpeWIm+W7uuS4gOS4qiBKYXZhIOW3
+peS9nOepuumXtOOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9
+InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSJkN2ZnOC0wLTAiPiZu
+YnNwOzwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJt
+ZXVlIiBkYXRhLW9mZnNldC1rZXk9Ijd0M3VtLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zm
+c2V0LWtleT0iN3QzdW0tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9Ijd0M3VtLTAtMCI+IVtd
+KGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vZTkxZDA0NmEt
+NzIxNi00YjljLWE0YzQtZWRhYjlhZjM3NTMwLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBj
+bGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0
+LWtleT0iYWhza2EtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxv
+Y2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJhaHNrYS0w
+LTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iYWhza2EtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVl
+Ij48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRh
+LWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iMWxnNGYtMC0wIj48ZGl2IGNsYXNzPSJw
+dWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0
+ciIgZGF0YS1vZmZzZXQta2V5PSIxbGc0Zi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iMWxn
+NGYtMC0wIj5DbG91ZCBTdHVkaW8g5Lya6Ieq5Yqo6K+G5Yir5Yiw6L+Z5pivIEphdmEg6aG555uu
+5bm25bCG6K+t6KiA5pyN5Yqh6K6+572u5Li6IEphdmHvvIzkvaDlj6/ku6Xngrnlh7vlt6bkuIro
+p5IgbG9nbyDvvIzov5vlhaXorr7nva4t6K+t6KiA5pyN5Yqh5Zmo5p2l6YCJ5oup6aG555uu57G7
+5Z6L5ZKM5rqQ5Luj56CB55uu5b2V44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIg
+ZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9ImM2
+anNrLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1Ymxp
+Yy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iYzZqc2stMC0wIj48c3Bh
+biBkYXRhLW9mZnNldC1rZXk9ImM2anNrLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFu
+PjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9
+ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9ImNvZGdtLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURy
+YWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEt
+b2Zmc2V0LWtleT0iY29kZ20tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImNvZGdtLTAtMCI+
+IVtdKGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vOGEyMzQz
+ZjAtNjYyNi00OWIxLTg5YTAtNGYwYWNlMDhkNWViLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRp
+diBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zm
+c2V0LWtleT0iZTQ4anYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQt
+YmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJlNDhq
+di0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZTQ4anYtMC0wIj48YnIgZGF0YS10ZXh0PSJ0
+cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBk
+YXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iNDNxa3EtMC0wIj48ZGl2IGNsYXNz
+PSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0
+LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI0M3FrcS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0i
+NDNxa3EtMC0wIj7mjqXkuIvmnaXvvIzmiJHku6zopoHlnKjnu4jnq6/ov5DooYwgYG12biBkZXBl
+bmRlbmN5OnJlc29sdmVgIOino+aekOmhueebruS+nei1luOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48
+ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1v
+ZmZzZXQta2V5PSIxbm84NS0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjFu
+bzg1LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSIxbm84NS0wLTAiPjxiciBkYXRhLXRleHQ9
+InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUi
+IGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSI4cGRjLTAtMCI+PGRpdiBjbGFz
+cz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iOHBkYy0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0i
+OHBkYy0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHVi
+LmNuLzY4ZDllZGRhLTAwMTMtNDMyYS1hYzQ0LWE5YWM5ZmZkNTQwYS5qcGcpPC9zcGFuPjwvZGl2
+PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVl
+IiBkYXRhLW9mZnNldC1rZXk9ImU3ZTV2LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5
+bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0
+LWtleT0iZTdlNXYtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImU3ZTV2LTAtMCI+PGJyIGRh
+dGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9j
+az0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9IjFmMjY1LTAtMCI+
+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0
+eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMWYyNjUtMC0wIj48c3BhbiBkYXRhLW9m
+ZnNldC1rZXk9IjFmMjY1LTAtMCI+546w5Zyo77yM5bCG6byg5qCH56e75Yqo5Yiw6KaB6LCD6K+V
+55qE6KGM5bem5L6n77yM5Lya5Ye6546w57qi6Imy55qE5pat54K577yM54K55Ye75a6D5YiZ5Zyo
+5q2k6KGM5omT5LiK5pat54K544CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0
+YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9IjMxMmgw
+LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1E
+cmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMzEyaDAtMC0wIj48c3BhbiBk
+YXRhLW9mZnNldC1rZXk9IjMxMmgwLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwv
+ZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJt
+ZXVlIiBkYXRhLW9mZnNldC1rZXk9IjlqOHNuLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zm
+c2V0LWtleT0iOWo4c24tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjlqOHNuLTAtMCI+IVtd
+KGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vZjVlOThiNTEt
+ZWQ0Zi00Nzg0LThlMmMtMmE4NjljOTgwNWNlLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBj
+bGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0
+LWtleT0iNTM2cC0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9j
+ayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjUzNnAtMC0w
+Ij48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjUzNnAtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48
+L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVk
+aXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iNGxxa28tMC0wIj48ZGl2IGNsYXNzPSJwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIg
+ZGF0YS1vZmZzZXQta2V5PSI0bHFrby0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iNGxxa28t
+MC0wIj7miZPlvIDlj7PkvqfnmoTjgIzosIPor5XjgI3pnaLmnb/vvIzngrnlh7vnu7/oibLnmoTk
+uInop5LlvaLmjInpkq7lvIDlp4vosIPor5XjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFz
+cz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtl
+eT0iZDg5OTMtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sg
+cHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJkODk5My0wLTAi
+PjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZDg5OTMtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48
+L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVk
+aXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iZXVwb3UtMC0wIj48ZGl2IGNsYXNzPSJwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIg
+ZGF0YS1vZmZzZXQta2V5PSJldXBvdS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZXVwb3Ut
+MC0wIj4hW10oaHR0cHM6Ly9kbi1jb2RpbmctbmV0LXByb2R1Y3Rpb24tcHAuY29kZWh1Yi5jbi8y
+ZDRhZGQ0Mi1jMzUwLTRlOTUtOWZhNC1jMmFlYjllM2M1ZDkuanBnKTwvc3Bhbj48L2Rpdj48L2Rp
+dj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0
+YS1vZmZzZXQta2V5PSI1a2lucS0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVm
+YXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9
+IjVraW5xLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI1a2lucS0wLTAiPjxiciBkYXRhLXRl
+eHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRy
+dWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSI0dW50My0wLTAiPjxkaXYg
+Y2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURl
+ZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjR1bnQzLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQt
+a2V5PSI0dW50My0wLTAiPuatpOaXtu+8jENsb3VkIFN0dWRpbyDkvJroh6rliqjmiZPlvIDnu4jn
+q6/vvIzlsIblupTnlKjov5DooYzotbfmnaXjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFz
+cz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtl
+eT0iMWQ0Y20tMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sg
+cHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIxZDRjbS0wLTAi
+PjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iMWQ0Y20tMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48
+L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVk
+aXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iOHJuaHQtMC0wIj48ZGl2IGNsYXNzPSJwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIg
+ZGF0YS1vZmZzZXQta2V5PSI4cm5odC0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iOHJuaHQt
+MC0wIj4hW10oaHR0cHM6Ly9kbi1jb2RpbmctbmV0LXByb2R1Y3Rpb24tcHAuY29kZWh1Yi5jbi81
+ZjhmMTcxZC0xZmE5LTRjMWMtOTNkMi0zNGZiYmI1Y2VkZjAuanBnKTwvc3Bhbj48L2Rpdj48L2Rp
+dj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0
+YS1vZmZzZXQta2V5PSI3ZDU1bi0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVm
+YXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9
+IjdkNTVuLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI3ZDU1bi0wLTAiPjxiciBkYXRhLXRl
+eHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRy
+dWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSJmcjdjay0wLTAiPjxkaXYg
+Y2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURl
+ZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImZyN2NrLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQt
+a2V5PSJmcjdjay0wLTAiPuS4iuS4gOatpeaIkeS7rOW3sue7j+WQr+WKqOS6hui/meS4qiBKYXZh
+IOW6lOeUqO+8jOeOsOWcqOmAieS4reWPs+S+p+OAjOiuv+mXrumTvuaOpeOAjemdouadv++8jOeC
+ueWHu+S4iumdoueahOKAnO+8i+KAne+8jOWIm+W7uuS4gOS4quiuv+mXrumTvuaOpeOAguaIkeS7
+rOeCueWHu+i/meS4qumTvuaOpe+8jOWOu+iuv+mXrui/meS4quW6lOeUqOeahOe9kemhteOAgjwv
+c3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRp
+dG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSJhOTRlMy0wLTAiPjxkaXYgY2xhc3M9InB1Ymxp
+Yy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBk
+YXRhLW9mZnNldC1rZXk9ImE5NGUzLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJhOTRlMy0w
+LTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIi
+IGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5PSJk
+czZiYi0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImRzNmJiLTAtMCI+PHNw
+YW4gZGF0YS1vZmZzZXQta2V5PSJkczZiYi0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQt
+cHJvZHVjdGlvbi1wcC5jb2RlaHViLmNuLzhiZGI1YTdjLWM4MmUtNDY1ZS1hMDVmLTlhODJkYmMz
+ZWUzYy5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1
+ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9ImViNTZkLTAtMCI+PGRpdiBj
+bGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVm
+YXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iZWI1NmQtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1r
+ZXk9ImViNTZkLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2Pjxk
+aXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9m
+ZnNldC1rZXk9Ijc3YjRuLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0
+LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iNzdi
+NG4tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9Ijc3YjRuLTAtMCI+5q2k5pe277yM5Y+v5Lul
+55yL5Yiw5bem5L6n5pat54K55aSE5Y+Y5oiQ5LqG5LiA5Liq5bCP566t5aS077yM6K+05piO56iL
+5bqP6L+Q6KGM5Yiw6L+Z6YeM5pqC5YGc5LqG77yM6K6/6Zeu6ZO+5o6l55qE572R6aG15Lmf5YGc
+5Zyo6YKj6YeM44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0i
+dHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRhLW9mZnNldC1rZXk9IjJxMG12LTAtMCI+PGRp
+diBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMnEwbXYtMC0wIj48c3BhbiBkYXRhLW9mZnNl
+dC1rZXk9IjJxMG12LTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2
+PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImJtZXVlIiBkYXRh
+LW9mZnNldC1rZXk9ImZmaG5oLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZh
+dWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0i
+ZmZobmgtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImZmaG5oLTAtMCI+IVtdKGh0dHBzOi8v
+ZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vNWFlMWQyMTYtOGU2Ny00MjA0
+LWJhMjMtYmZjMmMyYmZmODkwLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBk
+YXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iZmQx
+YmstMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJmZDFiay0wLTAiPjxzcGFu
+IGRhdGEtb2Zmc2V0LWtleT0iZmQxYmstMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+
+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0i
+Ym1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iODcwaGYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJh
+ZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1v
+ZmZzZXQta2V5PSI4NzBoZi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iODcwaGYtMC0wIj7k
+uI7mraTlkIzml7bvvIzlnKjlj7PkvqfnmoTosIPor5XpnaLmnb/kuK3lh7rnjrDkuobmnKzlnLDl
+j5jph4/lkozosIPnlKjmoIjliJfooajvvIzkvaDlsLHlj6/ku6XpgJrov4fkuIrpnaLnmoTkuIDn
+s7vliJfmjInpkq7mk43kvZzlkozov5nkupvkv6Hmga/mnaXosIPor5Xku6PnoIHvvIzmib7lh7rp
+lJnor6/miYDlnKjkuobjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJs
+b2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUiIGRhdGEtb2Zmc2V0LWtleT0iN2ZnYzYtMC0w
+Ij48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI3ZmdjNi0wLTAiPjxzcGFuIGRhdGEt
+b2Zmc2V0LWtleT0iN2ZnYzYtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+
+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYm1ldWUi
+IGRhdGEtb2Zmc2V0LWtleT0iM3BpdDEtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHls
+ZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQt
+a2V5PSIzcGl0MS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iM3BpdDEtMC0wIj4hW10oaHR0
+cHM6Ly9kbi1jb2RpbmctbmV0LXByb2R1Y3Rpb24tcHAuY29kZWh1Yi5jbi81OGMzNDJjYS1jNTIy
+LTRlM2MtOGNjYi1mMGNhYzY2YTUxNWQuanBnKTwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNz
+PSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJibWV1ZSIgZGF0YS1vZmZzZXQta2V5
+PSIyN3UzNC0wLTAiPiZuYnNwOzwvZGl2Pg==">​</div>
+</div>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="search.html" title="全文搜索功能介绍">全文搜索功能介绍</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2142</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="faq1.html" title="Cloud Studio 常见问题">Cloud Studio 常见问题</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    9781</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy-static.html" title="使用一键部署搭建静态网站">使用一键部署搭建静态网站</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    11698</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="access-link.html" title="使用访问链接演示你的应用">使用访问链接演示你的应用</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    17878</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="plugins1.html" title="Cloud Studio 插件介绍">Cloud Studio 插件介绍</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    7346</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy.html" title="一键部署使用指南">一键部署使用指南</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    31851</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

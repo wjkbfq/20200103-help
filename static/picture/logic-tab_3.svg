@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>微服务管理</title>
+    <desc>Created with Sketch.</desc>
+    <g id="微服务管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+        <path d="M31,26 L31,19 L28,19 L28,22 L20,22 L20,19 L17,19 L17,26 L20,26 L20,34 L12,34 L12,26 L15,26 L15,17 L16,17 L20,17 L20,14 L28,14 L28,17 L32,17 L33,17 L33,26 L36,26 L36,34 L28,34 L28,26 L31,26 Z M44,37 C45.7,37 47,38.3 47,40 C47,41.7 45.7,43 44,43 C42.7,43 41.6,42.2 41.2,41 L5,41 L3,41 L3,39 L3,14 L5,14 L5,39 L41.2,39 C41.6,37.8 42.7,37 44,37 Z M6.8,9 C6.4,10.2 5.3,11 4,11 C2.3,11 1,9.7 1,8 C1,6.3 2.3,5 4,5 C5.3,5 6.4,5.8 6.8,7 L43,7 L45,7 L45,9 L45,34 L43,34 L43,9 L6.8,9 Z M22,16 L22,20 L26,20 L26,16 L22,16 Z M14,28 L14,32 L18,32 L18,28 L14,28 Z M30,28 L30,32 L34,32 L34,28 L30,28 Z" id="Combined-Shape" fill="#7C848E"></path>
+    </g>
+</svg>

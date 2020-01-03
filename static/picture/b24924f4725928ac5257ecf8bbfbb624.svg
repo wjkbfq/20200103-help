@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="830px" height="326px" viewBox="0 0 830 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone 8 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iPhone-8-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Path" stroke="#888888" points="398 47.1099976 120 47.1099976 120 107.413417"></polyline>
+        <g id="Group" transform="translate(115.500000, 106.413417)" fill="#888888">
+            <polygon id="Path" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+        </g>
+        <polyline id="Path" stroke="#888888" transform="translate(574.476562, 77.261707) scale(-1, 1) translate(-574.476562, -77.261707) " points="713.476562 47.1099976 435.476563 47.1099976 435.476562 107.413417"></polyline>
+        <g id="Group" transform="translate(713.476562, 109.913417) scale(-1, 1) translate(-713.476562, -109.913417) translate(708.976562, 106.413417)" fill="#888888">
+            <polygon id="Path" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+        </g>
+        <path d="M415.483796,47.1099976 L415.483796,107.413417" id="Path" stroke="#888888"></path>
+        <g id="Group-Copy" transform="translate(410.983796, 106.413417)" fill="#888888">
+            <polygon id="Path" points="0 0.5 4.5 6.5 9 0.5"></polygon>
+        </g>
+        <g id="RectEndPoint1" transform="translate(5.000000, 114.070935)">
+            <polygon id="Rectangle" fill="#BBBBBB" opacity="0.6" points="2 2 227 2 227 197 2 197"></polygon>
+            <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="225" height="195"></rect>
+        </g>
+        <g id="RectEndPoint1-Copy" transform="translate(301.983796, 114.070935)">
+            <polygon id="Rectangle" fill="#BBBBBB" opacity="0.6" points="2 2 227 2 227 197 2 197"></polygon>
+            <rect id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" x="0" y="0" width="225" height="195"></rect>
+        </g>
+        <g id="RectEndPoint1-Copy-2" transform="translate(599.500000, 114.070935)">
+            <polygon id="Rectangle" fill="#BBBBBB" opacity="0.6" points="2 2 227 2 227 197 2 197"></polygon>
+            <polygon id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" points="0 0 225 0 225 195 0 195"></polygon>
+        </g>
+        <g id="RectEndPoint2" transform="translate(338.983796, 16.000000)">
+            <polygon id="Rectangle" fill="#BBBBBB" opacity="0.6" points="2 2 149 2 149 56 2 56"></polygon>
+            <polygon id="Rectangle" stroke="#E5E5E5" fill="#FFFFFF" points="0 0 147 0 147 54 0 54"></polygon>
+        </g>
+        <text id="产品功能" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400" fill="#333333">
+            <tspan x="377.483796" y="48.5">产品功能</tspan>
+        </text>
+        <g id="Group-6" transform="translate(35.500000, 142.570935)" font-family="PingFangSC-Medium, PingFang SC" font-weight="400">
+            <text id="拍摄身份证照片，可自动识别文字信息，减少" font-size="14" line-spacing="23" fill="#666666">
+                <tspan x="0" y="58.5616964">拍摄身份证照片，可自动</tspan>
+                <tspan x="0" y="81.5616964">识别文字信息，减少用户</tspan>
+                <tspan x="0" y="104.561696">输入，同时支持与权威库</tspan>
+                <tspan x="0" y="127.561696">校验，验证信息真实性。</tspan>
+            </text>
+            <text id="身份证OCR" font-size="18" fill="#333333">
+                <tspan x="0" y="19.619742">身份证OCR</tspan>
+            </text>
+        </g>
+        <g id="Group-3" transform="translate(332.983796, 142.570935)" font-family="PingFangSC-Medium, PingFang SC" font-weight="400">
+            <text id="用户录制一段视频，检测是否为真人拍摄，降" font-size="14" line-spacing="23" fill="#666666">
+                <tspan x="0.983795863" y="58.5616964">用户录制一段视频，检测</tspan>
+                <tspan x="0.983795863" y="81.5616964">是否为真人拍摄，降低攻</tspan>
+                <tspan x="0.983795863" y="104.561696">击风险，支持读数字、做</tspan>
+                <tspan x="0.983795863" y="127.561696">动作、光线等多种模式。</tspan>
+            </text>
+            <text id="活体检测" font-size="18" fill="#333333">
+                <tspan x="0.983795863" y="19.619742">活体检测</tspan>
+            </text>
+        </g>
+        <g id="Group-4" transform="translate(629.500000, 142.570935)" font-family="PingFangSC-Medium, PingFang SC" font-weight="400">
+            <text id="将用户拍摄的照片和权威证件库照片或预留照" font-size="14" line-spacing="23" fill="#666666">
+                <tspan x="0.773551146" y="58.5616964">将用户拍摄的照片和权威</tspan>
+                <tspan x="0.773551146" y="81.5616964">证件库照片或预留照片进</tspan>
+                <tspan x="0.773551146" y="104.561696">行比对，判断是否为同一</tspan>
+                <tspan x="0.773551146" y="127.561696">个人。</tspan>
+            </text>
+            <text id="人脸对比" font-size="18" fill="#333333">
+                <tspan x="0.773551146" y="19.619742">人脸对比</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

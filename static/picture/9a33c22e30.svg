@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>游戏多媒体引擎 GME-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="游戏多媒体引擎-GME-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(2.000000, 0.000000)" fill="#7C848E" fill-rule="nonzero">
+            <rect id="XMLID_346_" x="12" y="13" width="2" height="2"></rect>
+            <rect id="XMLID_345_" x="12" y="16" width="2" height="2"></rect>
+            <polygon id="XMLID_7_-path" points="26 22.9 14 29.7 2 22.9 2 9.2 14 2.3 26 9.2 28 8 14 0 0 8 0 24 14 32 28 24 28 12 26 13.2"></polygon>
+            <g id="XMLID_657_" transform="translate(17.000000, 10.000000)">
+                <rect id="XMLID_659_" x="2" y="0" width="2" height="6"></rect>
+                <rect id="XMLID_658_" x="0" y="2" width="6" height="2"></rect>
+            </g>
+            <path d="M17.8739825,11 L15.7324356,11 C15.3866262,10.4021986 14.7402824,10 14,10 C12.8954305,10 12,10.8954305 12,12 L12,17 C12,18.1045695 12.8954305,19 14,19 C15.1045695,19 16,18.1045695 16,17 L16,16 L18,16 L18,17 C18,19.209139 16.209139,21 14,21 C11.790861,21 10,19.209139 10,17 L10,12 C10,9.790861 11.790861,8 14,8 C15.8638394,8 17.4299397,9.27477279 17.8739825,11 Z" id="Combined-Shape"></path>
+            <path d="M7,18 L9,18 C9,20.7614237 11.2385763,23 14,23 C16.7614237,23 19,20.7614237 19,18 L21,18 C21,21.8659932 17.8659932,25 14,25 C10.1340068,25 7,21.8659932 7,18 Z" id="Oval-9"></path>
+        </g>
+    </g>
+</svg>

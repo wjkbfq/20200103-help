@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>客服咨询-hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="客服咨询-hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-17" transform="translate(1.000000, 1.000000)">
+            <path d="M11.5093042,9.95817022 C12.4373075,8.90179182 13,7.51660785 13,6 C13,2.6862915 10.3137085,-5.15143483e-14 7,-5.15143483e-14 C3.6862915,-5.15143483e-14 1,2.6862915 1,6 C1,7.37444822 1.46214824,8.64095594 2.23952769,9.65260612" id="椭圆形" stroke="#00A4FF"></path>
+            <path d="M7,8 L7,9 C7,11.7614237 4.76142375,14 2,14" id="矩形" stroke="#00A4FF" transform="translate(4.500000, 11.000000) rotate(90.000000) translate(-4.500000, -11.000000) "></path>
+            <circle id="椭圆形" fill="#00A4FF" cx="7" cy="13.5" r="1"></circle>
+            <rect id="矩形" stroke="#00A4FF" fill="#F7F8FA" x="0.5" y="5.5" width="3" height="5" rx="1.5"></rect>
+            <rect id="矩形" fill="#00A4FF" opacity="0.300060454" x="1.5" y="6.5" width="1" height="3" rx="0.5"></rect>
+            <rect id="矩形-copy-13" stroke="#00A4FF" fill="#F7F8FA" x="10.5" y="5.5" width="3" height="5" rx="1.5"></rect>
+            <rect id="矩形-copy-14" fill="#00A4FF" opacity="0.300060454" x="11.5" y="6.5" width="1" height="3" rx="0.5"></rect>
+        </g>
+    </g>
+</svg>

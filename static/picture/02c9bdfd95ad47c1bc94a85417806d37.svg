@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>高性能计算</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="高性能计算" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M29.8356,13.8468888 C28.7905961,7.0713499 22.9328585,2 16,2 C8.2680135,2 2,8.2680135 2,16 C2,23.7319865 8.2680135,30 16,30 C22.9128193,30 28.759176,24.9573577 29.8272152,18.2067726 L29.8356,13.8468888 Z" id="Oval-13" stroke="#00A4FF" stroke-width="2"></path>
+        <g id="Group" transform="translate(13.000000, 8.000000)">
+            <circle id="Oval" stroke="#00A4FF" stroke-width="2" cx="3" cy="8" r="3"></circle>
+            <rect id="Rectangle" fill="#00A4FF" transform="translate(7.535534, 3.535534) rotate(45.000000) translate(-7.535534, -3.535534) " x="6.53553391" y="-0.464466094" width="2" height="8"></rect>
+        </g>
+    </g>
+</svg>

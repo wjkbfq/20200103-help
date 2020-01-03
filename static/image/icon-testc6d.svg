@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>画板</title>
+    <desc>Created with Sketch.</desc>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L15,1 L15,15 L1,15 L1,1 L6,1 Z M12,2 C12,2.55228475 11.5522847,3 11,3 L5,3 C4.44771525,3 4,2.55228475 4,2 L2,2 L2,14 L14,14 L14,2 L12,2 Z M7.12132034,9.24264069 L9.94974747,6.41421356 L10.6568542,7.12132034 L7.82842712,9.94974747 L7.12132034,10.6568542 L5,8.53553391 L5.70710678,7.82842712 L7.12132034,9.24264069 Z" id="Combined-Shape" fill="#666666" fill-rule="nonzero"></path>
+    </g>
+</svg>

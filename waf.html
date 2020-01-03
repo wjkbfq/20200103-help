@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Web应用防火墙 - 腾讯云</title>
+    <meta name="keywords" content="waf,Waf,WAF,bot,Bot,BOT,网站管家,防篡改,爬虫">
+    <meta name="description" content="Web 应用防火墙，基于 AI 一站式 Web 安全和业务运营风险防护解决方案，解决网站 OWASP TOP 10攻击、BOT 行为管理、CC攻击防护和防篡改等网站安全问题。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.waf.overview.top.navigation.overview">
+						Web 应用防火墙
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.waf.overview.top.navigation.details">
+						产品详细信息
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.waf.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.waf.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.waf.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.waf.overview.top.nav.btn1">
+						立即选购
+					</a>
+					
+
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+
+            <h1 class="c-hero-section-tit">
+                T-Sec Web 应用防火墙
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">基于 AI 的一站式 Web 业务运营风险防护方案</p>
+				<p class="m-mod">提供一站式的网站服务智能安全防护平台</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn buy  J-pdBannerBtn1" hotrep="product.waf.overview.banner.btn1">
+                    立即选购
+                </a>
+
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/ea5916b099a128168d0f4e2f6416a8be.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.waf.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">Web 应用防火墙概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="details">
+                        <a href="javascript:;" hotrep="product.waf.overview.navigation.details">
+                            
+                            <span class="c-tab-tit">产品详细信息</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.waf.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.waf.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.waf.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.waf.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.waf.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-img">
+                        <img src="static/picture/175d21b860a22cca7f4c8b6c9ade623f.svg" alt="">
+                    </div>
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                           Web 应用防火墙简介
+                        </h4>
+                        <p class="c-media-info">
+                            腾讯云 Web 应用防火墙（Web Application Firewall，WAF）帮助腾讯云内及云外用户应对 Web 攻击、入侵、漏洞利用、挂马、篡改、后门、爬虫、域名劫持等网站及 Web 业务安全防护问题。企业组织通过部署腾讯云网站管家服务，将 Web 攻击威胁压力转移到腾讯云网站管家防护集群节点，分钟级获取腾讯 Web 业务防护能力，为组织网站及 Web 业务安全运营保驾护航。&nbsp;
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+                <div role="list" class="about-mod-list c-grid">
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    AI 引擎+威胁情报
+                                </h4>
+                                <p class="c-media-info">
+                                    独家基于 AI 引擎 WAF，融合腾讯亿级威胁情报，打造更聪明的威胁识别大脑，精准有效拦截 Web 威胁
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    业务风险防护
+                                </h4>
+                                <p class="c-media-info">
+                                    更有价值，高级 Bot 行为管理、CC 防护人机识别、DNS 劫持检测，满足业务安全运营防护需求
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    最低防护延迟
+                                </h4>
+                                <p class="c-media-info">
+                                    独家 30 线独享 BGP IP 链路接入防护，服务延迟业界最低，保障受护业务访问速度
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div role="listitem" class="c-g-12">
+                        <div class="c-media-horiz">
+                            <div class="c-media-img">
+                                <i class="p-icon-yes"></i>
+                            </div>
+                            <div class="c-media-body">
+                                <h4 class="c-media-heading">
+                                    无缝扩展防护
+                                </h4>
+                                <p class="c-media-info">
+                                    一键无缝接入百 G 抗 DDoS 能力：应对敏感大流量 DDoS 攻击问题，无惧突发风险
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                
+
+                
+                <div class="about-event">
+                    <div class="about-event-tit">
+                        活动 &amp; 公告
+                    </div>
+                    <div class="about-event-con">
+                        <ul>
+                            
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.waf.overview.about.activity.1">
+                                    限时3折特惠体验全新 Web 应用防火墙，查看详情 >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.waf.overview.about.activity.2">
+                                    AI in WAF | 腾讯云 Web 应用防火墙 AI 引擎实践（上）>>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.waf.overview.about.activity.3">
+                                    AI in WAF | 腾讯云 Web 应用防火墙 AI 引擎实践（下）>>
+                                    
+                                </a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                                <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" target="_blank" hotrep="product.waf.overview.about.aside.media">
+                                    
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">产品简介</div>
+                                    <h3 class="c-thumbnail-tit">Web 应用防火墙简介</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-doc-icon"></i>
+                                    <span class="c-thumbnail-status-txt">文档</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+                <div class="about-doc">
+                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.about.aside.pdf.1" class="c-media-horiz p-cursor d-card-hover">
+                        <div class="c-media-img">
+                            <i class="p-icon-pdf"></i>
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                <span style="color: #00a4ff">Web 应用防火墙产品概况 </span>
+                            </h4>
+                            <p class="c-media-info">
+                               
+                            </p>
+                        </div>
+                    </a>
+                    
+                    
+                </div>
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall function-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">腾讯云 Web 应用防火墙的特性</h3>
+        </div>
+        <div class="c-section-bd">
+            <div role="list" class="c-grid function-list J-section2List">
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/370f572561921299f1f43e5b5be3d274.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                AI+ Web 应用防火墙
+                            </h4>
+                            <p class="c-media-info">
+                                基于 AI+ 规则的 Web 攻击识别，防绕过，低漏报，低误报，精准有效防御常见 Web 攻击，如 SQL 注入、非授权访问、XSS 跨站脚本、CSRF 跨站请求伪造，Webshell木马上传等 OWASP 定义的十大 Web 安全威胁攻击。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/f81ecc6d395fac8ccb54c2e692179bdf.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                0day 漏洞虚拟补丁
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯安全团队7*24小时监测，主动发现并响应，24小时内下发高危 Web 漏洞，0day 漏洞防护虚拟补丁，受护用户无需任何操作即可获取紧急漏洞，0day 漏洞攻击防护能力，有效缩短漏洞响应周期。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/e70ef617beaf85d69e681bc1bfab0b8a.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                网页防篡改
+                            </h4>
+                            <p class="c-media-info">
+                                用户可设置将核心网页内容缓存云端，并对外发布缓存中的网页内容，实现网页替身效果，防止网页篡改给组织所带来的负面影响。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/bb64c0a2c0333af02e066fdf01ba6a31.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                 数据防泄漏
+                            </h4>
+                            <p class="c-media-info">
+                                通过事前服务器应用隐藏，事中入侵防护及事后敏感数据替换隐藏策略，防止后台数据库被黑客窃取。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/e129a2707626e5b453abb19b02a8f16c.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                CC 攻击防护
+                            </h4>
+                            <p class="c-media-info">
+                                多维度自定义精准访问控制、配合人机识别和频率控制等对抗手段，高效过滤垃圾访问及缓解 CC 攻击问题。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/100d28e31b02d87bf33d1add9d9cdce3.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                爬虫 Bot 行为管理
+                            </h4>
+                            <p class="c-media-info">
+                                基于 AI+ 规则库的网页爬虫及 Bot 机器人管理，协助企业规避恶意 Bot 行为带来的站点用户数据泄露、内容侵权、竞争比价、库存查取、黑产 SEO、商业策略外泄等业务风险问题。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/001e78448a9b1d32a1fae725f56e6b17.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                 DNS 非法劫持检测
+                            </h4>
+                            <p class="c-media-info">
+                                对客户提交的域名进行全国范围的 DNS 验证，感知并详细地展示受护域名在各地域的劫持情况，规避站点用户被恶意劫持给企业主带来的数据窃取及金融损失问题。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/770b1a0bd7545d0749c14136ce3abdb4.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                30线 BGP IP 接入防护
+                            </h4>
+                            <p class="c-media-info">
+                                独家支持防护节点30线独享 BGP IP 链路接入，节点智能调度，有效解决访问延迟问题，保障1-18线城市用户的站点访问速度，实现对网站访问速度影响无感知的安全防护部署。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="x1zvr3tdjaq">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="互联网+业务" data-target="x1zvr3tdjaq">
+                        <a href="javascript:;" id="tab_x1zvr3tdjaq" role="tab" hotrep="product.waf.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="x1zvr3tdjaq">
+                            <span class="c-tab-tit">互联网+业务</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="电商 O2O 站点" data-target="g6b52pj4d2">
+                        <a href="javascript:;" id="tab_g6b52pj4d2" role="tab" hotrep="product.waf.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="g6b52pj4d2">
+                            <span class="c-tab-tit">电商 O2O 站点</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="金融网站" data-target="n1lnfidtjp">
+                        <a href="javascript:;" id="tab_n1lnfidtjp" role="tab" hotrep="product.waf.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="n1lnfidtjp">
+                            <span class="c-tab-tit">金融网站</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="民生政务网站" data-target="vuaqfqlxmt">
+                        <a href="javascript:;" id="tab_vuaqfqlxmt" role="tab" hotrep="product.waf.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="vuaqfqlxmt">
+                            <span class="c-tab-tit">民生政务网站</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="企业网站" data-target="wwsnyr3ik0l">
+                        <a href="javascript:;" id="tab_wwsnyr3ik0l" role="tab" hotrep="product.waf.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="wwsnyr3ik0l">
+                            <span class="c-tab-tit">企业网站</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.waf.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_x1zvr3tdjaq" data-panel="x1zvr3tdjaq" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="x1zvr3tdjaq" hotrep="product..overview.scene.1.tab">
+                        互联网+业务
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <ul class="d-ul"><li>业务数据不被入侵篡改窃取，过滤各类攻击及垃圾流量，支撑互联网 + 企业核心业务正常稳定运营。</li><li>解决恶意 Bot 带来的内容版权侵权，黑产 SEO，数据爬取泄露，垃圾流量负面影响问题。</li><li>高可用，随业务增长弹性扩展，节省成本。<br><img src="static/picture/32898b8bdd954a4efae79dd92877badb.svg" alt=""></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_g6b52pj4d2" data-panel="g6b52pj4d2" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="g6b52pj4d2" hotrep="product..overview.scene.2.tab">
+                        电商 O2O 站点
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <ul class="d-ul"><li>在高并发抢购及各类营销活动场景下，智能过滤恶意攻击及爬虫垃圾访问，保障业务访问流畅。</li><li>解决恶意 Bot 爬虫竞争比价，库存查询，业务数据抓取分析，黑产 SEO 等负面影响问题，确保营销策略有效开展。</li><li>高可用，随业务增长弹性扩展，节省成本。<br><img src="static/picture/9bab09452f4c414657b5836c411ffb02.svg" alt=""></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_n1lnfidtjp" data-panel="n1lnfidtjp" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="n1lnfidtjp" hotrep="product..overview.scene.3.tab">
+                        金融网站
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <ul class="d-ul"><li>有效检测 Web入侵，撞库拖库，DNS 劫持等异常访问，保护用户信息不外泄。</li><li>识别管理 Bot 机器人程序行为，协助泛金融企业反爬虫管理策略，避免金融产品信息被爬取，金融策略外泄等风险。<br><img src="static/picture/d510d994bdc624d038bf6a77d3ec1244.svg" alt=""></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_vuaqfqlxmt" data-panel="vuaqfqlxmt" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="vuaqfqlxmt" hotrep="product..overview.scene.4.tab">
+                        民生政务网站
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <ul class="d-ul"><li>保证民生政务网站（政务、医疗、教育、社保、税务等）内容不被黑篡改，民生数据不被入侵窃取。</li><li>保障民生服务正常可用，民众访问满意畅通，维护政府公信力，规避敏感安全事件影响。<br><img src="static/picture/e62a82d2c092cdb86a18f375a861adff.svg" alt=""></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_wwsnyr3ik0l" data-panel="wwsnyr3ik0l" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="wwsnyr3ik0l" hotrep="product..overview.scene.5.tab">
+                        企业网站
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <ul class="d-ul"><li>保障企业门户网站不被入侵挂马篡改，规避由网站安全事件带来的经济及企业品牌形象损失问题。</li><li>减少安全人员精力投入，零硬件零运维，节省成本。<br><img src="static/picture/99983f04eb7020b21749ed4479f8aeca.svg" alt=""></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall customer-mod J-cardWrapper">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">助力客户获得成功</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="p-customer-case c-grid">
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.waf.overview.customer.1">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/e76aa6afae45c74d2df5ba5e7aa5a80a.png" alt="深圳市公安局 ">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                深圳市公安局 
+                                <span>政府机构</span>
+                            </h4>
+                            <p class="c-media-info">
+                                Web 应用防火墙利用精细化的功能配置，依据业务模式定制，保障了安全便捷的民生政务服务。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.waf.overview.customer.2">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/3cc44c130ca872a007a8d7b3b5ebc2b5.png" alt="家乐福 ">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                家乐福 
+                                <span>智慧零售</span>
+                            </h4>
+                            <p class="c-media-info">
+                                Web 应用防火墙利用智能 CC 防护和 BOT 行为管理，有效保护短信接口，防止恶意刷单和恶意爬虫行为，护航家乐福电商大促活动。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.waf.overview.customer.3">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/558e4871abd7d6b0947dbe2370ae4ed4.png" alt="爱听卓乐">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                爱听卓乐
+                                <span>互联网+</span>
+                            </h4>
+                            <p class="c-media-info">
+                                Web 应用防火墙利用 AI 防护和智能 CC 防护功能，多次应对爱听卓乐大流量攻击和业务突增，有效保障网站数字资产安全。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="p-customer-more">
+                <div class="p-customer-more-inner">
+                    <div class="customer-more-tit">
+                        <em>众多客户选择腾讯云 WAF 服务</em>
+                    </div>
+                    <div class="customer-more-con">
+                        <div class="customer-more-list">
+                            <ul>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.1">
+                                        <img src="static/picture/9ecd6532677cb13ff9816a5f57aa4df3.png" alt="南方新媒体">
+                                        <img src="static/picture/9ecd6532677cb13ff9816a5f57aa4df3.png" alt="南方新媒体">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.2">
+                                        <img src="static/picture/a87c477797731c102b35958605b0ac4b.png" alt="广东省政务云">
+                                        <img src="static/picture/a87c477797731c102b35958605b0ac4b.png" alt="广东省政务云">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.3">
+                                        <img src="static/picture/7021db138967cd72ce682b95c1a39694.png" alt="安利">
+                                        <img src="static/picture/7021db138967cd72ce682b95c1a39694.png" alt="安利">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.4">
+                                        <img src="static/picture/e61f08b813da03bbdf55ac89f290915b.png" alt="QQ音乐">
+                                        <img src="static/picture/e61f08b813da03bbdf55ac89f290915b.png" alt="QQ音乐">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.5">
+                                        <img src="static/picture/6fb73d78cbdc072dae9406e0d043bcee.png" alt="三一重工">
+                                        <img src="static/picture/6fb73d78cbdc072dae9406e0d043bcee.png" alt="三一重工">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.waf.overview.customer.more.6">
+                                        <img src="static/picture/d040cb3fe1502a35a420833cd2c04264.png" alt="华侨永亨银行">
+                                        <img src="static/picture/d040cb3fe1502a35a420833cd2c04264.png" alt="华侨永亨银行">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用腾讯云 Web 应用防火墙</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的 <a href="javascript:;">入门指南</a>，只需点几次鼠标，即可</p>
+<p>创建您的腾讯云 Web 应用防火墙。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.waf.overview.guide.btn">
+                           开始使用
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.waf.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'waf',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012105095, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "ryW-CaW3JL";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+
+</body>
+</html>

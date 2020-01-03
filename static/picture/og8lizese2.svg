@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="30px" viewBox="0 0 22 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>云通信</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-100.000000, -882.000000)">
+            <g id="通信服务" transform="translate(95.000000, 881.000000)">
+                <g id="云通信">
+                    <polygon id="_复合路径_-path" fill="#00A4FF" points="27 25 27 1 5 1 5 31 27 31 27 29 7 29 7 3 25 3 25 25"></polygon>
+                    <polygon id="_复合路径_-path" fill="#00A4FF" points="18 25 18 23 14 23 14 25"></polygon>
+                    <path d="M13.0342001,15.3474505 C13.9089479,15.7627513 14.9212265,16 16,16 C19.3137085,16 22,13.7614237 22,11 C22,8.23857625 19.3137085,6 16,6 C12.6862915,6 10,8.23857625 10,11 C10,12.0170414 10.3643882,12.96316 10.9903046,13.752639 L10.9903046,15.6785487 L13.0342001,15.3474505 Z" id="Oval-42" stroke="#00A4FF" stroke-width="2"></path>
+                    <circle id="Oval-43" fill="#00A4FF" cx="13" cy="11" r="1"></circle>
+                    <circle id="Oval-43-Copy" fill="#00A4FF" cx="16" cy="11" r="1"></circle>
+                    <circle id="Oval-43-Copy-2" fill="#00A4FF" cx="19" cy="11" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

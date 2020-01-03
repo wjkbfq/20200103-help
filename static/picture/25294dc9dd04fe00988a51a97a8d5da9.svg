@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>跨地域部署</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="跨地域部署" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M42,42 L42,38 L48,44 L46,44 L0,44 L0,42 L0,9 L2,11 L2,42 L42,42 Z M2,4 L48,4 L48,6 L48,39 L46,37 L46,6 L6,6 L6,10 L0,4 L2,4 Z" id="Combined-Shape" fill="#334966"></path>
+        <circle id="Oval-12" fill="#00A4FF" cx="18" cy="24" r="9"></circle>
+        <circle id="Oval-12-Copy" stroke="#334966" stroke-width="2" cx="30" cy="24" r="8"></circle>
+    </g>
+</svg>

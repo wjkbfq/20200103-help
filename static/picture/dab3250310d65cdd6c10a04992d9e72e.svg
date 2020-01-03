@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>涉政检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文本内容安全" transform="translate(-153.000000, -522.000000)">
+            <g id="涉政检测" transform="translate(153.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="38" y="8" width="2" height="2"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="34" y="8" width="2" height="2"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="42" y="8" width="2" height="2"></rect>
+                <path d="M28,23.9740006 C30.0022379,25.0173318 32.1421498,25.4688335 34.4197359,25.3285058 C37.8361149,25.1180142 39.7582197,23.4543129 42.015997,23.1691188 C43.5211819,22.9789894 45.5158496,23.2472833 48,23.9740006 L48,37.1989155 C44.4259416,36.5859348 42.1399328,36.3240401 41.1419736,36.4132314 C38.0691984,36.6878564 34.6832853,38.1099772 32.8381696,38.1099772 C30.094184,38.1099772 28.4814608,37.8062899 28,37.1989155 L28,23.9740006 Z" id="矩形" fill="#00A4FF"></path>
+                <path d="M28,23.5355975 L28,37.5132231 C28.5446257,37.7439439 29.9526425,37.9384766 32.0800781,37.9384766 C32.8151323,37.9384766 33.1700424,37.8580631 36.2027247,37.0730031 C37.3305113,36.7810569 38.1432715,36.5907396 38.9636734,36.4390869 C39.5808476,36.3250013 40.159316,36.2429306 40.7117284,36.1944956 C41.754586,36.1030589 43.8222654,36.3135168 47,36.8222445 L47,22.7623235 C44.8494969,22.1993772 43.1238174,22.0041877 41.8397774,22.1633075 C41.4931346,22.2062639 41.1335524,22.2882882 40.7326848,22.4128542 C40.4408213,22.5035482 40.1313307,22.6149492 39.7436522,22.7663641 C39.5276453,22.8507295 38.7549699,23.1617478 38.6522908,23.2024843 C36.8197643,23.9295138 35.4933423,24.291153 33.8010568,24.3934419 C31.7746091,24.515929 29.8378623,24.2295225 28,23.5355975 Z" id="矩形" stroke="#334966" stroke-width="2"></path>
+                <polygon id="星形" fill="#FFFFFF" points="35 32.5 32.648859 33.736068 33.097887 31.118034 31.1957739 29.263932 33.8244295 28.881966 35 26.5 36.1755705 28.881966 38.8042261 29.263932 36.902113 31.118034 37.351141 33.736068"></polygon>
+                <rect id="矩形" stroke="#334966" fill="#D8D8D8" x="27.5" y="23.5" width="1" height="20"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="27" width="12" height="2"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="33" width="12" height="2"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="21" width="12" height="2"></rect>
+                <polygon id="Shape" fill="#334966" fill-rule="nonzero" points="46 18 46 6 2 6 2 42 23 42 23 44 0 44 0 4 48 4 48 18"></polygon>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="0" y="12" width="48" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="48px" viewBox="0 0 44 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>产品技术直通车</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-1376.000000, -3493.000000)">
+            <g id="产品技术直通车" transform="translate(1376.000000, 3493.000000)">
+                <path d="M21.1175617,-6.49480469e-15 C20.4146031,0.610454866 19.7698844,1.27974203 19.192565,2 L2,2 L2,46 L38,46 L38,24.9087286 C38.6915168,24.6464484 39.3595664,24.3401288 40,23.9933307 L40,48 L0,48 L0,0 L21.1175617,0 Z M17.3260711,5 C17.0266296,5.64370968 16.77389,6.31156465 16.5720057,7 L7,7 L7,36 L33,36 L33,25.971068 C33.6783461,25.9317136 34.3459351,25.8525979 35,25.7360957 L35,38 L5,38 L5,5 L17.3260711,5 Z M17,41 L23,41 L23,43 L17,43 L17,41 Z" id="Combined-Shape" fill="#9E8854" fill-rule="nonzero"></path>
+                <ellipse id="Oval" fill="#A99159" cx="32" cy="11" rx="12" ry="11"></ellipse>
+                <path d="M27.499463,21.2002148 L23,23 L23.7946707,19.0266464 C21.4591673,17.0196784 20,14.1660423 20,11 C20,4.92486775 25.372583,0 32,0 C38.627417,0 44,4.92486775 44,11 C44,17.0751322 38.627417,22 32,22 C30.4084444,22 28.8892558,21.7159795 27.499463,21.2002148 Z M32,20 C37.5598241,20 42,15.9298388 42,11 C42,6.07016122 37.5598241,2 32,2 C26.4401759,2 22,6.07016122 22,11 C22,15.9298388 26.4401759,20 32,20 Z" id="Combined-Shape" fill="#A99159" fill-rule="nonzero"></path>
+                <rect id="Rectangle-43" fill="#111111" x="28" y="8" width="6" height="2"></rect>
+                <rect id="Rectangle-43-Copy" fill="#111111" x="28" y="12" width="8" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

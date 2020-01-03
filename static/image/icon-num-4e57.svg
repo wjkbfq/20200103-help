@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="64px" viewBox="0 0 47 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 348 4.40536496e-13 347.940044 62.3816691 347.880821 124 0 124 54.0430368 62.6333443"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-num-4" transform="translate(-301.000000, -29.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="path-1"></g>
+            <g id="编组" mask="url(#mask-2)">
+                <g transform="translate(303.000000, 31.000000)">
+                    <ellipse id="Oval-Copy-7" stroke="#F5F7FA" stroke-width="2.916" fill="none" cx="30.4530714" cy="30" rx="30.4530714" ry="30"></ellipse>
+                    <path d="M33.9099065,16.1586905 L37.078672,16.1586905 L37.078672,36.4617084 L41.8523967,36.4617084 L41.8523967,39.2664552 L37.078672,39.2664552 L37.078672,46.0480818 L33.8687537,46.0480818 L33.8687537,39.2664552 L19.0948988,39.2664552 L19.0948988,36.0012276 L33.9099065,16.1586905 Z M33.7452953,20.637913 L21.9344419,36.4617084 L33.8687537,36.4617084 L33.8687537,20.637913 L33.7452953,20.637913 Z" id="4" stroke="none" fill="#F5F7FA" fill-rule="evenodd"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>收起</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01首页-copy-2" transform="translate(-1748.000000, -1301.000000)" fill="#999" fill-rule="nonzero">
+            <g id="第三栏" transform="translate(0.000000, 831.000000)">
+                <g id="三角形">
+                    <g id="右侧导航" transform="translate(1678.000000, 67.000000)">
+                        <g id="分组-21">
+                            <path d="M71.7113088,406.75 L72.7694964,408.25 L70,408.25 L70,406.75 L71.7113088,406.75 Z M84.2403044,406.75 L86,406.75 L86,408.25 L83.2168897,408.25 L84.2403044,406.75 Z M70,414.25 L70,412.75 L86,412.75 L86,414.25 L70,414.25 Z M70,420.25 L70,418.75 L86,418.75 L86,420.25 L70,420.25 Z M77.9152832,408.78787 L74.4152832,403.78787 L81.4152832,403.78787 L77.9152832,408.78787 Z" id="收起"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

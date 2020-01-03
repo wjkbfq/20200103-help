@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="41px" viewBox="0 0 48 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>TVP奖项册</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-1374.000000, -3727.000000)">
+            <g id="TVP奖项册" transform="translate(1374.000000, 3723.000000)">
+                <g id="Group-2">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+                    <g id="Group" transform="translate(0.000000, 4.000000)">
+                        <path d="M1,1 L1,38 L21.3027756,38 L24,39.7981496 L26.6972244,38 L47,38 L47,1 L27.3027756,1 L24,3.20185043 L20.6972244,1 L1,1 Z" id="Rectangle-23" stroke="#A99159" stroke-width="2"></path>
+                        <polygon id="Rectangle-110" fill="#A99159" points="24 11 27 8 40 8 40 28 37 31 24 31"></polygon>
+                        <path d="M8.5,19.5 L8.5,20.5 L29.5,20.5 L29.5,19.5 L8.5,19.5 Z" id="Rectangle-110-Copy-2" stroke="#A99159"></path>
+                        <path d="M8.5,26.5 L8.5,27.5 L29.5,27.5 L29.5,26.5 L8.5,26.5 Z" id="Rectangle-110-Copy-5" stroke="#A99159"></path>
+                        <rect id="Rectangle-110-Copy-6" stroke="#A99159" x="8.5" y="12.5" width="11" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

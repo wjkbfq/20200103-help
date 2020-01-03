@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的学习pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="基础课程-空白页" transform="translate(-1477.000000, -283.000000)" fill="#7C848E">
+            <g id="Group-4" transform="translate(1477.000000, 283.000000)">
+                <path d="M0,7 L7,7 L7,0 L0,0 L0,7 Z M2,5 L5.001,5 L5.001,2 L2,2 L2,5 Z" id="Fill-1"></path>
+                <path d="M8,7 L15,7 L15,0 L8,0 L8,7 Z M10,5 L13,5 L13,2 L10,2 L10,5 Z" id="Fill-2"></path>
+                <path d="M0,15 L7,15 L7,8 L0,8 L0,15 Z M2,13.001 L5.001,13.001 L5.001,10 L2,10 L2,13.001 Z" id="Fill-3"></path>
+                <path d="M8,15 L15,15 L15,8 L8,8 L8,15 Z M10,13.001 L13,13.001 L13,10 L10,10 L10,13.001 Z" id="Fill-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

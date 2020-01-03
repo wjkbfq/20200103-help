@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>自定义检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文本内容安全" transform="translate(-466.000000, -519.000000)">
+            <g id="自定义检测" transform="translate(465.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <rect id="矩形" fill="#00A4FF" x="38" y="1" width="9" height="9"></rect>
+                <rect id="矩形复制-7" fill="#00A4FF" x="38" y="38" width="9" height="9"></rect>
+                <rect id="矩形" fill="#334966" x="13" y="14" width="22" height="2"></rect>
+                <rect id="矩形复制-14" fill="#334966" x="21" y="33" width="6" height="2"></rect>
+                <rect id="矩形复制-11" fill="#334966" x="23" y="15" width="2" height="20"></rect>
+                <rect id="矩形复制-12" fill="#334966" x="13" y="14" width="2" height="4"></rect>
+                <rect id="矩形复制-13" fill="#334966" x="33" y="14" width="2" height="4"></rect>
+                <rect id="矩形复制-6" fill="#00A4FF" x="1" y="1" width="9" height="9"></rect>
+                <rect id="矩形复制-8" fill="#00A4FF" x="1" y="38" width="9" height="9"></rect>
+                <polygon id="路径" stroke="#334966" stroke-width="2" points="5 43 5 5 43 5 43 43"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

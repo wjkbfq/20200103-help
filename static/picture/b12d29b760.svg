@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>图片内容安全-灰色-32</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片内容安全" transform="translate(-111.000000, -358.000000)">
+            <g id="图片内容安全-灰色-32" transform="translate(111.000000, 358.000000)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="32" height="32"></rect>
+                <rect id="矩形" stroke="#7C848E" stroke-width="2" x="8.33333333" y="7" width="14.333333" height="12.333333"></rect>
+                <path d="M29.3333333,2 L2.33333333,2 L2.33333333,16.7 C2.33333333,16.7 2.46487179,27.1363636 15.4871795,30 C28.5094872,27.0727273 28.6410256,16.7 28.6410256,16.7 L28.6410256,6.66666667" id="形状" stroke="#7C848E" stroke-width="2" fill-rule="nonzero"></path>
+                <polyline id="路径" stroke="#7C848E" stroke-width="2" transform="translate(17.490188, 18.490188) rotate(45.000000) translate(-17.490188, -18.490188) " points="14.6686989 22.9615921 14.6686989 14.0187831 20.3116763 14.0187831"></polyline>
+                <polyline id="路径复制" stroke="#7C848E" stroke-width="2" transform="translate(11.904569, 18.323521) rotate(45.000000) translate(-11.904569, -18.323521) " points="9.70930735 20.9901876 9.70930735 15.6568542 14.0998316 15.6568542"></polyline>
+                <circle id="椭圆形" fill="#7C848E" cx="12.5" cy="10.5" r="1.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

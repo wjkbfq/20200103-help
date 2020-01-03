@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>资源监控</title>
+    <desc>Created with Sketch.</desc>
+    <g id="资源监控" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+        <path d="M13,30 L35,30 L35,32 L13,32 L13,30 Z M44,37 C45.7,37 47,38.3 47,40 C47,41.7 45.7,43 44,43 C42.7,43 41.6,42.2 41.2,41 L5,41 L3,41 L3,39 L3,14 L5,14 L5,39 L41.2,39 C41.6,37.8 42.7,37 44,37 Z M6.8,9 C6.4,10.2 5.3,11 4,11 C2.3,11 1,9.7 1,8 C1,6.3 2.3,5 4,5 C5.3,5 6.4,5.8 6.8,7 L43,7 L45,7 L45,9 L45,34 L43,34 L43,9 L6.8,9 Z M13,22.0118408 L13,20.0118408 L19.5996926,20.0118408 L21.0429444,22.8739407 L27.0519253,13.8612246 L29.6361531,19.0050659 L34.9907532,19.0050659 L34.9907532,21.0050659 L28.4027263,21.0050659 L26.9627231,18.1387754 L20.9570556,27.1455295 L18.368325,22.0118408 L13,22.0118408 Z" id="Combined-Shape" fill="#7C848E" fill-rule="nonzero"></path>
+    </g>
+</svg>

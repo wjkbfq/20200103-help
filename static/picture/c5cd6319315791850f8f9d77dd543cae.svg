@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>完全托管-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="完全托管-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,5 L2,37 L46,37 L46,5 L2,5 Z M0,3 L48,3 L48,39 L0,39 L0,3 Z" id="Rectangle-16" fill="#334966" fill-rule="nonzero"></path>
+        <rect id="Rectangle-17" fill="#334966" x="12" y="43" width="24" height="2"></rect>
+        <rect id="Rectangle-73" fill="#334966" x="20" y="37" width="2" height="8"></rect>
+        <rect id="Rectangle-73-Copy" fill="#334966" x="26" y="37" width="2" height="8"></rect>
+        <rect id="Rectangle-74" fill="#00A4FF" transform="translate(16.000000, 23.000000) scale(1, -1) translate(-16.000000, -23.000000) " x="12" y="14" width="8" height="18"></rect>
+        <rect id="Rectangle-74-Copy" fill="#00A4FF" transform="translate(32.000000, 21.000000) scale(1, -1) translate(-32.000000, -21.000000) " x="28" y="10" width="8" height="22"></rect>
+        <polyline id="Path-5" stroke="#334966" stroke-width="2" points="9 30 21 18 32 20 39 13"></polyline>
+        <polyline id="Path-5-Copy" stroke="#334966" stroke-width="2" points="9 18 24 30 31.8539843 25.8796748 39 27"></polyline>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>腾讯优客-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="腾讯优客-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 0.000000)">
+            <path d="M17.2,19.411 C17.6844803,18.6013437 17.9594399,17.6836661 18,16.741 C17.9691484,15.4480928 17.4241459,14.2208279 16.4856789,13.3309736 C15.547212,12.4411192 14.2927199,11.9621033 13,12 C11.7072801,11.9621033 10.452788,12.4411192 9.51432106,13.3309736 C8.57585413,14.2208279 8.03085161,15.4480928 8,16.741 C8.02416526,17.6522733 8.2769021,18.5428698 8.735,19.331 C10.039542,21.2945394 11.4639111,23.1757752 13,24.964 C13,24.964 16.582,20.585 17.2,19.411 Z" id="Shape" stroke="#7C848E" stroke-width="2"></path>
+            <path d="M26,25 L26,6 L19.956,6 C19.0597488,2.93434939 16.1914334,0.872593115 13,1 C9.80867559,0.872956244 6.94056068,2.93456845 6.044,6 L0,6 L0,31 L26,31 L26,29 L2,29 L2,8 L24,8 L24,25 L26,25 Z M17.51,6 L8.137,6 C8.9891296,4.09712003 10.9170767,2.90776339 13,3 C15.0826394,2.90789988 17.0102255,4.09727843 17.862,6 L17.51,6 Z" id="Shape" fill="#7C848E" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#7C848E" fill-rule="nonzero" cx="13" cy="17" r="2"></circle>
+        </g>
+    </g>
+</svg>

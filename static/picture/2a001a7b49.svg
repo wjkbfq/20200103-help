@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>安全运营中心-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="安全运营中心-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape"></path>
+            <g id="Group-11-Copy" transform="translate(5.000000, 5.000000)">
+                <rect id="XMLID_294_" x="0" y="7" width="2" height="7"></rect>
+                <rect id="XMLID_293_" x="3" y="2" width="2" height="12"></rect>
+                <polygon id="XMLID_292_" points="6 5 8 5 8 14 6 14"></polygon>
+                <circle id="XMLID_291_" cx="12" cy="15" r="1"></circle>
+                <path d="M8.12601749,14 C8.57006028,12.2747728 10.1361606,11 12,11 C13.8638394,11 15.4299397,12.2747728 15.8739825,14 L13.7324356,14 C13.3866262,13.4021986 12.7402824,13 12,13 C11.2597176,13 10.6133738,13.4021986 10.2675644,14 L8.12601749,14 Z" id="Combined-Shape"></path>
+                <path d="M11,9.34062345 L11,0 L9,0 L9,9.852 C9.616,9.6130257 10.289,9.43948484 11,9.34062345 Z" id="XMLID_289_"></path>
+                <path d="M14,9.34062345 L14,7 L12,7 L12,9.852 C12.616,9.6130257 13.289,9.43948484 14,9.34062345 Z" id="XMLID_289_-Copy" transform="translate(13.000000, 8.426000) scale(-1, 1) translate(-13.000000, -8.426000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

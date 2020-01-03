@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>智能推荐-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="智能推荐-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(1.000000, 3.000000)">
+            <path d="M28,26 C27.2897779,25.9957131 26.6351046,25.6150891 26.28,25 L1,25 L1,8 L3,8 L3,23 L26.28,23 C26.7660656,22.1581503 27.7870648,21.7877158 28.6998631,22.1220358 C29.6126615,22.4563558 30.1528813,23.3985996 29.9802345,24.3552416 C29.8075876,25.3118835 28.9720785,26.0058471 28,26 Z" id="_复合路径_-path" fill="#7C848E"></path>
+            <path d="M27.0120508,3.00018082 L3.73205081,3.00018082 C3.27944513,3.78411685 2.35672894,4.16631841 1.48236191,3.93203247 C0.607994882,3.69774653 -3.36397576e-14,2.90539218 -3.37507799e-14,2.00018082 C-3.38618023e-14,1.09496946 0.607994882,0.302615105 1.48236191,0.0683291662 C2.35672894,-0.165956773 3.27944513,0.216244788 3.73205081,1.00018082 L29.0120508,1.00018082 L29.0120508,18.0001808 L27.0120508,18.0001808 L27.0120508,3.00018082 Z" id="_复合路径_-path" fill="#7C848E"></path>
+            <g id="Group-2" transform="translate(6.000000, 5.000000)">
+                <path d="M9.1437893,3.25863062 L2.64678051,8.22427975 L9.1437893,13.1899289 L15.6407981,8.22427975 L9.1437893,3.25863062 Z" id="Rectangle-127" stroke="#7C848E" stroke-width="2"></path>
+                <circle id="Oval-56" fill="#7C848E" cx="9" cy="2" r="2"></circle>
+                <circle id="Oval-56-Copy-3" fill="#7C848E" cx="9" cy="14" r="2"></circle>
+                <circle id="Oval-56-Copy" fill="#7C848E" cx="16" cy="8" r="2"></circle>
+                <circle id="Oval-56-Copy-2" fill="#7C848E" cx="2" cy="8" r="2"></circle>
+                <rect id="Rectangle-128" fill="#7C848E" x="8" y="4" width="2" height="3"></rect>
+                <rect id="Rectangle-128-Copy" fill="#7C848E" x="8" y="10" width="2" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

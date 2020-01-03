@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <title>安全_定制建模_icon</title>
+  <rect x="-371.875" y="-411.25" width="595" height="842" style="fill: none"/>
+  <path d="M24.013,46.023l-.294-.088C3.183,39.774,3.965,26.464,4.008,25.9l0-23.923H43.5v2H6.005v22C5.969,26.546,5.386,38.222,24,43.93,41.8,38.178,42.005,26.1,42.005,25.977v-16h2v16c0,.561-.224,13.8-19.7,19.953Z" style="fill: #00a4ff"/>
+  <polygon points="35 29.374 35 16.673 24 10.322 13 16.673 13 29.374 24 35.725 35 29.374" style="fill: none;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <polyline points="12.781 16.61 24.031 22.563 34.781 16.61" style="fill: none;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="23.977" y1="11.41" x2="23.975" y2="16.41" style="fill: #00a4ff;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="18.287" y1="26.285" x2="13.957" y2="28.785" style="fill: #00a4ff;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="29.832" y1="26.347" x2="34.162" y2="28.847" style="fill: #00a4ff;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="23.998" y1="22.097" x2="23.998" y2="34.587" style="fill: #00a4ff;stroke: #00a4ff;stroke-miterlimit: 10;stroke-width: 2px"/>
+</svg>

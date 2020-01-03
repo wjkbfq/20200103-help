@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830.001" height="254" viewBox="0 0 830.001 254">
+  <title>画板 1</title>
+  <g>
+    <g>
+      <path d="M218.778,124.812h69.468" style="fill: none;stroke: #888"/>
+      <polygon points="284.186 128.872 289.599 124.812 284.186 120.752 284.186 128.872" style="fill: #888"/>
+      <path d="M218.778,124.812h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M253.963,124.812h34.283" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M218.778,124.812h35.185v97.435h35.185" style="fill: none;stroke: #888"/>
+      <polygon points="285.088 226.307 290.501 222.247 285.088 218.187 285.088 226.307" style="fill: #888"/>
+      <path d="M218.778,124.812h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M253.963,124.812v97.435" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M253.963,222.247h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M405.528,124.812H514.691" style="fill: none;stroke: #888"/>
+      <polygon points="510.631 128.872 516.044 124.812 510.631 120.752 510.631 128.872" style="fill: #888"/>
+      <path d="M405.528,124.812h55.033" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M460.561,124.812h54.13" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M405.528,124.812h55.033v97.435h54.13" style="fill: none;stroke: #888"/>
+      <polygon points="510.631 226.307 516.044 222.247 510.631 218.187 510.631 226.307" style="fill: #888"/>
+      <path d="M405.528,124.812h55.033" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M460.561,124.812v97.435" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M460.561,222.247h54.13" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M405.528,124.812h55.033V27.377h54.13" style="fill: none;stroke: #888"/>
+      <polygon points="510.631 31.437 516.044 27.377 510.631 23.318 510.631 31.437" style="fill: #888"/>
+      <path d="M405.528,124.812h55.033" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M460.561,124.812V27.377" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M460.561,27.377h54.13" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M218.778,124.812h35.185V27.377h35.185" style="fill: none;stroke: #888"/>
+      <polygon points="285.088 31.437 290.501 27.377 285.088 23.318 285.088 31.437" style="fill: #888"/>
+      <path d="M218.778,124.812h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M253.963,124.812V27.377" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M253.963,27.377h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect x="109.164" y="104.513" width="111.855" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="107.36" y="102.709" width="111.855" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(125.403 129.774)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">组件应用场景</text>
+    </g>
+    <g>
+      <rect x="295.914" y="7.078" width="111.855" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="294.11" y="5.274" width="111.855" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(312.153 32.339)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">分类筛选组件</text>
+    </g>
+    <g>
+      <rect x="295.914" y="104.513" width="111.855" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="294.11" y="102.709" width="111.855" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(312.153 129.774)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">排序组件</text>
+    </g>
+    <g>
+      <rect x="295.914" y="201.948" width="111.855" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="294.11" y="200.144" width="111.855" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(312.153 227.209)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">高级纠错组件</text>
+    </g>
+    <g>
+      <rect x="521.458" y="104.513" width="187.638" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.653" y="102.709" width="187.638" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(537.696 129.774)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">按照任意数值升序降序排序</text>
+    </g>
+    <g>
+      <rect x="521.458" y="201.948" width="124.486" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.653" y="200.144" width="124.486" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(537.696 227.209)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">用户自定义排序</text>
+    </g>
+    <g>
+      <rect x="521.458" y="7.078" width="137.116" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.653" y="5.274" width="137.116" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(537.696 32.339)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">按文本相关性排序</text>
+    </g>
+  </g>
+</svg>

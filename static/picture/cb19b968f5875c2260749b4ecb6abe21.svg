@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>涉黄检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文本内容安全" transform="translate(-75.000000, -522.000000)">
+            <g id="涉黄检测" transform="translate(75.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="37" y="33" width="2" height="2"></rect>
+                <path d="M36,22 C30.4771525,22 26,26.4771525 26,32 C26,37.5228475 30.4771525,42 36,42 C41.5228475,42 46,37.5228475 46,32 C46,29.3478351 44.9464316,26.804296 43.0710678,24.9289322 C41.195704,23.0535684 38.6521649,22 36,22 Z M33,37 L31,37 L31,27 L33,27 L33,37 Z M41,29 L41,37 L35,37 L35,27 L41,27 L41,29 Z" id="Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="37" y="29" width="2" height="2"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="38" y="8" width="2" height="2"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="34" y="8" width="2" height="2"></rect>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="42" y="8" width="2" height="2"></rect>
+                <path d="M36,44 C29.372583,44 24,38.627417 24,32 C24,25.372583 29.372583,20 36,20 C42.627417,20 48,25.372583 48,32 C48,38.627417 42.627417,44 36,44 Z M36,42 C41.5228475,42 46,37.5228475 46,32 C46,26.4771525 41.5228475,22 36,22 C30.4771525,22 26,26.4771525 26,32 C26,37.5228475 30.4771525,42 36,42 Z" id="Shape" fill="#344966" fill-rule="nonzero"></path>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="27" width="12" height="2"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="33" width="12" height="2"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="7" y="21" width="12" height="2"></rect>
+                <path d="M46,19.509 L46,6 L2,6 L2,42 L23.509,42 C24.0861719,42.7200892 24.7241881,43.38922 25.416,44 L0,44 L0,4 L48,4 L48,21.417 C47.3892381,20.7248656 46.7201082,20.0865157 46,19.509 Z" id="Shape" fill="#334966" fill-rule="nonzero"></path>
+                <rect id="Rectangle-path" fill="#344966" fill-rule="nonzero" x="0" y="12" width="48" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

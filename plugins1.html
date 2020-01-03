@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>Cloud Studio 插件介绍 &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='一键部署使用指南' href='one-click-deploy.html'>
+<link rel='next' title='使用访问链接演示你的应用' href='access-link.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6228'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Fplugins">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Fplugins&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6228 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="cloud-studio.html" title="View all posts in Cloud Studio">
+                        <span itemprop="name">Cloud Studio</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="Cloud Studio 插件介绍">
+                        <span itemprop="name">Cloud Studio 插件介绍</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6228" class="post-6228 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-cloud-studio ht_kb_tag-doc" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				Cloud Studio 插件介绍			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/cloud-studio/plugins" rel="bookmark" itemprop="url"><time datetime="2018-10-23" itemprop="datePublished">2018年10月23日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/andy" title="Andy" rel="me" itemprop="author">Andy</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/cloud-studio" rel="tag">Cloud Studio</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 安装插件</a></li><li><a href="#i-2"><span class="toc_number toc_depth_1">2</span> 给插件评分</a></li><li><a href="#i-3"><span class="toc_number toc_depth_1">3</span> 管理插件</a></li><li><a href="#i-4"><span class="toc_number toc_depth_1">4</span> 创建插件</a></li><li><a href="#i-5"><span class="toc_number toc_depth_1">5</span> 实时开发预览插件</a></li><li><a href="#i-6"><span class="toc_number toc_depth_1">6</span> 发布你的插件</a></li></ul></div>
+<div class="markdown-here-wrapper" data-md-url="https://dev.tencent.com/help/wp-admin/post.php?post=6228&amp;action=edit">
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">Cloud Studio 目前开放了插件系统，通过安装插件可以增强使用体验，或开发插件自定义工作空间。您可以前往<a href="javascript:;">插件市场</a>安装自己喜欢的插件，也可以<a href="javascript:;">开发一款自己喜欢的插件</a>，给所有用户使用。</p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6"><span id="i">安装插件</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">您可以前往<a href="javascript:;">插件市场</a>，选择自己喜欢的插件进行安装。需要注意的是，<strong>安装前需要先登录腾讯云开发者平台</strong>。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/e86e917a-0c4e-47ac-a9fe-58f381bf.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">安装后，前往 dashboard 的<a href="javascript:;">第三方插件</a>就可以看到自己安装的插件了，这些插件会对你所有的工作空间起作用。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/c9e5d1e9-4cfa-4075-98f1-90baa2a2.jpg" alt=""></p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e7%bb%99%e6%8f%92%e4%bb%b6%e8%af%84%e5%88%86"><span id="i-2">给插件评分</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">如果您觉得某个插件很好用，也可以在插件的主页给插件进行评分。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/63953697-281e-4d1f-bb6a-e7ff59cc.jpg" alt=""></p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e7%ae%a1%e7%90%86%e6%8f%92%e4%bb%b6"><span id="i-3">管理插件</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">在 dashboard 中的<a href="javascript:;">插件管理</a>页面可以管理自己安装或开发的插件。在<a href="javascript:;">第三方插件</a>中，你可以开启、关闭或卸载插件。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/b2188ede-ea99-4cec-b967-cc71386f.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">在<a href="javascript:;">我开发的插件</a>中你可以管理自己开发的插件。你可以发布或预发布自己开发的插件，也可以修改或删除自己开发的插件。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/f9481d59-8a9f-411c-ab4a-4dd32668.jpg" alt=""></p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e5%88%9b%e5%bb%ba%e6%8f%92%e4%bb%b6"><span id="i-4">创建插件</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">如果您没找到自己想要的插件，也可以创建一个插件，并发布到插件市场。要创建插件，我们需要进入 Cloud Studio <a href="workspace.html">控制台</a>，点击「新建 Cloud Studio 插件」，进入<a href="javascript:;">插件创建页面</a>。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/028b103b-e390-4a5c-9f2a-17356bce.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">在插件创建页面，你需要填写一些插件的基本信息：插件名、仓库名、分类和描述等。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/4a813d21-2825-47b8-a2ac-2523b987.jpg" alt=""></p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e5%ae%9e%e6%97%b6%e5%bc%80%e5%8f%91%e9%a2%84%e8%a7%88%e6%8f%92%e4%bb%b6"><span id="i-5">实时开发预览插件</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">创建完成之后，就可以进入该插件的工作空间实时开发预览插件。插件工作空间默认是 Nodejs (8.12.0版本)的环境，同时预装了 yarn (1.12.1版本)。可以看到，在右侧功能区有一个「插件开发」面板，您可以在这里进行插件的开发和实时调试。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/af65ec35-846b-454a-b8f9-a745961c.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">启动实时预览模式后，整个调试过程如同在传统编辑器中开发前端项目一样，每次修改源码并保存时，<code style="font-size: 0.85em; font-family: 'Roboto Mono', Menlo, Monaco, Courier, monospace; margin: 0px 0.15em; padding: 1px 5px; border: 1px solid #eaeaea; background-color: #f8f8f8; border-radius: 0px; display: inline;">dev-server</code> 内置的 webpack 将会立即编译代码，编译完成后会将新的代码加载到当前工作空间，此时无需刷新浏览器即可查看插件的效果。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/c829a2ac-9ffb-4f82-861d-7a21a80c.jpg" alt=""></p>
+<h1 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.6em; border-bottom: 1px solid #dddddd;" id="%e5%8f%91%e5%b8%83%e4%bd%a0%e7%9a%84%e6%8f%92%e4%bb%b6"><span id="i-6">发布你的插件</span></h1>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">如果你已经完成插件开发，想要将其发布到插件市场供所有用户安装，就可以前往 Cloud Studio <a href="javascript:;">插件管理</a>发布插件。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">我们提供了两种插件发布方式——「预发布」和「正式发布」。「预发布」是指在你自己的所有工作空间开启该插件，无需审核，其他用户也不会再插件市场看到。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/9f0954fe-7c6c-41df-8407-030aac80.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">如果你的插件在所有工作空间中都能正常运行，可以将其正式发布到<a href="plugins.html">插件市场</a>，供所有用户安装使用。前往控制台<a href="javascript:;">我开发的插件</a>页面中，点击「管理」进入插件设置页面，再选择「发布」，填写插件的版本号和版本说明就可以正式发布了。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">正式发布之后，我们会在后台审核你的插件代码，审核通过之后就可以在<a href="plugins.html">插件市场</a>看到它啦。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/295ab12a-fabc-4189-a949-d0624739.jpg" alt=""></p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">更加详细的插件开发步骤和 API 请参考<a href="javascript:;">插件开发文档</a>。</p>
+<div style="height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; font-size: 0em; padding: 0; margin: 0;" title="MDH:PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEt
+b2Zmc2V0LWtleT0iOXVhODYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI5
+dWE4Ni0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iOXVhODYtMC0wIj5DbG91ZCBTdHVkaW8g
+55uu5YmN5byA5pS+5LqG5o+S5Lu257O757uf77yM6YCa6L+H5a6J6KOF5o+S5Lu25Y+v5Lul5aKe
+5by65L2/55So5L2T6aqM77yM5oiW5byA5Y+R5o+S5Lu26Ieq5a6a5LmJ5bel5L2c56m66Ze044CC
+5oKo5Y+v5Lul5YmN5b6AW+aPkuS7tuW4guWcul0oaHR0cHM6Ly9zdHVkaW8uZGV2LnRlbmNlbnQu
+Y29tL3BsdWdpbnMvKeWuieijheiHquW3seWWnOasoueahOaPkuS7tu+8jOS5n+WPr+S7pVvlvIDl
+j5HkuIDmrL7oh6rlt7HllpzmrKLnmoTmj5Lku7ZdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5jZW50
+LmNvbS9kYXNoYm9hcmQvcGx1Z2luL2NyZWF0ZSnvvIznu5nmiYDmnInnlKjmiLfkvb/nlKjjgII8
+L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVk
+aXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iNGxrbGktMC0wIj48ZGl2IGNsYXNzPSJwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIg
+ZGF0YS1vZmZzZXQta2V5PSI0bGtsaS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iNGxrbGkt
+MC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0i
+IiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0i
+bzA3Ny0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJs
+aWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9Im8wNzctMC0wIj48c3Bh
+biBkYXRhLW9mZnNldC1rZXk9Im8wNzctMC0wIj4jIOWuieijheaPkuS7tjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIg
+ZGF0YS1vZmZzZXQta2V5PSIzaDJnZy0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9IjNoMmdnLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSIzaDJnZy0wLTAiPuaCqOWPr+S7
+peWJjeW+gFvmj5Lku7bluILlnLpdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5jZW50LmNvbS9wbHVn
+aW5zLynvvIzpgInmi6noh6rlt7HllpzmrKLnmoTmj5Lku7bov5vooYzlronoo4XjgILpnIDopoHm
+s6jmhI/nmoTmmK/vvIwqKuWuieijheWJjemcgOimgeWFiOeZu+W9leiFvuiur+S6keW8gOWPkeiA
+heW5s+WPsCoq44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0i
+dHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImMxamJoLTAtMCI+PGRp
+diBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iYzFqYmgtMC0wIj48c3BhbiBkYXRhLW9mZnNl
+dC1rZXk9ImMxamJoLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2
+PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRh
+LW9mZnNldC1rZXk9IjljZmc4LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZh
+dWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0i
+OWNmZzgtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjljZmc4LTAtMCI+IVtdKGh0dHBzOi8v
+ZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vZTg2ZTkxN2EtMGM0ZS00N2Fj
+LWE5ZmUtNThmMzgxYmYyOTNjLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBk
+YXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iN3Y0
+dTAtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI3djR1MC0wLTAiPjxzcGFu
+IGRhdGEtb2Zmc2V0LWtleT0iN3Y0dTAtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+
+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0i
+YjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iZHRpc2ktMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJh
+ZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1v
+ZmZzZXQta2V5PSJkdGlzaS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZHRpc2ktMC0wIj7l
+ronoo4XlkI7vvIzliY3lvoAgZGFzaGJvYXJkIOeahFvnrKzkuInmlrnmj5Lku7ZdKGh0dHBzOi8v
+c3R1ZGlvLmRldi50ZW5jZW50LmNvbS9kYXNoYm9hcmQvcGx1Z2luL3RoaXJkcGFydHkp5bCx5Y+v
+5Lul55yL5Yiw6Ieq5bex5a6J6KOF55qE5o+S5Lu25LqG77yM6L+Z5Lqb5o+S5Lu25Lya5a+55L2g
+5omA5pyJ55qE5bel5L2c56m66Ze06LW35L2c55So44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYg
+Y2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNl
+dC1rZXk9IjJrN2Y1LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJs
+b2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMms3ZjUt
+MC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjJrN2Y1LTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1
+ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0
+YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9Ijh2amg2LTAtMCI+PGRpdiBjbGFzcz0i
+cHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1s
+dHIiIGRhdGEtb2Zmc2V0LWtleT0iOHZqaDYtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9Ijh2
+amg2LTAtMCI+IVtdKGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIu
+Y24vYzllNWQxZTktNGNmYS00MDc1LTk4ZjEtOTBiYWEyYTI3MjA5LmpwZyk8L3NwYW4+PC9kaXY+
+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQi
+IGRhdGEtb2Zmc2V0LWtleT0iOGVkMzYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHls
+ZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQt
+a2V5PSI4ZWQzNi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iOGVkMzYtMC0wIj48YnIgZGF0
+YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2Nr
+PSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iM3VlNWotMC0wIj48
+ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5
+bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIzdWU1ai0wLTAiPjxzcGFuIGRhdGEtb2Zm
+c2V0LWtleT0iM3VlNWotMC0wIj4jIOe7meaPkuS7tuivhOWIhjwvc3Bhbj48L2Rpdj48L2Rpdj48
+ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1v
+ZmZzZXQta2V5PSI1NGYxYi0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjU0
+ZjFiLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI1NGYxYi0wLTAiPuWmguaenOaCqOinieW+
+l+afkOS4quaPkuS7tuW+iOWlveeUqO+8jOS5n+WPr+S7peWcqOaPkuS7tueahOS4u+mhtee7meaP
+kuS7tui/m+ihjOivhOWIhuOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEt
+YmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSI5bjNwMS0w
+LTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJh
+ZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjluM3AxLTAtMCI+PHNwYW4gZGF0
+YS1vZmZzZXQta2V5PSI5bjNwMS0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rp
+dj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZo
+NCIgZGF0YS1vZmZzZXQta2V5PSI5YWtxNi0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0
+eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNl
+dC1rZXk9Ijlha3E2LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI5YWtxNi0wLTAiPiFbXSho
+dHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHViLmNuLzYzOTUzNjk3LTI4
+MWUtNGQxZi1iYjZhLWU3ZmY1OWNjYzExYi5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xh
+c3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1r
+ZXk9IjJyb3I4LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2Nr
+IHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMnJvcjgtMC0w
+Ij48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjJyb3I4LTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+
+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1l
+ZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImRtZnFrLTAtMCI+PGRpdiBjbGFzcz0icHVi
+bGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIi
+IGRhdGEtb2Zmc2V0LWtleT0iZG1mcWstMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImRtZnFr
+LTAtMCI+IyDnrqHnkIbmj5Lku7Y8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRh
+LWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iN2czZG4t
+MC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURy
+YWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI3ZzNkbi0wLTAiPjxzcGFuIGRh
+dGEtb2Zmc2V0LWtleT0iN2czZG4tMC0wIj7lnKggZGFzaGJvYXJkIOS4reeahFvmj5Lku7bnrqHn
+kIZdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5jZW50LmNvbS9kYXNoYm9hcmQvcGx1Z2luKemhtemd
+ouWPr+S7peeuoeeQhuiHquW3seWuieijheaIluW8gOWPkeeahOaPkuS7tuOAguWcqFvnrKzkuInm
+lrnmj5Lku7ZdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5jZW50LmNvbS9kYXNoYm9hcmQvcGx1Z2lu
+L3RoaXJkcGFydHkp5Lit77yM5L2g5Y+v5Lul5byA5ZCv44CB5YWz6Zet5oiW5Y246L295o+S5Lu2
+44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0
+YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImEwc2o3LTAtMCI+PGRpdiBjbGFzcz0i
+cHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1s
+dHIiIGRhdGEtb2Zmc2V0LWtleT0iYTBzajctMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImEw
+c2o3LTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xh
+c3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1r
+ZXk9ImZsaGNmLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2Nr
+IHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iZmxoY2YtMC0w
+Ij48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImZsaGNmLTAtMCI+IVtdKGh0dHBzOi8vZG4tY29kaW5n
+LW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vYjIxODhlZGUtZWE5OS00Y2VjLWI5NjctY2M3
+MTM4NmYxZWM3LmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2Nr
+PSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iZHFkNjYtMC0wIj48
+ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5
+bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJkcWQ2Ni0wLTAiPjxzcGFuIGRhdGEtb2Zm
+c2V0LWtleT0iZHFkNjYtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9k
+aXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRh
+dGEtb2Zmc2V0LWtleT0iYXQxc2YtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURl
+ZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5
+PSJhdDFzZi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iYXQxc2YtMC0wIj7lnKhb5oiR5byA
+5Y+R55qE5o+S5Lu2XShodHRwczovL3N0dWRpby5kZXYudGVuY2VudC5jb20vZGFzaGJvYXJkL3Bs
+dWdpbi9taW5lKeS4reS9oOWPr+S7peeuoeeQhuiHquW3seW8gOWPkeeahOaPkuS7tuOAguS9oOWP
+r+S7peWPkeW4g+aIlumihOWPkeW4g+iHquW3seW8gOWPkeeahOaPkuS7tu+8jOS5n+WPr+S7peS/
+ruaUueaIluWIoOmZpOiHquW3seW8gOWPkeeahOaPkuS7tuOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48
+ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1v
+ZmZzZXQta2V5PSI4OGYxcy0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9Ijg4
+ZjFzLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI4OGYxcy0wLTAiPjxiciBkYXRhLXRleHQ9
+InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUi
+IGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSI4aWY5Yy0wLTAiPjxkaXYgY2xh
+c3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjhpZjljLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5
+PSI4aWY5Yy0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2Rl
+aHViLmNuL2Y5NDgxZDU5LThhOWYtNDExYy1hYjRhLTRkZDMyNjY4MjA2NC5qcGcpPC9zcGFuPjwv
+ZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0
+dmg0IiBkYXRhLW9mZnNldC1rZXk9IjRwMWo5LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zm
+c2V0LWtleT0iNHAxajktMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjRwMWo5LTAtMCI+PGJy
+IGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1i
+bG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9Ijd0czlsLTAt
+MCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFm
+dFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iN3RzOWwtMC0wIj48c3BhbiBkYXRh
+LW9mZnNldC1rZXk9Ijd0czlsLTAtMCI+IyDliJvlu7rmj5Lku7Y8L3NwYW4+PC9kaXY+PC9kaXY+
+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEt
+b2Zmc2V0LWtleT0iYTF1NDUtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJh
+MXU0NS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iYTF1NDUtMC0wIj7lpoLmnpzmgqjmsqHm
+ib7liLDoh6rlt7Hmg7PopoHnmoTmj5Lku7bvvIzkuZ/lj6/ku6XliJvlu7rkuIDkuKrmj5Lku7bv
+vIzlubblj5HluIPliLDmj5Lku7bluILlnLrjgILopoHliJvlu7rmj5Lku7bvvIzmiJHku6zpnIDo
+poHov5vlhaUgQ2xvdWQgU3R1ZGlvIFvmjqfliLblj7BdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5j
+ZW50LmNvbS9kYXNoYm9hcmQvd29ya3NwYWNlKe+8jOeCueWHu+OAjOaWsOW7uiBDbG91ZCBTdHVk
+aW8g5o+S5Lu244CN77yM6L+b5YWlW+aPkuS7tuWIm+W7uumhtemdol0oaHR0cHM6Ly9zdHVkaW8u
+ZGV2LnRlbmNlbnQuY29tL2Rhc2hib2FyZC9wbHVnaW4vY3JlYXRlKeOAgjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIg
+ZGF0YS1vZmZzZXQta2V5PSIzdHJ1LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVE
+ZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtl
+eT0iM3RydS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iM3RydS0wLTAiPjxiciBkYXRhLXRl
+eHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRy
+dWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSJkZTA0Zi0wLTAiPjxkaXYg
+Y2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURl
+ZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImRlMDRmLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQt
+a2V5PSJkZTA0Zi0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5j
+b2RlaHViLmNuLzAyOGIxMDNiLWUzOTAtNGE1Yy05ZjJhLTE3MzU2YmNlNGY2ZC5qcGcpPC9zcGFu
+PjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9
+ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImVobXQyLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURy
+YWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEt
+b2Zmc2V0LWtleT0iZWhtdDItMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImVobXQyLTAtMCI+
+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0
+YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImMwZnI5
+LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1E
+cmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iYzBmcjktMC0wIj48c3BhbiBk
+YXRhLW9mZnNldC1rZXk9ImMwZnI5LTAtMCI+5Zyo5o+S5Lu25Yib5bu66aG16Z2i77yM5L2g6ZyA
+6KaB5aGr5YaZ5LiA5Lqb5o+S5Lu255qE5Z+65pys5L+h5oGv77ya5o+S5Lu25ZCN44CB5LuT5bqT
+5ZCN44CB5YiG57G75ZKM5o+P6L+w562J44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9
+IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9
+IjVtNWVuLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1
+YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iNW01ZW4tMC0wIj48
+c3BhbiBkYXRhLW9mZnNldC1rZXk9IjVtNWVuLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9z
+cGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0
+b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9ImVkNm9mLTAtMCI+PGRpdiBjbGFzcz0icHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRh
+dGEtb2Zmc2V0LWtleT0iZWQ2b2YtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImVkNm9mLTAt
+MCI+IVtdKGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBwLmNvZGVodWIuY24vNGE4
+MTNkMjEtMjgyNS00N2I4LWEyYWMtMjUyM2I5ODdlNmZlLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+
+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEt
+b2Zmc2V0LWtleT0iOTI5Z3EtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI5
+MjlncS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iOTI5Z3EtMC0wIj48YnIgZGF0YS10ZXh0
+PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVl
+IiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iM2lzZTctMC0wIj48ZGl2IGNs
+YXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZh
+dWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIzaXNlNy0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtl
+eT0iM2lzZTctMC0wIj4jIOWunuaXtuW8gOWPkemihOiniOaPkuS7tjwvc3Bhbj48L2Rpdj48L2Rp
+dj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0
+YS1vZmZzZXQta2V5PSJlb3Bvby0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVm
+YXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9
+ImVvcG9vLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJlb3Bvby0wLTAiPuWIm+W7uuWujOaI
+kOS5i+WQju+8jOWwseWPr+S7pei/m+WFpeivpeaPkuS7tueahOW3peS9nOepuumXtOWunuaXtuW8
+gOWPkemihOiniOaPkuS7tuOAguaPkuS7tuW3peS9nOepuumXtOm7mOiupOaYryBOb2RlanMgKDgu
+MTIuMOeJiOacrCnnmoTnjq/looPvvIzlkIzml7bpooToo4XkuoYgeWFybiAoMS4xMi4x54mI5pys
+KeOAguWPr+S7peeci+WIsO+8jOWcqOWPs+S+p+WKn+iDveWMuuacieS4gOS4quOAjOaPkuS7tuW8
+gOWPkeOAjemdouadv++8jOaCqOWPr+S7peWcqOi/memHjOi/m+ihjOaPkuS7tueahOW8gOWPkeWS
+jOWunuaXtuiwg+ivleOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxv
+Y2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSI0a2k4bS0wLTAi
+PjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRT
+dHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjRraThtLTAtMCI+PHNwYW4gZGF0YS1v
+ZmZzZXQta2V5PSI0a2k4bS0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIg
+ZGF0YS1vZmZzZXQta2V5PSJldDhzYy0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9ImV0OHNjLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJldDhzYy0wLTAiPiFbXShodHRw
+czovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHViLmNuL2FmNjVlYzM1LTg0NmIt
+NDU0YS1iOGY5LWE3NDU5NjFjMWFiZC5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9
+IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9
+IjFpNHBmLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1
+YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMWk0cGYtMC0wIj48
+c3BhbiBkYXRhLW9mZnNldC1rZXk9IjFpNHBmLTAtMCI+PGJyIGRhdGEtdGV4dD0idHJ1ZSI+PC9z
+cGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0
+b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9IjN1ZTR1LTAtMCI+PGRpdiBjbGFzcz0icHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRh
+dGEtb2Zmc2V0LWtleT0iM3VlNHUtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjN1ZTR1LTAt
+MCI+5ZCv5Yqo5a6e5pe26aKE6KeI5qih5byP5ZCO77yM5pW05Liq6LCD6K+V6L+H56iL5aaC5ZCM
+5Zyo5Lyg57uf57yW6L6R5Zmo5Lit5byA5Y+R5YmN56uv6aG555uu5LiA5qC377yM5q+P5qyh5L+u
+5pS55rqQ56CB5bm25L+d5a2Y5pe277yMYGRldi1zZXJ2ZXJgIOWGhee9rueahCB3ZWJwYWNrIOWw
+huS8mueri+WNs+e8luivkeS7o+egge+8jOe8luivkeWujOaIkOWQjuS8muWwhuaWsOeahOS7o+eg
+geWKoOi9veWIsOW9k+WJjeW3peS9nOepuumXtO+8jOatpOaXtuaXoOmcgOWIt+aWsOa1j+iniOWZ
+qOWNs+WPr+afpeeci+aPkuS7tueahOaViOaenOOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNs
+YXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQt
+a2V5PSIzNmRldS0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9j
+ayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjM2ZGV1LTAt
+MCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSIzNmRldS0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUi
+Pjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEt
+ZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSJlNXJyZC0wLTAiPjxkaXYgY2xhc3M9InB1
+YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRy
+IiBkYXRhLW9mZnNldC1rZXk9ImU1cnJkLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJlNXJy
+ZC0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHViLmNu
+L2M4MjlhMmFjLTlmZmItNGY4Mi04NjFkLTdhMjFhODBjODFiYi5qcGcpPC9zcGFuPjwvZGl2Pjwv
+ZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBk
+YXRhLW9mZnNldC1rZXk9ImNmdWRtLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVE
+ZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtl
+eT0iY2Z1ZG0tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImNmdWRtLTAtMCI+PGJyIGRhdGEt
+dGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0i
+dHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9IjJlcXJqLTAtMCI+PGRp
+diBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMmVxcmotMC0wIj48c3BhbiBkYXRhLW9mZnNl
+dC1rZXk9IjJlcXJqLTAtMCI+IyDlj5HluIPkvaDnmoTmj5Lku7Y8L3NwYW4+PC9kaXY+PC9kaXY+
+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEt
+b2Zmc2V0LWtleT0iMXVsaTYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIx
+dWxpNi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iMXVsaTYtMC0wIj7lpoLmnpzkvaDlt7Ln
+u4/lrozmiJDmj5Lku7blvIDlj5HvvIzmg7PopoHlsIblhbblj5HluIPliLDmj5Lku7bluILlnLrk
+vpvmiYDmnInnlKjmiLflronoo4XvvIzlsLHlj6/ku6XliY3lvoAgQ2xvdWQgU3R1ZGlvIFvmj5Lk
+u7bnrqHnkIZdKGh0dHBzOi8vc3R1ZGlvLmRldi50ZW5jZW50LmNvbS9kYXNoYm9hcmQvcGx1Z2lu
+KeWPkeW4g+aPkuS7tuOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxv
+Y2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSIyOGIyZS0wLTAi
+PjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRT
+dHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjI4YjJlLTAtMCI+PHNwYW4gZGF0YS1v
+ZmZzZXQta2V5PSIyOGIyZS0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIg
+ZGF0YS1vZmZzZXQta2V5PSI0dnNoZS0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9IjR2c2hlLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI0dnNoZS0wLTAiPuaIkeS7rOaP
+kOS+m+S6huS4pOenjeaPkuS7tuWPkeW4g+aWueW8j+KAlOKAlOOAjOmihOWPkeW4g+OAjeWSjOOA
+jOato+W8j+WPkeW4g+OAjeOAguOAjOmihOWPkeW4g+OAjeaYr+aMh+WcqOS9oOiHquW3seeahOaJ
+gOacieW3peS9nOepuumXtOW8gOWQr+ivpeaPkuS7tu+8jOaXoOmcgOWuoeaguO+8jOWFtuS7lueU
+qOaIt+S5n+S4jeS8muWGjeaPkuS7tuW4guWcuueci+WIsOOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48
+ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1v
+ZmZzZXQta2V5PSI5YXBpNy0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9Ijlh
+cGk3LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI5YXBpNy0wLTAiPjxiciBkYXRhLXRleHQ9
+InRydWUiPjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUi
+IGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSIxOWw3ci0wLTAiPjxkaXYgY2xh
+c3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjE5bDdyLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5
+PSIxOWw3ci0wLTAiPiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2Rl
+aHViLmNuLzlmMDk1NGZlLTdjNmMtNDFkZi04NDA3LTAzMGFhYzgwZjdkYi5qcGcpPC9zcGFuPjwv
+ZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0
+dmg0IiBkYXRhLW9mZnNldC1rZXk9IjRrcHQxLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zm
+c2V0LWtleT0iNGtwdDEtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjRrcHQxLTAtMCI+PGJy
+IGRhdGEtdGV4dD0idHJ1ZSI+PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1i
+bG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9ImI0dmg0IiBkYXRhLW9mZnNldC1rZXk9IjgwNmJqLTAt
+MCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFm
+dFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iODA2YmotMC0wIj48c3BhbiBkYXRh
+LW9mZnNldC1rZXk9IjgwNmJqLTAtMCI+5aaC5p6c5L2g55qE5o+S5Lu25Zyo5omA5pyJ5bel5L2c
+56m66Ze05Lit6YO96IO95q2j5bi46L+Q6KGM77yM5Y+v5Lul5bCG5YW25q2j5byP5Y+R5biD5Yiw
+W+aPkuS7tuW4guWcul0oaHR0cHM6Ly9zdHVkaW8uZGV2LnRlbmNlbnQuY29tL3BsdWdpbnMp77yM
+5L6b5omA5pyJ55So5oi35a6J6KOF5L2/55So44CC5YmN5b6A5o6n5Yi25Y+wW+aIkeW8gOWPkeea
+hOaPkuS7tl0oaHR0cHM6Ly9zdHVkaW8uZGV2LnRlbmNlbnQuY29tL2Rhc2hib2FyZC9wbHVnaW4v
+bWluZSnpobXpnaLkuK3vvIzngrnlh7vjgIznrqHnkIbjgI3ov5vlhaXmj5Lku7borr7nva7pobXp
+naLvvIzlho3pgInmi6njgIzlj5HluIPjgI3vvIzloavlhpnmj5Lku7bnmoTniYjmnKzlj7flkozn
+iYjmnKzor7TmmI7lsLHlj6/ku6XmraPlvI/lj5HluIPkuobjgII8L3NwYW4+PC9kaXY+PC9kaXY+
+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEt
+b2Zmc2V0LWtleT0iMzljaWYtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIz
+OWNpZi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iMzljaWYtMC0wIj48YnIgZGF0YS10ZXh0
+PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVl
+IiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iZ3Y0aC0wLTAiPjxkaXYgY2xh
+c3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9Imd2NGgtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9
+Imd2NGgtMC0wIj7mraPlvI/lj5HluIPkuYvlkI7vvIzmiJHku6zkvJrlnKjlkI7lj7DlrqHmoLjk
+vaDnmoTmj5Lku7bku6PnoIHvvIzlrqHmoLjpgJrov4fkuYvlkI7lsLHlj6/ku6XlnKhb5o+S5Lu2
+5biC5Zy6XShodHRwczovL3N0dWRpby5kZXYudGVuY2VudC5jb20vcGx1Z2lucynnnIvliLDlroPl
+labjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBk
+YXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iMWNpNmwtMC0wIj48ZGl2IGNsYXNz
+PSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0
+LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIxY2k2bC0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0i
+MWNpNmwtMC0wIj48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBj
+bGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0
+LWtleT0iOXJidW8tMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxv
+Y2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI5cmJ1by0w
+LTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iOXJidW8tMC0wIj4hW10oaHR0cHM6Ly9kbi1jb2Rp
+bmctbmV0LXByb2R1Y3Rpb24tcHAuY29kZWh1Yi5jbi8yOTVhYjEyYS1mYWJjLTQxODktYTk0OS1k
+MDYyNDczOWJmY2UuanBnKTwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxv
+Y2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIgZGF0YS1vZmZzZXQta2V5PSJjM2dzYS0wLTAi
+PjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRT
+dHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImMzZ3NhLTAtMCI+PHNwYW4gZGF0YS1v
+ZmZzZXQta2V5PSJjM2dzYS0wLTAiPjxiciBkYXRhLXRleHQ9InRydWUiPjwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSJiNHZoNCIg
+ZGF0YS1vZmZzZXQta2V5PSJmNjhhOC0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9ImY2OGE4LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJmNjhhOC0wLTAiPuabtOWKoOiv
+pue7hueahOaPkuS7tuW8gOWPkeatpemqpOWSjCBBUEkg6K+35Y+C6ICDW+aPkuS7tuW8gOWPkeaW
+h+aho10oaHR0cHM6Ly9zdHVkaW8uZGV2LnRlbmNlbnQuY29tL3BsdWdpbnMtZG9jcynjgII8L3Nw
+YW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRv
+cj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iNXMxZWEtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMt
+RHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0
+YS1vZmZzZXQta2V5PSI1czFlYS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iNXMxZWEtMC0w
+Ij48YnIgZGF0YS10ZXh0PSJ0cnVlIj48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBk
+YXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iYjR2aDQiIGRhdGEtb2Zmc2V0LWtleT0iOGoy
+dDYtMC0wIj4mbmJzcDs8L2Rpdj4=">​</div>
+</div>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="search.html" title="全文搜索功能介绍">全文搜索功能介绍</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2142</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="faq1.html" title="Cloud Studio 常见问题">Cloud Studio 常见问题</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    9781</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy-static.html" title="使用一键部署搭建静态网站">使用一键部署搭建静态网站</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    11699</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="access-link.html" title="使用访问链接演示你的应用">使用访问链接演示你的应用</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    17879</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy.html" title="一键部署使用指南">一键部署使用指南</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    31852</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="git2.html" title="使用 Git 进行版本控制">使用 Git 进行版本控制</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    5827</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

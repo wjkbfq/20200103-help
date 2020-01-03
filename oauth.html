@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>腾讯云开发者平台如何采用 OAuth协议认证？ &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='Cloud Studio' href='cloud-studio1.html'>
+<link rel='next' title='如何创建 SVN 仓库？' href='create-svn.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6423'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Ffaq%2Fb4e5b7aee786%2Foauth">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Ffaq%2Fb4e5b7aee786%2Foauth&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6423 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="faq.html" title="View all posts in 常见问题">
+                        <span itemprop="name">常见问题</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="账号管理.html" title="View all posts in 账号管理">
+                        <span itemprop="name">账号管理</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="腾讯云开发者平台如何采用 OAuth协议认证？">
+                        <span itemprop="name">腾讯云开发者平台如何采用 OAuth协议认证？</span>
+                    </a>
+                    <meta itemprop="position" content="4">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6423" class="post-6423 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-70 ht_kb_tag-doc" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				腾讯云开发者平台如何采用 OAuth协议认证？			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/doc/faq/b4e5b7aee786/oauth" rel="bookmark" itemprop="url"><time datetime="2018-12-19" itemprop="datePublished">2018年12月19日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/chenhang" title="chenhang" rel="me" itemprop="author">chenhang</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/%e8%b4%a6%e5%8f%b7%e7%ae%a1%e7%90%86" rel="tag">账号管理</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 接入</a><ul><li><a href="#i-2"><span class="toc_number toc_depth_2">1.1</span> 开发者注册</a></li><li><a href="#i-3"><span class="toc_number toc_depth_2">1.2</span> 授权流程</a></li></ul></li><li><a href="#i-4"><span class="toc_number toc_depth_1">2</span> 参数</a><ul><li><a href="#i-5"><span class="toc_number toc_depth_2">2.1</span> 用户信息</a></li><li><a href="#i-6"><span class="toc_number toc_depth_2">2.2</span> 用户的项目列表</a></li><li><a href="#i-7"><span class="toc_number toc_depth_2">2.3</span> 创建任务</a></li><li><a href="#_id"><span class="toc_number toc_depth_2">2.4</span> 根据 id 获取任务</a></li><li><a href="#_id-2"><span class="toc_number toc_depth_2">2.5</span> 根据 id 删除任务</a></li><li><a href="#i-8"><span class="toc_number toc_depth_2">2.6</span> 更新任务</a></li><li><a href="#i-9"><span class="toc_number toc_depth_2">2.7</span> 获取用户某项目的任务列表</a></li><li><a href="#webhook"><span class="toc_number toc_depth_2">2.8</span> webhook 列表</a></li><li><a href="#_webhook"><span class="toc_number toc_depth_2">2.9</span> 增加 webhook</a></li><li><a href="#_webhook-2"><span class="toc_number toc_depth_2">2.10</span> 获取 webhook</a></li><li><a href="#_webhook-3"><span class="toc_number toc_depth_2">2.11</span> 编辑 webhook</a></li><li><a href="#_webhook-4"><span class="toc_number toc_depth_2">2.12</span> 删除 webhook</a></li><li><a href="#_branch_commit_sha"><span class="toc_number toc_depth_2">2.13</span> 从 branch 名称查询 commit sha</a></li><li><a href="#i-10"><span class="toc_number toc_depth_2">2.14</span> 添加部署公钥</a></li><li><a href="#_repo"><span class="toc_number toc_depth_2">2.15</span> 读取 repo 某个文件</a></li></ul></li></ul></div>
+<div id="hkb" class="hkb-template-single">
+<article id="post-6270" class="post-6270 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-account ht_kb_tag-doc">
+<div class="hkb-entry-content">
+<div class="hkb-article__content entry-content">
+<p>注册应用无需审核即可使用授权。腾讯云开发者平台采用 OAuth 2.0 协议认证。</p>
+<h2 id="1接入" id="%e6%8e%a5%e5%85%a5"><span id="i"><span id="i">接入</span></span></h2>
+<p><img src="static/picture/e3dc0e6d-6bc6-481f-9d7e-42d351d9.png" alt="图片"></p>
+<h3 id="11-开发者注册" id="%e5%bc%80%e5%8f%91%e8%80%85%e6%b3%a8%e5%86%8c"><span id="i-2"><span id="i-2">开发者注册</span></span></h3>
+<p>在<strong>账户 -&gt; 应用管理</strong>页面添加应用，注册要接入开发者平台的应用。</p>
+<p><img src="static/picture/a06fb26b-c272-492c-925a-9549aa1a.png" alt="图片"></p>
+<p><img src="static/picture/98ded2b6-877e-43ac-88c6-ba5ea648.png" alt="图片"></p>
+<p>其中<strong>回调地址</strong>是用户授权后，开发者平台回调到应用，并且回传<strong>授权码</strong>的地址。</p>
+<p>保存后，会返回到应用列表。</p>
+<p><img src="static/picture/7dd385c0-d42a-4ada-9c5e-dfe38389.png" alt="图片"></p>
+<p>此时再查看应用，会生成 <code class="highlighter-rouge">client id</code> 和 <code class="highlighter-rouge">client secret</code>。</p>
+<p><img src="static/picture/ec4d2a86-6b2a-4567-9f15-bf38716f.png" alt="图片"></p>
+<p>保存 client id 和 client secret，以便后续认证使用。</p>
+<h3 id="12-授权流程" id="%e6%8e%88%e6%9d%83%e6%b5%81%e7%a8%8b"><span id="i-3"><span id="i-3">授权流程</span></span></h3>
+<ul>
+<li>将用户引导到开发者平台第三方登录页面上。如右侧：</li>
+</ul>
+<pre class="command-line">https://dev.tencent.com/oauth_authorize.html?client_id={client_id}
+&amp;redirect_uri={redirect_uri}&amp;response_type=code[&amp;scope={scope}</pre>
+<ul>
+<li>如用户未登录腾讯开发者中心，跳转到登录页面</li>
+</ul>
+<p><img src="static/picture/526f5f05-6dfb-4338-8e8e-9342f9e5.png" alt="图片"></p>
+<ul>
+<li>用户登录，并对应用请求的 scope 进行授权。</li>
+</ul>
+<p><img src="static/picture/9d9b7dad-7d80-4aef-9154-f3a66cca.png" alt="图片"></p>
+<ul>
+<li>授权通过，开发者平台会将<strong>授权码</strong>回传给应用在开发者平台注册的回调地址（http://xxx.com/callback?code=xxx），应用直接获取授权码 code 即可。</li>
+</ul>
+<p><img src="static/picture/5381b5f2-002b-4e79-bdba-a45d79ea.png" alt="图片"></p>
+<ul>
+<li>应用向开发者平台的 Token Endpoint 发送请求：</li>
+</ul>
+<pre class="command-line">https://dev.tencent.com/api/oauth/access_token?client_id={client_id}&amp;client_secret=
+{client_secret}&amp;grant_type=authorization_code&amp;code={code}</pre>
+<p>返回值 ：</p>
+<div>
+<pre>{ "expires_in": "271645",  "refresh_token": "xxxxxx", "access_token":"xxxxxx" }
+</pre>
+</div>
+<p><img src="static/picture/c0b6eed6-1b98-4ff7-9416-51b60bf2.png" alt="图片"></p>
+<ul>
+<li>使用 <code class="highlighter-rouge">access_token</code> 访问受保护的资源 <code class="highlighter-rouge">https://dev.tencent.com/api/current_user?access_token={access_token}</code></li>
+</ul>
+<p><img src="static/picture/fda15723-76c4-4a97-9a22-c1e0943d.png" alt="图片"></p>
+<ul>
+<li>Response body 中的 <code class="highlighter-rouge">code</code> 为 0，表示正常接收请求。如果 <code class="highlighter-rouge">code</code> 为 1，表示请求异常，请参照 <code class="highlighter-rouge">msg</code> 中的返回信息进行处理。</li>
+</ul>
+<p><img src="static/picture/b1729148-185e-4aca-a05a-cf4a127f.png" alt="图片"></p>
+<h2 id="2-参数" id="%e5%8f%82%e6%95%b0"><span id="i-4"><span id="i-4">参数</span></span></h2>
+<table>
+<thead>
+<tr>
+<th>scope 名称</th>
+<th>说明</th>
+<th>授权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>授权获取用户信息（用户名称，头像，tag，email，动态 ）</td>
+<td>读</td>
+</tr>
+<tr>
+<td>user:email</td>
+<td>授权获取用户的email ）</td>
+<td>读</td>
+</tr>
+<tr>
+<td>notification</td>
+<td>授权读取通知信息，包含email通知</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>social:message</td>
+<td>授权读取、发送私信、私信语音</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>project</td>
+<td>授权项目信息、项目列表，仓库信息，公钥列表、成员，任务列表</td>
+<td>读</td>
+</tr>
+<tr>
+<td>project:members</td>
+<td>授权项目管理者增、删、改项目成员，退出项目</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>project:task</td>
+<td>授权任务操作，包含增、删、改</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>project:file</td>
+<td>授权文件，包含增、删、改</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>project:depot</td>
+<td>获取 commit 信息，分支操作，MR/PR, LineNotes, fork, webhook 等操作</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>project:key</td>
+<td>授权操作部署公钥、个人公钥</td>
+<td>读写</td>
+</tr>
+</tbody>
+</table>
+<h3 id="210-用户信息" id="%e7%94%a8%e6%88%b7%e4%bf%a1%e6%81%af"><span id="i-5"><span id="i-5">用户信息</span></span></h3>
+<pre class="command-line">GET   /api/account/current_user</pre>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "tags_str": "云计算追随者, 技术风向标",
+        "tags": "19,32",
+        "job_str": "产品",
+        "job": 2,
+        "sex": 0,
+        "phone": "18600000000",
+        "birthday": "2014-07-16",
+        "location": "广东 深圳  ",
+        "company": "Coding.net",
+        "slogan": "让开发更简单",
+        "website": "",
+        "introduction": "",
+        "avatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+        "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+        "lavatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+        "created_at": 1399045779000,
+        "last_logined_at": 1502121619000,
+        "last_activity_at": 1502173432514,
+        "global_key": "coding",
+        "name": "coding",
+        "name_pinyin": "coding",
+        "updated_at": 1502121621000,
+        "path": "/u/coding",
+        "status": 1,
+        "email": "coding@dev.tencent.com",
+        "is_member": 0,
+        "id": 93,
+        "points_left": 0.44,
+        "vip": 4,
+        "vip_expired_at": 1502467200000,
+        "skills": [
+            {
+                "skillName": "Java",
+                "skillId": 1,
+                "level": 4
+            },
+            {
+                "skillName": "Ruby",
+                "skillId": 3,
+                "level": 3
+            },
+            {
+                "skillName": "JavaScript",
+                "skillId": 11,
+                "level": 3
+            }
+        ],
+        "degree": 3,
+        "school": "",
+        "follows_count": 83,
+        "fans_count": 191,
+        "tweets_count": 110,
+        "phone_country_code": "+86",
+        "country": "cn",
+        "followed": false,
+        "follow": false,
+        "is_phone_validated": true,
+        "email_validation": 1,
+        "phone_validation": 1,
+        "twofa_enabled": 1
+    }
+}
+</pre>
+</div>
+<h3 id="230-用户的项目列表" id="%e7%94%a8%e6%88%b7%e7%9a%84%e9%a1%b9%e7%9b%ae%e5%88%97%e8%a1%a8"><span id="i-6"><span id="i-6">用户的项目列表</span></span></h3>
+<pre>GET    /api/user/projects</pre>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "page": 1,
+        "pageSize": 100,
+        "totalPage": 1,
+        "totalRow": 2,
+        "list": [
+            {
+                "created_at": 1426246044000,
+                "backend_project_path": "/user/baoti/project/Coding-API",
+                "description": "开发者平台的 API 是啥样呢？瞧一瞧，看一看。\n注意：由于官方未提供 API 文档，此处 API 整理自 Coding-Android 项目源码。\n尚未对照 IOS 客户端源码。请前往演示, 或转至 http://coding-api.coding.io/ 以查看当前整理的 API.",
+                "git_url": "git://dev.tencent.com/baoti/Coding-API.git",
+                "ssh_url": "git@dev.tencent.com:baoti/Coding-API.git",
+                "is_public": true,
+                "https_url": "https://dev.tencent.com/baoti/Coding-API.git",
+                "id": 67965,
+                "name": "Coding-API",
+                "owner_id": 84337,
+                "owner_user_name": "baoti",
+                "owner_user_picture": "/static/fruit_avatar/Fruit-2.png",
+                "owner_user_home": "&lt;a href=\"https://dev.tencent.com/u/baoti\"&gt;baoti&lt;/a&gt;",
+                "project_path": "/u/baoti/p/Coding-API",
+                "status": 1,
+                "type": 1,
+                "updated_at": 1426576642885,
+                "last_updated": 1426576630625,
+                "fork_count": 0,
+                "star_count": 2,
+                "watch_count": 5,
+                "pin": false,
+                "depot_path": "/u/baoti/p/Coding-API/git",
+                "forked": false,
+                "un_read_activities_count": 0,
+                "icon": "/static/project_icon/scenery-23.png",
+                "current_user_role_id": 100,
+                "current_user_role": "owner",
+                "stared": false,
+                "watched": false,
+                "recommended": 1,
+                "max_member": 10,
+                "groupId": 0
+            },
+            {
+                "created_at": 1426171134000,
+                "backend_project_path": "/user/baoti/project/Coding-Android",
+                "description": "Fork 自官方仓库，并添加了自己的修改分支",
+                "git_url": "git://coding.net/baoti/Coding-Android.git",
+                "ssh_url": "git@dev.tencent.com:baoti/Coding-Android.git",
+                "is_public": true,
+                "https_url": "https://coding.net/baoti/Coding-Android.git",
+                "id": 67604,
+                "name": "Coding-Android",
+                "owner_id": 84337,
+                "owner_user_name": "baoti",
+                "owner_user_picture": "/static/fruit_avatar/Fruit-2.png",
+                "owner_user_home": "&lt;a href=\"https://coding.net/u/baoti\"&gt;baoti&lt;/a&gt;",
+                "project_path": "/u/baoti/p/Coding-Android",
+                "status": 1,
+                "type": 1,
+                "updated_at": 1426485162000,
+                "last_updated": 1426485163000,
+                "fork_count": 307,
+                "star_count": 0,
+                "watch_count": 0,
+                "pin": false,
+                "depot_path": "/u/baoti/p/Coding-Android/git",
+                "forked": true,
+                "un_read_activities_count": 0,
+                "icon": "/static/project_icon/scenery-17.png",
+                "current_user_role_id": 100,
+                "current_user_role": "owner",
+                "stared": false,
+                "watched": false,
+                "recommended": 0,
+                "max_member": 10,
+                "groupId": 0,
+                "parent_depot_path": "coding/Coding-Android"
+            }
+        ]
+    }
+}
+</pre>
+</div>
+<h3 id="240-创建任务" id="%e5%88%9b%e5%bb%ba%e4%bb%bb%e5%8a%a1"><span id="i-7"><span id="i-7">创建任务</span></span></h3>
+<pre class="command-line">POST   /api/user/{user_name}/project/{project_name}/task</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表单字段</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>owner_id</td>
+<td>string</td>
+<td>当前任务执行人的 id</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>int</td>
+<td>任务优先级, 默认值为 1, 0 – 有空再看, 1 – 正常处理, 2 – 优先处理, 3 – 十万火急</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>string</td>
+<td>任务完成期限, 选填</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>任务描述, 选填</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>任务内容, 选填</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:（点击代码展开）</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="241-根据-id-获取任务" id="%e6%a0%b9%e6%8d%ae-id-%e8%8e%b7%e5%8f%96%e4%bb%bb%e5%8a%a1"><span id="_id"><span id="_id">根据 id 获取任务</span></span></h3>
+<pre>GET   /api/user/{user_name}/project/{project_name}/task/{task_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>task_id</td>
+<td>int</td>
+<td>任务 id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "id": 123,
+        "priority": 2,
+        "comments": 0,
+        "content": "",
+        "created_at": 1426579942000,
+        "creator": {
+            "avatar": "/static/fruit_avatar/Fruit-15.png",
+            "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+            "lavatar": "/static/fruit_avatar/Fruit-15.png",
+            "global_key": "baoti",
+            "name": "baoti",
+            "id": 85544
+        },
+        "creator_id": 85544,
+        "current_user_role_id": "2",
+        "owner": {
+            "avatar": "/static/fruit_avatar/Fruit-15.png",
+            "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+            "lavatar": "/static/fruit_avatar/Fruit-15.png",
+            "global_key": "baoti",
+            "name": "baoti",
+            "id": 85544
+        },
+        "owner_id": 85544,
+        "project": {
+            "id": 67965,
+            "name": "Coding-API",
+            "owner_id": 84337
+        },
+        "project_id": 67965,
+        "status": 1,
+        "updated_at": 1426579942000,
+        "deadline": "",
+        "has_description": true
+    }
+}
+</pre>
+</div>
+<h3 id="242-根据-id-删除任务" id="%e6%a0%b9%e6%8d%ae-id-%e5%88%a0%e9%99%a4%e4%bb%bb%e5%8a%a1"><span id="_id-2"><span id="_id-2">根据 id 删除任务</span></span></h3>
+<pre>DELETE   /api/user/{user_name}/project/{project_name}/task/{task_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>task_id</td>
+<td>int</td>
+<td>任务 id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="243-更新任务" id="%e6%9b%b4%e6%96%b0%e4%bb%bb%e5%8a%a1"><span id="i-8"><span id="i-8">更新任务</span></span></h3>
+<pre>PUT   /api/user/{user_name}/project/{project_name}/task/{task_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>task_id</td>
+<td>int</td>
+<td>任务 id</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表单字段</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>任务内容, 可不填</td>
+</tr>
+<tr>
+<td>status</td>
+<td>short</td>
+<td>任务内容, 1 – 进行中, 2 – 已完成, 可不填</td>
+</tr>
+<tr>
+<td>owner_id</td>
+<td>int</td>
+<td>任务新执行者的 id, 可不填</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>任务描述, 可不填</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>int</td>
+<td>任务优先级, 默认值为 1, 0 – 有空再看, 1 – 正常处理, 2 – 优先处理, 3 – 十万火急, 可不填</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>string</td>
+<td>任务完成期限, 格式 “yyyy-MM-dd”</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="244-获取用户某项目的任务列表" id="%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e6%9f%90%e9%a1%b9%e7%9b%ae%e7%9a%84%e4%bb%bb%e5%8a%a1%e5%88%97%e8%a1%a8"><span id="i-9"><span id="i-9">获取用户某项目的任务列表</span></span></h3>
+<pre class="command-line">GET  /api/user/{user_name}/project/{project_name}/tasks/my/{task_status}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>task_status</td>
+<td>string</td>
+<td>任务状态, “all” – 获取所有任务, “processing” – 获取进行中的任务, “done” – 获取已完成的任务, “watch” – 获取关注的任务</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "page": 1,
+        "pageSize": 100,
+        "totalPage": 1,
+        "totalRow": 2,
+        "list": [
+            {
+                "id": 123,
+                "priority": 2,
+                "comments": 0,
+                "content": "",
+                "created_at": 1426579942000,
+                "creator": {
+                    "avatar": "/static/fruit_avatar/Fruit-15.png",
+                    "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+                    "lavatar": "/static/fruit_avatar/Fruit-15.png",
+                    "global_key": "baoti",
+                    "name": "baoti",
+                    "id": 85544
+                },
+                "creator_id": 85544,
+                "current_user_role_id": "2",
+                "owner": {
+                    "avatar": "/static/fruit_avatar/Fruit-15.png",
+                    "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+                    "lavatar": "/static/fruit_avatar/Fruit-15.png",
+                    "global_key": "baoti",
+                    "name": "baoti",
+                    "id": 85544
+                },
+                "owner_id": 85544,
+                "project": {
+                    "id": 67965,
+                    "name": "Coding-API",
+                    "owner_id": 84337
+                },
+                "project_id": 67965,
+                "status": 1,
+                "updated_at": 1426579942000,
+                "deadline": "",
+                "has_description": true
+            },
+            {
+                "id": 125,
+                "priority": 2,
+                "comments": 0,
+                "content": "",
+                "created_at": 1426579942000,
+                "creator": {
+                    "avatar": "/static/fruit_avatar/Fruit-15.png",
+                    "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+                    "lavatar": "/static/fruit_avatar/Fruit-15.png",
+                    "global_key": "baoti",
+                    "name": "baoti",
+                    "id": 85544
+                },
+                "creator_id": 85544,
+                "current_user_role_id": "2",
+                "owner": {
+                    "avatar": "/static/fruit_avatar/Fruit-15.png",
+                    "gravatar": "https://dn-coding-net-avatar.codehub.cn/89628160-f594-4e52-8c77-fda089fcc7dd.jpg",
+                    "lavatar": "/static/fruit_avatar/Fruit-15.png",
+                    "global_key": "baoti",
+                    "name": "baoti",
+                    "id": 85544
+                },
+                "owner_id": 85544,
+                "project": {
+                    "id": 67965,
+                    "name": "Coding-API",
+                    "owner_id": 84337
+                },
+                "project_id": 67965,
+                "status": 1,
+                "updated_at": 1426579942000,
+                "deadline": "",
+                "has_description": true
+            }
+        ]
+    }
+}
+</pre>
+</div>
+<h3 id="250-webhook-列表" id="webhook-%e5%88%97%e8%a1%a8"><span id="webhook"><span id="webhook">webhook 列表</span></span></h3>
+<pre>GET   /api/user/{user_name}/project/{project_name}/git/hooks</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": [
+        {
+            "depot_id": 20658,
+            "hook_url": "http://abc.dev.tencent.com",
+            "type": 1,
+            "token": "",
+            "status": 0,
+            "created_at": 1431511538877,
+            "updated_at": 1431511538877,
+            "send_type": 3,
+            "id": 174
+        },
+        {
+            "depot_id": 20658,
+            "hook_url": "https://api-doc.dev.tencent.io",
+            "type": 1,
+            "token": "hjklzxcqaw3422345",
+            "status": 0,
+            "created_at": 1431511574722,
+            "updated_at": 1431511574722,
+            "send_type": 3,
+            "id": 175
+        }
+    ]
+}
+</pre>
+</div>
+<h3 id="251-增加-webhook" id="%e5%a2%9e%e5%8a%a0-webhook"><span id="_webhook"><span id="_webhook">增加 webhook</span></span></h3>
+<pre>POST   /api/user/{user_name}/project/{project_name}/git/hook/{hook_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表单字段</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hook_url</td>
+<td>string</td>
+<td>webhook 链接</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>自定义 webhook 秘钥</td>
+</tr>
+<tr>
+<td>type_push</td>
+<td>boolean</td>
+<td>push代码 通知开关</td>
+</tr>
+<tr>
+<td>type_mr_pr</td>
+<td>boolean</td>
+<td>MR/PR 通知开关</td>
+</tr>
+<tr>
+<td>type_topic</td>
+<td>boolean</td>
+<td>发布讨论 通知开关</td>
+</tr>
+<tr>
+<td>type_member</td>
+<td>boolean</td>
+<td>成员变动 通知开关</td>
+</tr>
+<tr>
+<td>type_comment</td>
+<td>boolean</td>
+<td>发表评论 通知开关</td>
+</tr>
+<tr>
+<td>type_document</td>
+<td>boolean</td>
+<td>文档 通知开关</td>
+</tr>
+<tr>
+<td>type_watch</td>
+<td>boolean</td>
+<td>项目被关注 通知开关</td>
+</tr>
+<tr>
+<td>type_star</td>
+<td>boolean</td>
+<td>项目被加星 通知开关</td>
+</tr>
+<tr>
+<td>type_task</td>
+<td>boolean</td>
+<td>项目任务 通知开关</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:（点击代码展开）</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="252-获取-webhook" id="%e8%8e%b7%e5%8f%96-webhook"><span id="_webhook-2"><span id="_webhook-2">获取 webhook</span></span></h3>
+<pre class="command-line">GET   /api/user/{user_name}/project/{project_name}/git/hook/{hook_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>hook_id</td>
+<td>int</td>
+<td>webhook id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:（点击代码展开）</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "depot_id": 20658,
+        "hook_url": "http://abc.dev.tencent.com",
+        "type": 1,
+        "token": "",
+        "status": 0,
+        "created_at": 1431511538877,
+        "updated_at": 1431511538877,
+        "send_type": 3,
+        "id": 174
+    }
+}
+</pre>
+</div>
+<h3 id="253-编辑-webhook" id="%e7%bc%96%e8%be%91-webhook"><span id="_webhook-3"><span id="_webhook-3">编辑 webhook</span></span></h3>
+<pre class="command-line">PUT   /api/user/{user_name}/project/{project_name}/git/hook/{hook_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>hook_id</td>
+<td>int</td>
+<td>webhook id</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表单字段</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hook_url</td>
+<td>string</td>
+<td>webhook 链接</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>自定义 webhook 秘钥</td>
+</tr>
+<tr>
+<td>type_push</td>
+<td>boolean</td>
+<td>push代码 通知开关</td>
+</tr>
+<tr>
+<td>type_mr_pr</td>
+<td>boolean</td>
+<td>MR/PR 通知开关</td>
+</tr>
+<tr>
+<td>type_topic</td>
+<td>boolean</td>
+<td>发布讨论 通知开关</td>
+</tr>
+<tr>
+<td>type_member</td>
+<td>boolean</td>
+<td>成员变动 通知开关</td>
+</tr>
+<tr>
+<td>type_comment</td>
+<td>boolean</td>
+<td>发表评论 通知开关</td>
+</tr>
+<tr>
+<td>type_document</td>
+<td>boolean</td>
+<td>文档 通知开关</td>
+</tr>
+<tr>
+<td>type_watch</td>
+<td>boolean</td>
+<td>项目被关注 通知开关</td>
+</tr>
+<tr>
+<td>type_star</td>
+<td>boolean</td>
+<td>项目被加星 通知开关</td>
+</tr>
+<tr>
+<td>type_task</td>
+<td>boolean</td>
+<td>项目任务 通知开关</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="254-删除-webhook" id="%e5%88%a0%e9%99%a4-webhook"><span id="_webhook-4"><span id="_webhook-4">删除 webhook</span></span></h3>
+<pre>DELETE   /api/user/{user_name}/project/{project_name}/git/hook/{hook_id}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>hook_id</td>
+<td>int</td>
+<td>webhook id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0
+}
+</pre>
+</div>
+<h3 id="260-从-branch-名称查询-commit-sha" id="%e4%bb%8e-branch-%e5%90%8d%e7%a7%b0%e6%9f%a5%e8%af%a2-commit-sha"><span id="_branch_commit_sha"><span id="_branch_commit_sha">从 branch 名称查询 commit sha</span></span></h3>
+<pre class="command-line">GET   /api/user/{user_name}/project/{project_name}/git/tree/{branch_name}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>branch_name</td>
+<td>string</td>
+<td>分支名称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "ref": "master",
+        "lastCommitter": {
+            "name": "ZXX_ABC",
+            "email": "kcccss111@gmail.com",
+            "avatar": "https://dn-coding-net-production-static.codehub.cn/0174e523-963b-4cfb-a2ef-d4f0efea3465.jpg?imageMogr2/auto-orient/format/jpeg/crop/!128x128a0a0",
+            "link": "/u/zxx_sse"
+        },
+        "files": [
+            {
+                "mode": "file",
+                "path": "README.md",
+                "name": "README.md",
+                "flatten_path": "README.md"
+            }
+        ],
+        "can_edit": true,
+        "isHead": true,
+        "headCommit": {
+            "fullMessage": "new file abc.md",
+            "shortMessage": "new file abc.md\n",
+            "allMessage": "",
+            "commitId": "8a305b5304a0eab0c58ea861dbb1b760a72ea9a8",
+            "commitTime": 1431057342000,
+            "committer": {
+                "name": "ZXX_ABC",
+                "email": "kcccss111@gmail.com",
+                "avatar": "https://dn-coding-net-production-static.codehub.cn/0174e523-963b-4cfb-a2ef-d4f0efea3465.jpg?imageMogr2/auto-orient/format/jpeg/crop/!128x128a0a0",
+                "link": "/u/zxx_sse"
+            },
+            "notesCount": 0
+        },
+        "readme": {
+            "data": "#abcawerq\n",
+            "lang": "markdown",
+            "size": 10,
+            "previewed": true,
+            "preview": "&lt;h1&gt;abcawerq&lt;/h1&gt;",
+            "lastCommitMessage": "Initial commit\n",
+            "lastCommitDate": 1431057300000,
+            "lastCommitId": "48b65a3b85ab65974f4d64da0f27d7e757561198",
+            "lastCommitter": {
+                "name": "ZXX_ABC",
+                "email": "kcccss111@gmail.com",
+                "avatar": "https://dn-coding-net-production-static.codehub.cn/0174e523-963b-4cfb-a2ef-d4f0efea3465.jpg?imageMogr2/auto-orient/format/jpeg/crop/!128x128a0a0",
+                "link": "/u/zxx_sse"
+            },
+            "mode": "file",
+            "path": "README.md",
+            "name": "README.md",
+            "flatten_path": "README.md"
+        },
+        "lastCommit": {
+            "fullMessage": "new file abc.md",
+            "shortMessage": "new file abc.md\n",
+            "allMessage": "",
+            "commitId": "8a305b5304a0eab0c58ea861dbb1b760a72ea9a8",
+            "commitTime": 1431057342000,
+            "committer": {
+                "name": "ZXX_ABC",
+                "email": "kcccss111@gmail.com",
+                "avatar": "https://dn-coding-net-production-static.codehub.cn/0174e523-963b-4cfb-a2ef-d4f0efea3465.jpg?imageMogr2/auto-orient/format/jpeg/crop/!128x128a0a0",
+                "link": "/u/zxx_sse"
+            },
+            "notesCount": 0
+        }
+    }
+}
+</pre>
+</div>
+<h3 id="270-添加部署公钥" id="%e6%b7%bb%e5%8a%a0%e9%83%a8%e7%bd%b2%e5%85%ac%e9%92%a5"><span id="i-10"><span id="i-10">添加部署公钥</span></span></h3>
+<pre>POST   /api/user/{user_name}/project/{project_name}/git/deploy_key</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表单字段</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>公钥名</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>公钥内容</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div>
+<pre>{
+    "code": 0,
+    "data": {
+        "id": 2781,
+        "owner_id": 31828,
+        "content": "ssh-rsa qwertyuiopas...... qwertyuiopasdfghjkl",
+        "finger_print": "ef:03:d4:9d:d3:7d:bb:6d:ac:c3:99:9a:10:a9:32:4d",
+        "type": "deploy",
+        "title": "coding-abc",
+        "created_at": 1431509572347
+    }
+}
+</pre>
+</div>
+<h3 id="280-读取-repo-某个文件" id="%e8%af%bb%e5%8f%96-repo-%e6%9f%90%e4%b8%aa%e6%96%87%e4%bb%b6"><span id="_repo"><span id="_repo">读取 repo 某个文件</span></span></h3>
+<pre>GET  /api/user/{user_name}/project/{project_name}/git/blob/{branch_name}/{file_path}</pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_name</td>
+<td>string</td>
+<td>项目所有者在开发者平台的用户名，即 global_key</td>
+</tr>
+<tr>
+<td>project_name</td>
+<td>string</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>branch_name</td>
+<td>string</td>
+<td>分支名称</td>
+</tr>
+<tr>
+<td>file_path</td>
+<td>string</td>
+<td>文件在 repo 中的路径 ( 包含文件名 )</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response:</strong></p>
+<div class="language-json highlighter-rouge">
+<pre class="highlight">{
+    "code": 0,
+    "data": {
+        "ref": "master",
+        "file": {
+            "data": "hello world!!!", //文件内容
+            "lang": "",
+            "size": 14,
+            "previewed": false,
+            "lastCommitMessage": "new hello file\n",
+            "lastCommitDate": 1500350251000,
+            "lastCommitId": "899c1a848a1eaa8e925fa1aeaef084447f4e7673",
+            "lastCommitter": {
+                "name": "Coding",
+                "email": "coding@dev.tencent.com",
+                "avatar": "https://dn-coding-net-production-static.codehub.cn/512b2a62-956b-4ef8-8e84-b3c66e71468f.png?imageMogr2/auto-orient/format/png/crop/!300x300a0a0",
+                "link": "/u/coding"
+            },
+            "mode": "file",
+            "path": "hello",
+            "name": "hello"
+        },
+        "isHead": true,
+        "can_edit": false,
+        "headCommit": {
+            "fullMessage": "new hello file",
+            "shortMessage": "new hello file\n",
+            "allMessage": "",
+            "commitId": "52545e0a252f79b62a46f54dc087b0719ffa641b",
+            "commitTime": 1502101718000,
+            "committer": {
+                "name": "Coding",
+                "email": "coding@dev.tencent.com",
+                "avatar": "https://dn-coding-net-production-static.codehub.cn/512b2a62-956b-4ef8-8e84-b3c66e71468f.png?imageMogr2/auto-orient/format/png/crop/!300x300a0a0",
+                "link": "/u/coding"
+            },
+            "notesCount": 0
+        }
+    }
+}<code>
+</code></pre>
+</div>
+</div>
+</div>
+</article>
+<section class="hkb-article-related"></section>
+</div>
+<aside id="sidebar" role="complementary">
+<section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"></section>
+</aside>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="access-token.html" title="个人访问令牌">个人访问令牌</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    665</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="add-account.html" title="帐号关联后是否可以添加原 Coding.net 用户成员？">帐号关联后是否可以添加原 Coding.net 用户成员？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1375</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="other-account.html" title="原来与 Coding.net 帐号绑定的第三方登录方式是否会保留？">原来与 Coding.net 帐号绑定的第三方登录方式是否会保留？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1049</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="account-data.html" title="帐号关联后 Coding.net 帐号中的项目资源是否会丢失？">帐号关联后 Coding.net 帐号中的项目资源是否会丢失？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1278</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="account-phone.html" title="帐号关联后 Coding.net 帐号中的手机电话是哪一个？">帐号关联后 Coding.net 帐号中的手机电话是哪一个？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1234</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="account-name.html" title="帐号关联后 Coding.net 帐号中的昵称会发生变化吗？">帐号关联后 Coding.net 帐号中的昵称会发生变化吗？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1156</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

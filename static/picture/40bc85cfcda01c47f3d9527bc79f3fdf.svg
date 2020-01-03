@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>金融服务-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="金融服务-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <path d="M1,4 L31,4 L31,22 L29,22 L29,6 L1,6 L1,4 Z M3,10 L3,26 L31,26 L31,28 L1,28 L1,10 L3,10 Z M17,17 L17,18 L21,18 L21,20 L17,20 L17,23 L15,23 L15,20 L11,20 L11,18 L15,18 L15,17 L11,17 L11,15 L14.7787748,15 L10.8036936,11.0249188 L12.2178936,9.6107188 L16.0861828,13.479008 L19.9543095,9.6108813 L21.3685095,11.0250813 L17.3935908,15 L21,15 L21,17 L17,17 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

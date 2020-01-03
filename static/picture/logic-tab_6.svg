@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>推理服务市场</title>
+    <desc>Created with Sketch.</desc>
+    <g id="推理服务市场" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+        <path d="M44,37 C45.7,37 47,38.3 47,40 C47,41.7 45.7,43 44,43 C42.7,43 41.6,42.2 41.2,41 L5,41 L3,41 L3,39 L3,14 L5,14 L5,39 L41.2,39 C41.6,37.8 42.7,37 44,37 Z M6.8,9 C6.4,10.2 5.3,11 4,11 C2.3,11 1,9.7 1,8 C1,6.3 2.3,5 4,5 C5.3,5 6.4,5.8 6.8,7 L43,7 L45,7 L45,9 L45,34 L43,34 L43,9 L6.8,9 Z M17.2846119,32 L30.9283824,32 L24.1064971,28.2036767 L17.2846119,32 Z M15.5432072,30.6802537 L23,26.5306095 L23,19.2082648 L15.5432072,30.6802537 Z M32.3360869,30.4945523 L25,19.2082648 L25,26.4120799 L32.3360869,30.4945523 Z M24,14 L37,34 L11,34 L24,14 Z" id="Combined-Shape" fill="#7C848E"></path>
+    </g>
+</svg>

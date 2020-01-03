@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>图像识别</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图像识别" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+        <path d="M14,9.63992627 L14,4 L2,4 L2,7.50512782 L4.90729234,4.46112001 L8.47627719,9.16024838 L11.677305,6.07131016 L14,9.63992627 Z M13.1497768,12 L11.322695,9.19285 L9.69441285,10.764115 L10.6330666,12 L13.1497768,12 Z M2,10.4008221 L2,12 L8.12162146,12 L4.73340379,7.53887999 L2,10.4008221 Z M0,2 L16,2 L16,14 L0,14 L0,2 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

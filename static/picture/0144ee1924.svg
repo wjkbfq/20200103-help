@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>卡证文字识别-32px copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="卡证文字识别-32px-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group-2" transform="translate(1.000000, 3.000000)" fill="#00A4FF">
+            <rect id="Rectangle-78" x="3" y="1" width="26" height="2"></rect>
+            <rect id="Rectangle-78-Copy" x="1" y="23" width="28" height="2"></rect>
+            <rect id="Rectangle-79" x="1" y="8" width="2" height="17"></rect>
+            <rect id="Rectangle-79-Copy" x="27" y="1" width="2" height="17"></rect>
+            <circle id="Oval-30" cx="2" cy="2" r="2"></circle>
+            <circle id="Oval-30-Copy" cx="28" cy="24" r="2"></circle>
+        </g>
+        <rect id="矩形-copy" stroke="#00A4FF" x="21.5" y="20.5" width="3" height="1"></rect>
+        <rect id="矩形-copy-2" stroke="#00A4FF" x="21.5" y="15.5" width="3" height="1"></rect>
+        <rect id="矩形-copy-3" stroke="#00A4FF" x="19.5" y="10.5" width="5" height="1"></rect>
+        <path d="M12.5,15 C11.4005612,15 10.5,14.0994388 10.5,13 C10.5,11.9005612 11.4005612,11 12.5,11 C13.5994388,11 14.5,11.9005612 14.5,13 C14.5,14.1096045 13.6080222,15 12.5,15 Z" id="Path-Copy" stroke="#00A4FF" stroke-width="2" fill-rule="nonzero"></path>
+        <path d="M8,20.6538462 C8,19.1905043 9.37675619,18 11.0544402,18 L13.9455598,18 C15.6232438,18 17,19.1905043 17,20.6538462 L17,21 L8,21 L8,20.6538462 Z" id="Path-Copy-2" stroke="#00A4FF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

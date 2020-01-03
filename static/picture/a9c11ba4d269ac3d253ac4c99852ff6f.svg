@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>解决方案</title>
+    <desc>Created with Sketch.</desc>
+    <g id="解决方案" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+        <path d="M5,11 L11,11 L11,13 L5,13 L5,11 Z M5,8 L11,8 L11,10 L5,10 L5,8 Z M11,14 C12.654,14 14,12.654 14,11 C14,10.064 13.561,9.196 12.794,8.617 L11.999,8.017 L11.999,6.945 L12,6.937 C11.966,4.76 10.185,3 8,3 C5.816,3 4.035,4.759 4.001,6.934 L4.001,8.017 L3.206,8.617 C2.439,9.196 2,10.064 2,11 C2,12.654 3.346,14 5,14 L5,15.999 C2.238,16 0,13.761 0,11 C0,9.369 0.793,7.934 2.001,7.021 C2.001,7.014 2,7.007 2,7 C2,3.686 4.686,1 8,1 C11.313,1 14,3.686 14,7 C14,7.007 13.999,7.014 13.999,7.021 C15.207,7.934 16,9.369 16,11 C16,13.761 13.762,16 11,16 L11,14 Z M9,14 L9,15.9996667 L7,15.9993333 L7,14 L9,14 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

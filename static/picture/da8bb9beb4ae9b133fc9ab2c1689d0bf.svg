@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>全局IP封禁@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="全局IP封禁" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(0.000000, 3.000000)">
+            <path d="M2,2 L2,34 L46,34 L46,2 L2,2 Z M0,0 L48,0 L48,36 L0,36 L0,0 Z" id="Rectangle-16-Copy" fill="#334966" fill-rule="nonzero"></path>
+            <rect id="Rectangle-17-Copy" fill="#334966" fill-rule="nonzero" x="12" y="40" width="24" height="2"></rect>
+            <rect id="Rectangle-73-Copy" fill="#334966" fill-rule="nonzero" x="20" y="34" width="2" height="8"></rect>
+            <rect id="Rectangle-73-Copy-Copy" fill="#334966" fill-rule="nonzero" x="26" y="34" width="2" height="8"></rect>
+            <g id="Group-2" transform="translate(24.500000, 17.866025) rotate(-30.000000) translate(-24.500000, -17.866025) translate(4.500000, 15.866025)" fill="#00A4FF">
+                <rect id="Rectangle" x="1.13686838e-13" y="1.13686838e-13" width="40" height="4"></rect>
+            </g>
+            <path d="M24,9 L24,21 L30,21 C33.3137085,21 36,18.3137085 36,15 C36,11.6862915 33.3137085,9 30,9 L24,9 Z M24,23 L24,29 L22,29 L22,23 L22,7 L30,7 C34.418278,7 38,10.581722 38,15 C38,19.418278 34.418278,23 30,23 L24,23 Z M14,7 L16,7 L16,29 L14,29 L14,7 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>特性6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="特性6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-3" transform="translate(0.000000, 3.000000)">
+            <polygon id="Combined-Shape" fill="#334966" fill-rule="nonzero" points="48 6 46 6 46 2 2 2 2 34 22 34 22 36 0 36 0 0 48 0"></polygon>
+            <rect id="Rectangle-17" fill="#334966" x="12" y="40" width="10" height="2"></rect>
+            <rect id="Rectangle-73" fill="#334966" x="20" y="34" width="2" height="8"></rect>
+            <rect id="Rectangle-77" stroke="#334966" stroke-width="2" x="27" y="11" width="20" height="30"></rect>
+            <rect id="Rectangle" fill="#334966" x="27" y="34" width="21" height="2"></rect>
+            <rect id="Rectangle-Copy" fill="#00A4FF" x="30" y="14" width="16" height="20"></rect>
+            <polygon id="Rectangle-Copy-2" fill="#00A4FF" points="8 10 20 10 20 12 8 12"></polygon>
+            <polygon id="Rectangle-Copy-3" fill="#00A4FF" points="8 16 20 16 20 18 8 18"></polygon>
+            <polygon id="Rectangle-Copy-4" fill="#00A4FF" points="8 22 20 22 20 24 8 24"></polygon>
+        </g>
+    </g>
+</svg>

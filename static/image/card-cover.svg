@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="460px" height="540px" viewBox="0 0 460 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,0 L456,0 L456,-4.4408921e-16 C458.209139,3.05438519e-14 460,1.790861 460,4 L460,540 L0,540 L0,4 L-4.4408921e-16,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,-4.4408921e-16 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#222733" transform="translate(230.000000, 270.000000) scale(1, -1) translate(-230.000000, -270.000000) " xlink:href="#path-1"></use>
+            <g id="original_Oval-4_71768822-Group" opacity="0.2" mask="url(#mask-2)" stroke="#FFFFFF" stroke-width="2">
+                <g transform="translate(194.920361, 365.798665) scale(1, -1) rotate(-158.000000) translate(-194.920361, -365.798665) translate(-478.079639, -1094.201335)">
+                    <ellipse id="duplicate_30_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(11.925460) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="388.807332" ry="1408.61836"></ellipse>
+                    <ellipse id="duplicate_29_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(11.154947) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="378.241915" ry="1370.5997"></ellipse>
+                    <ellipse id="duplicate_28_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(10.404836) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="367.676498" ry="1332.58146"></ellipse>
+                    <ellipse id="duplicate_27_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(9.675867) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="357.111082" ry="1294.56369"></ellipse>
+                    <ellipse id="duplicate_26_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(8.968761) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="346.545665" ry="1256.54644"></ellipse>
+                    <ellipse id="duplicate_25_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(8.284213) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="335.980249" ry="1218.52974"></ellipse>
+                    <ellipse id="duplicate_24_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(7.622902) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="325.414832" ry="1180.51366"></ellipse>
+                    <ellipse id="duplicate_23_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(6.985478) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="314.849415" ry="1142.49827"></ellipse>
+                    <ellipse id="duplicate_22_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(6.372571) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="304.283999" ry="1104.48363"></ellipse>
+                    <ellipse id="duplicate_21_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(5.784785) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="293.718582" ry="1066.46983"></ellipse>
+                    <ellipse id="duplicate_20_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(5.222702) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="283.153165" ry="1028.45697"></ellipse>
+                    <ellipse id="duplicate_19_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(4.686875) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="272.587749" ry="990.445158"></ellipse>
+                    <ellipse id="duplicate_18_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(4.177834) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="262.022332" ry="952.434531"></ellipse>
+                    <ellipse id="duplicate_17_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(3.696080) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="251.456916" ry="914.425244"></ellipse>
+                    <ellipse id="duplicate_16_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(3.242089) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="240.891499" ry="876.41748"></ellipse>
+                    <ellipse id="duplicate_15_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(2.816310) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="230.326082" ry="838.411461"></ellipse>
+                    <ellipse id="duplicate_14_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(2.419162) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="219.760666" ry="800.407449"></ellipse>
+                    <ellipse id="duplicate_13_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(2.051038) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="209.195249" ry="762.405766"></ellipse>
+                    <ellipse id="duplicate_12_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(1.712300) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="198.629832" ry="724.406803"></ellipse>
+                    <ellipse id="duplicate_11_original_Oval-4_71768822" transform="translate(673.373993, 1460.448840) rotate(1.403283) translate(-673.373993, -1460.448840) " cx="673.373993" cy="1460.44884" rx="188.064416" ry="686.411047"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

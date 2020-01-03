@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-step</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视觉" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-step" fill="#BCC0C4">
+            <path d="M0,8 L2,8 L2,6 L0,6 L0,8 Z M0,14 L2,14 L2,12 L0,12 L0,14 Z M0,2 L2,2 L2,0 L0,0 L0,2 Z M3,8 L14,8 L14,6 L3,6 L3,8 Z M3,14 L14,14 L14,12 L3,12 L3,14 Z M3,0 L3,2 L14,2 L14,0 L3,0 Z" id="形状"></path>
+        </g>
+    </g>
+</svg>

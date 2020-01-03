@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>网红带货</title>
+    <desc>Created with Sketch.</desc>
+    <g id="网红带货" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-20-copy" transform="translate(1.000000, 1.000000)">
+            <circle id="椭圆形" stroke="#7B848E" cx="7" cy="3" r="3"></circle>
+            <path d="M0.5,13.5 L13.5,13.5 L13.5,12 C13.5,10.0670034 11.9329966,8.5 10,8.5 L4,8.5 C2.06700338,8.5 0.5,10.0670034 0.5,12 L0.5,13.5 Z" id="矩形" stroke="#7B848E"></path>
+            <circle id="椭圆形" fill="#7B848E" opacity="0.301037016" cx="7" cy="3" r="1.5"></circle>
+            <path d="M4,10 L10,10 C11.1045695,10 12,10.8954305 12,12 L2,12 L2,12 C2,10.8954305 2.8954305,10 4,10 Z" id="矩形" fill="#7B848E" opacity="0.297223772"></path>
+            <rect id="矩形" stroke="#7B848E" fill="#F7F8FA" x="7.5" y="7.5" width="6" height="6"></rect>
+            <rect id="矩形-copy-51" fill="#7B848E" opacity="0.300525484" x="9" y="9" width="3" height="3"></rect>
+            <path d="M9.5,7.5 L9.5,9.5 L10.5,9.5 C11.0522847,9.5 11.5,9.05228475 11.5,8.5 C11.5,7.94771525 11.0522847,7.5 10.5,7.5 L9.5,7.5 Z" id="矩形-copy-51" stroke="#7B848E" transform="translate(10.500000, 8.500000) rotate(90.000000) translate(-10.500000, -8.500000) "></path>
+        </g>
+    </g>
+</svg>

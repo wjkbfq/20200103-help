@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="image-copy" transform="translate(2.500000, 0.000000)">
+            <path d="M8.02056167,6.56957307 L8.58103422,4.39887826 L6.45510387,4.98555253 L8.02056167,6.56957307 Z" id="Shape" stroke="#00A4FF" fill-rule="nonzero"></path>
+            <ellipse id="Oval" fill="#00A4FF" fill-rule="nonzero" cx="6.153125" cy="4.90434783" rx="1" ry="1"></ellipse>
+            <ellipse id="Oval" fill="#00A4FF" fill-rule="nonzero" cx="8.834375" cy="4.17391304" rx="1" ry="1"></ellipse>
+            <ellipse id="Oval" fill="#00A4FF" fill-rule="nonzero" cx="8.1125" cy="6.88695652" rx="1" ry="1"></ellipse>
+            <polygon id="Path" fill="#00A4FF" fill-rule="nonzero" points="6.46875 13.5652174 6.46875 12.5652174 4.46875 12.5652174 4.46875 13.5652174"></polygon>
+            <path d="M10.5,0.5 L0.5,0.5 L0.5,15.5 L10.5,15.5 L10.5,0.5 Z" id="Path-2" stroke="#00A4FF"></path>
+            <path d="M7.5772389,3.09714541 C7.30910377,2.37384692 6.63643442,1.89130435 5.84375,1.89130435 C4.92082645,1.89130435 4.14455131,2.57859933 4.0372793,3.50122345 L3.9930957,3.88123737 L3.61474921,3.93795334 C2.91972494,4.04214084 2.35625,4.67654029 2.35625,5.35652174 C2.35625,6.12516837 3.02747032,6.80434783 3.78125,6.80434783 L5.86748487,6.80434783 L7.5772389,3.09714541 Z" id="Shape" stroke="#00A4FF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

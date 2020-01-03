@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>弹性计算-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="弹性计算-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24,0 C10.745,0 0,10.745 0,24 C0,37.255 10.745,48 24,48 C37.255,48 48,37.255 48,24 C48,10.745 37.255,0 24,0 M24,2 C36.131,2 46,11.869 46,24 C46,36.131 36.131,46 24,46 C11.869,46 2,36.131 2,24 C2,11.869 11.869,2 24,2" id="Fill-1" fill="#334966"></path>
+        <polygon id="Polygon-3" fill="#00A4FF" points="24 11 35 17.5 35 30.5 24 37 13 30.5 13 17.5"></polygon>
+        <polygon id="Fill-1" fill="#334966" points="24 10 18 13.6 19.94 14.77 23 12.93 23 18 25 18 25 12.93 28.06 14.77 30 13.6"></polygon>
+        <polygon id="Fill-2" fill="#334966" points="34.28 26.2 34.28 28.661 30.08 26.24 29 27.931 33.51 30.531 30.28 32.47 30.28 34.8 36.28 31.2 36.28 25"></polygon>
+        <polygon id="Fill-3" fill="#334966" points="12 31.2 18 34.8 18 32.47 14.77 30.53 19.28 27.93 18.2 26.24 14 28.66 14 26.2 12 25"></polygon>
+    </g>
+</svg>

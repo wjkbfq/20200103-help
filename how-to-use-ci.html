@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>持续集成 &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='Cloud Studio 常见问题' href='faq1.html'>
+<link rel='next' title='配置 SSH 公钥访问代码仓库' href='ssh.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6315'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fknowledge-base%2Fhow-to-use-ci">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fknowledge-base%2Fhow-to-use-ci&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6315 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="quick-start.html" title="View all posts in 快速入门">
+                        <span itemprop="name">快速入门</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="持续集成">
+                        <span itemprop="name">持续集成</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6315" class="post-6315 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-quick-start ht_kb_tag-doc" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				持续集成			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/knowledge-base/how-to-use-ci" rel="bookmark" itemprop="url"><time datetime="2018-11-15" itemprop="datePublished">2018年11月15日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/andy" title="Andy" rel="me" itemprop="author">Andy</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/quick-start" rel="tag">快速入门</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 持续集成介绍</a></li><li><a href="#i-2"><span class="toc_number toc_depth_1">2</span> 持续集成的优势</a></li><li><a href="#i-3"><span class="toc_number toc_depth_1">3</span> 创建持续集成</a></li><li><a href="#_Jenkinsfile"><span class="toc_number toc_depth_1">4</span> 找到或者创建 Jenkinsfile</a></li><li><a href="#i-4"><span class="toc_number toc_depth_1">5</span> 查看构建记录</a></li><li><a href="#i-5"><span class="toc_number toc_depth_1">6</span> 修改触发条件</a></li><li><a href="#i-6"><span class="toc_number toc_depth_1">7</span> 预制系统环境变量</a></li><li><a href="#i-7"><span class="toc_number toc_depth_1">8</span> 时区设置</a></li><li><a href="#i-8"><span class="toc_number toc_depth_1">9</span> 支持的构建环境</a></li><li><a href="#i-9"><span class="toc_number toc_depth_1">10</span> 镜像优化</a></li></ul></div>
+<h3 id="%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90%e4%bb%8b%e7%bb%8d" id="%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90%e4%bb%8b%e7%bb%8d"><span id="i"><span id="i">持续集成介绍</span></span></h3>
+<p>在软件工程中，持续集成（CI）是指将所有开发者的工作副本每天多次合并到主干的做法。Grady Booch 在1991年的 Booch method 中首次命名并提出了 CI 的概念，尽管在当时他并不主张每天多次集成。而 XP（Extreme programming，极限编程）采用了 CI 的概念，并提倡每天不止一次集成。</p>
+<p>持续集成在现代软件研发流程中，扮演了十分重要的角色。通过对每次提交的代码不断进行自动化的单元测试、代码检查、编译构建、契约测试，甚至自动部署，持续集成大大降低了开发人员的工作负担，减少了不必要的重复劳动，提升代码质量和开发效率。毫无疑问，持续集成是开发者和研发团队的福音。</p>
+<p>当我们提交了一部分修改完成的代码后，我们总是希望可以快速、持续地得到直观且有效的反馈，以达到我们持续快速交付的目的。持续集成也是敏捷开发的好伙伴。Jenkins工具则是我们达到目的的利器。</p>
+<p>我们在平时的工程中，总有一部分工作是相对机械化，易出错的（例如部署，打包），把这部分工作较给机器来做，我们仅需要轻轻地点一下鼠标泡杯咖啡就能让自己轻松地完成工作。</p>
+<p><strong>持续集成服务器就是能够采用自动化的手段，来解放人的双手，实现项目持续集成的工具。</strong></p>
+<p>然而想在项目和团队中实施持续集成，却不是一件简单的事情。CODING 推出的持续集成<sup>beta</sup>服务，CODING 持续集成是基于 Jenkins 的，兼容 Jenkinsfile 配置文件，如果您之前有使用过或者写过 Jenkinsfile 相信您会很快上手。</p>
+<div>
+<div>
+<h3 id="%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90%e7%9a%84%e5%a5%bd%e5%a4%84" id="%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90%e7%9a%84%e4%bc%98%e5%8a%bf"><span id="i-2"><span id="i-2">持续集成的优势</span></span></h3>
+<p><strong>1.解放了重复性劳动。</strong><br>
+自动化部署工作可以解放集成、测试、部署等重复性劳动，而机器集成的频率明显比手工高很多。</p>
+<p><strong>2.更快地修复问题。</strong><br>
+持续集成更早的获取变更，更早的进入测试，更早的发现问题，解决问题的成本显著下降。</p>
+<p><strong>3.更快的交付成果。</strong><br>
+更早发现错误减少解决错误所需的工作量。集成服务器在构建环节发现错误可以及时通知开发人员修复。集成服务器在部署环节发现错误可以回退到上一版本，服务器始终有一个可用的版本。</p>
+<p><strong>4.减少手工的错误。</strong><br>
+在重复性动作上，人容易犯错，而机器犯错的几率几乎为零。</p>
+<p><strong>5.减少了等待时间。</strong><br>
+缩短了从开发、集成、测试、部署各个环节的时间，从而也就缩短了中间可以出现的等待时机。持续集成，意味着开发、集成、测试、部署也得以持续。</p>
+<p><strong>6.更高的产品质量。</strong><br>
+集成服务器往往提供代码质量检测等功能，对不规范或有错误的地方会进行标致，也可以设置邮件和短信等进行警告。</p>
+</div>
+</div>
+<h3 id="%e5%88%9b%e5%bb%ba%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90" id="%e5%88%9b%e5%bb%ba%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90"><span id="i-3"><span id="i-4">创建持续集成</span></span></h3>
+<p>CODING 持续集成是基于 Jenkins 的，通过 Jenkinsfile 配置文件完成CI的步骤，接下来将引导您一步步创建一个持续集成示例。</p>
+<p><a class="bubble-markdown-image-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer"><img class="bubble-markdown-image" src="static/picture/032cd0f8-58ae-4b5d-b96c-95e2895d.png" alt="图片"></a></p>
+<p>在任意一个项目的左侧有个持续集成的功能，点击后即可打开持续集成界面。点击【开始持续集成】进入下一步。</p>
+<h3 id="%e6%89%be%e5%88%b0%e6%88%96%e8%80%85%e5%88%9b%e5%bb%ba-jenkinsfile" id="%e6%89%be%e5%88%b0%e6%88%96%e8%80%85%e5%88%9b%e5%bb%ba-jenkinsfile"><span id="_Jenkinsfile"><span id="_Jenkinsfile">找到或者创建 Jenkinsfile</span></span></h3>
+<p><a class="bubble-markdown-image-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer"><img class="bubble-markdown-image" src="static/picture/11dd3bc5-18b8-4be1-8f3e-1617df23.png" alt="图片"></a></p>
+<p>CODING 持续集成服务支持通过项目中的 Jenkinsfile 和通过示例创建 Jenkinsfile 。 Jenkinsfile  简单来说就是一个配置持续集成流程的配置文件， 您可以参考 Jenkins 的<a class="auto-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer">官方文档</a> 或者第三方的<a href="javascript:;">中文文档</a>，了解 Jenkinsfile 是如何编写的。</p>
+<p>我们这里直接选择简易示例进行创建，建议示例中的配置如下：</p>
+<p><img class="alignnone wp-image-6342 size-full" src="static/picture/8098b9c2-d519-4070-bdb0-4023a472.png" sizes="(max-width: 890px) 100vw, 890px" srcset="static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 890w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 150w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 300w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 768w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 50w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 60w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 600w, static/picture/8098b9c2-d519-4070-bdb0-4023a472.png 320w" alt="" width="890" height="889"><img src="static/picture/eec20ed2-ac98-46cc-baa3-9d73f933.png"></p>
+<p>agent 中声明了构建环境，stages 中生声明了步骤，每个步骤都是可以自定义的。简易示例中预支了四个步骤，分别是检出、构建、测试、部署。其中只有检出有具体步骤其余都只是输出文本，用来展示每个步骤。</p>
+<p>在检出那一步中通过 git 获取到了代码仓库中的代码，其中 env 代表系统变量，而 GIT_BUILD_REF 和 GIT_REPO_URL 是已经内置的系统变量，点击页面下方的构建按钮进入下一步。</p>
+<p>我们来看一个完整的从拉取代码到上传到服务器的例子，这里只是用 Java 语言的项目举例，其它编程语言需要根据实际情况自行修改：</p>
+<pre class="language-" data-role="codeBlock" data-info="">pipeline {
+    agent {
+        // 此处设定构建环境，目前可选有
+        // java-8,python-2.7,python-3.5,build-essential,ruby-2.3,go-1.7
+        label "java-8"
+    }
+    stages  {
+
+     	stage("环境") {
+            steps {
+                parallel "Maven": {
+                  	script{
+                      	sh 'mvn -version'
+                  	}
+                }, "Java": {
+                    sh 'java -version'
+                }, "sshpass": {
+                  	sh 'apt install -y sshpass'
+                    sh 'sshpass -v'
+                }
+            }
+          
+        }
+        
+        stage("检出") {
+            steps {
+                sh 'ci-init'
+                checkout(
+                  [$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], 
+                  userRemoteConfigs: [[url: env.GIT_REPO_URL]]]
+                )
+            }
+        }
+
+        stage("构建") {
+            steps {
+                echo "构建中..."
+              	sh 'mvn package -Dmaven.test.skip=true'
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+                echo "构建完成."
+            }
+        }
+
+        stage("测试") {
+            steps {
+                parallel "单元测试": {
+                    echo "单元测试中..."
+                    sh 'mvn test'
+                    echo "单元测试完成."
+                    junit 'target/surefire-reports/*.xml'
+                }, "接口测试": {
+                    echo "接口测试中..."
+                    // 请在这里放置您项目代码的单元测试调用过程，例如 mvn test
+                    echo "接口测试完成."
+                    // 请在这里放置收集接口测试报告的调用过程，JUnit 示例：junit 'target/surefire-reports/*.xml'
+                }
+
+            }
+          
+        }
+      	stage("运行"){
+      		steps {
+            	sh 'java -jar target/java-0.0.1-SNAPSHOT.jar'
+    	    }
+    	}
+      	stage("部署"){
+      		steps {
+              parallel "上传": {
+                    sh 'sshpass -p password scp target/java-0.0.1-SNAPSHOT.jar root@1.1.1.1:/root/'
+                }, "运行": {
+                    sh 'sshpass -p password  ssh root@1.1.1.1 java -jar /root/java-0.0.1-SNAPSHOT.jar'
+                }
+    	    }
+    	}
+ 
+    }
+}</pre>
+<p>&nbsp;</p>
+<p>首先我们先新建了一个名为【环境】的步骤，然后同时执行 java、maven 的检查和 sshpass 的安装。我们需要在后面通过 sshpass 将构建物传输到服务器上。</p>
+<p>在【构建】那一步中有一行 “archiveArtifacts artifacts: &#8216;**/target/*.jar&#8217;, fingerprint: true” ，这一行主要是声明构建物在哪里，这样target下的所有jar都会被当做构建物，显示在构建产物选项卡中。</p>
+<p>我们最后再来看看【部署】这个步骤，【部署】这里通过 sshpass 将我们的编译结果通过命令行传输到指定服务器上，然后再通过 sshpass 连接到服务器上运行。</p>
+<p>准备好 Jenkinsfile 后就可以进入下一步了，进入下一步后您会看到构建记录列表，在构建记录列表中能看到构建记录的状态、对应的版本、开始时间等信息。</p>
+<p><a class="bubble-markdown-image-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer"><img class="bubble-markdown-image" src="static/picture/bc16463a-9d83-422c-a4ed-564a13c4.png" alt="图片"></a></p>
+<p>点击构建记录后可以看到可视化的构建过程，每个步骤都是可以点击的，点击后还能看到那个步骤的详细日志。</p>
+<h3 id="%e6%9f%a5%e7%9c%8b%e6%9e%84%e5%bb%ba%e8%ae%b0%e5%bd%95" id="%e6%9f%a5%e7%9c%8b%e6%9e%84%e5%bb%ba%e8%ae%b0%e5%bd%95"><span id="i-4"><span id="i-5">查看构建记录</span></span></h3>
+<p>当创建完成后会自动构建一次，如果您想调整构建过程的话可以随时点击右上方的配置按钮修改 Jenkinsfile 来调整构建流程。</p>
+<p><a class="bubble-markdown-image-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer"><img class="alignnone size-medium" src="static/picture/780c9a9e-9854-44b1-8dd9-a537cd99.jpeg" width="1026" height="235"></a></p>
+<p>点击构件记录进去可以看到更详细的步骤及日志：</p>
+<p><img src="static/picture/c19bad02-d6eb-4037-b61a-d3f8eec9.png"></p>
+<p>每一个步骤都是可以点击的，如果哪一个步骤是成功的会自动变成绿色，如果不成功会变成红色的 X ，让您能够一目了然看到构建过程。点击每一个步骤都可以看到该步骤的日志输出，如上图就是在查看检出这个步骤的日志。</p>
+<p><img class="alignnone size-medium" src="static/picture/4af89374-f503-4724-aad1-a5241518.png" width="972" height="199"></p>
+<h3 id="%e4%bf%ae%e6%94%b9%e8%a7%a6%e5%8f%91%e6%9d%a1%e4%bb%b6" id="%e4%bf%ae%e6%94%b9%e8%a7%a6%e5%8f%91%e6%9d%a1%e4%bb%b6"><span id="i-5"><span id="i-6">修改触发条件</span></span></h3>
+<p><a class="bubble-markdown-image-link" href="javascript:;" target="_blank" rel="nofollow noopener noreferrer"><img class="bubble-markdown-image" src="static/picture/3821d134-047b-474f-8378-46f07438.png" alt="图片"></a></p>
+<p>您可以在修改 Jenkinsfile 的时候修改触发方式，您可以自行选择是推送到某个标签或者某个分支时间触发构建。</p>
+<p>当然您也可以在构建记录的右上角找到“配置”按钮。</p>
+<p><img src="static/picture/fdca163e-b6cc-441b-a423-3d753099.png"></p>
+<h3 id="%e9%a2%84%e5%88%b6%e7%b3%bb%e7%bb%9f%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f"><span id="i-6">预制系统环境变量</span></h3>
+<p>目前已经预制了几个可以在脚本中使用的环境变量：</p>
+<table width="863">
+<tbody>
+<tr>
+<td width="213">GIT_COMMIT</td>
+<td>当前的SHA</td>
+</tr>
+<tr>
+<td>GIT_BRANCH</td>
+<td>远程存储库的名称（默认为origin），后跟当前正在使用的分支的名称，例如“ origin/master”或“ origin/foo”</td>
+</tr>
+<tr>
+<td>GIT_LOCAL_BRANCH</td>
+<td>名称。如果配置了“检出特定本地分支”行为，则发布变量。如果行为配置为null或**，则该属性将包含生成的本地分支名称sans远程名称。</td>
+</tr>
+<tr>
+<td>GIT_PREVIOUS_COMMIT</td>
+<td>来自同一分支的先前构建的提交的SHA（未在分支上的第一次构建时设置）</td>
+</tr>
+<tr>
+<td>GIT_PREVIOUS_SUCCESSFUL_COMMIT</td>
+<td>来自同一分支的先前成功构建的提交的SHA （未在分支上的第一次构建时设置）</td>
+</tr>
+<tr>
+<td>GIT_URL</td>
+<td>存储库远程URL</td>
+</tr>
+<tr>
+<td>GIT_URL_N</td>
+<td>存在多个远程URL时的存储库远程URL，例如GIT_URL_1，GIT_URL_2</td>
+</tr>
+<tr>
+<td>GIT_AUTHOR_NAME和GIT_COMMITTER_NAME</td>
+<td>如果启用了“自定义用户名/电子邮件地址”行为，则输入的名称; 回退到“Global Config user.name Value”下的Jenkins系统配置中输入的值（如果有的话）</td>
+</tr>
+<tr>
+<td>GIT_AUTHOR_EMAIL和GIT_COMMITTER_EMAIL</td>
+<td>如果启用了“自定义用户名/电子邮件地址”行为，则输入的电子邮件; 回退到“Global Config user.email Value”下的Jenkins系统配置中输入的值（如果有的话）</td>
+</tr>
+</tbody>
+</table>
+<p>执行时提供这些环境变量。由应用端这边准备好就行。这个是第一步，然后再用用户的自定义环境变量去覆盖。</p>
+<p>如果是代码推送触发的持续集成，系统默认环境变量还应该带上 ref</p>
+<p>添加一个默认的环境变量：<br>
+<code class="hljs crmsh"><span class="hljs-attr">REF=</span>refs/heads/<span class="hljs-keyword">master</span></code>具体的值根据构建 CiBuild 里面记录的 branch 字段给定就行。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 id="%e6%97%b6%e5%8c%ba%e8%ae%be%e7%bd%ae"><span id="i-7">时区设置</span></h3>
+<p>jenkins 以及能够为 agent 默认配置好 timezone 和 localtime（默认中国上海）</p>
+<p>如果需要配置其他时区可以在基础镜像里加图下这个指令，然后更新所有镜像就可以更新时区。</p>
+<p><img src="static/picture/b6944cec-a639-4b78-8d4d-b85fa7d2.png"><br>
+<code class="hljs sml">sh <span class="hljs-symbol">'echo</span> <span class="hljs-string">"Asia/Shanghai"</span> &gt; /etc/timezone'<br>
+sh <span class="hljs-symbol">'cp</span> /usr/share/zoneinfo/<span class="hljs-type">Asia</span>/<span class="hljs-type">Shanghai</span> /etc/localtime'<br>
+sh <span class="hljs-symbol">'date'</span></code></p>
+<h3 id="agents" id="%e6%94%af%e6%8c%81%e7%9a%84%e6%9e%84%e5%bb%ba%e7%8e%af%e5%a2%83"><span id="i-8"><span id="i-7">支持的构建环境</span></span></h3>
+<p>CODING持续集成服务目前支持以下环境：</p>
+<ul>
+<li>java-8</li>
+<li>python-2.7</li>
+<li>python-3.5</li>
+<li>go-1.7</li>
+<li>go-1.9</li>
+<li>go-1.11</li>
+<li>node-8</li>
+<li>node-10</li>
+<li>php-7.0</li>
+<li>php-7.1</li>
+<li>php-7.2</li>
+<li>php-7.3</li>
+<li>ruby-2.3</li>
+<li>default: 包括了 java-1.8.0_181, go-1.7.4, node-10.11.0, php-7.0.30, ruby-2.3, python-2.7.13 等。</li>
+</ul>
+<blockquote><p>需要更多环境，请发邮件到support@coding.net联系运营小姐姐提出要求。</p></blockquote>
+<h3 id="%e9%95%9c%e5%83%8f%e4%bc%98%e5%8c%96" id="%e9%95%9c%e5%83%8f%e4%bc%98%e5%8c%96"><span id="i-9"><span id="i-8">镜像优化</span></span></h3>
+<p>为了帮助构建更快，maven、gradle、npm、python、ruby 默认使用了腾讯云的源 https://mirrors.cloud.tencent.com/。php 目前支持了其他国内的源（https://packagist.phpcomposer.com）。</p>
+<p>&nbsp;</p>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="account-management.html" title="账户管理">账户管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    5480</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="wiki-management.html" title="Wiki管理">Wiki管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    5949</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="file-management.html" title="文件管理">文件管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    8422</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="code-management.html" title="代码管理">代码管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    21033</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="bbe5a1aee786.html" title="任务管理">任务管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    18213</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="safe.html" title="安全保障">安全保障</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    3936</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>无需部署</title>
+    <desc>Created with Sketch.</desc>
+    <g id="无需部署" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1547630346588-48x48" transform="translate(0.000000, 1.000000)" fill-rule="nonzero">
+            <path d="M37.3,26.9 C32,26.9 27.7,31.2 27.7,36.5 C27.7,41.8 32,46.1 37.3,46.1 C42.6,46.1 46.9,41.8 46.9,36.5 C46.8,31.2 42.6,26.9 37.3,26.9 Z M37.8,39.2 L37.8,39.2 L36.4,40.6 L35,39.2 L32.2,36.4 L33.6,35 L36.4,37.8 L41.1,33.1 L42.5,34.5 L37.8,39.2 Z" id="形状" fill="#00A4FF"></path>
+            <path d="M37.3,47 C31.5,47 26.7,42.3 26.7,36.4 C26.7,30.5 31.4,25.8 37.3,25.8 C43.2,25.8 47.9,30.5 47.9,36.4 C47.9,42.3 43.1,47 37.3,47 Z M37.3,27.9 C32.6,27.9 28.7,31.7 28.7,36.5 C28.7,41.3 32.5,45.1 37.3,45.1 C42.1,45.1 45.9,41.3 45.9,36.5 C45.9,31.7 42,27.9 37.3,27.9 Z" id="形状" fill="#334966"></path>
+            <g id="Rectangle-2_1_" transform="translate(29.000000, 3.000000)" fill="#334966">
+                <rect id="Rectangle-path_12_" x="0.4" y="0.3" width="2" height="2"></rect>
+            </g>
+            <g id="Rectangle-2-Copy-2_1_" transform="translate(25.000000, 3.000000)" fill="#334966">
+                <rect id="Rectangle-path_11_" x="0.4" y="0.3" width="2" height="2"></rect>
+            </g>
+            <g id="Rectangle-2-Copy_1_" transform="translate(33.000000, 3.000000)" fill="#334966">
+                <rect id="Rectangle-path_10_" x="0.4" y="0.3" width="2" height="2"></rect>
+            </g>
+            <g id="Rectangle-2_2_" transform="translate(33.000000, 14.000000)" fill="#334966">
+                <rect id="Rectangle-path_16_" x="0.4" y="0.2" width="2" height="2"></rect>
+            </g>
+            <g id="Rectangle-2-Copy-2_2_" transform="translate(29.000000, 14.000000)" fill="#334966">
+                <rect id="Rectangle-path_15_" x="0.4" y="0.2" width="2" height="2"></rect>
+            </g>
+            <g id="Rectangle-2-Copy_2_" transform="translate(37.000000, 14.000000)" fill="#334966">
+                <rect id="Rectangle-path_7_" x="0.4" y="0.2" width="2" height="2"></rect>
+            </g>
+            <g id="Combined-Shape_2_" fill="#334966">
+                <g id="Shape_3_">
+                    <polygon id="路径" points="5.2 32.5 0.2 32.5 0.2 0 39.4 0 39.4 12.1 37.4 12.1 37.4 2 2.2 2 2.2 30.5 5.2 30.5"></polygon>
+                </g>
+            </g>
+            <g id="Rectangle_2_" transform="translate(1.000000, 6.000000)" fill="#334966">
+                <g id="Rectangle-path_17_">
+                    <rect id="矩形" x="0.2" y="0.8" width="37.3" height="2"></rect>
+                </g>
+            </g>
+            <g id="Combined-Shape_3_" transform="translate(4.000000, 10.000000)" fill="#334966">
+                <g id="Shape_5_">
+                    <polygon id="路径" points="20.9 33.3 0.2 33.3 0.2 0.8 39.5 0.8 39.5 12.9 37.5 12.9 37.5 2.8 2.2 2.8 2.2 31.3 20.9 31.3"></polygon>
+                </g>
+            </g>
+            <g id="Rectangle_3_" transform="translate(5.000000, 17.000000)" fill="#334966">
+                <g id="Rectangle-path_21_">
+                    <rect id="矩形" x="0.2" y="0.6" width="37.3" height="2"></rect>
+                </g>
+            </g>
+            <g id="Rectangle-4_3_" transform="translate(9.000000, 25.000000)" fill="#00A4FF">
+                <g id="Rectangle-path_20_">
+                    <rect id="矩形" x="0.4" y="0.2" width="10.2" height="2"></rect>
+                </g>
+            </g>
+            <g id="Rectangle-4-Copy_3_" transform="translate(9.000000, 30.000000)" fill="#00A4FF">
+                <g id="Rectangle-path_19_">
+                    <rect id="矩形" x="0.4" y="0.3" width="10.2" height="2"></rect>
+                </g>
+            </g>
+            <g id="Rectangle-4-Copy-2_3_" transform="translate(9.000000, 35.000000)" fill="#00A4FF">
+                <g id="Rectangle-path_18_">
+                    <rect id="矩形" x="0.4" y="0.3" width="10.2" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

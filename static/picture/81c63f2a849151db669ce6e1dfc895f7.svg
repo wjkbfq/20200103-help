@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>机器视觉能力</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="机器视觉能力" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,11 L7,43 L47,43 L47,11 L7,11 Z" id="Rectangle-18-Copy" stroke="#334966" stroke-width="2"></path>
+        <rect id="Rectangle-3" fill="#00A4FF" x="8" y="27" width="38" height="15"></rect>
+        <path d="M1,5 L1,37 L41,37 L41,5 L1,5 Z" id="Rectangle-18" stroke="#334966" stroke-width="2" fill="#FFFFFF"></path>
+        <path d="M1,15.0213484 L1,37 L22.9786516,37 C22.4692792,25.0929472 12.9070528,15.5307208 1,15.0213484 Z" id="Combined-Shape" stroke="#334966" stroke-width="2"></path>
+        <path d="M1,22.030742 L1,37 L15.969258,37 C15.4734558,28.9599858 9.0400142,22.5265442 1,22.030742 Z" id="Combined-Shape" stroke="#334966" stroke-width="2"></path>
+        <path d="M1,29.0549288 L1,37 L8.94507122,37 C8.4839224,32.8283834 5.17161661,29.5160776 1,29.0549288 Z" id="Combined-Shape" stroke="#334966" stroke-width="2"></path>
+        <circle id="Oval-6" fill="#00A4FF" cx="30" cy="15" r="4"></circle>
+    </g>
+</svg>

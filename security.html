@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="Keywords" content="Git,Svn,代码托管,Pages,WebIDE,Cloud Studio,持续集成,开发协作,团队协作,项目管理,敏捷开发,缺陷管理,在线IDE,CI,代码管理,CODING,腾讯云开发者平台">
+    <meta name="Description" content="腾讯云开发者平台是腾讯云为开发者提供的在线研发管理工具，提供 Git/Svn 代码托管，项目管理，持续集成，云端开发工具 Cloud Studio 等一整套 SaaS 产品。">
+    
+    
+
+    <title>腾讯云开发者平台 | 技术助力开发</title>
+<link href="static/css/security.aa24fa2e.chunk.css" rel="stylesheet"></head>
+<body>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/f671f544-d4f4-470a-afc9-1354d6f1.png">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>功能</span>
+                        <div class="drop-down-container">
+                            <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="cs.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+            <div class="loading" id="loading">
+                <div class="loader-inner line-spin-fade-loader">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="right-zone" id="right-zone" style="display: none">
+                <div class="login-zone">
+                    <div class="register js-register">
+                        <a href="register.html">注册</a>
+                    </div>
+                    <div class="login js-login">
+                        <a href="register.html">登录</a>
+                    </div>
+                    <a class="avatar" title="进入工作台">
+                        <img>
+                    </a>
+                </div>
+                <div class="icon" id="show-header-icon">
+                    <i></i><i></i><i></i>
+                </div>
+                <div class="icon-hide" id="hide-header-icon">
+                    <i class="left"></i><i class="right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header" id="mobile-header" style="display: none">
+        <div class="nav">
+            <div class="nav-item">
+                <span class="grey">产品</span>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="production.html" target="_blank">CODING 个人版</a>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="cs.html" target="_blank">Cloud Studio</a>
+            </div>
+            <div class="nav-item">
+                <a class="sub" href="javascript:;" target="_blank">CODING 企业版</a>
+            </div>
+            <div class="nav-item">
+                <a href="help.html" target="_blank">文档</a>
+            </div>
+            <div class="nav-item nav-out js-login" style="margin: 30px 0 20px;">
+                <a href="register.html">登录</a>
+            </div>
+            <div class="nav-item nav-out js-register">
+                <a href="register.html">注册</a>
+            </div>
+            <div class="nav-item nav-avatar" id="mobile-header-avatar" style="display: none;">
+                <a href="register.html">
+                    <img src="static/picture/xxxHTMLLINKxxx0.8758357129096039.jpg" alt="头像">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="display: none" id="iframe-waring-modal">
+        <div class="cuk-modal-backdrop"></div>
+        <div tabindex="-1" class="cuk-modal-container" role="document">
+            <div class="cuk-modal">
+                <div class="cuk-modal-header">升级公告</div>
+                <div class="cuk-modal-body"><p class="text-indent">
+                    为了给您提供更稳定更高效的服务，系统现进行全面升级。当您遇到点击未响应等问题时，您仅需在当前页面进行刷新操作便可解决。给您带来的不便敬请谅解。 具体刷新操作：</p>
+                    <div>
+                        <ul>
+                            <li>若您是<strong> Windows </strong>或<strong> Linux </strong>用户，请按<strong> ctrl + F5 </strong>或者 浏览器刷新按钮<strong class="fresh-btn"> ⟳ </strong></li>
+                            <li>若您是<strong> Mac </strong>用户，请按<strong> command + R </strong>或者 浏览器刷新按钮<strong class="fresh-btn"> ⟳ </strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cuk-modal-footer">
+                    <button id="iframe-waring-btn" class="cuk-button" type="button">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="security_description">
+    <h1>腾讯云开发者平台服务安全性说明</h1>
+    <hr>
+    <p>腾讯云开发者平台是一个面向开发者和软件开发团队的专业云端开发平台（以下简称 开发者平台）。用户数据的安全性和隐私性是我们的核心责任。为此我们采取了以下措施保障用户数据的安全性和隐私性：
+    </p>
+    <ol>
+        <li>
+            <strong>管理制度</strong>
+            <p>开发者平台通过严格的管理制度，规范产品的研发、运维、运营：</p>
+            <article>
+                <ul>
+                    <li>1）开发者平台所有能接触到用户数据的相关人员均签订了符合业界标准的《保密协议》；</li>
+                    <li>2）开发者平台所有人员的招聘均通过背景调查；</li>
+                    <li>3）开发者平台平台拥有严格的权限管理， 项目内容仅限项目成员，平台不存在超级用户；</li>
+                    <li>4）开发者平台所有能接触到用户数据的相关人员均接受过安全培训和考核；</li>
+                    <li>5）开发者平台严格区分产品、研发、运维与运营，并拥有标准的业务流程，不存在一人身兼数职；</li>
+                    <li>6）开发者平台数据库访问权限仅限于极少数核心人员，并且每次数据库以及数据文件操作均需要备案；</li>
+                    <li>7）开发者平台所有服务器相关的密码至少每月更换一次，并且使用 16 位以上超复杂密码；</li>
+                    <li>8）开发者平台内部有独立的安全小组，负责全面检查 开发者平台系统的安全性问题，包括系统功能、服务器部署、客户端消息处理等等，每次生产系统的更新都需要经过安全小组的审查，并且记录更新内容；</li>
+                    <li>9）开发者平台定期聘请外部安全专家，对 开发者平台整个系统进行检查，保证系统整体的安全性；</li>
+                    <li>10）开发者平台会对每次业务中断或者安全性事故出具详细的问题分析报告并提出整改措施；</li>
+                </ul>
+            </article>
+        </li>
+
+        <li>
+            <strong>加密与备份</strong>
+            <p>开发者平台通过一系列加密与备份技术保障用户数据的安全性：</p>
+            <article>
+                <ul>
+                    <li>1）整站 SSL 加密，开发者平台的所有内容都必须通过 SSL 加密的方式才能访问，包括与 CDN、云存储等等供用商之间的通信；</li>
+                    <li>2）数据实时备份，在同一机房，开发者平台的数据库和文件都有实时热备机制，同步时间不超过 1 分钟；</li>
+                    <li>3）异地数据备份，为了防止机房故障导致的数据丢失，开发者平台采取了定时异地备份 ，同步时间不超过 1 小时；</li>
+                    <li>4）对于用户要求删除的数据我们会保留 7 天后清除，开发者平台不会私自保存用户的数据；</li>
+                </ul>
+            </article>
+        </li>
+
+        <li>
+            <strong>监控与响应</strong>
+            <p>开发者平台拥有完备的监控和报警体系，及时发现并解决问题：</p>
+            <article>
+                <ul>
+                    <li>1）开发者平台运维团队对 开发者平台的所有 IT 设施进行 24x7 的监控，并且人工轮班响应；</li>
+                    <li>2）开发者平台的全自动监控工具监控的内容包括：</li>
+                    <li>
+                        <ul>
+                            <li>服务器 CPU、内存、硬盘以及网络等硬件资源，报警阈值 90%；</li>
+                            <li>系统服务响应时间，包括页面访问、代码拉取和推送，报警阈值 5 秒；</li>
+                            <li>邮件、短信、推送，报警阈值 10 分钟；</li>
+                            <li>分布全国 100 个节点的连通性，报警阈值 20 分钟；</li>
+                        </ul>
+                    </li>
+                    <li>3）开发者平台的服务均拥有多个实例，包括 HTTP 服务、Git 服务、邮件、短信、APP 推送、消息队列，当一个实例不可用，系统会自动启用备用实例；</li>
+                    <li>4）开发者平台监控系统会通过 APP 推送、短信、邮件、电话四种方式逐级通知运维人员；</li>
+                    <li>5）开发者平台监控系统的的警报不能得到及时处理时会自动对问题升级并通知更高级别的运维人员；</li>
+                </ul>
+            </article>
+        </li>
+
+        <li>
+            <strong>供应商审查</strong>
+            <p>开发者平台选用的云服务商均满足以下标准：</p>
+            <article>
+                <ul>
+                    <li>1）云基础架构，数据中经过 TIA-942 标准认证；</li>
+                    <li>2）数据中心 24x7 物理隔离，并且有物理安全管控；</li>
+                    <li>3）拥有灾难恢复计划并且经过灾难恢复演示；</li>
+                    <li>4）拥有完备的防火墙和防病毒设置；</li>
+                    <li>5）拥有完备的故障报警机制，并且提供业务专员处理故障；</li>
+                    <li>6）签订正规的服务合同；</li>
+                </ul>
+            </article>
+        </li>
+
+        <li>
+            <strong>可用性承诺</strong>
+            <p>开发者平台拥有完整的 SLA 服务承诺，详情请参见 <a href="javascript:;">https://dev.tencent.com/gitsla</a> 。</p>
+        </li>
+    </ol>
+    <hr>
+    <p class="bottom">最后更新：2018 年 09 月 11 日</p>
+</div>
+<footer class="footer-container">
+    <iframe id="report_iframe" name="report_iframe" style="position:absolute;height:1px;width:1px;bottom:-250px;left:-250px;" src="thirdpartyreport.html"></iframe>
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" target="_blank" class="item" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<script type="text/javascript" src="static/js/tcss.ping.https.js"></script>
+<script type="text/javascript">
+    var Utils = (function () {
+        var protocol = window.location.protocol,
+            tencentDomain = 'dev.tencent.com',
+            newReportIframeUrl = 'https://cloud.tencent.com/act/thirdpartyreport';
+
+        return {
+            // 准备新上报的 iframe
+            getReportIframeUrl: function(url) {
+                var queryStr = '';
+                var originUrlStr = protocol + '//' + tencentDomain;
+
+                url = url.replace(/(\w+)\/\//g, '$1/');
+
+                if (url.indexOf('?') > -1) {
+                    var execData = /^(.*)\?(.*)$/.exec(url);
+                    if (execData !== null && execData[1]) {
+                        originUrlStr = execData[1];
+                    }
+                    if (execData !== null && execData[2]) {
+                        queryStr = execData[2];
+                    }
+                } else {
+                    originUrlStr = url;
+                }
+
+                var iframeSrcUrl = newReportIframeUrl;
+                if (queryStr) {
+                    iframeSrcUrl += '?' + encodeURI(queryStr) + '&url=' + encodeURIComponent(originUrlStr);
+                } else {
+                    iframeSrcUrl += '?url=' + encodeURIComponent(originUrlStr);
+                }
+                return iframeSrcUrl;
+            },
+
+            changeReportSrc: function(url) {
+                if (window.frames['report_iframe']) {
+                    window.frames['report_iframe'].location.href = url;
+                }
+            },
+
+            tcssReport: function() {
+                if (typeof(pgvMain) === 'function') {
+                    pgvMain({repeatApplay: 'true', virtualDomain: 'qcloud.dev.qq.com'});
+                }
+            },
+
+            onLoadDo: function() {
+                window.onload = function() {
+                    Utils.tcssReport();
+                    var reportIframeSrcUrl = Utils.getReportIframeUrl(window.location.href);
+                    Utils.changeReportSrc(reportIframeSrcUrl);
+                };
+            }
+        };
+    }());
+    Utils.onLoadDo();
+</script>
+
+<script type="text/javascript" src="static/js/runtime~security.1eceeb42.js"></script><script type="text/javascript" src="static/js/security.dd61fbc0.chunk.js"></script></body>
+</html>

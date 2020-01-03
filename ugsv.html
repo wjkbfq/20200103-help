@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>短视频 UGSV_短视频 SDK_拍摄剪辑及视频特效制作 - 腾讯云</title>
+    <meta name="keywords" content="短视频,短视频SDK,短视频解决方案,手机短视频编辑">
+    <meta name="description" content="短视频(UGSV)服务，集成了采集、剪接、特效、分享、播放客户端组件，配合快速上传、转码、存储、智能标签等强大云点播能力，令开发者可以轻松制作出基于移动端的短视频内容业务。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+   <link rel="stylesheet" href="static/css/ugsv-v2.css">
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.ugsv.overview.top.navigation.overview">
+						短视频 SDK 
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ugsv.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ugsv.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.ugsv.overview.top.navigation.developer">
+						文档与资源
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.ugsv.overview.top.nav.btn1">
+						Demo 体验
+					</a>
+					
+
+					
+					
+						<a href="javascript:;" class="c-btn c-nav-bm-btn-hole" hotrep="product.ugsv.overview.top.nav.btn2">
+							立即选购
+						</a>
+					
+					
+					
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+
+            <h1 class="c-hero-section-tit">
+                短视频 SDK
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">基于快速上传、转码、存储等强大云端能力，令开发者可以轻松制作出基于移动端的短视频内容业务</p>
+				<p class="m-mod">强大的云端能力，丰富的短视频功能</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn default  J-pdBannerBtn1" hotrep="product.ugsv.overview.banner.btn1">
+                    Demo 体验
+                </a>
+
+                
+                    
+                    <a href="javascript:;" class="c-btn p-weak-btn" hotrep="product.ugsv.overview.banner.btn2">立即选购</a>
+                    
+                
+                    
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/image15.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.ugsv.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">短视频 SDK 概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.ugsv.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.ugsv.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="developer">
+                        <a href="javascript:;" hotrep="product.ugsv.overview.navigation.developer">
+                            
+                            <span class="c-tab-tit">文档与资源</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.ugsv.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.ugsv.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-tall about-ugsv">
+                <div class="c-section-inner">
+                    <div class="c-section-hd">
+                        <h3 class="c-section-tit">关于短视频 SDK</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="ugsv-demo">
+                            <video class="ugsv-demo-video" src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/demo-1.mp4" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/default-bg.png" width="100%" autoplay="autoplay" muted="muted" playsinline="playsinline" data-id="1"></video>
+                            <video class="ugsv-demo-video" src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/demo-2.mp4" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/default-bg.png" width="100%" autoplay="autoplay" muted="muted" playsinline="playsinline" data-id="2" style="display: none;"></video>
+                            <video class="ugsv-demo-video" src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/demo-3.mp4" poster="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/product/ugsv/css/img/demo/default-bg.png" width="100%" autoplay="autoplay" muted="muted" playsinline="playsinline" data-id="3" style="display: none;"></video>
+                            <div class="ugsv-demo-mask init">
+                                <div class="demo-item">
+                                    <div class="mask-item">
+                                        <div class="item-wrap">
+                                            <div class="item-inner" data-id="1">
+                                                <img class="item-img" src="static/picture/demo-11.svg">
+                                                <span class="item-txt">点击观看短视频拍摄</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mask-item">
+                                        <div class="item-wrap">
+                                            <div class="item-inner" data-id="2">
+                                                <img class="item-img" src="static/picture/demo-21.svg">
+                                                <span class="item-txt">点击观看短视频制作</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mask-item">
+                                        <div class="item-wrap">
+                                            <div class="item-inner" data-id="3">
+                                                <img class="item-img" src="static/picture/demo-31.svg">
+                                                <span class="item-txt">点击观看特效剪辑</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ugsv-intro">
+                            <div class="intro-txt">
+                                <p class="title">产品简介</p>
+                                <p class="summary">短视频 （User&nbsp;Generated&nbsp;Short&nbsp;Video，UGSV）基于腾讯云强大的上传、存储、转码、分发的云点播能力，提供集成了采集、剪辑、拼接、特效、分享、播放等功能的客户端&nbsp;SDK，并整合腾讯的&nbsp;IM、社交、用户画像数据以及最顶尖的&nbsp;AI&nbsp;人脸识别和图像检测技术，帮助用户聚焦业务本身，快速轻松实现基于移动端的短视频应用。</p>
+                            </div>
+                            <div class="sdk-wrap">
+                                <p class="title">扫码体验&nbsp;Demo</p>
+                                <div class="sdk-inner">
+                                    <div class="pc">
+                                        <div class="sdk">
+                                            <img src="static/picture/ios1.png">
+                                            <p>iOS</p>
+                                        </div>
+                                        <div class="sdk">
+                                            <img src="static/picture/android2.png">
+                                            <p>Android</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile">
+                                        <a href="javascript:;" class="c-btn">下载&nbsp;iOS&nbsp;版</a>
+                                        <a href="javascript:;" class="c-btn">下载&nbsp;Android&nbsp;版</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="ilth2m9psfo">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="社交创意短视频" data-target="ilth2m9psfo">
+                        <a href="javascript:;" id="tab_ilth2m9psfo" role="tab" hotrep="product.ugsv.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="ilth2m9psfo">
+                            <span class="c-tab-tit">社交创意短视频</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="互动聊天" data-target="c9ue91bhoi">
+                        <a href="javascript:;" id="tab_c9ue91bhoi" role="tab" hotrep="product.ugsv.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="c9ue91bhoi">
+                            <span class="c-tab-tit">互动聊天</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="短视频新闻" data-target="bpx7fvb184">
+                        <a href="javascript:;" id="tab_bpx7fvb184" role="tab" hotrep="product.ugsv.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="bpx7fvb184">
+                            <span class="c-tab-tit">短视频新闻</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="问答咨询" data-target="6dn5zrzpzky">
+                        <a href="javascript:;" id="tab_6dn5zrzpzky" role="tab" hotrep="product.ugsv.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="6dn5zrzpzky">
+                            <span class="c-tab-tit">问答咨询</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="竞技游戏" data-target="bx6xv3ksuq5">
+                        <a href="javascript:;" id="tab_bx6xv3ksuq5" role="tab" hotrep="product.ugsv.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="bx6xv3ksuq5">
+                            <span class="c-tab-tit">竞技游戏</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.ugsv.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_ilth2m9psfo" data-panel="ilth2m9psfo" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="ilth2m9psfo" hotrep="product..overview.scene.1.tab">
+                        社交创意短视频
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>用户在移动端可自由拍摄短视频，可采用美颜滤镜、动效挂件、特效插件、绿幕抠像、智能剪辑和拼接等功能来制作视频，将个人创意加入短视频，通过快速上传实时与他人分享精彩内容。<br><img src="static/picture/98cb20183466eedee9051bfd3332e1c8.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_c9ue91bhoi" data-panel="c9ue91bhoi" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="c9ue91bhoi" hotrep="product..overview.scene.2.tab">
+                        互动聊天
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>在移动端聊天过程中，通过随拍随传的短视频传递更生动的信息，突破传统图文聊天方式、实时短视频使聊天更有趣，气泡字幕加实拍短视频可实现更高效更真实的互动。<br><img src="static/picture/3990717b7ed64e0bfdf9a557d71ae885.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_bpx7fvb184" data-panel="bpx7fvb184" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="bpx7fvb184" hotrep="product..overview.scene.3.tab">
+                        短视频新闻
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>通过移动端实时拍摄的新闻内容，与他人分享身边的最新资讯，比传统图文信息更具可读性和真实性。短视频的快速上传、智能编辑和云端存储，让更多读者更快看到有趣且真实的新闻内容。<br><img src="static/picture/5dc230f095a73779d303f2b3536e90c5.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_6dn5zrzpzky" data-panel="6dn5zrzpzky" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="6dn5zrzpzky" hotrep="product..overview.scene.4.tab">
+                        问答咨询
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>特定场景的专业咨询可通过高效且方便的短视频传递更加丰富和真实的解答，专家精心录制的短视频与气泡字幕配合，可有效且快速地解答问询者的疑问，提升咨询效率和准确性。<br><img src="static/picture/b7ffa407e39320624d9b90a86cfcb941.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_bx6xv3ksuq5" data-panel="bx6xv3ksuq5" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="bx6xv3ksuq5" hotrep="product..overview.scene.5.tab">
+                        竞技游戏
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>用户可在现场实时拍摄和剪辑竞技实况，将精彩且关键的环节分享给全网关注者。通过快速上传，将最新赛况同步分享，结合短视频的特效制作、智能剪辑等更能引爆赛事相关讨论。<br><img src="static/picture/0fdd92cf148080bf866fdf9ce1c1b4a9.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall  ugsv-function">
+                <div class="c-section-inner">
+                    <div class="c-section-hd">
+                        <h3 class="c-section-tit">产品功能</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="function-wrap">
+                            <ul class="function-inner">
+                                <li>
+                                    <div class="function-item">
+                                        <!-- 展開時，添加「actived」 -->
+                                        <div class="item-m-title actived">
+                                            <span class="txt">采集拍摄</span>
+                                            <i class="arrow-icon"></i>
+                                        </div>
+                                        <div class="item-container">
+                                            <div class="item-container-inner">
+                                                <div class="demo-function">
+                                                    <img src="static/picture/function-11.png" alt="采集拍摄">
+                                                    <div class="function-hover">
+                                                        <div class="function-intro">
+                                                            <ul>
+                                                                <li>多种屏比拍摄</li>
+                                                                <li>多种屏比切换</li>
+                                                                <li>拍摄控制</li>
+                                                                <li>变速控制</li>
+                                                                <li>分段录制</li>
+                                                                <li>背景音乐</li>
+                                                                <li>基础美颜</li>
+                                                                <li>高级美颜</li>
+                                                                <li class="button">
+                                                                    <a href="javascript:;" target="_blank" class="c-btn">了解更多</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="function-name">
+                                                    <p>采集拍摄</p>
+                                                </div>
+                                                <div class="m-function-intro">
+                                                    <p>支持多种屏比拍摄和切换、拍摄控制、变速控制、分段录制、背景音乐、基础美颜和高级美颜等</p>
+                                                    <a href="javascript:;" target="_blank" class="more-info">了解更多&gt;&gt;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="function-item">
+                                        <div class="item-m-title">
+                                            <span class="txt">剪辑拼接</span>
+                                            <i class="arrow-icon"></i>
+                                        </div>
+                                        <div class="item-container">
+                                            <div class="item-container-inner">
+                                                <div class="demo-function">
+                                                    <img src="static/picture/function-21.png" alt="剪辑拼接">
+                                                    <div class="function-hover">
+                                                        <div class="function-intro">
+                                                            <ul>
+                                                                <li>帧时间线</li>
+                                                                <li>按帧预览</li>
+                                                                <li>截取游标</li>
+                                                                <li>设置速度</li>
+                                                                <li class="button">
+                                                                    <a href="javascript:;" target="_blank" class="c-btn">了解更多</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="function-name">
+                                                    <p>剪辑拼接</p>
+                                                </div>
+                                                <div class="m-function-intro">
+                                                    <p>支持帧时间线、按帧预览、截取游标、设置速度等</p>
+                                                    <a href="javascript:;" target="_blank" class="more-info">了解更多&gt;&gt;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="function-item">
+                                        <div class="item-m-title">
+                                            <span class="txt">特效制作</span>
+                                            <i class="arrow-icon"></i>
+                                        </div>
+                                        <div class="item-container">
+                                            <div class="item-container-inner">
+                                                <div class="demo-function">
+                                                    <img src="static/picture/function-31.png" alt="特效制作">
+                                                    <div class="function-hover">
+                                                        <div class="function-intro">
+                                                            <ul>
+                                                                <li>AI&nbsp;贴纸</li>
+                                                                <li>AI&nbsp;抠图</li>
+                                                                <li>绿幕抠像</li>
+                                                                <li>时间特效</li>
+                                                                <li>滤镜特效</li>
+                                                                <li>变声特效</li>
+                                                                <li class="button">
+                                                                    <a href="javascript:;" target="_blank" class="c-btn">了解更多</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="function-name">
+                                                    <p>特效制作</p>
+                                                </div>
+                                                <div class="m-function-intro">
+                                                    <p>支持&nbsp;AI&nbsp;贴纸、AI&nbsp;抠图、绿幕抠像、时间特效、滤镜特效、变声特效等</p>
+                                                    <a href="javascript:;" target="_blank" class="more-info">了解更多&gt;&gt;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="function-item">
+                                        <div class="item-m-title">
+                                            <span class="txt">混音字幕</span>
+                                            <i class="arrow-icon"></i>
+                                        </div>
+                                        <div class="item-container">
+                                            <div class="item-container-inner">
+                                                <div class="demo-function">
+                                                    <img src="static/picture/function-41.png" alt="混音字幕">
+                                                    <div class="function-hover">
+                                                        <div class="function-intro">
+                                                            <ul>
+                                                                <li>选择声音文件</li>
+                                                                <li>截取声音片段</li>
+                                                                <li>设置声音大小</li>
+                                                                <li>选择字幕容器</li>
+                                                                <li>设置字幕起始帧</li>
+                                                                <li>文字设置</li>
+                                                                <li class="button">
+                                                                    <a href="javascript:;" target="_blank" class="c-btn">了解更多</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="function-name">
+                                                    <p>混音字幕</p>
+                                                </div>
+                                                <div class="m-function-intro">
+                                                    <p>支持选择声音文件、截取声音片段、设置声音大小、选择字幕容器、设置字幕起始帧和文字设置等</p>
+                                                    <a href="javascript:;" target="_blank" class="more-info">了解更多&gt;&gt;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="function-item">
+                                        <div class="item-m-title">
+                                            <span class="txt">动态贴纸</span>
+                                            <i class="arrow-icon"></i>
+                                        </div>
+                                        <div class="item-container">
+                                            <div class="item-container-inner">
+                                                <div class="demo-function">
+                                                    <img src="static/picture/function-51.png" alt="动态贴纸">
+                                                    <div class="function-hover">
+                                                        <div class="function-intro">
+                                                            <ul>
+                                                                <li>动态贴纸</li>
+                                                                <li>静态贴纸</li>
+                                                                <li>贴纸位置</li>
+                                                                <li>贴纸起始帧</li>
+                                                                <li>选择特效</li>
+                                                                <li class="button">
+                                                                    <a href="javascript:;" target="_blank" class="c-btn">了解更多</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="function-name">
+                                                    <p>动态贴纸</p>
+                                                </div>
+                                                <div class="m-function-intro">
+                                                    <p>支持选择动态或静态贴纸、设置贴纸位置、设置贴纸起始帧等</p>
+                                                    <a href="javascript:;" target="_blank" class="more-info">了解更多&gt;&gt;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="c-section c-p-y-tall ugsv-buy">
+                <div class="c-section-inner">
+                    <div class="c-section-hd">
+                        <h3 class="c-section-tit">购买短视频&nbsp;SDK</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="package-wrap">
+                            <ul class="package-list part">
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">体验版&nbsp;SDK</div>
+                                            <div class="package-desc">提供采集拍摄，特效编辑，视频拼接等功能，支持&nbsp;UI&nbsp;定制。您可免费试用。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版&nbsp;28&nbsp;天的免费使用权限。</div>
+                                                <div class="price">
+                                                    <span class="num free">免费试用</span>
+                                                    <!-- <span class="unit">免费试用</span> -->
+                                                    <div class="coupon">
+                                                        <a href="javascript:;">领优惠券</a>
+                                                        <span>立减10元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即使用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">精简版&nbsp;SDK</div>
+                                            <div class="package-desc">提供短视频录制拍摄等基础功能，支持&nbsp;UI&nbsp;定制，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;精简版一年使用权限，及&nbsp;1T&nbsp;点播存储空间&nbsp;+&nbsp;5T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">2345</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省583元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">基础版&nbsp;SDK&nbsp;1</div>
+                                            <div class="package-desc">提供除需要人脸识别技术支持的全部功能，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版一年使用权限，及&nbsp;50T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">10050</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省1450元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="package-list part">
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">基础版&nbsp;SDK&nbsp;2</div>
+                                            <div class="package-desc">提供除需要人脸识别技术支持的全部功能，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版一年使用权限，及&nbsp;100T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">19999</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省3001元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">商业版&nbsp;SDK</div>
+                                            <div class="package-desc">提供短视频基础版的全部功能，采用天天P图美颜技术，另送&nbsp;10&nbsp;个&nbsp;2D&nbsp;贴纸。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;商业版一年使用权限，请拨打&nbsp;95716 转 1&nbsp;联系我们。</div>
+                                                <div class="price">
+                                                    <span class="num">350000</span>
+                                                    <span class="unit">元/年</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">申请试用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">商业版&nbsp;SDK&nbsp;PRO</div>
+                                            <div class="package-desc">提供大眼、瘦脸、动效等基于&nbsp;AI&nbsp;人脸识别能力的全功能版本，提供丰富的&nbsp;2D&nbsp;、3D&nbsp;贴纸素材。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;商业版&nbsp;PRO&nbsp;一年使用权限，请拨打&nbsp;95716 转 1&nbsp;联系我们。</div>
+                                                <div class="price">
+                                                    <span class="num">500000</span>
+                                                    <span class="unit">元/年</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">申请试用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="package-list whole">
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">体验版&nbsp;SDK</div>
+                                            <div class="package-desc">提供采集拍摄，特效编辑，视频拼接等功能，支持&nbsp;UI&nbsp;定制。您可免费试用。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版&nbsp;28&nbsp;天的免费使用权限。</div>
+                                                <div class="price">
+                                                    <span class="num free">免费试用</span>
+                                                    <!-- <span class="unit">免费试用</span> -->
+                                                    <div class="coupon">
+                                                        <a href="javascript:;">领优惠券</a>
+                                                        <span>立减10元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即使用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">精简版&nbsp;SDK</div>
+                                            <div class="package-desc">提供短视频录制拍摄等基础功能，支持&nbsp;UI&nbsp;定制，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;精简版一年使用权限，及&nbsp;1T&nbsp;点播存储空间&nbsp;+&nbsp;5T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">2345</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省583元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">基础版&nbsp;SDK&nbsp;1</div>
+                                            <div class="package-desc">提供除需要人脸识别技术支持的全部功能，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版一年使用权限，及&nbsp;50T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">10050</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省1450元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">基础版&nbsp;SDK&nbsp;2</div>
+                                            <div class="package-desc">提供除需要人脸识别技术支持的全部功能，购买资源包即可获得。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;基础版一年使用权限，及&nbsp;100T&nbsp;点播流量，有效期为一年。</div>
+                                                <div class="price">
+                                                    <span class="num">19999</span>
+                                                    <span class="unit">元</span>
+                                                    <span class="tag">省3001元</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">立即购买</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">商业版&nbsp;SDK</div>
+                                            <div class="package-desc">提供短视频基础版的全部功能，采用天天P图美颜技术，另送&nbsp;10&nbsp;个&nbsp;2D&nbsp;贴纸。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;商业版一年使用权限，请拨打&nbsp;95716 转 1&nbsp;联系我们。</div>
+                                                <div class="price">
+                                                    <span class="num">350000</span>
+                                                    <span class="unit">元/年</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">申请试用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="package-inner">
+                                        <div class="package-hd">
+                                            <div class="package-name">商业版&nbsp;SDK&nbsp;PRO</div>
+                                            <div class="package-desc">提供大眼、瘦脸、动效等基于&nbsp;AI&nbsp;人脸识别能力的全功能版本，提供丰富的&nbsp;2D&nbsp;、3D&nbsp;贴纸素材。</div>
+                                        </div>
+                                        <div class="package-bd">
+                                            <div class="package-content">
+                                                <div class="content-txt">包含：短视频&nbsp;SDK&nbsp;商业版&nbsp;PRO&nbsp;一年使用权限，请拨打&nbsp;95716 转 1&nbsp;联系我们。</div>
+                                                <div class="price">
+                                                    <span class="num">500000</span>
+                                                    <span class="unit">元/年</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="javascript:;" target="_blank" class="c-btn">申请试用</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="c-section c-p-y-tall  function-mod ugsv-advantage">
+                <div class="c-section-inner">
+                    <div class="c-section-hd">
+                        <h3 class="c-section-tit">产品优势</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="c-grid function-list">
+                            <div class="c-g-6">
+                                <div class="c-media">
+                                    <div class="c-media-img">
+                                        <img class="ico64" src="static/picture/b0c6faa8b83d21e762a5a14d576af43a.svg" alt="功能完备">
+                                        <img class="ico64 m-icon" src="static/picture/b0c6faa8b83d21e762a5a14d576af43a.svg" alt="功能完备">
+                                    </div>
+                                    <div class="c-media-body">
+                                        <h4 class="c-media-heading">
+                                            功能完备
+                                        </h4>
+                                        <p class="c-media-info">
+                                            SDK&nbsp;功能强大，为&nbsp;APP&nbsp;开发者提供视频采集、剪辑、拼接、特效、美颜、滤镜、绿幕抠像、动态挂件、发布和播放等最领先的短视频功能。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-g-6">
+                                <div class="c-media">
+                                    <div class="c-media-img">
+                                        <img class="ico64" src="static/picture/27bf33ee6e29700f8c62d62ccec9c1d2.svg" alt="点播整合">
+                                        <img class="ico64 m-icon" src="static/picture/27bf33ee6e29700f8c62d62ccec9c1d2.svg" alt="点播整合">
+                                    </div>
+                                    <div class="c-media-body">
+                                        <h4 class="c-media-heading">
+                                            点播整合
+                                        </h4>
+                                        <p class="c-media-info">
+                                            腾讯云点播为短视频提供从作品上传、存储、快速转码、到视频鉴黄和分发的一站式云端接入服务，保证用户的作品第一时间被观看、分享。
+                                        </p>
+                                        <a href="vod.html" target="_blank" class="c-media-link">了解点播&gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-g-6">
+                                <div class="c-media">
+                                    <div class="c-media-img">
+                                        <img class="ico64" src="static/picture/7e8d378060684c9566b3eccfddd3aa4b.svg" alt="内容监管">
+                                        <img class="ico64 m-icon" src="static/picture/7e8d378060684c9566b3eccfddd3aa4b.svg" alt="内容监管">
+                                    </div>
+                                    <div class="c-media-body">
+                                        <h4 class="c-media-heading">
+                                            内容监管
+                                        </h4>
+                                        <p class="c-media-info">
+                                            结合腾讯云点播鉴黄能力，支持视频上传后自动发起鉴黄并接收结果。上传完成后可快速计算色情指数供业务侧处理。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-g-6">
+                                <div class="c-media">
+                                    <div class="c-media-img">
+                                        <img class="ico64" src="static/picture/c2b36c873f1a7b5fbba95a11a18b7a45.svg" alt="AI能力">
+                                        <img class="ico64 m-icon" src="static/picture/c2b36c873f1a7b5fbba95a11a18b7a45.svg" alt="AI能力">
+                                    </div>
+                                    <div class="c-media-body">
+                                        <h4 class="c-media-heading">
+                                            AI&nbsp;能力
+                                        </h4>
+                                        <p class="c-media-info">
+                                            结合云端&nbsp;AI&nbsp;引擎，利用人脸识别和动作捕捉等技术，实现智能标签、智能封面、绿幕抠像和人脸挂件等，实现内容分类和个性化推荐。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="c-section c-p-y-tall ugsv-framework">
+                <div class="c-section-inner">
+                    <div class="c-section-hd ">
+                        <h3 class="c-section-tit">产品架构</h3>
+                    </div>
+                    <div class="c-section-bd">
+                        <div class="framework-box">
+                            <div class="framework-img" data-map="mobile">
+                                <img src="static/picture/framework.png">
+                            </div>
+                            <div class="framework-word">
+                                <div class="framework-word-simple">
+                                    <p class="framework-simple-title">丰富可扩展</p>
+                                    <div class="framework-simple-detail">
+                                        <ul class="framework-simple-list">
+                                            <li>
+                                                集成&nbsp;SDK&nbsp;后，可通过摄像头拍摄，也可从直播中截取生成文件。
+                                            </li>
+                                            <li>
+                                                可直接在手机端进行剪辑、拼接、添加滤镜、人脸挂件、绿幕抠像等特效制作，令开发者的&nbsp;APP&nbsp;具备多种短视频创作玩法。
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="framework-word-simple">
+                                    <p class="framework-simple-title">强大的云端配套</p>
+                                    <div class="framework-simple-detail">
+                                        <ul class="framework-simple-list">
+                                            <li>
+                                                结合腾讯云点播服务的云端能力，可以让用户的作品快速上传存储到云端，并由腾讯云点播服务无缝提供快速转码、鉴黄和视频分发。保证用户的作品能在第一时间分享、观看。
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="c-section c-p-y-tall customer-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户案例</h3>
+        </div>
+        <div role="list" class="c-section-bd">
+            <div role="listitem" class="p-customer-list">
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.1">
+                        <img alt="" src="static/picture/9d4147a55f1452ae83bb84f3de16da41.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.2">
+                        <img alt="" src="static/picture/732a750a480f92988822e62faaacd93c.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.3">
+                        <img alt="东方头条" src="static/picture/47d6857dd3f39dea01fe0c4b25f14b92.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.4">
+                        <img alt="有象视频" src="static/picture/58955c2d9584ac1e1f020986a065368a.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.5">
+                        <img alt="企鹅电竞" src="static/picture/aa166cad90cf15fc41424a593b49d0ff.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.6">
+                        <img alt="" src="static/picture/5bb33554a55242bf8d82387505018c8f.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.7">
+                        <img alt="世纪佳缘" src="static/picture/6d4f35b78e84db4c79e35207ac7ffeaa.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.8">
+                        <img alt="汽车之家" src="static/picture/8ba06337ae2304748675e8a4f359c8f6.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.9">
+                        <img alt="" src="static/picture/3c03e44e4f0b0dd892f08e9013156a64.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.10">
+                        <img alt="QQ炫舞" src="static/picture/0cab93923fe1bb3af83b476981a509c0.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.11">
+                        <img alt="" src="static/picture/0d9cfa05e94924ff6caabfe4d535afe6.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.ugsv.overview.customer.12">
+                        <img alt="" src="static/picture/7f495c89dec06bd75a557df21aec2f79.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用短视频 SDK</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的 <a href="javascript:;" target="_blank">入门指南</a>，快速接入使用腾讯云短视频&nbsp;SDK。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.ugsv.overview.guide.btn">
+                           立即选购
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.ugsv.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'ugsv',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012113628, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "By90aZhyL";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+<script src="static/js/api.js"></script>
+
+<script src="static/js/index2.js"></script>
+
+
+</body>
+</html>

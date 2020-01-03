@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>营销风控</title>
+    <desc>Created with Sketch.</desc>
+    <g id="营销风控" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+        <path d="M3.07050605,9 C3.293492,10.2180734 4.21319007,12.8576561 8,13.934 C11.7666716,12.8633801 12.696645,10.2454703 12.925877,9 L11.39,9 L9.406,12.436 L6.594,7.564 L5.765,9 L3.07050605,9 Z M3,8.4 L3,7 L4.61,7 L6.594,3.564 L9.406,8.436 L10.235,7 L13,7 L13,8.362 L13,3 L3,3 L3,8.4 Z M1,1 L15,1 L15,8.4 C15,8.4 14.946,14.359 8,16 C1.054,14.359 1,8.4 1,8.4 L1,1 Z" id="Combined-Shape" fill="#00A4FF"></path>
+    </g>
+</svg>

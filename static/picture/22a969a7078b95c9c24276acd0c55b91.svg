@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>安全检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="安全检测" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M46,19.1653059 L46,6 L2,6 L2,42 L25.2747595,42 C26.0655407,42.7762863 26.9809091,43.4436627 28,43.971059 L28,44 L0,44 L0,4 L48,4 L48,19.4786541 C47.3274733,19.4032507 46.6601248,19.2985937 46,19.1653059 Z" id="Combined-Shape" fill="#334966"></path>
+        <path d="M37,21.1272231 L36.3209987,21.480455 C33.4236099,22.9891856 30.2641388,23.9758848 27,24.3943087 L27,34.2645 C27,36.4847555 28.29649,38.5300905 30.3778634,39.5710644 L37,42.8819766 L43.622021,39.5711222 C45.70351,38.5300905 47,36.4847555 47,34.2645 L47,24.3943088 C43.7358635,23.9758861 40.5764194,22.9892008 37.6793488,21.4806359 L37,21.1272231 Z" id="Fill-6" stroke="#334966" stroke-width="2" fill="#00A4FF"></path>
+        <polygon id="Fill-11" fill="#FFFFFF" points="36.243 32.656 33.415 29.828 32 31.242 34.829 34.07 36.243 35.484 37.657 34.07 42.314 29.414 40.899 28"></polygon>
+        <path d="M37,21.1272231 L36.3209987,21.480455 C33.4236099,22.9891856 30.2641388,23.9758848 27,24.3943087 L27,34.2645 C27,36.4847555 28.29649,38.5300905 30.3778634,39.5710644 L37,42.8819766 L43.622021,39.5711222 C45.70351,38.5300905 47,36.4847555 47,34.2645 L47,24.3943088 C43.7358635,23.9758861 40.5764194,22.9892008 37.6793488,21.4806359 L37,21.1272231 Z" id="Fill-6" stroke="#334966" stroke-width="2"></path>
+        <rect id="Rectangle" fill="#334966" x="0" y="12" width="48" height="2"></rect>
+        <rect id="Rectangle-2" fill="#334966" x="38" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-2-Copy-2" fill="#334966" x="34" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-2-Copy" fill="#334966" x="42" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-4" fill="#00A4FF" x="7" y="21" width="12" height="2"></rect>
+        <rect id="Rectangle-4-Copy" fill="#00A4FF" x="7" y="27" width="12" height="2"></rect>
+        <rect id="Rectangle-4-Copy-2" fill="#00A4FF" x="7" y="33" width="12" height="2"></rect>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>互动直播</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="互动直播" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,5 L2,39 L46,39 L46,5 L2,5 Z M0,3 L48,3 L48,41 L0,41 L0,3 Z" id="Rectangle-16" fill="#334966" fill-rule="nonzero"></path>
+        <polygon id="Star-Copy-2" fill="#00A4FF" points="30 27.7719334 23.8196601 31.0211303 25 24.1392207 20 19.2654253 26.9098301 18.2613682 30 12 33.0901699 18.2613682 40 19.2654253 35 24.1392207 36.1803399 31.0211303"></polygon>
+        <rect id="Rectangle-17" fill="#334966" x="12" y="43" width="24" height="2"></rect>
+        <path d="M18,25.4954044 L21.5236357,27.3458314 L20.8507495,23.4269616 L23.6986901,20.6539895 L19.7626856,20.0826899 L18,16.5150664 L16.2373144,20.0826899 L12.3013099,20.6539895 L15.1492505,23.4269616 L14.4763643,27.3458314 L18,25.4954044 Z M18,27.7544125 L11.8196601,31 L13,24.1257354 L8,19.2573542 L14.9098301,18.2544125 L18,12 L21.0901699,18.2544125 L28,19.2573542 L23,24.1257354 L24.1803399,31 L18,27.7544125 Z" id="Star" fill="#334966" fill-rule="nonzero"></path>
+        <circle id="Oval-5" fill="#00A4FF" cx="5" cy="8" r="1"></circle>
+        <circle id="Oval-5-Copy" fill="#334966" cx="8" cy="8" r="1"></circle>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>高并发支持-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="高并发支持-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="23"></circle>
+        <path d="M12,30 L24,24 L36,30 L24,36 L12,30 Z M24,33.763932 L31.527864,30 L24,26.236068 L16.472136,30 L24,33.763932 Z" id="Rectangle-40-Copy-2" fill="#334966" fill-rule="nonzero"></path>
+        <polygon id="Rectangle-40-Copy" fill="#00A4FF" points="12 24 24 18 36 24 24 30"></polygon>
+        <path d="M12,18 L24,12 L36,18 L24,24 L12,18 Z M24,21.763932 L31.527864,18 L24,14.236068 L16.472136,18 L24,21.763932 Z" id="Rectangle-40" fill="#334966" fill-rule="nonzero"></path>
+    </g>
+</svg>

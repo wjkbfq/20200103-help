@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>智能语音识别-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="智能语音识别-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="23"></circle>
+        <rect id="Rectangle-47" fill="#00A4FF" x="18" y="9" width="12" height="20" rx="6"></rect>
+        <path d="M25,32.9506248 L25,37 L29,37 L29,39 L19,39 L19,37 L23,37 L23,32.9506248 C17.9466773,32.4489003 14,28.1853481 14,23 L16,23 C16,27.418278 19.581722,31 24,31 C28.418278,31 32,27.418278 32,23 L34,23 C34,28.1853481 30.0533227,32.4489003 25,32.9506248 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        <rect id="Rectangle-50" fill="#334966" x="21" y="16" width="6" height="2"></rect>
+        <rect id="Rectangle-50-Copy" fill="#334966" x="21" y="20" width="6" height="2"></rect>
+    </g>
+</svg>

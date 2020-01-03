@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>域名注册</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="域名注册" fill="#000000">
+            <path d="M85,93 L85,70 C85,68.343 86.343,67 88,67 L107,67 C108.657,67 110,68.343 110,70 L110,93 L107,93 L107,70 L99,70 L99,93 L96,93 L96,70 L88,70 L88,93 L85,93 Z M10,40 L134,40 L134,23 L10,23 L10,40 Z M134,121 L137,121 L137,124 L7,124 L7,20 L137,20 L137,111 L134,111 L134,43 L10,43 L10,121 L132,121 L134,121 Z M65,90 L76,90 L76,70 L65,70 L65,90 Z M65,93 C63.343,93 62,91.657 62,90 L62,70 C62,68.343 63.343,67 65,67 L76,67 C77.657,67 79,68.343 79,70 L79,90 C79,91.657 77.657,93 76,93 L65,93 Z M56,90 L56,93 L43,93 C41.343,93 40,91.657 40,90 L40,70 C40,68.343 41.343,67 43,67 L56,67 L56,70 L43,70 L43,90 L56,90 Z M30,93 L34,93 L34,89 L30,89 L30,93 Z" id="Page-1"></path>
+        </g>
+    </g>
+</svg>

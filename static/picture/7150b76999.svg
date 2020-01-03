@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>营销风控-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="营销风控-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape"></path>
+        </g>
+        <g id="Group" transform="translate(8.000000, 7.000000)">
+            <circle id="Oval-48" stroke="#00A4FF" stroke-width="2" cx="8" cy="8" r="6"></circle>
+            <rect id="Rectangle-118" fill="#00A4FF" x="7" y="0" width="2" height="5"></rect>
+            <rect id="Rectangle-118-Copy" fill="#00A4FF" x="7" y="11" width="2" height="5"></rect>
+            <rect id="Rectangle-118-Copy-2" fill="#00A4FF" transform="translate(13.500000, 8.000000) rotate(90.000000) translate(-13.500000, -8.000000) " x="12.5" y="5.5" width="2" height="5"></rect>
+            <rect id="Rectangle-118-Copy-3" fill="#00A4FF" transform="translate(2.500000, 8.000000) rotate(90.000000) translate(-2.500000, -8.000000) " x="1.5" y="5.5" width="2" height="5"></rect>
+            <circle id="Oval-49" fill="#00A4FF" cx="8" cy="8" r="1"></circle>
+        </g>
+    </g>
+</svg>

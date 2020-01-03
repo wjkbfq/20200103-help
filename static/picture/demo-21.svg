@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>demo-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="21.9503129%" y1="14.9347976%" x2="172.978878%" y2="143.14584%" id="linearGradient-1">
+            <stop stop-color="#00A4FF" offset="0%"></stop>
+            <stop stop-color="#00A3FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="短视频完稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="短视频产品介绍页3-1" transform="translate(-685.000000, -828.000000)">
+            <g id="demo-2" transform="translate(685.000000, 828.000000)">
+                <rect id="Rectangle-2" stroke="#00A4FF" stroke-width="2" x="19" y="24" width="42" height="32"></rect>
+                <path d="M38.006,39.856 L38.026,31.984 C38.035,31.979 38.041,31.977 38.047,31.977 C38.0516667,31.977 40.3553333,33.308 44.958,35.97 L38.006,39.856 Z M39.069,30.273 C38.428,29.909 37.664,29.909 37.023,30.273 C36.382,30.637 36,31.29 36,32.019 L36,39.858 C36,40.586 36.382,41.239 37.023,41.603 C37.343,41.785 37.695,41.876 38.046,41.876 C38.398,41.876 38.749,41.785 39.069,41.603 L45.961,37.684 C46.602,37.318 46.984,36.667 46.984,35.937 C46.984,35.209 46.602,34.556 45.961,34.191 L39.069,30.273 Z" id="Fill-1-Copy-3" fill="url(#linearGradient-1)"></path>
+                <path d="M23.9960938,49.0039062 L56.9960938,49.0039062" id="Line-3" stroke="#00A4FF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M51,47 L51,51.03125" id="Line-4" stroke="#00A4FF" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval-5-Copy" stroke="#00A4FF" stroke-width="2" cx="40" cy="40" r="39"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

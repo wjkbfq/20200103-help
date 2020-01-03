@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>复制成功</title>
+    <desc>Created with Sketch.</desc>
+    <g id="复制成功" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M19.9285714,10.0873016 C19.9285714,4.46104762 15.4675238,-4.54747351e-13 9.84126984,-4.54747351e-13 C4.46104762,-4.54747351e-13 0,4.46104762 0,10.0873016 C0,15.4675238 4.46104762,19.9285714 9.84126984,19.9285714 C15.4675238,19.9285714 19.9285714,15.4675238 19.9285714,10.0873016 Z" id="Fill-" fill="#08BD5D" opacity="0.153087798"></path>
+            <polyline id="Line" stroke="#08BD5D" stroke-width="2" stroke-linecap="square" points="6 10 9 13 15 7"></polyline>
+        </g>
+    </g>
+</svg>

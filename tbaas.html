@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>腾讯云区块链服务 TBaaS_区块链技术_BaaS - 腾讯云</title>
+    <meta name="keywords" content="腾讯云区块链,区块链服务,TBaaS,区块链,BaaS,分布式">
+    <meta name="description" content="腾讯云区块链服务TBaaS（Tencent Blockchain as a Service，TBaaS），构建于金融云基础之上。 平台系统不仅符合金融级别的安全合规性要求，同时还具备了腾讯云完备的能力，用户在弹性、开放的云平台上能够快速构建自己的IT基础设施和区块链服务。">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.tbaas.overview.top.navigation.overview">
+						腾讯云区块链服务 TBaaS
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.tbaas.overview.top.navigation.details">
+						产品详细信息
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.tbaas.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.tbaas.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.tbaas.overview.top.navigation.developer">
+						文档与资源
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.tbaas.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="#section-buy" class="c-nav-bm-btn c-btn" hotrep="product.tbaas.overview.top.nav.btn1">
+						立即选购
+					</a>
+					
+
+					
+					
+						<a href="javascript:;" class="c-btn c-nav-bm-btn-hole" hotrep="product.tbaas.overview.top.nav.btn2">
+							申请体验
+						</a>
+					
+					
+					
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+
+            <h1 class="c-hero-section-tit">
+                腾讯云区块链服务 TBaaS
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">提供高效、开放、安全、弹性的区块链服务，打造可信的企业间价值通道</p>
+				<p class="m-mod">低门槛，一站式接入的区块链服务</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="#section-buy" class="c-btn buy  J-pdBannerBtn1" hotrep="product.tbaas.overview.banner.btn1">
+                    立即选购
+                </a>
+
+                
+                    
+                    <a href="javascript:;" class="c-btn p-weak-btn" hotrep="product.tbaas.overview.banner.btn2">申请体验</a>
+                    
+                
+                    
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/daaa1e40f300b3c74ea3ec11918cfaee.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.tbaas.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">腾讯云区块链服务 TBaaS概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="details">
+                        <a href="javascript:;" hotrep="product.tbaas.overview.navigation.details">
+                            
+                            <span class="c-tab-tit">产品详细信息</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.tbaas.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.tbaas.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="developer">
+                        <a href="javascript:;" hotrep="product.tbaas.overview.navigation.developer">
+                            
+                            <span class="c-tab-tit">文档与资源</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.tbaas.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.tbaas.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.tbaas.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-img">
+                        <img src="static/picture/84d83811204b176c3edfbff15d65b9ff.svg" alt="">
+                    </div>
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                           腾讯云区块链服务 TBaaS 简介
+                        </h4>
+                        <p class="c-media-info">
+                            腾讯云区块链服务（Tencent Blockchain as a Service，TBaaS）构建于腾讯云基础之上，让您在弹性、开放的云平台上快速构建自己的 IT 基础设施和区块链服务。TBaaS 集成了三大区块链底层引擎，极大的降低您实现区块链底层技术的成本，简化区块链构建和运维工作，同时面对各行业领域场景，满足您的个性化需求，一站式快速交付定制 TBaaS。&nbsp;
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+                <div class="about-event">
+                    <div class="about-event-tit">
+                        活动 &amp; 公告
+                    </div>
+                    <div class="about-event-con">
+                        <ul>
+                            
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.tbaas.overview.about.activity.1">
+                                    腾讯云 TBaaS 区块链服务平台通过国家互联网信息办公室第一批境内区块链信息服务备案 >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.tbaas.overview.about.activity.2">
+                                    欢迎申请购买企业级区块链金融专区服务，一键式快速部署区块链网络 >>
+                                    
+                                </a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                                <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" target="_blank" hotrep="product.tbaas.overview.about.aside.media">
+                                    
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">产品简介</div>
+                                    <h3 class="c-thumbnail-tit">腾讯云区块链服务简介</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-doc-icon"></i>
+                                    <span class="c-thumbnail-status-txt">文档</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section J-pdBuyCardSection c-p-y-tall home-selling-mod">
+    <div class="c-section-inner">
+        <a id="section-buy" class="p-href-mod"></a>
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">多引擎产品售卖</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="d-selling-card-wrap">
+                <div class="d-selling-card-list item-3">
+
+
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">Hyperledger  Fabric 增强版</h3>
+
+                                    <div class="d-selling-card-desc J-pdBuyCardDesc" style="height: 48px;">
+                                        <p>腾讯云增强版 Fabric，提供高性能、可扩展的企业级区块链网络服务</p>
+                                    </div>
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList" style="height: 208px;">
+
+                                            <li class="d-selling-card-param-item">
+                                                成员管理（可插拔 CA 组件）
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                多通道隔离，同一通道支持组织间私有数据配置
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                可插拔的共识服务（Kafka/Raft），支持基于 key 的背书策略
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                execute-order-validate 框架
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                多语言智能合约，合约 IDE 与合约全生命周期管理
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                Docker 执行环境
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn" hotrep="product.tbaas.buycard.list.btn0">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">FISCO BCOS</h3>
+
+                                    <div class="d-selling-card-desc J-pdBuyCardDesc" style="height: 48px;">
+                                        <p>源于金链盟，提供开源、安全可控、稳定易用的区块链底层技术</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList" style="height: 208px;">
+
+                                            <li class="d-selling-card-param-item">
+                                                群组架构（区块链节点可根据业务关系选择群组加入，参与到对应账本的数据共享和共识过程中）
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                并行计算与热点账户解决方案
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                链上信使协议 AMOP
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                弹性联盟链共识方案框架
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn" hotrep="product.tbaas.buycard.list.btn1">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">Tencent TrustSQL</h3>
+
+                                    <div class="d-selling-card-desc J-pdBuyCardDesc" style="height: 48px;">
+                                        <p>腾讯自主研发的，提供基于场景的、便捷易用的区块链底层服务</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList" style="height: 208px;">
+
+                                            <li class="d-selling-card-param-item">
+                                                共识算法可切换（BFT-Raft/Raft）
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                支持海量数据存储
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                支持 SPV 节点
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                提供隐私数据的加解密和授权设施
+                                            </li>
+
+                                            <li class="d-selling-card-param-item">
+                                                提供用户身份管理设施
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn" hotrep="product.tbaas.buycard.list.btn2">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall function-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">腾讯云区块链服务的特性</h3>
+        </div>
+        <div class="c-section-bd">
+            <div role="list" class="c-grid function-list J-section2List">
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/1008ac704c25b99f4896aebad4344618.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                云上服务
+                            </h4>
+                            <p class="c-media-info">
+                                TBaaS 遵循标准的区块链底层协议搭建，可兼容网络协议一致的友商云平台。在多云融合的环境中，用户可以按照业务需求搭建真正的跨云平台联盟链，让用户解耦对底层技术平台的强依赖性，提升区块链平台自身的可信度。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/6e6c565eb8d0c661520d65e2e7810c82.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                私有云服务
+                            </h4>
+                            <p class="c-media-info">
+                                为了更好满足用户诉求，TBaaS 支持 TCE 私有化部署方式。TCE 是腾讯云企业级私有云解决方案，经过工信部可信云认证，达到金融行业最高标准级别。TBaaS 专有云部署方式搭建在稳健的 TCE 平台，用户可以自主管控整个 TBaaS 云平台。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/584ab080bd5064434061475a9c27f5d9.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                隐私保护
+                            </h4>
+                            <p class="c-media-info">
+                                平台采用基于数字证书的 PKI 的身份管理、多链隔离、信息加密、智能合约控制等手段保护私密信息。基于 PKI 的身份管理采用双重身份认证机制，首先通过腾讯云官网完成账号验证；再进入区块链的权限管理体系，只有使用该安全证书签名的客户端节点才能发起交易请求或提案。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/770b1a0bd7545d0749c14136ce3abdb4.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                多链支持
+                            </h4>
+                            <p class="c-media-info">
+                                一条逻辑上的区块链是集合了特定组织、特定节点的私有区块链系统，不同的组织间可以建立不同的逻辑区块链，链间实现数据隔离，智能合约可以部署在不同的逻辑区块链之上。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/b0ad31398711eadef8ecef93ea2703a2.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                合约管理
+                            </h4>
+                            <p class="c-media-info">
+                                TBaaS 平台提供完备的智能合约集成开发调试环境，大大缩短了用户开发周期并减轻了开发压力，以更便捷的方式辅助软件开发。与其它平台不同，腾讯 TBaaS 平台不仅可以对智能合约进行词法分析、语法检查，还专门提供了智能合约安全检查服务，对合规性和安全性进行校验。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/100d28e31b02d87bf33d1add9d9cdce3.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                共识机制
+                            </h4>
+                            <p class="c-media-info">
+                                共识机制决定了区块链的数据一致性的实现方式和适用场景，腾讯云区块链目前支持超级账本原生共识机制的同时，未来也将支持用户自定义的共识插件和背书插件，方便用户根据自身业务需要进行灵活选择和切换。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/453d6f512a62b18b4b37391bf48a9a44.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                开放机制
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云区块链 TBaaS 是一个开放的服务平台，在支持超级账本 Fabric 的同时，我们也支持 BCOS，TrustSQL 等优秀合作伙伴的区块链底层平台。我们在未来将支持 R3 Corda，企业以太坊等区块链技术，并积极关注区块链前沿科技的发展。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/1e3d28079dc382da074ac2311bc1f162.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                证书管理
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云区块链与目前国内领先的证书服务提供商中国金融认证中心（CFCA）进行深度的战略合作，支持在腾讯云区块链中使用 CFCA 签发企业所需的各类证书（例如电子签名、身份认证、SSL 证书、交易监控、反欺诈），为客户带来全平台的证书可识别性和一体化的用户与证书管理服务。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/370f572561921299f1f43e5b5be3d274.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                硬件加密
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云已具备成熟的硬件加密能力和产品，腾讯云区块链可以直接与其无缝对接，帮助银行、保险、证券等企业充分保护其数据存储安全和传输安全，提升加密解密和签名验签效率，实现密钥安全管理，帮助客户符合监管和等级保护要求。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item" style="display: none">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/a8fbde85950fa18102a903ea5f9cef1f.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                按需存储
+                            </h4>
+                            <p class="c-media-info">
+                                存储膨胀是当前区块链必然会面临的一个问题，腾讯云区块链为此提供了多种存储层解决方案，以适应不同的需求。例如账本数据支持使用块存储解决方案，状态数据和历史数据除了使用原生的 GoLevel DB 和 CouchDB 以外，还可支持使用腾讯云端的 MongoDB 方案。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item" style="display: none">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/e70ef617beaf85d69e681bc1bfab0b8a.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                企业互联
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云区块链以 VPC 的形式部署和提供服务，将区块链部署于一个独立的VPC 中，不占用用户的 VPC 配额，同时支持将区块链 VPC 与其他多个用户的 VPC 快速打通，不受限于网络地址重叠与繁琐的路由配置等因素的影响，方便用户直接通过自己的 VPC 访问自己的组织和节点。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item" style="display: none">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/d894a1b583bfee1ad69a2bdf6f87b578.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                网络管理
+                            </h4>
+                            <p class="c-media-info">
+                                TBaaS 网络遵照联盟链的准入机制，采用多组织联合，区域自治的方式，多链隔离等技术，实现了网络既可以灵活拓展，又可以自适应的管理模式。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item" style="display: none">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/001e78448a9b1d32a1fae725f56e6b17.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                策略和权限管理
+                            </h4>
+                            <p class="c-media-info">
+                                TBaaS 提供了图形化等更加友好的权限和策略方式，帮助客户更好地实现针对不同用户和不同业务逻辑的共识定制。同时，针对企业级的管理和监控需求，对用户的权限、角色，和各种共识策略、访问策略进行了全方位的增强。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item" style="display: none">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/144537446cd3a45ab43eba8ae057cf3c.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                账号管理
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云区块链的登录体系和敏感操作支持双层安全保护，在用户名和密码之外，再加一层 MFA 设备，MFA 设备可以安装到智能手机等移动设备上。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <div class="c-show-more-mod J-section2More">
+                                <a href="javascript:;" class="c-show-more-txt">显示所有特性</a>
+                </div>
+                <div class="c-show-more-mod show J-section2Hide" style="display: none">
+                                <a href="javascript:;" class="c-show-more-txt">收起</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">产品架构</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="enyw4lfen4i">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="TBaaS 基础设施架构" data-target="enyw4lfen4i">
+                        <a href="javascript:;" id="tab_enyw4lfen4i" role="tab" hotrep="product.tbaas.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="enyw4lfen4i">
+                            <span class="c-tab-tit">TBaaS 基础设施架构</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="TBaaS 业务架构" data-target="fo5yqc2pmvi">
+                        <a href="javascript:;" id="tab_fo5yqc2pmvi" role="tab" hotrep="product.tbaas.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="fo5yqc2pmvi">
+                            <span class="c-tab-tit">TBaaS 业务架构</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.tbaas.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_enyw4lfen4i" data-panel="enyw4lfen4i" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="enyw4lfen4i" hotrep="product..overview.scene.1.tab">
+                        TBaaS 基础设施架构
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云区块链服务 TBaaS 为用户提供公有云、金融云、专有云的服务。用户可以根据自己的需求，灵活的进行构建自己的系统，既可以购买公有云上的区块链即服务系统，也可以将系统搭建在自建机房专有云上。<br><img src="static/picture/9d0a1f18c033916b97b06e3bb98edeff.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_fo5yqc2pmvi" data-panel="fo5yqc2pmvi" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="fo5yqc2pmvi" hotrep="product..overview.scene.2.tab">
+                        TBaaS 业务架构
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云区块链服务 TBaaS，专注于用区块链技术应用于不同的业务场景，通俗易懂地帮助客户从业务的角度去理解区块链，并推出特定业务场景下区块链的解决方案。更低门槛更高效地帮助用户方便、快速的构建区块链服务。我们将用户从繁琐、重复性的开发任务中解脱出来，让用户将更多的精力投放在区块链上的服务、业务系统的高级架构设计上。<br><img src="static/picture/a83e661b89525d701ecfa99068dcc9a0.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="blqq6hck23q">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="共享账本" data-target="blqq6hck23q">
+                        <a href="javascript:;" id="tab_blqq6hck23q" role="tab" hotrep="product.tbaas.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="blqq6hck23q">
+                            <span class="c-tab-tit">共享账本</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="公证记录" data-target="8jitaxhq9l2">
+                        <a href="javascript:;" id="tab_8jitaxhq9l2" role="tab" hotrep="product.tbaas.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="8jitaxhq9l2">
+                            <span class="c-tab-tit">公证记录</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="互助保障" data-target="4b01tneq7e">
+                        <a href="javascript:;" id="tab_4b01tneq7e" role="tab" hotrep="product.tbaas.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="4b01tneq7e">
+                            <span class="c-tab-tit">互助保障</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="数字资产" data-target="mutfdqcvhzn">
+                        <a href="javascript:;" id="tab_mutfdqcvhzn" role="tab" hotrep="product.tbaas.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="mutfdqcvhzn">
+                            <span class="c-tab-tit">数字资产</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="防伪溯源" data-target="via0za8kqih">
+                        <a href="javascript:;" id="tab_via0za8kqih" role="tab" hotrep="product.tbaas.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="via0za8kqih">
+                            <span class="c-tab-tit">防伪溯源</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="物联网" data-target="vedyg0xqqj">
+                        <a href="javascript:;" id="tab_vedyg0xqqj" role="tab" hotrep="product.tbaas.overview.scene.6.tab" tabindex="-1" aria-selected="false" aria-controls="vedyg0xqqj">
+                            <span class="c-tab-tit">物联网</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem " data-title="共享经济" data-target="c79w51dfbgj">
+                        <a href="javascript:;" id="tab_c79w51dfbgj" role="tab" hotrep="product.tbaas.overview.scene.7.tab" tabindex="-1" aria-selected="false" aria-controls="c79w51dfbgj">
+                            <span class="c-tab-tit">共享经济</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none">
+                        <a href="javascript:;" role="tab" hotrep="product.tbaas.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_blqq6hck23q" data-panel="blqq6hck23q" style="display:block">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="blqq6hck23q" hotrep="product..overview.scene.1.tab">
+                        共享账本
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>传统跨境支付与银行间清结算过程中，痛点在于其流程需要经过开户行、央行、境外银行、代理行、清算行等多个机构，每个机构都有自己的账务系统，因此速度慢、效率低。在传统保险业中，保险公司需要处理的理赔单据繁多，处理单据流程时间长，导致时间成本巨大。腾讯云区块链 TBaaS 所拥有的共享账本和智能合约的特性，帮助用户解决银行间清结算慢，跨境支付时间长，费用高以及保险理赔单据繁多，流程时间长等问题。TBaaS 所提供的完备智能合约集成开发调试环境，与其它平台不同，腾讯特别提供智能合约检查服务，对合规性和安全性进行校验，以防止类似于以太坊 DAO 安全事件的再次发生。</p><h4>业务场景</h4><p>1） 银行间清结算 2）跨境汇款 3）审计 4）快速核保/险直赔<br><img src="static/picture/a627ea9f211d10bf6c8aa3ebf9a59187.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_8jitaxhq9l2" data-panel="8jitaxhq9l2" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="8jitaxhq9l2" hotrep="product..overview.scene.2.tab">
+                        公证记录
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>在传统的存证、电子合同票据与用户信息的记录保全过程中，存在出证慢、流程长、票据作假的风险，并致使维权成本较高。在传统供应链金融链条中，核心企业及上下游企业的信息流、物流、资金流信息的整合至关重要。但目前各企业维护自己的数据信息，信息孤岛增大了信息整合的难度。腾讯云区块链 TBaaS 所具备的区块链防篡改特性可保障智能合约的执行，为智能合约提供运行的平台。在真实业务场景中，腾讯云区块链 TBaaS 可以有效地帮助客户解决了公证、信息记录与供应链链条中业务流程长，单据繁多和信息作伪与易篡改的问题。</p><h4>业务场景</h4><p>1） 电子合同 2）电子票据 3）证据保全 4）供应链金融/供应链管理<br><img src="static/picture/9f70051d1e45b514bf9e9c28348b200f.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_4b01tneq7e" data-panel="4b01tneq7e" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="4b01tneq7e" hotrep="product..overview.scene.3.tab">
+                        互助保障
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>互助保障的场景，其中互助保险在传统运作模式下，存在平台方作弊，监管难度大的问题；公益组织在传统运作模式下，其公益善款与账目的不透明，常常导致公众缺乏信心，信任无法传递。腾讯云区块链 TBaaS 将每个交易方变成网络中的一个节点，各个机构的各项资产、产品以数字化的形式在网络中体现，并解决机构互信问题，形成统一的联盟，实现资金流向可追溯，信息公开透明，全网信息共享；同时，基于分布式账簿，防篡改，流程透明可追溯，规避了内部作弊风险。</p><h4>业务场景</h4><p>1） 互助保险 2）大病众筹 3）公益捐赠<br><img src="static/picture/a10c49a2ba3f35af90bdfe7851150df1.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_mutfdqcvhzn" data-panel="mutfdqcvhzn" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="mutfdqcvhzn" hotrep="product..overview.scene.4.tab">
+                        数字资产
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>在金融业务典型的大数据交易、资产交易、共享经济和积分流通与通兑的场景下，腾讯云区块链 TBaaS 提供价值流通能力，能够让区块链在数字资产发行与流通中扮演资产确权、交易确认、记账、对账和清算的角色；而区块链技术的防篡改能力，将有效防止数据篡改，规避内部作弊风险</p><h4>业务场景</h4><p>1）大数据交易 2）共享经济 3）积分流通与通兑<br><img src="static/picture/d26374ec80e3c29919ca2a7c12070571.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_via0za8kqih" data-panel="via0za8kqih" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="via0za8kqih" hotrep="product..overview.scene.5.tab">
+                        防伪溯源
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>目前，繁荣的市场经济领域中，由于社会分工的精细化，不法商贩利用生产-供货-销售-消费各个环节中的漏洞和信息不对称，制造假冒伪劣商品，给国民经济、产品品牌、消费者都带来很大损害。由于传统方式所限，很难通过技术手段来开展产品的溯源和防伪，腾讯云TBaaS针对这一困境，提出基于物联网、防伪标签、物流跟踪的产品防伪溯源的区块链解决方案，防范供应链中鱼龙混杂的原材料供给，防范销售渠道中出现的各类假冒伪劣商品，通过区块链技术完美结合腾讯云物联网、大数据、二维码/NFC芯片、海量存储等产品，为客户提供一站式产品防伪溯源能力。</p><h4>业务场景</h4><p>1）医疗药品溯源 2）烟草溯源 3）食品溯源 4）处方流转<br><img src="static/picture/5c1efc9e953c78727a3362b7de3748d9.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_vedyg0xqqj" data-panel="vedyg0xqqj" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="vedyg0xqqj" hotrep="product..overview.scene.6.tab">
+                        物联网
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>区块链技术的出现，其点对点的组网模式、分布式的存储、安全的数字认证方式，天然的与物联网的诉求相契合，不仅填补了物联网在实际应用中的缺陷，也使物联网真正大规模部署、安全运营成为可能。针对行业上的痛点，腾讯TBaaS平台，助力物联网与区块链技术的结合，不仅降低了物联网的运营成本，还使得智能设备能够以更加安全可靠的方式进行管理，并实现物联网的高级目标，即支付与费用的结算，形成价值流通的网络。</p><h4>业务场景</h4><p>1）智能家居 2）物流供应链 3）智能制造<br><img src="static/picture/35342e0ff5eca439885129d3513c44ce.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_c79w51dfbgj" data-panel="c79w51dfbgj" style="">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="c79w51dfbgj" hotrep="product..overview.scene.7.tab">
+                        共享经济
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <h4>场景描述</h4><p>共享经济不需要任何第三方中介，用户间可以点对点的进行交易。区块链技术因其自身所拥有的去中心去中介化的特征，传输数据的过程中数据不可篡改且真实可信，它可以帮助创建出一个真正的的共享经济。</p><h4>业务场景</h4><p>1）电力共享 2）充电桩共享 3）房屋共享<br><img src="static/picture/8f2a987606efdd895c24b9373f9fc82c.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall customer-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户与合作伙伴</h3>
+        </div>
+        <div role="list" class="c-section-bd">
+            <div role="listitem" class="p-customer-list">
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.1">
+                        <img alt="中国银行" src="static/picture/f3686bb6560fcfc2472970249c7d853a.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.2">
+                        <img alt="龙江银行" src="static/picture/755ecef61acc6114af0bbec6658bf6f2.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.3">
+                        <img alt="微众银行" src="static/picture/webank.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.4">
+                        <img alt="中国金融认证中心" src="static/picture/c40f8d357fe53ff77151946300366aab.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.5">
+                        <img alt="爱心人寿" src="static/picture/430c031ca832c08393a118dea18ca991.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.6">
+                        <img alt="东华医为" src="static/picture/e14f90304d42231b88fd6139b91122c3.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.7">
+                        <img alt="乐居" src="static/picture/9b814755a071751c76e3383459111170.png">
+                    </a>
+                </div>
+                
+                <div class="p-customer-item ">
+                    <a href="javascript:;" hotrep="product.tbaas.overview.customer.8">
+                        <img alt="钢聚人" src="static/picture/3ae3a4f8a45f87f54ab025d3203b1243.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用腾讯云区块链服务</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的 <a href="javascript:;">入门指南</a>，只需点几次鼠标，即可</p>
+<p>创建您的首个腾讯云 TBaaS 区块链网络。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.tbaas.overview.guide.btn">
+                           开始使用
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.tbaas.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'tbaas',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012107020, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "ByxQ0TW21U";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+
+</body>
+</html>

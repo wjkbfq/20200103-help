@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>网络安全-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="网络安全-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <path d="M5,7.39664037 L16.0509005,17.3469159 L29.0128857,5.67589208 L29,8.38272827 C29,10.342122 29,13.2812126 29,17.2 C29,17.2 28.9,28 16,31 C3.1,28 3,17.2 3,17.2 L3,2 L29,2 L29,4 L27,4 L25,4 L5,4 L5,7.39664037 Z M5,10.0879058 L5,17.2 C5,17.5871413 5.28102205,25.749226 15,28.6308234 L15,19.0919463 L5,10.0879058 Z M27,10.1829095 L17,19.1838158 L17,28.6089461 C20.9904386,27.3459145 23.9360946,25.1429325 25.6,22 C27,19.5 27,17.2 27,17.2 L27,10.1829095 Z" id="Combined-Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

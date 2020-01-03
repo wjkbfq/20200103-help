@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>如何使用Jenkins Pipeline &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='账户管理' href='account-management.html'>
+<link rel='next' title='Jenkins常见词汇表' href='jenkins-gossary.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6582'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Fci%2Fjenkins-introduction">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Fci%2Fjenkins-introduction&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6582 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="faq.html" title="View all posts in 常见问题">
+                        <span itemprop="name">常见问题</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="持续集成.html" title="View all posts in 持续集成">
+                        <span itemprop="name">持续集成</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="如何使用Jenkins Pipeline">
+                        <span itemprop="name">如何使用Jenkins Pipeline</span>
+                    </a>
+                    <meta itemprop="position" content="4">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6582" class="post-6582 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-68 ht_kb_tag-doc" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				如何使用Jenkins Pipeline			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/doc/ci/jenkins-introduction" rel="bookmark" itemprop="url"><time datetime="2018-12-26" itemprop="datePublished">2018年12月26日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/chenhang" title="chenhang" rel="me" itemprop="author">chenhang</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/%e6%8c%81%e7%bb%ad%e9%9b%86%e6%88%90" rel="tag">持续集成</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 快速启动示例</a></li><li><a href="#Jenkins"><span class="toc_number toc_depth_1">2</span> Jenkins 运行多个步骤</a><ul><li><a href="#LinuxBSDMac_OS"><span class="toc_number toc_depth_2">2.1</span> Linux，BSD和Mac OS</a></li><li><a href="#Windows"><span class="toc_number toc_depth_2">2.2</span> Windows</a></li><li><a href="#i-2"><span class="toc_number toc_depth_2">2.3</span> 超时，重试等等</a></li><li><a href="#i-3"><span class="toc_number toc_depth_2">2.4</span> 完成</a></li></ul></li><li><a href="#Jenkins-2"><span class="toc_number toc_depth_1">3</span> Jenkins 定义执行环境</a></li><li><a href="#Jenkins-3"><span class="toc_number toc_depth_1">4</span> Jenkins 使用环境变量</a><ul><li><a href="#i-4"><span class="toc_number toc_depth_2">4.1</span> 环境证书</a></li></ul></li><li><a href="#Jenkins-4"><span class="toc_number toc_depth_1">5</span> Jenkins 记录测试结果和工件</a></li><li><a href="#Jenkins-5"><span class="toc_number toc_depth_1">6</span> Jenkins 清理和通知</a><ul><li><a href="#Email"><span class="toc_number toc_depth_2">6.1</span> Email</a></li><li><a href="#Hipchat"><span class="toc_number toc_depth_2">6.2</span> Hipchat</a></li><li><a href="#Slack"><span class="toc_number toc_depth_2">6.3</span> Slack</a></li></ul></li><li><a href="#Jenkins-6"><span class="toc_number toc_depth_1">7</span> Jenkins 部署</a><ul><li><a href="#i-5"><span class="toc_number toc_depth_2">7.1</span> 阶段作为部署环境</a></li><li><a href="#i-6"><span class="toc_number toc_depth_2">7.2</span> 要求人力投入进行</a></li><li><a href="#i-7"><span class="toc_number toc_depth_2">7.3</span> 结论</a></li></ul></li></ul></div>
+<p>&nbsp;</p>
+<h1 id="%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8%e7%a4%ba%e4%be%8b"><span id="i">快速启动示例</span></h1>
+<p>以下是一些简单的复制和粘贴的一个简单的流水线与各种语言的例子。</p>
+<p><strong>Java</strong></p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent { docker <span class="hljs-string">'maven:3.3.3'</span> }
+    stages {
+        stage(<span class="hljs-string">'build'</span>) {
+            steps {
+                sh <span class="hljs-string">'mvn --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+<span class="hljs-comment">/* Requires the Docker Pipeline plugin */</span>
+node(<span class="hljs-string">'docker'</span>) {
+    checkout scm
+    stage(<span class="hljs-string">'Build'</span>) {
+        docker.image(<span class="hljs-string">'maven:3.3.3'</span>).inside {
+            sh <span class="hljs-string">'mvn --version'</span>
+        }
+    }
+}</pre>
+<p><strong>Node.js / JavaScript</strong></p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent { docker <span class="hljs-string">'node:6.3'</span> }
+    stages {
+        stage(<span class="hljs-string">'build'</span>) {
+            steps {
+                sh <span class="hljs-string">'npm --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+<span class="hljs-comment">/* Requires the Docker Pipeline plugin */</span>
+node(<span class="hljs-string">'docker'</span>) {
+    checkout scm
+    stage(<span class="hljs-string">'Build'</span>) {
+        docker.image(<span class="hljs-string">'node:6.3'</span>).inside {
+            sh <span class="hljs-string">'npm --version'</span>
+        }
+    }
+}</pre>
+<p><strong>Ruby</strong></p>
+<p>Jenkinsfile (Declarative Pipeline)</p>
+<pre>pipeline {
+    agent { docker <span class="hljs-string">'ruby'</span> }
+    stages {
+        stage(<span class="hljs-string">'build'</span>) {
+            steps {
+                sh <span class="hljs-string">'ruby --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+<span class="hljs-comment">/* Requires the Docker Pipeline plugin */</span>
+node(<span class="hljs-string">'docker'</span>) {
+    checkout scm
+    stage(<span class="hljs-string">'Build'</span>) {
+        docker.image(<span class="hljs-string">'ruby'</span>).inside {
+            sh <span class="hljs-string">'ruby --version'</span>
+        }
+    }
+}</pre>
+<p><strong>Python</strong></p>
+<p>Jenkinsfile (Declarative Pipeline)</p>
+<pre>pipeline {
+    agent { docker <span class="hljs-string">'python:3.5.1'</span> }
+    stages {
+        stage(<span class="hljs-string">'build'</span>) {
+            steps {
+                sh <span class="hljs-string">'python --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+<span class="hljs-comment">/* Requires the Docker Pipeline plugin */</span>
+node(<span class="hljs-string">'docker'</span>) {
+    checkout scm
+    stage(<span class="hljs-string">'Build'</span>) {
+        docker.image(<span class="hljs-string">'python:3.5.1'</span>).inside {
+            sh <span class="hljs-string">'python --version'</span>
+        }
+    }
+}</pre>
+<p><strong>PHP</strong></p>
+<p>Jenkinsfile (Declarative Pipeline)</p>
+<pre>pipeline {
+    agent { docker <span class="hljs-string">'php'</span> }
+    stages {
+        stage(<span class="hljs-string">'build'</span>) {
+            steps {
+                sh <span class="hljs-string">'php --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+<span class="hljs-comment">/* Requires the Docker Pipeline plugin */</span>
+node(<span class="hljs-string">'docker'</span>) {
+    checkout scm
+    stage(<span class="hljs-string">'Build'</span>) {
+        docker.image(<span class="hljs-string">'php'</span>).inside {
+            sh <span class="hljs-string">'php --version'</span>
+        }
+    }
+}</pre>
+<h1 id="jenkins-%e8%bf%90%e8%a1%8c%e5%a4%9a%e4%b8%aa%e6%ad%a5%e9%aa%a4"><span id="Jenkins">Jenkins 运行多个步骤</span></h1>
+<p>Pipeline由多个步骤组成，允许您构建，测试和部署应用程序。Jenkins Pipeline允许您以简单的方式组合多个步骤，可以帮助您建模任何类型的自动化过程。</p>
+<p>想像一个“一步一步”，就像执行单一动作的单一命令一样。当一个步骤成功时，它移动到下一步。当步骤无法正确执行时，Pipeline将失败。</p>
+<p>当Pipeline中的所有步骤成功完成后，Pipeline被认为已成功执行。</p>
+<h2 id="linux%ef%bc%8cbsd%e5%92%8cmac-os"><span id="LinuxBSDMac_OS">Linux，BSD和Mac OS</span></h2>
+<p>在Linux，BSD和Mac OS（类Unix）系统上，该sh步骤用于在Pipeline中执行shell命令。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Build'</span>) {
+            steps {
+                sh <span class="hljs-string">'echo "Hello World"'</span>
+                sh <span class="hljs-string">''</span><span class="hljs-string">'
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '</span><span class="hljs-string">''</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    stage(<span class="hljs-string">'Build'</span>) {
+        sh <span class="hljs-string">'echo "Hello World"'</span>
+        sh <span class="hljs-string">''</span><span class="hljs-string">'
+            echo "Multiline shell steps works too"
+            ls -lah
+        '</span><span class="hljs-string">''</span>
+    }
+}</pre>
+<h2 id="windows"><span id="Windows">Windows</span></h2>
+<p>基于Windows的系统应该使用 bat 执行批处理命令的步骤。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Deploy'</span>) {
+            steps {
+                retry(<span class="hljs-number">3</span>) {
+                    sh <span class="hljs-string">'./flakey-deploy.sh'</span>
+                }
+
+                timeout(time: <span class="hljs-number">3</span>, unit: <span class="hljs-string">'MINUTES'</span>) {
+                    sh <span class="hljs-string">'./health-check.sh'</span>
+                }
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    stage(<span class="hljs-string">'Build'</span>) {
+        bat <span class="hljs-string">'set'</span>
+    }
+}</pre>
+<h2 id="%e8%b6%85%e6%97%b6%ef%bc%8c%e9%87%8d%e8%af%95%e7%ad%89%e7%ad%89"><span id="i-2">超时，重试等等</span></h2>
+<p>有一些强大的步骤，“包装”其他步骤，可以轻松地解决问题，如重试（ retry ）步骤，直到成功或退出，如果步骤太长（ timeout ）。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Deploy'</span>) {
+            steps {
+                retry(<span class="hljs-number">3</span>) {
+                    sh <span class="hljs-string">'./flakey-deploy.sh'</span>
+                }
+
+                timeout(time: <span class="hljs-number">3</span>, unit: <span class="hljs-string">'MINUTES'</span>) {
+                    sh <span class="hljs-string">'./health-check.sh'</span>
+                }
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    stage(<span class="hljs-string">'Deploy'</span>) {
+        retry(<span class="hljs-number">3</span>) {
+            sh <span class="hljs-string">'./flakey-deploy.sh'</span>
+        }
+
+        timeout(time: <span class="hljs-number">3</span>, unit: <span class="hljs-string">'MINUTES'</span>) {
+            sh <span class="hljs-string">'./health-check.sh'</span>
+        }
+    }
+}</pre>
+<p>“部署”阶段重试flakey-deploy.sh脚本3次，然后等待health-check.sh脚本执行最多3分钟。如果健康检查脚本在3分钟内未完成，则Pipeline将在“部署”阶段被标记为失败。</p>
+<p>“包装”的步骤，例如timeout和retry可以包含其它步骤，包括timeout或retry。</p>
+<p>我们可以组合这些步骤。例如，如果我们想重新部署我们的部署5次，但是在失败的阶段之前，总是不想花3分钟以上：</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Deploy'</span>) {
+            steps {
+                timeout(time: <span class="hljs-number">3</span>, unit: <span class="hljs-string">'MINUTES'</span>) {
+                    retry(<span class="hljs-number">5</span>) {
+                        sh <span class="hljs-string">'./flakey-deploy.sh'</span>
+                    }
+                }
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    stage(<span class="hljs-string">'Deploy'</span>) {
+        timeout(time: <span class="hljs-number">3</span>, unit: <span class="hljs-string">'MINUTES'</span>) {
+            retry(<span class="hljs-number">5</span>) {
+                sh <span class="hljs-string">'./flakey-deploy.sh'</span>
+            }
+        }
+    }
+}</pre>
+<h2 id="%e5%ae%8c%e6%88%90"><span id="i-3">完成</span></h2>
+<p>当Pipeline完成执行后，您可能需要运行清理步骤或根据Pipeline的结果执行某些操作。可以在本post节中执行这些操作。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Test'</span>) {
+            steps {
+                sh <span class="hljs-string">'echo "Fail!"; exit 1'</span>
+            }
+        }
+    }
+    post {
+        always {
+            echo <span class="hljs-string">'This will always run'</span>
+        }
+        success {
+            echo <span class="hljs-string">'This will run only if successful'</span>
+        }
+        failure {
+            echo <span class="hljs-string">'This will run only if failed'</span>
+        }
+        unstable {
+            echo <span class="hljs-string">'This will run only if the run was marked as unstable'</span>
+        }
+        changed {
+            echo <span class="hljs-string">'This will run only if the state of the Pipeline has changed'</span>
+            echo <span class="hljs-string">'For example, if the Pipeline was previously failing but is now successful'</span>
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-keyword">try</span> {
+        stage(<span class="hljs-string">'Test'</span>) {
+            sh <span class="hljs-string">'echo "Fail!"; exit 1'</span>
+        }
+        echo <span class="hljs-string">'This will run only if successful'</span>
+    } <span class="hljs-keyword">catch</span> (e) {
+        echo <span class="hljs-string">'This will run only if failed'</span>
+
+        <span class="hljs-comment">// Since we're catching the exception in order to report on it,</span>
+        <span class="hljs-comment">// we need to re-throw it, to ensure that the build is marked as failed</span>
+        <span class="hljs-keyword">throw</span> e
+    } <span class="hljs-keyword">finally</span> {
+        def currentResult = currentBuild.result ?: <span class="hljs-string">'SUCCESS'</span>
+        <span class="hljs-keyword">if</span> (currentResult == <span class="hljs-string">'UNSTABLE'</span>) {
+            echo <span class="hljs-string">'This will run only if the run was marked as unstable'</span>
+        }
+
+        def previousResult = currentBuild.previousBuild?.result
+        <span class="hljs-keyword">if</span> (previousResult != <span class="hljs-literal">null</span> &amp;&amp; previousResult != currentResult) {
+            echo <span class="hljs-string">'This will run only if the state of the Pipeline has changed'</span>
+            echo <span class="hljs-string">'For example, if the Pipeline was previously failing but is now successful'</span>
+        }
+
+        echo <span class="hljs-string">'This will always run'</span>
+    }
+}</pre>
+<h1 id="jenkins-%e5%ae%9a%e4%b9%89%e6%89%a7%e8%a1%8c%e7%8e%af%e5%a2%83"><span id="Jenkins-2">Jenkins 定义执行环境</span></h1>
+<p>您可能已经注意到agent每个示例中的指令。该 agent指令告诉Jenkins在哪里以及如何执行Pipeline或其子集。如您所料，agent所有Pipeline都是必需的。</p>
+<p>在引擎盖下，有几件事情agent会发生：</p>
+<ul>
+<li>该块中包含的所有步骤均排队等待Jenkins执行。一旦执行者可用，步骤就会开始执行。</li>
+<li>将分配一个工作区，其中将包含从源代码管理检出的文件以及Pipeline的任何其他工作文件。</li>
+</ul>
+<p>有几种方法可以定义代理在Pipeline中使用，对于本次巡视，我们将仅关注使用短暂的Docker container。</p>
+<p>Pipeline设计用于容易地使用Docker图像和容器在里面运行。这允许Pipeline定义所需的环境和工具，而无需手动配置各种系统工具和对代理的依赖。这种方法允许您几乎可以使用可以打包在Docker容器中的任何工具 。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent {
+        docker { image <span class="hljs-string">'node:7-alpine'</span> }
+    }
+    stages {
+        stage(<span class="hljs-string">'Test'</span>) {
+            steps {
+                sh <span class="hljs-string">'node --version'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-comment">/* Requires the Docker Pipeline plugin to be installed */</span>
+    docker.image(<span class="hljs-string">'node:7-alpine'</span>).inside {
+        stage(<span class="hljs-string">'Test'</span>) {
+            sh <span class="hljs-string">'node --version'</span>
+        }
+    }
+}</pre>
+<p>当Pipeline执行时，Jenkins将自动启动指定的容器并执行其中定义的步骤：</p>
+<pre>[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] sh
+[guided-tour] Running shell script
++ node --version
+v7<span class="hljs-number">.4</span><span class="hljs-number">.0</span>
+[Pipeline] }
+[Pipeline] <span class="hljs-comment">// stage</span>
+[Pipeline] }</pre>
+<p>混合和匹配不同容器或其他代理时，在执行Pipeline时可以有很大的灵活性，有关更多配置选项，请继续使用<strong>“使用环境变量”。</strong></p>
+<h1 id="jenkins-%e4%bd%bf%e7%94%a8%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f"><span id="Jenkins-3">Jenkins 使用环境变量</span></h1>
+<p>Jenkins 环境变量可以全局设置，如下面的示例或每个阶段。您可能会期望，每个阶段设置环境变量意味着它们将仅适用于定义它们的阶段。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+
+    environment {
+        DISABLE_AUTH = <span class="hljs-string">'true'</span>
+        DB_ENGINE    = <span class="hljs-string">'sqlite'</span>
+    }
+
+    stages {
+        stage(<span class="hljs-string">'Build'</span>) {
+            steps {
+                sh <span class="hljs-string">'printenv'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    withEnv([<span class="hljs-string">'DISABLE_AUTH=true'</span>,
+             <span class="hljs-string">'DB_ENGINE=sqlite'</span>]) {
+        stage(<span class="hljs-string">'Build'</span>) {
+            sh <span class="hljs-string">'printenv'</span>
+        }
+    }
+}</pre>
+<p>这种从内部定义环境变量的方法Jenkinsfile 对于指示脚本（例如a）可以非常有用Makefile，以不同的方式配置构建或测试，以在Jenkins内部运行它们。</p>
+<p>环境变量的另一个常见用途是在构建或测试脚本中设置或覆盖“虚拟”凭据。因为（显而易见）将凭据直接放入一个不好的主意Jenkinsfile，Jenkins Pipeline允许用户快速而安全地访问预定义的凭据，而Jenkinsfile无需知道其价值。</p>
+<h2 id="%e7%8e%af%e5%a2%83%e8%af%81%e4%b9%a6"><span id="i-4">环境证书</span></h2>
+<p>如果您的Jenkins环境配置了凭据，例如构建秘密或API令​​牌，那么可以将它们轻松插入环境变量中，以便在Pipeline中使用。下面的代码片段用于“秘密文本”类型的凭据。</p>
+<pre>environment {
+    AWS_ACCESS_KEY_ID     = credentials(<span class="hljs-string">'AWS_ACCESS_KEY_ID'</span>)
+    AWS_SECRET_ACCESS_KEY = credentials(<span class="hljs-string">'AWS_SECRET_ACCESS_KEY'</span>)
+}</pre>
+<p>正如第一个例子，这些变量将在全局或每个阶段可用，具体取决于environment指令 在哪里Jenkinsfile。</p>
+<p>第二种最常见的凭证类型是“用户名和密码”，仍然可以在environment指令中使用，但会导致稍微不同的变量被设置。</p>
+<pre>environment {
+   SAUCE_ACCESS = credentials(<span class="hljs-string">'sauce-lab-dev'</span>)
+}</pre>
+<p>这将实际设置3个环境变量：</p>
+<pre>SAUCE_ACCESS 含 &lt;username&gt;:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">password</span>&gt;</span>
+SAUCE_ACCESS_USR 包含用户名
+SAUCE_ACCESS_PSW 包含密码</span></pre>
+<pre>credentials仅适用于声明性Pipeline。对于使用脚本Pipeline的用户，请参阅该withCredentials步骤的文档。</pre>
+<p>到目前为止，我们关心的是创建一个配置并执行我们期望的方式的Pipeline。在接下来的两个部分中，我们将介绍连续交付的另一个重要方面：表面反馈和信息。</p>
+<h1 id="jenkins-%e8%ae%b0%e5%bd%95%e6%b5%8b%e8%af%95%e7%bb%93%e6%9e%9c%e5%92%8c%e5%b7%a5%e4%bb%b6"><span id="Jenkins-4">Jenkins 记录测试结果和工件</span></h1>
+<p>虽然测试是良好的连续交付流程的关键部分，但大多数人不想筛选数千行控制台输出，以查找有关测试失败的信息。为了使这更容易，Jenkins可以记录和汇总测试结果，只要您的测试运行器可以输出测试结果文件。Jenkins通常捆绑在一起junit，但是如果您的测试运行器无法输出JUnit风格的XML报告，则还会有其他插件，可以处理任何广泛使用的测试报告格式。</p>
+<p>要收集我们的测试结果和工件，我们将使用该post部分。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Test'</span>) {
+            steps {
+                sh <span class="hljs-string">'./gradlew check'</span>
+            }
+        }
+    }
+    post {
+        always {
+            junit <span class="hljs-string">'build/reports/**/*.xml'</span>
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-keyword">try</span>{
+        stage(<span class="hljs-string">'Test'</span>) {
+            sh <span class="hljs-string">'./gradlew check'</span>
+        }
+    <span class="hljs-keyword">finally</span> {
+        junit <span class="hljs-string">'build/reports/**/*.xml'</span>
+    }
+}</pre>
+<p>这将永远抓住测试结果，让Jenkins跟踪他们，计算趋势并对其进行报告。测试失败的Pipeline将被标记为“不稳定”，在Web UI中用黄色表示。这与“FAILED”状态不同，用红色表示。</p>
+<p>当有测试失败时，从Jenkins抓住建造的文物进行本地分析和调查往往是有用的。Jenkins内置的支持存储“工件”，在Pipeline执行过程中生成的文件，实际上是这样。</p>
+<p>这很容易通过archive步骤和文件集合表达式完成，如下面的示例所示：</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Build'</span>) {
+            steps {
+                sh <span class="hljs-string">'./gradlew build'</span>
+            }
+        }
+        stage(<span class="hljs-string">'Test'</span>) {
+            steps {
+                sh <span class="hljs-string">'./gradlew check'</span>
+            }
+        }
+    }
+
+    post {
+        always {
+            archive <span class="hljs-string">'build/libs/**/*.jar'</span>
+            junit <span class="hljs-string">'build/reports/**/*.xml'</span>
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-keyword">try</span>{
+        stage(<span class="hljs-string">'Test'</span>) {
+            sh <span class="hljs-string">'./gradlew check'</span>
+        }
+    <span class="hljs-keyword">finally</span> {
+        archiveArtifacts artifacts: <span class="hljs-string">'build/libs/**/*.jar'</span>, fingerprint: <span class="hljs-literal">true</span>
+        junit <span class="hljs-string">'build/reports/**/*.xml'</span>
+    }
+}</pre>
+<p>记录Jenkins中的测试和工件对于快速轻松地向团队的各个成员发布信息非常有用。接下来，我们将讨论如何告诉团队成员什么在我们的Pipeline已经发生的事情。</p>
+<h1 id="jenkins-%e6%b8%85%e7%90%86%e5%92%8c%e9%80%9a%e7%9f%a5"><span id="Jenkins-5">Jenkins 清理和通知</span></h1>
+<p>由于post Pipeline的部分保证在Pipeline执行结束时运行，因此我们可以添加一些通知或其他步骤来执行定稿，通知或其他Pipeline末端任务。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'No-op'</span>) {
+            steps {
+                sh <span class="hljs-string">'ls'</span>
+            }
+        }
+    }
+    post {
+        always {
+            echo <span class="hljs-string">'One way or another, I have finished'</span>
+            deleteDir() <span class="hljs-comment">/* clean up our workspace */</span>
+        }
+        success {
+            echo <span class="hljs-string">'I succeeeded!'</span>
+        }
+        unstable {
+            echo <span class="hljs-string">'I am unstable :/'</span>
+        }
+        failure {
+            echo <span class="hljs-string">'I failed :('</span>
+        }
+        changed {
+            echo <span class="hljs-string">'Things were different before...'</span>
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-keyword">try</span> {
+        stage(<span class="hljs-string">'No-op'</span>) {
+            sh <span class="hljs-string">'ls'</span>
+        }
+    }
+}
+<span class="hljs-keyword">catch</span> (exc) {
+    echo <span class="hljs-string">'I failed'</span>
+}
+<span class="hljs-keyword">finally</span> {
+    <span class="hljs-keyword">if</span> (currentBuild.result == <span class="hljs-string">'UNSTABLE'</span>) {
+        echo <span class="hljs-string">'I am unstable :/'</span>
+    } <span class="hljs-keyword">else</span> {
+        echo <span class="hljs-string">'One way or another, I have finished'</span>
+    }
+}</pre>
+<p>有很多方法可以发送通知，下面是一些演示如何将有关Pipeline的通知发送到电子邮件，Hipchat房间或Slack频道的片段。</p>
+<h2 id="email"><span id="Email">Email</span></h2>
+<pre>post {
+    failure {
+        mail to: <span class="hljs-string">'team@example.com'</span>,
+             subject: <span class="hljs-string">"Failed Pipeline: ${currentBuild.fullDisplayName}"</span>,
+             body: <span class="hljs-string">"Something is wrong with ${env.BUILD_URL}"</span>
+    }
+}</pre>
+<h2 id="hipchat"><span id="Hipchat">Hipchat</span></h2>
+<pre>post {
+    failure {
+        hipchatSend message: <span class="hljs-string">"Attention @here ${env.JOB_NAME} #${env.BUILD_NUMBER} has failed."</span>,
+                    color: <span class="hljs-string">'RED'</span>
+    }
+}</pre>
+<h2 id="slack"><span id="Slack">Slack</span></h2>
+<pre>post {
+    success {
+        slackSend channel: <span class="hljs-string">'#ops-room'</span>,
+                  color: <span class="hljs-string">'good'</span>,
+                  message: <span class="hljs-string">"The pipeline ${currentBuild.fullDisplayName} completed successfully."</span>
+    }
+}</pre>
+<p>现在，当事情出现故障，不稳定或甚至成功时，我们可以通过令人兴奋的部分完成我们的持续交付流程：shipping！好了现在让我们来看看下一节：Jenkins部署</p>
+<h1 id="jenkins-%e9%83%a8%e7%bd%b2"><span id="Jenkins-6">Jenkins 部署</span></h1>
+<p>最基本的连续交付流程将至少具有三个阶段，这些阶段应在以下内容中定义Jenkinsfile：构建，测试和部署。</p>
+<p>对于本节，我们将主要关注部署阶段，但应该注意的是，稳定的构建和测试阶段是任何部署活动的重要前身。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        stage(<span class="hljs-string">'Build'</span>) {
+            steps {
+                echo <span class="hljs-string">'Building'</span>
+            }
+        }
+        stage(<span class="hljs-string">'Test'</span>) {
+            steps {
+                echo <span class="hljs-string">'Testing'</span>
+            }
+        }
+        stage(<span class="hljs-string">'Deploy'</span>) {
+            steps {
+                echo <span class="hljs-string">'Deploying'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    stage(<span class="hljs-string">'Build'</span>) {
+        echo <span class="hljs-string">'Building'</span>
+    }
+    stage(<span class="hljs-string">'Test'</span>) {
+        echo <span class="hljs-string">'Testing'</span>
+    }
+    stage(<span class="hljs-string">'Deploy'</span>) {
+        echo <span class="hljs-string">'Deploying'</span>
+    }
+}</pre>
+<h2 id="%e9%98%b6%e6%ae%b5%e4%bd%9c%e4%b8%ba%e9%83%a8%e7%bd%b2%e7%8e%af%e5%a2%83"><span id="i-5">阶段作为部署环境</span></h2>
+<p>一个常见的模式是扩展级别以捕获额外的部署环境，如“分段”或“生产”，如下面的代码段所示。</p>
+<pre>stage(<span class="hljs-string">'Deploy - Staging'</span>) {
+    steps {
+        sh <span class="hljs-string">'./deploy staging'</span>
+        sh <span class="hljs-string">'./run-smoke-tests'</span>
+    }
+}
+stage(<span class="hljs-string">'Deploy - Production'</span>) {
+    steps {
+        sh <span class="hljs-string">'./deploy production'</span>
+    }
+}</pre>
+<p>在这个例子中，我们假设我们的./run-smoke-tests脚本运行的任何“烟雾测试” 都足以将释放资格或验证到生产环境。自动将代码自动部署到生产的这种Pipeline可以被认为是“持续部署”的实现。虽然这是一个崇高的理想，但对许多人来说，连续部署可能不实际的原因很好，但仍然可以享受持续交付的好处。 Jenkins Pipeline很容易支撑两者。</p>
+<h2 id="%e8%a6%81%e6%b1%82%e4%ba%ba%e5%8a%9b%e6%8a%95%e5%85%a5%e8%bf%9b%e8%a1%8c"><span id="i-6">要求人力投入进行</span></h2>
+<p>通常在阶段之间，特别是环境阶段之间，您可能需要人为的输入才能继续。例如，判断应用程序是否处于“促进”到生产环境的状态。这可以通过<code>input</code>步骤完成。在下面的示例中，“真实检查”阶段实际上阻止输入，如果没有人确认进度，则不会继续进行。</p>
+<pre>Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any
+    stages {
+        <span class="hljs-comment">/* "Build" and "Test" stages omitted */</span>
+
+        stage(<span class="hljs-string">'Deploy - Staging'</span>) {
+            steps {
+                sh <span class="hljs-string">'./deploy staging'</span>
+                sh <span class="hljs-string">'./run-smoke-tests'</span>
+            }
+        }
+
+        stage(<span class="hljs-string">'Sanity check'</span>) {
+            steps {
+                input <span class="hljs-string">"Does the staging environment look ok?"</span>
+            }
+        }
+
+        stage(<span class="hljs-string">'Deploy - Production'</span>) {
+            steps {
+                sh <span class="hljs-string">'./deploy production'</span>
+            }
+        }
+    }
+}</pre>
+<p>Toggle Scripted Pipeline <em>(Advanced)</em></p>
+<pre>Jenkinsfile (Scripted Pipeline)
+node {
+    <span class="hljs-comment">/* "Build" and "Test" stages omitted */</span>
+
+    stage(<span class="hljs-string">'Deploy - Staging'</span>) {
+        sh <span class="hljs-string">'./deploy staging'</span>
+        sh <span class="hljs-string">'./run-smoke-tests'</span>
+    }
+
+    stage(<span class="hljs-string">'Sanity check'</span>) {
+        input <span class="hljs-string">"Does the staging environment look ok?"</span>
+    }
+
+    stage(<span class="hljs-string">'Deploy - Production'</span>) {
+        sh <span class="hljs-string">'./deploy production'</span>
+    }
+}</pre>
+<h2 id="%e7%bb%93%e8%ae%ba"><span id="i-7">结论</span></h2>
+<p>这个导读旨在向您介绍使用Jenkins和Jenkins Pipeline的基础知识。因为它是非常可扩展的，Jenkins可以进行修改和配置，以处理几乎任何方面的自动化。要了解更多关于Jenkins可以做什么的信息，请查看<a href="javascript:;" target="_blank" rel="noopener">用户手册</a>或 <a href="javascript:;" target="_blank" rel="noopener">Jenkins博客</a>，了解最新的活动，教程和更新。</p>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="add-android.html" title="持续集成是否支持 Android APK 打包?">持续集成是否支持 Android APK 打包?</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    1407</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="path.html" title="持续集成支持哪些环境？">持续集成支持哪些环境？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2418</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="tencent-cloud.html" title="持续集成如何部署到腾讯云的服务器上?">持续集成如何部署到腾讯云的服务器上?</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2208</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="add-ssh.html" title="持续集成如何使用 makefile 添加 ssh 代理？">持续集成如何使用 makefile 添加 ssh 代理？</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2216</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="jenkins-gossary.html" title="Jenkins常见词汇表">Jenkins常见词汇表</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2790</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

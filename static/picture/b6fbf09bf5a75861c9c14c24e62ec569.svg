@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>多维报表运营-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="多维报表运营-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,6 L2,42 L46,42 L46,6 L2,6 Z M0,4 L48,4 L48,44 L0,44 L0,4 Z" id="Rectangle-34" fill="#334966" fill-rule="nonzero"></path>
+        <circle id="Oval-16" fill="#00A4FF" cx="21.5" cy="25.5" r="9.5"></circle>
+        <path d="M9,13.0378896 L9,25 L20.9621104,25 C20.4765922,18.6175939 15.3824061,13.5234078 9,13.0378896 Z" id="Combined-Shape" stroke="#334966" stroke-width="2" transform="translate(15.000000, 19.000000) scale(-1, 1) translate(-15.000000, -19.000000) "></path>
+        <rect id="Rectangle-35" fill="#334966" x="36" y="12" width="4" height="2"></rect>
+        <rect id="Rectangle-35-Copy" fill="#00A4FF" x="36" y="19" width="4" height="2"></rect>
+        <rect id="Rectangle-35-Copy-2" fill="#00A4FF" x="36" y="26" width="4" height="2"></rect>
+        <rect id="Rectangle-35-Copy-3" fill="#334966" x="8" y="34" width="32" height="2"></rect>
+    </g>
+</svg>

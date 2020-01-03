@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
+	<script>var timeStamps = [new Date()];</script>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+	<script>timeStamps[1] = new Date();</script>
+	<script>translateTip = "";</script>
+	
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+	<style>
+		.side-navigation{
+			display: none!important;
+		}
+		.mod-hero .banner-ct {
+			padding-left:20px!important;
+			width: 60%!important;
+		}
+		.main-content {
+			padding-left: 20px!important;
+			padding-right: 20px;
+		}
+		@media screen and (max-width: 768px){
+			.main-content {
+				padding-left: 0px!important;
+				padding-right: 0px;
+			}
+		}
+	</style>
+
+	<title>FPGA 云服务器_FPGA 实例_硬件加速 - 腾讯云</title><meta name="keywords" content="FPGA 云服务器,硬件加速,FPGA 加速云服务器,FPGA 实例"><meta name="description" content="FPGA 云服务器（FPGA Cloud Computing）是基于 FPGA（Field Programmable Gate Array）现场可编程阵列的计算服务，您只需单击几下即可在几分钟内轻松获取并部署您的 FPGA 计算实例。您可以在 FPGA 实例上编程，为您的应用程序创建自定义硬件加速。我们为您提供可重编程的环境，您可以在 FPGA 实例上多次编程，而无需重新设计硬件，让您能更加专注于业务发展。"><link href="static/css/product-temp20160918-20170220001.css" rel="stylesheet" media="screen"><link href="static/css/product-cpm.css" rel="stylesheet" media="screen"><link href="static/css/product-cvm.css" rel="stylesheet" media="screen"></head><body>
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-wrap-dark"> <div class="c-nav-mod c-nav-mod-pc c-nav-dark"> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script><div class="body"><div class="mod-hero J-mod-hero"><div class="mod-inner" class=" slide-fpga"><div class="banner-ct"><h1 itemprop="name" class="title"><span class="title-cn">FPGA</span><span class="title-en">云服务器</span></h1><div itemprop="description" class="head-content">FPGA 云服务器（FPGA Cloud Computing）是基于FPGA（Field Programmable Gate Array）现场可编程阵列的计算服务，您只需单击几下即可在几分钟内轻松获取并部署您的FPGA计算实例。您可以在FPGA实例上编程，为您的应用程序创建自定义硬件加速。我们为您提供可重编程的环境，您可以在FPGA实例上多次编程，而无需重新设计硬件，让您能更加专注于业务发展。</div><div class="head-operation"><!--tc-btn-1-disable 加在tc-btn-1后 不可点状态--><div class="op-line"><a href="javascript:;" target="_blank" class="tc-btn tc-btn-3  " hotrep="product.fpga.apply">立即申请</a><a href="javascript:;" target="_blank" class="tc-btn tc-btn-1  " hotrep="product.fpga.pricing">产品定价</a></div><div class="event first-event"><span class="des"><i class="icon-info"></i>申请使用资格，将有专人为您提供服务与报价</span></div><div class="event"><a target="_blank" href="javascript:;" hotrep="product.fpga.page" class="des">了解更多 >></a></div></div></div><div class="pt-icon"><picture><source type="image/svg+xml" srcset="https://mc.qcloudimg.com/static/img/8500e1f5d96bb4c4f9e480bca665a40d/FPGA-144.svg"><img src="static/picture/pc-png.png" alt="FPGA 云服务器"></picture></div><div class="m-pt-icon"><img class="m-icon" src="static/picture/image25.png"></div></div></div><div class="mod-inner"><div class="main-content slide-fpga"><div></div><!--tab-title-fixed fix在顶部的时候加上--><div class="tab-title "><ul><li mod="userDefined16" hotrep="product.fpga.tab.intro"><a href="#userDefined16">产品介绍</a></li><li mod="userDefined15" hotrep="product.fpga.tab.advantage"><a href="#userDefined15">产品优势</a></li><li mod="featuresV2" hotrep="product.fpga.tab.function"><a href="#featuresV2">产品功能</a></li><li mod="scenarios" hotrep="product.fpga.tab.scene"><a href="#scenarios">应用场景</a></li><li mod="wiki" hotrep="product.fpga.tab.wiki"><a href="#wiki">产品文档</a></li></ul><div class="op-btn"><a href="javascript:;" target="_blank" class="tc-btn tc-btn-3  " hotrep="product.fpga.apply">立即申请</a><a href="javascript:;" target="_blank" class="tc-btn tc-btn-1  " hotrep="product.fpga.pricing">产品定价</a></div></div><div class="m-tab-title arr-down" style="display: none;"><a href="##" class="tab-current"><span class="tab-icon"></span><span class="J-tab-current-text"></span></a><div class="mod-inner"><ul class="list"><li mod="userDefined16" hotrep="product.fpga.tab.intro" class="item" title="产品介绍"><a href="#userDefined16">产品介绍</a></li><li mod="userDefined15" hotrep="product.fpga.tab.advantage" class="item" title="产品优势"><a href="#userDefined15">产品优势</a></li><li mod="featuresV2" hotrep="product.fpga.tab.function" class="item" title="产品功能"><a href="#featuresV2">产品功能</a></li><li mod="scenarios" hotrep="product.fpga.tab.scene" class="item" title="应用场景"><a href="#scenarios">应用场景</a></li><li mod="wiki" hotrep="product.fpga.tab.wiki" class="item" title="产品文档"><a href="#wiki">产品文档</a></li></ul></div></div><div class="tab-content J-defined-content" mod="userDefined16" data-responsive="show"><a class="anchor" id="userDefined16" style="top: -48px;">&nbsp;</a><h3 class="tab-content-title" style="margin-bottom:45px;">产品介绍</h3>
+<!--总列数3 start-->
+
+<p>&nbsp;</p>
+
+<div class="tab-content-detail">
+<div class="pro-img-em"><em>FPGA 云服务器</em>
+
+<div class="pro-img-txt">专业可靠的FPGA平台，让您不再受硬件问题困扰。硬件可编程、低功耗、低延时，让您更专注业务创新。</div>
+</div>
+
+<div class="pro-img-list">
+<ul>
+	<li class="pro-img-item">
+	<div class="pro-img-item-top"><img alt="部署方便快捷" src="static/picture/fpga-img-2.png"></div>
+
+	<div class="pro-img-item-con"><em>部署方便快捷</em>
+
+	<p>几分钟轻松获取实例，<br>
+	将 FPGA 部署开发时间从数月缩减到数天</p>
+	</div>
+	</li>
+	<li class="pro-img-item-icon">&nbsp;</li>
+	<li class="pro-img-item">
+	<div class="pro-img-item-top"><img alt="灵活计费" src="static/picture/fpga-img-3.png"></div>
+
+	<div class="pro-img-item-con"><em>灵活计费</em>
+
+	<p>按需购买，按需计费</p>
+	</div>
+	</li>
+	<li class="pro-img-item-icon">&nbsp;</li>
+	<li class="pro-img-item">
+	<div class="pro-img-item-top"><img alt="安全可靠的&lt;br&gt; FPGA 知识产权交易平台" src="static/picture/fpga-img-1.png"></div>
+
+	<div class="pro-img-item-con"><em>安全可靠的知识产权交易平台</em>
+
+	<p>统一 FPGA 硬件平台及 FPGA 服务市场</p>
+	</div>
+	</li>
+</ul>
+</div>
+</div></div><div class="tab-content J-defined-content" mod="userDefined15" data-responsive="show"><a class="anchor" id="userDefined15" style="top: -48px;">&nbsp;</a><h3 class="tab-content-title">产品优势</h3>
+<!--总列数3 start-->
+
+<div class="tab-content-detail">
+<div class="summary-content">
+<table class="comparison-table">
+	<colgroup>
+		<col class="col1" style="width: 15%">
+		<col class="col2" style="width: 55%">
+		<col class="col3">
+	</colgroup>
+	<thead><!--第一行标题 start-->
+		<tr>
+			<th class="tb-title">优势</th>
+			<th class="tb-title cp-block border-l-r">腾讯云 FPGA 云服务器</th>
+			<th class="tb-title tb-title-old">传统 FPGA 解决方案</th>
+		</tr>
+		<!--第一行标题 end-->
+	</thead>
+	<tbody><!--每个tr标签内为一行--><!--第一行 start--><!--无论多少行，无论最后一行是否需要灰色背景，一定要保证使用下面的代码作为第一行的代码-->
+		<tr>
+			<td>
+			<div class="info tb-sub-title">弹性</div>
+			</td>
+			<td class="border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">弹性扩展，灵活配置</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>您只需几分钟时间即可轻松获取一个或若干个 FPGA 实例，方便业务扩展；</li>
+				<li>借助 FPGA 云服务器，您只需在管理控制台中单击几下，即可在腾讯云上部署自定义 FPGA，开发者无需关注 FPGA 基础设施。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>机器硬件固定配置，难以满足变化的需求；</li>
+				<li>芯片购买、硬件设计及大规模部署都需要大量时间和成本。</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<div class="info tb-sub-title">性能</div>
+			</td>
+			<td class="border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">硬件加速，降低延时</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>FPGA 云服务器通过专用的 PCI Express (PCIe) 结构连接到您的 FPGA 实例，透传 FPGA 性能，极致发挥 FPGA 性能；</li>
+				<li>与仅使用 CPU 的服务器相比，您可以使用 FPGA 硬件加降低应用程序的处理延时，提高处理能力。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>用户手工容灾，依赖于硬件健壮性；</li>
+				<li>数据物理单点，数据安全不可控。</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<div class="info tb-sub-title">易用</div>
+			</td>
+			<td class="border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">即买即用，快速部署</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>与云服务器 CVM、负载均衡 CLB、对象存储 COS 等多种云产品无缝接入，内网流量免费；</li>
+				<li>采用与云服务器 CVM 一致的管理方式，提供 FPGA 硬件开发环境，降低学习成本，简单易用。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>购买装机管理，自行实现硬件扩展、驱动安装。</li>			
+</ul>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<div class="info tb-sub-title">平台</div>
+			</td>
+			<td class="border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">统一服务市场，IP 交易安全可靠</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>腾讯云提供统一的 FPGA 服务市场，知识产权开发者可以通过腾讯云服务市场为其他客户无偿或有偿地提供用于开发设计的 FPGA 应用程序；应用程序开发者可通过服务市场免费或付费地使用 FPGA 服务。</li>
+				<li>腾讯及其合作伙伴拥有大量 FPGA 知识产权 (IP)，可帮助您加速产品上市进程；同时您也可以通过腾讯云市场，为其他客户提供您设计的 IP，知识产权交易安全可靠。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>FPGA 硬件编程设计门槛高，FPGA 开发者缺少 FPGA 相关知识产权；</li>
+				<li>FPGA 行业内的知识产权提供者和使用者缺乏交易平台和信用机制保证；</li>
+				<li>交易环节冗长，价格不透明，很难达成交易；获取 IP 后还需经过测试与验证，影响产品上市进程。</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<div class="info tb-sub-title">安全</div>
+			</td>
+			<td class="border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">立体防护，专业支持</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>不同用户、账户、实例间全面资源隔离，保证 FPGA 访问的独立与安全性，数据安全有保障；</li>
+				<li>您可以使用完善的安全组和网络 ACL 设置控制进出实例和子网的网络入出站流量并进行安全过滤；</li>
+				<li>与云安全无缝对接，享有与云服务器同等的云安全基础防护和高防服务。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>无任何用户权限控制，不同用户共享资源，数据不隔离；</li>
+				<li>需额外购买安全防护服务。</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div class="info tb-sub-title">节约</div>
+			</td>
+			<td class="cp-block-ft border-l-r" style="text-align: left;">
+			<div class="info">
+			<div class="tb-sub-title">节约成本，按需购买</div>
+
+			<div class="info">
+			<ul class="text-list">
+				<li>提供包月购买方式，您可按需购买，无需投入大量资金购置物理服务器；</li>
+				<li>将 FPGA 部署开发时间从数年或数月缩减到数天；</li>
+				<li>低服务器运维成本，您无需预先采购 FPGA 或采购硬件资源来运行 FPGA，即可为您的工作负载部署硬件加速；</li>
+				<li>避免本地数据中心开发 FPGA 无差别的繁重工作，助您有效降低基础设施建设人力和成本投入。</li>
+			</ul>
+			</div>
+			</div>
+			</td>
+			<td>
+			<div class="info">
+			<ul class="text-list">
+				<li>高服务器投资运营成本，FPGA 硬件交易价格不透明；</li>
+				<li>设计并大规模生产需要解决供应链、制造工艺、可靠性测试等多个环节，需耗费数月甚至数年；</li>
+				<li>为保障服务稳定需高额的运维IT成本。</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+		<!--最后一行 end-->
+	</tbody>
+</table>
+</div>
+</div>
+<!--总列数3 end--></div><div class="tab-content mod-scenario J-tabBoxWrapper" mod="featuresV2"><a class="anchor" id="featuresV2">&nbsp;</a><h3 class="tab-content-title">产品功能</h3><div class="mod-features"><div class="tab-content-detail"><div class="tab J-tabTitleArea"><ul class="tab-list"><li class="tab-item J-tabTitleItem current"><a href="javascript:;">概述</a></li><li class="tab-item J-tabTitleItem"><a href="javascript:;">计算能力</a></li><li class="tab-item J-tabTitleItem"><a href="javascript:;">机型配置</a></li><li class="tab-item J-tabTitleItem"><a href="javascript:;">FPGA 镜像</a></li><li class="tab-item J-tabTitleItem"><a href="javascript:;">网络与安全</a></li></ul></div><div class="J-tabContentArea"><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-up">概述<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody"><p>腾讯云推出全新 <strong>FPGA 型实例</strong>。目前，该实例已提供三种实例规格，搭载 <strong>Xilinx Kintex UltraScale KU115 FPGA</strong>。</p>
+<p>腾讯云和业界厂商有良好的关系，下一阶段也会推出<strong>基于 Intel 的 FPGA 硬件平台</strong>，方便开发者选择自己熟悉的开发模式，避免切换平台。</p>
+<p>与其他云服务器 CVM 实例一样，您可以采用<strong>包年包月</strong>的计费模式为 FPGA 计算实例支付预付款。内测阶段，我们将为获取内测资格的用户<strong>免费</strong>提供 FPGA 实例。</p>
+<p>您可以采用腾讯云提供的 FPGA 镜像进行部署和开发，目前腾讯云官方提供的 FPGA 镜像都是免费的，您可以调用基于深度学习的 Alexnet 模型的 FPGA 知识产权（IP）进行图片分类功能，加速您的产品应用。将来，您将可以在腾讯云服务市场上为其他客户无偿或有偿地提供您开发设计的 FPGA 镜像。</p>
+</div></div><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-down">计算能力<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody" style="display:none;"><h5 id=".E7.A1.AC.E4.BB.B6.E5.8A.A0.E9.80.9F">硬件加速</h5><p>FPGA 实例使用 FPGA 硬件加速器协同执行浮点数计算和图形处理等，借助 FPGA 实例，您可以轻松地使用 FPGA 为您的工作负载部署硬件加速，帮助您的应用程序降低处理时延并大幅提升处理能力。与仅使用 CPU 的服务器相比，应用程序运行速度最高可提升 20 倍。</p>
+<h5 id=".E5.8F.AF.E7.BC.96.E7.A8.8B">可编程</h5><p> FPGA 实例的 FPGA 是可编程的，您可以使用软件进行配置，灵活地更新和优化您的硬件加速，且无需重新设计任何硬件，非常适合深度学习、图形图像压缩处理、基因组学等其他 FPGA 计算工作负载。</p>
+</div></div><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-down">机型配置<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody" style="display:none;"><p>FPGA实例具有以下特征：</p>
+<ul>
+<li>FX2 实例搭载 Xilinx Kintex UltraScale KU115 FPGA</li>
+<li>每块 FPGA 都具有 2 条 16 GiB 本地 DDR4 ECC 受保护内存，并配有专用 PCle x8 连接</li>
+<li>每块 FPGA 大约包含 130 万个逻辑单元以及 5520 个数字信号处理（DSP）引擎</li>
+</ul>
+<p>FPGA 云服务器提供以下实例规格：</p>
+<table>
+<thead>
+<tr>
+<th>实例规格</th>
+<th>FPGA</th>
+<th>vCPU</th>
+<th>内存（GiB）</th>
+<th>数据盘</th>
+<th>网络</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FX2.7xlarge60</td>
+<td>1</td>
+<td>14核</td>
+<td>60</td>
+<td>搭载SSD云盘</td>
+<td>万兆网络</td>
+</tr>
+<tr>
+<td>FX2.14xlarge120</td>
+<td>2</td>
+<td>28核</td>
+<td>120</td>
+<td>搭载SSD云盘</td>
+<td>万兆网络</td>
+</tr>
+<tr>
+<td>FX2.28xlarge240</td>
+<td>4</td>
+<td>56核</td>
+<td>240</td>
+<td>搭载SSD云盘</td>
+<td>万兆网络</td>
+</tr>
+</tbody>
+</table>
+</div></div><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-down">FPGA 镜像<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody" style="display:none;"><p>腾讯云官方提供若干<strong>免费</strong>的 FPGA 镜像，您可参照腾讯云提供的<a href="javascript:;"><strong>入门指引</strong></a>，使用 FPGA 镜像部署环境，实现硬件加速。</p>
+<p>将来，FPGA应用程序开发者将可以在腾讯云服务市场<strong>免费或付费获取</strong>知识产权(IP)提供者提供的 FPGA 镜像，FPGA 知识产权提供者也可以为其他客户<strong>无偿或有偿提供</strong>您开发设计的 FPGA 镜像。</p>
+</div></div><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-down">网络与安全<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody" style="display:none;"><p>采用与云服务器 CVM 一致的购买管理方式，包括内外网IP分配、安全组、子网管理等，简单易用。</p>
+<p>支持和云服务器 CVM、私有网络 VPC、负载均衡 CLB、对象存储 COS 等的业务对接，不增加额外的管理和运维成本，内网流量免费。</p>
+<p>完善的安全组和网络 ACL 设置让您能控制进出实例和子网的网络入出站流量并进行安全过滤。</p>
+<p>与云安全无缝对接，享有与云服务器同等的云安全基础防护和高防服务。<br><a href="javascript:;">了解网络与安全性 &gt;&gt;</a></p>
+</div></div></div></div></div></div><div class="tab-content mod-scenario J-tabBoxWrapper" mod="scenarios"><a class="anchor" id="scenarios">&nbsp;</a><h3 class="tab-content-title">应用场景</h3><div class="tab-content-detail"><div class="tab J-tabTitleArea"><ul class="tab-list"><li class="tab-item J-tabTitleItem current"><a href="javascript:;">深度学习模型</a></li><li class="tab-item J-tabTitleItem"><a href="javascript:;">实时图像压缩</a></li></ul></div><div class="J-tabContentArea"><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-up">深度学习模型<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody"><p>腾讯云 FPGA 实例尤其适用于对时间和效率要求比较高的高性能计算 (HPC) 应用程序。</p>
+<p>随着移动互联网的发展，基于用户社交平台，用户正在创造庞大的图片集合且增长速度很快。为了增强图片分类检测的处理能力，降低图片检测成本，我们使用 FPGA 云服务器对深度学习模型中 CNN 算法的 Alexnet 模型进行加速计算。</p>
+<p>实验表明，采用 Alexnet 模型对图像进行分类检测对比测试，在性能上，FPGA 云服务器处理性能是 CPU 云服务器的<strong>5倍</strong>。</p>
+<!--相关产品--><!--相关说明--><!--相关解决方案--><!--相关推荐--></div></div><div class="list-content-v2"><a href="javascript:;" class="list-content-head J-tabContentHead arr-down">实时图像压缩<span class="icon"></span></a><div class="list-content-body markdown-text-box J-tabContentBody" style="display:none;"><p>常用的图片格式有 JPEG 格式、WEBP 格式等， WEBP 图片格式比 JPEG 图片格式存储空间小 30% 。为节省存储空间，降低传输流量，提升用户的图片下载体验，通常采用 WEBP 格式进行存储及传输分发。但 WEBP 压缩计算复杂度是 JPEG 压缩的10倍以上，采用 CPU 进行 WEBP 转码成本很高。为了增强图片转码能力，可使用 FPGA 云服务器进行加速，且不会影响视图片质量。F1 实例是满足这些应用程序要求的理想解决方案。</p>
+<p>对JPEG 格式图片转成 WEBP 格式图片进行测试对比，测试图片大小为 853x640，FPGA 云服务器处理延时相比 CPU 服务器<strong>降低20倍</strong>，FPGA 云服务器处理性能是 CPU 服务器的<strong>6倍</strong>。</p>
+<!--相关产品--><!--相关说明--><!--相关解决方案--><!--相关推荐--></div></div></div></div></div><div class="tab-content mod-wiki" mod="wiki"><a class="anchor" id="wiki">&nbsp;</a><h3 class="tab-content-title">产品文档</h3><div class="tab-content-detail column-4"><div class="menu-list"><div class="menu-links J-menu-links"><h4>快速入门</h4><a href="javascript:;" class="links-title J-links-title">快速入门<span class="icon arr-down"></span></a><ul><li><a href="javascript:;" target="_blank" class="textoverflow" hotrep="product.fpga.userguide.1">入门指引概述</a></li><li><a href="javascript:;" target="_blank" class="textoverflow" hotrep="product.fpga.userguide.2">API 说明</a></li><li><a href="javascript:;" target="_blank" class="textoverflow" hotrep="product.fpga.userguide.3">Demo 使用方法</a></li><li><a href="javascript:;" target="_blank" class="textoverflow" hotrep="product.fpga.userguide.4">性能测试对比</a></li></ul></div><div class="menu-links J-menu-links"><h4>常见问题</h4><a href="javascript:;" class="links-title J-links-title">常见问题<span class="icon arr-down"></span></a><ul><li><a href="javascript:;" target="_blank" class="textoverflow" hotrep="product.fpga.problems.1">常见问题</a></li></ul></div></div></div></div></div></div></div>
+
+	<script>timeStamps[3] = new Date();</script>
+	<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012102799, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "Hyy0a-3yU";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+	<script src="static/js/sticky-kit.5a7aa8afc35f165aa923-.js"></script>
+	<script src="static/js/jquery.hammer.679b2e070272888d16.js"></script>
+	<script src="static/js/index.b7a3a2c09105ddb59b27-31536.js"></script>
+	<script>timeStamps[4] = new Date();</script>
+	<script>
+		function __reportImgLoadCost() {
+			var requests, lowCostRequests;
+			var requestStartTimes, requestEndTimes, requestDurations;
+			var firstStartTime, lastEndTime, duration;
+
+			requests = window.performance.getEntries()
+				.filter(function (req) {
+					return req.initiatorType === 'img'
+						&& req.name.indexOf('mc.qcloudimg.com') != -1
+						&& req.name.indexOf('test.png') == -1;
+				});
+
+			requestDurations = requests.map(function(req) {
+				return req.duration;
+			});
+
+			lowCostRequests = requestDurations.filter(function(dt) {
+				return dt < 20;
+			});
+
+			// 低延时请求认定为缓存，占比大于80%则不上报
+			if ((lowCostRequests.length / requests.length) > 0.8) {
+				return;
+			}
+
+			requestStartTimes = requests.map(function(req) {
+				return req.fetchStart;
+			});
+
+			requestEndTimes = requests.map(function(req) {
+				return req.responseEnd;
+			});
+
+			firstStartTime = Math.min.apply(null, requestStartTimes);
+			lastEndTime = Math.max.apply(null, requestEndTimes);
+
+			duration = lastEndTime - firstStartTime;
+
+			var reportData = {
+				uin: '',
+				imgcacheLoadTime: duration,
+				mccdnLoadTime: duration,
+				totalCostTime: '',
+				userIp: '',
+				countryArea: 'qcloud',
+				province: 'qcloud',
+				city: 'qcloud'
+			}
+
+			var reportUrl = 'https://cloud.tencent.com/services/ajax/reportDc?typeId=cdn&data=' + encodeURIComponent(JSON.stringify(reportData));
+
+			var img = new Image();
+			img.onload = img.onerror = function() { img = img.onload = img.onerror = null;}
+			img.src = reportUrl;
+		}
+	</script>
+	<script>
+		//首页上报
+		$(document).ready(function() {
+			timeStamps[5] = new Date();
+		});
+		$(window).load(function() {
+			timeStamps[6] = new Date();
+			window.timeStat && window.timeStat(7822, 13, 37, timeStamps, 0);
+			window.TCISD && window.TCISD.performanceTimeStat([7822, 13, 2], 10);
+
+			
+		});
+	</script>
+	<script>
+		$(function() {
+			// 移出$('div.tab-content')的title，避免影响阅读，后期可移出
+			$('div.tab-content').prop('title', '');
+		});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+.QR-code{
+    display:none;
+    position: fixed;
+    background: linear-gradient(0deg, #3A0680 0%, #250C54 100%);;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 2000;
+}
+.QR-close-btn-box {
+    text-align: right;
+}
+.QR-close-btn {
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: 25px;
+    width: 20px;
+    height: 20px;
+}
+.QR-img-content{
+    box-sizing: border-box;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-85px;
+    margin-top: -100px;
+    padding: 10px;
+    background-color: #fff;
+}
+.QR-1,.QR-2{
+    display: none;
+}
+.QR-img-content img{
+    width: 150px;
+    height: 150px;
+}
+p.QR-code-tip{
+    width: 100%;
+    text-align: center;
+    letter-spacing:2px;
+    color:#fff;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 100px;
+}

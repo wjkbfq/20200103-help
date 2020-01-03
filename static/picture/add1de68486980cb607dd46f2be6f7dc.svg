@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>涉黄检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片内容安全" transform="translate(-74.000000, -518.000000)">
+            <g id="涉黄检测" transform="translate(74.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="37" y="37" width="2" height="2"></rect>
+                <polygon id="路径" fill="#344966" fill-rule="nonzero" transform="translate(26.707013, 25.496160) rotate(45.000000) translate(-26.707013, -25.496160) " points="28.1961157 17.6485267 30.098882 15.7457604 23.3151435 15.6639861 23.3151435 35.3283334 25.3151435 35.3283334 25.3151435 17.6639861"></polygon>
+                <path d="M36,26 C30.4771525,26 26,30.4771525 26,36 C26,41.5228475 30.4771525,46 36,46 C41.5228475,46 46,41.5228475 46,36 C46,33.3478351 44.9464316,30.804296 43.0710678,28.9289322 C41.195704,27.0535684 38.6521649,26 36,26 Z M33,41 L31,41 L31,31 L33,31 L33,41 Z M41,33 L41,41 L35,41 L35,31 L41,31 L41,33 Z" id="Shape" fill="#00A4FF" fill-rule="nonzero"></path>
+                <rect id="Rectangle-path" fill="#00A4FF" fill-rule="nonzero" x="37" y="33" width="2" height="2"></rect>
+                <rect id="Rectangle-path复制" fill="#00A4FF" fill-rule="nonzero" x="37" y="37" width="2" height="2"></rect>
+                <path d="M36,48 C29.372583,48 24,42.627417 24,36 C24,29.372583 29.372583,24 36,24 C42.627417,24 48,29.372583 48,36 C48,42.627417 42.627417,48 36,48 Z M36,46 C41.5228475,46 46,41.5228475 46,36 C46,30.4771525 41.5228475,26 36,26 C30.4771525,26 26,30.4771525 26,36 C26,41.5228475 30.4771525,46 36,46 Z" id="Shape" fill="#344966" fill-rule="nonzero"></path>
+                <polyline id="路径复制" stroke="#334966" stroke-width="2" transform="translate(15.156854, 28.414756) rotate(45.000000) translate(-15.156854, -28.414756) " points="10.863961 33.8442297 10.863961 22.9852814 19.449747 22.9852814"></polyline>
+                <circle id="椭圆形" stroke="#334966" stroke-width="2" cx="16" cy="13.5" r="2.5"></circle>
+                <path d="M4,40.9238281 L19,40.9238281 L20,42.9238281 L2,42.9238281 L2,12 L4,12 L4,40.9238281 Z M46,3.92382812 L1.04345703,3.92382812 L1.04345703,1.92382812 L48,1.92382812 L48,24.9873047 L46,22.9873047 L46,3.92382812 Z" id="形状" fill="#334966" fill-rule="nonzero"></path>
+                <circle id="椭圆形" fill="#334966" cx="3" cy="3" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>终端安全</title>
+    <desc>Created with Sketch.</desc>
+    <g id="终端安全" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+        <g id="Group" transform="translate(1.000000, 1.000000)" fill="#00A4FF">
+            <path d="M7,7 L4,9 L4,7 L5.5,6 L4,5 L4,3 L7,5 L7,7 Z M0,0 L14,0 L14,7.4 C14,7.4 13.946,13.359 7,15 C0.054,13.359 0,7.4 0,7.4 L0,0 Z M7,12.934 C11.732,11.589 11.987,7.802 12,7.362 L12,2 L2,2 L2,7.4 C2.013,7.803 2.268,11.589 7,12.934 Z M8,5 L10,5 L10,7 L8,7 L8,5 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830.001" height="329.001" viewBox="0 0 830.001 329.001">
+  <title>画板 1</title>
+  <g>
+    <g>
+      <path d="M219.679,201.891h35.185v97.435h35.185" style="fill: none;stroke: #888"/>
+      <polygon points="285.989 303.386 291.402 299.326 285.989 295.266 285.989 303.386" style="fill: #888"/>
+      <path d="M219.679,201.891h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M254.864,201.891v97.435" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M254.864,299.326h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M219.679,201.891h35.185V104.457h35.185" style="fill: none;stroke: #888"/>
+      <polygon points="285.989 108.516 291.402 104.457 285.989 100.397 285.989 108.516" style="fill: #888"/>
+      <path d="M219.679,201.891h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M254.864,201.891V104.457" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M254.864,104.457h35.185" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M431.69,103.554h83" style="fill: none;stroke: #888"/>
+      <polygon points="510.63 107.614 516.043 103.554 510.63 99.495 510.63 107.614" style="fill: #888"/>
+      <path d="M431.69,103.554h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M473.19,103.554h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M431.69,103.554h41.5V25.967h41.5" style="fill: none;stroke: #888"/>
+      <polygon points="510.63 30.027 516.043 25.967 510.63 21.908 510.63 30.027" style="fill: #888"/>
+      <path d="M431.69,103.554h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M473.19,103.554V25.967" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M473.19,25.967h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M431.69,103.554h41.5v77.587h41.5" style="fill: none;stroke: #888"/>
+      <polygon points="510.63 185.201 516.043 181.141 510.63 177.082 510.63 185.201" style="fill: #888"/>
+      <path d="M431.69,103.554h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M473.19,103.554v77.587" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M473.19,181.141h41.5" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+    <g>
+      <path d="M219.679,201.891h73.076" style="fill: none;stroke: #888"/>
+      <polygon points="288.696 205.951 294.109 201.891 288.696 197.832 288.696 205.951" style="fill: #888"/>
+      <path d="M219.679,201.891h36.989" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+      <path d="M256.668,201.891h36.087" style="fill: none;stroke: red;stroke-opacity: 0;stroke-width: 15px"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect x="110.065" y="181.592" width="111.855" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="108.261" y="179.788" width="111.855" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(126.305 206.853)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">组件应用场景</text>
+    </g>
+    <g>
+      <rect x="296.815" y="83.255" width="137.116" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="295.011" y="81.451" width="137.116" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(313.055 108.516)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">支持多种分词方式</text>
+    </g>
+    <g>
+      <rect x="296.815" y="181.592" width="115.464" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="295.011" y="179.788" width="115.464" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(313.055 206.853)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">支持结果标红</text>
+    </g>
+    <g>
+      <rect x="296.815" y="279.027" width="162.377" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="295.011" y="277.223" width="162.377" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(313.055 304.288)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">多种业务运营数据查看</text>
+    </g>
+    <g>
+      <rect x="521.457" y="83.255" width="106.442" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.652" y="81.451" width="106.442" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(548.695 108.516)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">单词分词</text>
+    </g>
+    <g>
+      <rect x="521.457" y="160.842" width="106.442" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.652" y="159.038" width="106.442" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(548.695 186.103)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">混合分词</text>
+    </g>
+    <g>
+      <rect x="521.457" y="5.668" width="106.442" height="45.109" style="fill: #bbb;opacity: 0.6000000238418579;isolation: isolate"/>
+      <rect x="519.652" y="3.864" width="106.442" height="45.109" style="fill: #fff;stroke: #e5e5e5"/>
+      <text transform="translate(548.695 30.929)" style="isolation: isolate;font-size: 12.6304349899292px;fill: #444;font-family: PingFangSC-Regular-GBpc-EUC-H, PingFang SC">正常分词</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<title>登录 - 腾讯云</title>
+<meta name="keywords" content="登录腾讯云,腾讯云用户登录">
+<meta name="description" content="">
+
+	<link rel="stylesheet" href="static/css/login-20199031724-31536000.css">
+	
+
+<link rel="stylesheet" href="static/css/oabreak-201904230945-31536001.css">
+<style type="text/css">
+	.qc-scrollbar{display:none};
+	.J-qc-back2top, .J-qc-scrollbar{display:none};
+</style>
+<link rel="canonical" href="login.html">
+</head>
+<body class="" style="background-color:#fff">
+
+	
+	
+
+	
+	
+	<div class="clg-head">
+	<div class="clg-head-inner">
+		<div class="clg-logo ">
+			<a href="index5.html">腾讯云</a>
+		</div>
+		<div class="clg-head-aside J-login-site-switcher">
+			<div class="clg-dropdown lang">
+				<a href="javascript:;" class="clg-dropdown-link J-login-site-curr"><i class="clg-icon-global"></i>中国站<i class="caret"></i></a>
+				<ul class="clg-dropdown-menu" role="menu" style="display: none">
+					<li role="presentation"><a role="menuitem" href="javascript:;">中国站</a></li>
+					<li role="presentation"><a role="menuitem" href="javascript:;">International</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function __getCookie(name) {
+		var reg = new RegExp("(^| )" + decodeURIComponent(name) + "(?:=([^;]*))?(;|$)"),
+			val = document.cookie.match(reg);
+		return val ? (val[2] ? decodeURIComponent(val[2]) : "") : null;
+	}
+
+	function __delCookie(name, path, domain, secure) {
+		var value = __getCookie(name);
+		if (value != null) {
+			var exp = new Date();
+			exp.setMinutes(exp.getMinutes() - 1000);
+			path = path || "/";
+			document.cookie = encodeURIComponent(name) + '=;expires=' + exp.toGMTString() + (path ? ';path=' + path : '') + (domain ? ';domain=' + domain : '') + (secure ? ';secure' : '');
+		}
+	}
+
+	// 依赖JQuery
+	function loginSiteSwitcherInit() {
+		if (!window.$ &&  window.jQuery) return;
+		var hostname = location.hostname;
+		var pathname = location.pathname;
+		var $switcherWrapper = $('.J-login-site-switcher');
+		var currSite = '中国站';
+
+		if (hostname == 'intl.cloud.tencent.com') {
+			currSite = 'International';
+			$switcherWrapper.find('li:eq(1)').addClass('actived');
+
+			if (pathname == '/login' || pathname == '/login/verify') {
+				$switcherWrapper.find('li:eq(0) a').attr('href', 'https://cloud.tencent.com/login?lang=zh');
+			} else if (pathname.indexOf('/login/subAccount') != -1) {
+				$switcherWrapper.find('li:eq(0) a').attr('href', 'https://cloud.tencent.com' + pathname + '?lang=zh');
+			}
+		} else {
+			$switcherWrapper.find('li:eq(0)').addClass('actived');
+
+			if (pathname == '/login' || pathname == '/login/verify') {
+				$switcherWrapper.find('li:eq(1) a').attr('href', 'https://intl.cloud.tencent.com/login');
+			} else if (pathname.indexOf('/login/subAccount') != -1) {
+				$switcherWrapper.find('li:eq(1) a').attr('href', 'https://intl.cloud.tencent.com' + pathname);
+			}
+		}
+
+		$switcherWrapper.find('.J-login-site-curr').html('<i class="clg-icon-global"></i>' + currSite + '<i class="caret"></i>');
+
+		$switcherWrapper.off().on('mouseenter', function() {
+			$switcherWrapper.find('ul').show();
+		}).on('mouseleave', function() {
+			$switcherWrapper.find('ul').hide();
+		})
+
+		$switcherWrapper.find('li a').on('click', function() {
+			var _this = this;
+			var cookieDomain = 'qcloud.com';
+			if (location.host.indexOf('cloud.tencent.com') != -1) {
+				cookieDomain = 'cloud.tencent.com';
+			}
+			__delCookie('uin', '/', cookieDomain);
+			__delCookie('skey', '/', cookieDomain);
+			__delCookie('subAccountLoginPage', '/', cookieDomain);
+			__delCookie('intl', '/', cookieDomain);
+			setTimeout(function() {
+				location.href = $(_this).attr('href');
+			})
+
+			return false;
+		})
+	}
+</script>
+
+	<div class="clg-wrap">
+		<div class="clg-wrap-inner">
+			<div class="clg-wrap-con clg-onpage">
+				<div class="clg-onpage-con" id="loginBox"></div>
+				<div class="clg-page-tips" id="loginAbout" style="display:none">
+					
+						
+						<div class="clg-page-tips-tit">
+							关于腾讯云登录
+						</div>
+						<div class="clg-page-tips-txt">
+							若微信扫码失败，请打开 <a href="javascript:;" class="J-openToWXLink">微信授权页面</a> 登录
+							<br>
+							若QQ登录腾讯云异常，可查阅 <a href="javascript:;" target="_blank">帮助文档</a>
+							<br>
+							若因微信、QQ、公众号冻结或账号密码找回失败等无法登录，可 <a href="javascript:;" target="_blank">自助申请</a> 登录账号
+						</div>
+						
+					
+				</div>
+			</div>
+			<div class="clg-wrap-aside">
+	
+	<div class="clg-wrap-aside-inner">
+		<div class="clg-wrap-aside-tit">云产品限时特惠</div>
+		<div class="clg-wrap-aside-list">
+			<ul>
+				
+					
+					<li><span>服务更稳、价格更优</span></li>
+					
+				
+					
+					<li><span>云服务器1核2G首年99元</span></li>
+					
+				
+					
+					<li><span>更有多款云产品助力轻松上云</span></li>
+					
+				
+			</ul>
+		</div>
+		
+		<div class="clg-wrap-aside-btn">
+			<a href="javascript:;" hotrep="denglu.southwest">
+				立即抢购
+			</a>
+		</div>
+		
+	</div>
+	
+	<div class="clg-wrap-aside-event">
+		<img src="static/picture/event.png">
+	</div>
+	
+	
+</div>
+		</div>
+	</div>
+
+	<style>
+	.qc-scrollbar{display:none};
+	.J-qc-back2top, .J-qc-scrollbar{display:none};
+</style>
+<div class="clg-footer">
+    <div class="clg-copyright">Copyright &copy; 2013<script>new Date().getFullYear()>2013&&document.write("-"+new Date().getFullYear());</script> Tencent Cloud. All Rights Reserved. <span>腾讯云&nbsp;版权所有</span></div>
+</div>
+	
+
+	
+	
+
+	
+	
+
+	<div class="oab-wrap J-wxmpBreakTip" style="display: none;">
+		<div class="oab-mask"></div>
+		<div class="oab-box">
+			<div class="oab-logo"></div>
+			<a href="javascript:;" class="oab-box-close J-wxmpBreakClose">关闭</a>
+			<div class="oab-box-tit">使用微信公众号登录</div>
+			<div class="oab-box-con">
+				<div class="oab-box-txt">
+					请前往微信公众平台进行账号授权，完成授权后，即可登录腾讯云。
+				</div>
+				<div class="oab-box-ctrl">
+					<label>
+						<input type="checkbox" class="oab-checkbox J-hideWXMPBreakTip">
+						<span>不再提示</span>
+					</label>
+				</div>
+				<div class="oab-box-btn">
+					<a href="javascript:;" class="oab-btn weak J-wxmpHomeLink">注册微信公众号</a>
+					<a href="javascript:;" class="oab-btn J-wxmpOauthLink">前往微信公众号授权</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="oab-wrap J-deviceNotSupportGuide" style="display:none">
+		<div class="oab-mask"></div>
+		<div class="oab-box">
+			<div class="oab-loginerror-mod">
+				<div class="oab-loginerror-logo"></div>
+				<div class="oab-loginerror-tit J-title">微信快速登录失败</div>
+				<div class="oab-loginerror-txt J-detail">
+					当前应用不支持微信快速登录，请使用Safari、UC、QQ浏览器或在微信内打开页面或使用其他方式进行登录。
+				</div>
+				<div class="oab-page-tips">
+					<div class="oab-page-tips-inner">
+						<div class="oab-page-tips-txt J-copyUrlContent">
+						</div>
+						<div class="oab-page-tips-btn">
+							<em>...</em>
+							<a href="javascript:;" class="J-copyUrlBtn">复制访问链接</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="oab-other-mod">
+				<div class="oab-other-tit"><span>使用其他方式登录</span></div>
+				<div class="oab-other-con">
+					<div class="oab-other-link J-emailBtn">
+						<a href="javascript:;">
+							<i class="oab-icon-mail"></i><span>邮箱</span>
+						</a>
+					</div>
+					<div class="oab-other-link J-qqBtn" style="display:none">
+						<a href="javascript:;">
+							<i class="oab-icon-qq"></i><span>QQ</span>
+						</a>
+					</div>
+					<div class="oab-other-link J-wxBtn" style="display:none">
+						<a href="javascript:;">
+							<i class="oab-icon-wx"></i><span>微信</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="oab-global-tips J-copyTip" style="display: none">
+			<i class="oab-global-tips-icon success"></i>
+			<span>复制成功</span>
+		</div>
+	</div>
+
+	<div class="oab-wrap J-loginBreakHelper" style="display:none">
+		<div class="oab-mask"></div>
+		<div class="oab-box">
+			<div class="oab-logo"></div>
+			<a href="javascript:;" class="oab-box-close J-helperClose">关闭</a>
+			<div class="oab-box-tit">登录异常帮助</div>
+			<div class="oab-box-con">
+				<div class="oab-box-list">
+					<div class="oab-box-item">
+						<div class="oab-box-item-icon">
+							<i class="clg-icon-oab-wx"></i>
+						</div>
+						<div class="oab-box-item-con">
+							<div class="oab-box-item-tit">
+								微信登录异常
+							</div>
+							<div class="oab-box-item-txt">
+								若二维码异常或登录失败，请打开 <a href="javascript:;" class="J-openToWXLink">微信授权页面<i class="clg-icon-link-blank"></i></a> 或 <a href="connect.html" target="_blank">联系我们</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="oab-box-item">
+						<div class="oab-box-item-icon">
+							<i class="clg-icon-oab-qq"></i>
+						</div>
+						<div class="oab-box-item-con">
+							<div class="oab-box-item-tit">
+								QQ登录异常
+							</div>
+							<div class="oab-box-item-txt">
+								若QQ登录腾讯云异常，请查阅 <a href="javascript:;" target="_blank">帮助文档</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="oab-box-btn center">
+					<a href="javascript:;" class="oab-btn weak J-helperClose">关闭</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012085352, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "ryW6naW3yL";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script type="text/javascript">
+	window.QCLoginCssLoaded = true;
+	var isMobile = false;
+	document.domain = 'cloud.tencent.com';
+	window.G_base64Surl = 'aHR0cHM6Ly9jb25zb2xlLmNsb3VkLnRlbmNlbnQuY29tL2FjY291bnQvdm91Y2hlcg==';
+	window.G_isLogined = false;
+	window.G_nickname = '';
+	window.G_isIntl = 0;
+	window.G_isSupportWxOauth = false;
+	window.G_isSupportQQOauth = false;
+</script>
+<script src="static/js/index.e779257d27cf872e012f-31536.js"></script>
+<script>if(window.loginSiteSwitcherInit){loginSiteSwitcherInit()}</script>
+</html>

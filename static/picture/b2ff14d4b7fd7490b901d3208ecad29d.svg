@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>高效搜索</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="高效搜索" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M30.4937917,4 L48,4 L48,48 L4,48 L4,30.4937917 C4.63851723,30.9479336 5.3063116,31.363593 6,31.7373866 L6,46 L46,46 L46,6 L31.7373866,6 C31.363593,5.3063116 30.9479336,4.63851723 30.4937917,4 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        <circle id="Oval-7-Copy" fill="#00A4FF" cx="27" cy="27" r="15"></circle>
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" fill="#FFFFFF" cx="15" cy="15" r="14"></circle>
+        <rect id="Rectangle" fill="#334966" transform="translate(29.603553, 29.603553) rotate(-45.000000) translate(-29.603553, -29.603553) " x="28.6035534" y="22.6789322" width="2" height="13.8492424"></rect>
+        <rect id="Rectangle-20" fill="#00A4FF" x="9" y="11" width="6" height="2"></rect>
+        <rect id="Rectangle-20-Copy" fill="#00A4FF" x="9" y="17" width="12" height="2"></rect>
+    </g>
+</svg>

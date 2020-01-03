@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>高性能云产品-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="高性能云产品-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-23" stroke="#334966" stroke-width="2" x="1" y="5" width="46" height="38"></rect>
+        <path d="M15,36 C11.1340068,36 8,32.8659932 8,29 C8,25.1340068 11.1340068,22 15,22 C15.0965182,22 15.1925801,22.0019534 15.2881485,22.0058229 C16.1468327,19.1113422 18.8268511,17 22,17 C25.8659932,17 29,20.1340068 29,24 C29,24.0277177 28.9998389,24.0553978 28.9995176,24.0830394 C29.3248781,24.0284269 29.6591193,24 30,24 C33.3137085,24 36,26.6862915 36,30 C36,33.3137085 33.3137085,36 30,36 C29.6592878,36 29.3252085,35.9716012 29,35.9170416 L29,36 L15,36 Z" id="Combined-Shape-Copy" fill="#00A4FF"></path>
+        <path d="M34,16 L34,12 L36,12 L36,16 L40,16 L40,18 L36,18 L36,22 L34,22 L34,18 L30,18 L30,16 L34,16 Z" id="Combined-Shape" fill="#334966"></path>
+    </g>
+</svg>

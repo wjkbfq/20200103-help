@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="a" data-name="未命名的渐变 175" x1="32.248" y1="27.071" x2="-0.655" y2="8.075" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00a4ff" stop-opacity="0.05"/>
+      <stop offset="0.014" stop-color="#00a4ff" stop-opacity="0.078"/>
+      <stop offset="0.141" stop-color="#00a4ff" stop-opacity="0.319"/>
+      <stop offset="0.268" stop-color="#00a4ff" stop-opacity="0.527"/>
+      <stop offset="0.39" stop-color="#00a4ff" stop-opacity="0.696"/>
+      <stop offset="0.508" stop-color="#00a4ff" stop-opacity="0.829"/>
+      <stop offset="0.619" stop-color="#00a4ff" stop-opacity="0.923"/>
+      <stop offset="0.722" stop-color="#00a4ff" stop-opacity="0.98"/>
+      <stop offset="0.809" stop-color="#00a4ff"/>
+      <stop offset="1" stop-color="#00a4ff"/>
+    </linearGradient>
+  </defs>
+  <title>01蓝色</title>
+  <path d="M20,39A19,19,0,1,1,39,20,19.021,19.021,0,0,1,20,39ZM20,4A16,16,0,1,0,36,20,16.019,16.019,0,0,0,20,4Z" style="fill: url(#a)"/>
+</svg>

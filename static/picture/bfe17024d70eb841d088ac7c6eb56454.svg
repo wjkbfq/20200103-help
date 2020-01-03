@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" transform="translate(0 2)">
+    <path fill="#334966" d="M9 38L11 38 11 42 37 42 37 36 39 36 39 44 9 44 9 38zM9 36L11 36 9 36zM39 6L37 6 37 2 11 2 11 8 9 8 9 0 39 0 39 6zM37 8L39 8 37 8zM0 8L20 8 20 36 0 36 0 8zM2 10L2 34 18 34 18 10 2 10zM28 8L48 8 48 36 28 36 28 8zM30 10L30 34 46 34 46 10 30 10z"/>
+    <rect width="12" height="8" x="4" y="12" fill="#00A4FF"/>
+    <rect width="12" height="8" x="32" y="12" fill="#00A4FF"/>
+    <rect width="12" height="2" x="4" y="22" fill="#00A4FF"/>
+    <rect width="12" height="2" x="32" y="22" fill="#00A4FF"/>
+    <rect width="12" height="2" x="4" y="26" fill="#00A4FF"/>
+    <rect width="12" height="2" x="32" y="26" fill="#00A4FF"/>
+    <rect width="12" height="2" x="4" y="30" fill="#00A4FF"/>
+    <rect width="12" height="2" x="32" y="30" fill="#00A4FF"/>
+  </g>
+</svg>

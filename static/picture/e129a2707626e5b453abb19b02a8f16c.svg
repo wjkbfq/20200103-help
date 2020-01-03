@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>黑客定位-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="黑客定位-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="23"></circle>
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="15"></circle>
+        <rect id="Rectangle-75" fill="#334966" x="23" y="6" width="2" height="6"></rect>
+        <rect id="Rectangle-75-Copy" fill="#334966" x="23" y="36" width="2" height="6"></rect>
+        <rect id="Rectangle-75-Copy-3" fill="#334966" x="36" y="23" width="6" height="2"></rect>
+        <rect id="Rectangle-75-Copy-4" fill="#334966" x="6" y="23" width="6" height="2"></rect>
+        <circle id="Oval-42" fill="#00A4FF" cx="24" cy="24" r="8"></circle>
+    </g>
+</svg>

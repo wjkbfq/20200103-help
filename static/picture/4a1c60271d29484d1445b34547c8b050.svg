@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>数据备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="数据备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8" transform="translate(2.000000, -3.000000)" stroke="#00A4FF" stroke-width="1.98">
+            <path d="M8.72032312,7.84977568 L5.99797924,20.7780993 L18.637989,18.0101295 L21.3603329,5.08180588 L8.72032312,7.84977568 Z" id="Rectangle-9" transform="translate(13.679156, 12.929953) rotate(-315.000000) translate(-13.679156, -12.929953) "></path>
+            <polyline id="Path-2" points="1.12743194 17.5013811 13.6791561 25.7591765 26.0239766 17.5013811"></polyline>
+            <polyline id="Path-2-Copy" points="1.12743194 22.9870954 13.6791561 31.2448907 26.0239766 22.9870954"></polyline>
+        </g>
+    </g>
+</svg>

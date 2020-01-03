@@ -1,0 +1,3676 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<title>账号相关 解绑登录方式 - 账号信息 - 文档中心 - 腾讯云</title>
+<meta name="keywords" content="管理与支持 账号相关">
+<meta name="description" content="腾讯云账号支持绑定或者解绑微信、QQ、邮箱和微信公众号四种登录方式，下面以解绑微信登录方式为示例。注意：注册方式不能解绑，但如果账号因所有权变更、员工离职等因素，需要解绑注册方式，请您提交工单进行处理">
+<meta name="format-detection" content="telephone=no">
+<script>window.WECHAT_SHARE_CONFIG = { default: { desc: '腾讯云文档，我们为提供云计算产品文档和使用帮助，解答使用中的常见问题，腾讯云包括：开发者、负载均衡、防攻击、防DDos攻击、安全、常见问题、云服务器、云主机、CDN、对象存储、MySQL、域名注册、备案、数据库、互联网+、文档、API、SDK等使用手册' } };</script>
+
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<script>document.domain = 'cloud.tencent.com';</script>
+<script>!function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,e),o.loaded=!0,o.exports}var n={};return e.m=t,e.c=n,e.p="//imgcache.qq.com/qcloud/main/scripts/",e(0)}([function(t,e){"use strict";function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=function(){function t(){n(this,t);try{window!==top&&"cloud.tencent.com"===top.document.domain&&top.DisableIFrameOfficialHeaderAndFooter&&this.init()}catch(t){}}return r(t,[{key:"init",value:function(){var t=document.getElementsByTagName("head")[0],e="#navigationBar,#navigationBarM,.c-hero-bar,.J-qc-footer,.J-subHeader,.J-docSidebarSearch{display:none!important}@media only screen and (max-width: 768px){.doc-box .table-box {padding-top:20px!important}.c-hero-bar-tit {margin-top:10px}}",n=document.createElement("link");n.setAttribute("rel","stylesheet"),n.setAttribute("type","text/css"),n.setAttribute("href","data:text/css;charset=UTF-8,"+encodeURIComponent(e)),t.appendChild(n)}}]),t}();new o}]);</script>
+
+		<link rel="stylesheet" href="static/css/pandect-201912301701-86400.css">
+		
+    <link rel="stylesheet" href="static/css/document-feedback.7c01938b50.css">
+
+
+		
+		
+	</head>
+	<body class="color-bg">
+		
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = true;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air " data-style="white"> <div class="c-nav-mod c-nav-mod-pc c-nav-white"> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+		<div class="J-mainContent responsible">
+			
+
+			<div class="doc-page J-pc-wrap">
+				<div class="doc-page-con J-body-wrap">
+					<div class="doc-con J-mainDetail">
+						<div class="doc-box">
+							<div class="side-nav-fixed doc-search-mod J-subHeader">
+	<a class="phone-menu-btn J-phoneMenu" href="javascript:void(0)">
+		<i class="phone-menu-icon J-phoneMenuTopTrigger"></i>
+		<i style="display: none" class="phone-menu-close-icon J-phoneMenuTopClose"></i>
+	</a>
+		
+			<div class="doc-inner-search-m doc-aside-search J-docSidebarSearchM" style="display: block">
+				<input type="text" hotrep="doc.sidebar.mobile.searchbar" class="doc-aside-search-input c-input-text J-docSidebarSearchInput" placeholder="搜索本产品内容">
+				<i class="doc-aside-search-icon J-docSidebarSearchBtn"></i>
+				<ul style="display: none" class="doc-aside-dropdown-menu  J-docSidebarSearchList" role="menu">
+				</ul>
+			</div>
+			
+</div>
+<div class="modal-bg J-searchModalM" style="display: none;z-index:80"></div>
+<div class="modal-bg J-phoneMenuModalM" style="display: none"></div>
+
+<div class="doc-list-wrap J-sideNavInnerBox" style="display: none;overflow-y: auto;" data-needfixfocuseleposition="true">
+<div class="doc-index-link-bar J-sideNavDocHome">
+	<a hotrep="document.sideNav.title" class="doc-index-link" href="javascript:;">文档首页</a>
+</div>
+
+<div class="nav-doc-warp side-navigation J-sideNavListWrap">
+		
+		<div class="side-nav-inner-list nav-mian-title">
+			<a hotrep="document.sideNav.title" href="javascript:;" class="side-nav-title-1">账号相关</a>
+		</div>
+		
+</div>
+</div>
+
+							<div class="table-box">
+								
+
+<div class="main-content doc-main-details">
+	<div class="J-innerMain main-content-inner m-height">
+
+		
+		<div class="crumbs J-innerMainCrumbs">
+			
+				
+				
+				<a href="product1.html" title="文档中心" data-bypass-xhr="" hotrep="document.article.breadcrumb">文档中心</a>
+				
+			
+				<i class="right-arrow-icon"></i>
+				
+				<a href="javascript:;" title="账号相关" hotrep="document.article.breadcrumb">账号相关</a>
+				
+			
+				<i class="right-arrow-icon"></i>
+				
+				<a href="javascript:;" title="账号信息" hotrep="document.article.breadcrumb">账号信息</a>
+				
+			
+				<i class="right-arrow-icon"></i>
+				
+				<span class="text">解绑登录方式</span>
+				
+			
+		</div>
+
+		<div class="markdown-text-box J-markdown-box">
+			<div class="box-title J-mainTitle">
+				<h1>解绑登录方式</h1>
+				<p class="time">最近更新时间：2019-10-29 12:11:04</p>
+				
+					<div class="box-operate-top">
+						
+							<a class="edit-git-btn" href="javascript:;" hotrep="document.article.edit" target="_blank">
+								<i class="edit-git-icon"></i>
+								<span class="text">编辑</span>
+							</a>
+						
+						
+							<a class="pdf-download-btn J-download-pdf" href="javascript:;" target="_blank" hotrep="document.article.pdf">
+								<i class="pdf-download-icon"></i>
+								<span class="text">查看pdf</span>
+							</a>
+						
+					</div>
+				
+			</div>
+			
+			
+			
+
+			
+			
+
+			
+			
+
+			
+
+			
+			
+
+			
+			<div id="docArticleContent" class="doc-article-content">
+				<p>腾讯云账号支持绑定或者解绑微信、QQ、邮箱和微信公众号四种登录方式，下面以解绑微信登录方式为示例。</p>
+
+						<blockquote class="d-mod-notice">
+							<div class="d-mod-title d-notice-title">
+								<i class="d-icon-notice"></i>注意：
+							</div>
+               <p>注册方式不能解绑，但如果账号因所有权变更、员工离职等因素，需要解绑注册方式，请您 <a href="javascript:;">提交工单</a> 进行处理。</p>
+
+						</blockquote>
+						<ol>
+<li>登录腾讯云控制台，进入 <a href="developer1.html">账号信息</a> 页面，单击【解绑】。<br><img src="static/picture/a50637eabec74a4ef0dc3b2ec9cb7f5e.jpg" alt=""></li>
+<li>在弹出的身份验证弹窗中，完成验证身份，如果当前的身份验证方式不可用，您可单击【使用备选校验方式】进行验证。</li>
+<li>解绑成功后，您可以选择在当前页面继续绑定或者解绑相关登录方式。</li>
+</ol>
+
+				
+			</div>
+
+			
+			
+
+			
+			<script type="text/template" id="codeTemplate" data-type="code">
+				<div class="markdown-code J-markdownCode">
+					<div class="markdown-code-hd">
+						<ul class="markdown-code-tab J-language">
+						<!--展示语言列表-->
+						</ul>
+					</div>
+					<div class="markdown-code-bd J-codeBox">
+						<ul class="code-toolbars">
+							<li>
+								<a href="javascript: void 0;" data-bypass-xhr="1" class="J-copyContent code-toolbars-item"><i class="icon copy"></i></a>
+								<div class="code-dropdown code-dropdown-align-center J-copy-tips">
+									<div class="code-dropdown-inner">
+										<div class="code-dropdown-text">复制</div>
+									</div>
+								</div>
+								<div class="code-dropdown code-dropdown-align-center J-copy-success">
+									<div class="code-dropdown-inner">
+										<div class="code-dropdown-text">复制成功</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!--展示语言代码列表-->
+					</div>
+				</div>
+			</script>
+
+			<script>!function(t){function e(r){if(n[r])return n[r].exports;var i=n[r]={exports:{},id:r,loaded:!1};return t[r].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}var n={};return e.m=t,e.c=n,e.p="//imgcache.qq.com/qcloud/main/scripts/",e(0)}([function(t,e){"use strict";function n(t){var e=document.querySelector("#docArticleContent"),n=e.querySelectorAll('script[type="text/plugin"][action="start"]'),i=e.querySelectorAll('script[type="text/plugin"][action="end"]');if(n.length===i.length)for(var o=0;o<n.length;o++)r(n[o],t)}function r(t,e){for(var n=t;n=n.nextSibling;)if(1==n.nodeType){if("end"===n.getAttribute("action")&&"text/plugin"===n.getAttribute("type"))break;n.style.display=e||"none"}}n()}]);</script>
+
+			<script>
+				void function () {
+					var wrapper = document.querySelector('#docArticleContent');
+					var externalLinks = wrapper.querySelectorAll('a[href]');
+
+					for (var i = 0, l = externalLinks.length; i < l; i += 1) {
+						var link = externalLinks[i];
+						var href = link.getAttribute('href');
+
+						if (href.indexOf('#') != 0) {
+							link.setAttribute('target', '_blank');
+						}
+					}
+
+					this.G_DOC_INFO = {"routebase":"/document","cat_id":"378","id":"14609","module":"product"};
+				}.call(this);
+			</script>
+		</div>
+
+		
+		
+		<div class="doc-pages J-docDetailPagination">
+			
+			<a href="javascript:;" class="prev J-docDetailPaginationPage" hotrep="document.detail.previous" title="上一篇: 绑定登录方式">上一篇: 绑定登录方式</a>
+			
+			
+			<a href="javascript:;" class="next J-docDetailPaginationPage" hotrep="document.detail.next" title="下一篇: 企业微信扫码登录指引">下一篇: 企业微信扫码登录指引</a>
+			
+		</div>
+		
+
+		
+		
+		<div id="document-feedback-container"></div>
+		
+
+		
+		<div class="correlation-doc-box">
+	<h3>账号相关 相关文档</h3>
+	<ul>
+		
+		<li><a href="javascript:;" title="实名认证基本介绍">实名认证基本介绍</a></li>
+		
+		<li><a href="javascript:;" title="企业实名认证指引">企业实名认证指引</a></li>
+		
+		<li><a href="javascript:;" title="简介">简介</a></li>
+		
+		<li><a href="javascript:;" title="公共请求参数">公共请求参数</a></li>
+		
+		<li><a href="javascript:;" title="接口请求参数">接口请求参数</a></li>
+		
+		<li><a href="javascript:;" title="创建项目">创建项目</a></li>
+		
+		<li><a href="javascript:;" title="签名方法">签名方法</a></li>
+		
+		<li><a href="javascript:;" title="查询项目列表">查询项目列表</a></li>
+		
+		<li><a href="javascript:;" title="正确返回结果">正确返回结果</a></li>
+		
+	</ul>
+</div>
+		
+	</div>
+</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="doc-aside J-docDetailSide">
+
+	<h2 class="doc-aside-tit J-docDetailSideTit">
+		<a href="product1.html" data-bypass-xhr="">
+		文档中心
+		</a>
+		
+		<a href="javascript:;" class="doc-aside-menu-icon J-productNavPopTrigger"></a>
+		
+	</h2>
+
+	
+	<div class="doc-aside-des">
+		
+		<a id="docAsideProductTitle" data-title="账号相关" href="javascript:;">账号相关</a>
+		
+		
+		<div class="doc-aside-search J-docSidebarSearch">
+			<input type="text" hotrep="doc.sidebar.pc.searchbar" class="doc-aside-search-input c-input-text J-docSidebarSearchInput" placeholder="搜索本产品内容">
+			<i class="doc-aside-search-icon J-docSidebarSearchBtn"></i>
+			<ul style="display: none" class="doc-aside-dropdown-menu J-docSidebarSearchList" role="menu">
+			</ul>
+		</div>
+		
+	</div>
+
+	<div class="doc-aside-wrap J-sideScrollArea">
+		<div class="doc-aside-nav side-navigation">
+			<div class="modal-bg J-modal" style="display: block;"></div>
+			<div class="side-nav-inner">
+				<div class="side-nav-inner-box J-sideNavInnerBoxPc">
+					
+
+
+
+
+
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="注册腾讯云" data-node="17985">
+		注册腾讯云
+		
+		
+		</a>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="实名认证" data-node="3592">
+		实名认证
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="实名认证基本介绍" data-node="3629">
+		实名认证基本介绍
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="个人实名认证指引" data-node="10495">
+		个人实名认证指引
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="企业实名认证指引" data-node="10496">
+		企业实名认证指引
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="实名认证变更指引" data-node="34075">
+		实名认证变更指引
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer down  " title="账号信息" data-node="11244">
+		账号信息
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="账号基本信息" data-node="11245">
+		账号基本信息
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="绑定登录方式" data-node="14608">
+		绑定登录方式
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="list-focus">
+		<a href="" class="side-nav-title-2 J-navLayer  list-focus " title="解绑登录方式" data-node="14609">
+		解绑登录方式
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="企业微信扫码登录指引" data-node="38405">
+		企业微信扫码登录指引
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="账号安全" data-node="8397">
+		账号安全
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="登录保护" data-node="8392">
+		登录保护
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="操作保护" data-node="10740">
+		操作保护
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="MFA 设备" data-node="37310">
+		MFA 设备
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="修改账号密码" data-node="14623">
+		修改账号密码
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="账号注销" data-node="30253">
+		账号注销
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="项目管理" data-node="10861">
+		项目管理
+		
+		
+		</a>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="API 文档" data-node="7237">
+		API 文档
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="简介" data-node="4367">
+		简介
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="API 概览" data-node="4368">
+		API 概览
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="调用方式" data-node="4375">
+		调用方式
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-3">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="请求结构" data-node="4376">
+		请求结构
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-4">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="请求结构简介" data-node="4379">
+		请求结构简介
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="公共请求参数" data-node="4380">
+		公共请求参数
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="接口请求参数" data-node="4381">
+		接口请求参数
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="最终请求形式" data-node="4382">
+		最终请求形式
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="返回结果" data-node="4377">
+		返回结果
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-4">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="正确返回结果" data-node="4384">
+		正确返回结果
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-4 J-navLayer   " title="错误返回结果" data-node="4385">
+		错误返回结果
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="签名方法" data-node="4378">
+		签名方法
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="用户账户相关接口" data-node="4389">
+		用户账户相关接口
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-3">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="创建项目" data-node="4398">
+		创建项目
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="查询项目列表" data-node="4400">
+		查询项目列表
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="修改项目" data-node="13620">
+		修改项目
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="停用项目" data-node="13621">
+		停用项目
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-3 J-navLayer   product-detail" title="启用项目" data-node="13622">
+		启用项目
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="错误码" data-node="4386">
+		错误码
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="常见问题" data-node="12035">
+		常见问题
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="通用类常见问题" data-node="17358">
+		通用类常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="实名认证常见问题" data-node="12037">
+		实名认证常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="个人认证常见问题" data-node="17354">
+		个人认证常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="企业认证常见问题" data-node="17355">
+		企业认证常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="账号资源迁移常见问题" data-node="17356">
+		账号资源迁移常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="邮箱手机号常见问题" data-node="17357">
+		邮箱手机号常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="MFA 常见问题" data-node="12036">
+		MFA 常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="项目管理常见问题" data-node="10864">
+		项目管理常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="账号关联常见问题" data-node="14610">
+		账号关联常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="账号注销常见问题" data-node="30252">
+		账号注销常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="QQ 帐号登录异常常见问题" data-node="33139">
+		QQ 帐号登录异常常见问题
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="服务协议" data-node="39915">
+		服务协议
+		
+		<i class="nav-drop-down-icon"></i>
+		</a>
+		
+			<ul class="nav-inner-list-2">
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="实名认证主体变更协议" data-node="39916">
+		实名认证主体变更协议
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="接受实名认证主体变更协议" data-node="39917">
+		接受实名认证主体变更协议
+		
+		
+		</a>
+		
+	</li>
+
+				
+					
+	
+	
+	
+	
+	<li class="">
+		<a href="javascript:;" class="side-nav-title-2 J-navLayer   " title="腾讯云账号注销协议" data-node="39918">
+		腾讯云账号注销协议
+		
+		
+		</a>
+		
+	</li>
+
+				
+			</ul>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="联系我们" data-node="39113">
+		联系我们
+		
+		
+		</a>
+		
+	
+
+</div>
+
+<div class="side-nav-inner-list J-navTopItem">
+
+	
+	
+	
+	
+	
+		<a href="javascript:;" class="side-nav-title-1 J-navLayer   " title="词汇表" data-node="18523">
+		词汇表
+		
+		
+		</a>
+		
+	
+
+</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		
+			<div class="doc-aside-links J-sideRelativeLink">
+	<div class="c-aside-links">
+		<div class="aside-links-tit">相关链接</div>
+		<div class="aside-links-item">
+			<a href="free.html" target="_blank" hotrep="document.sidebar.relation.free">
+			<span>免费套餐</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a href="guide.html" target="_blank" hotrep="document.sidebar.relation.guide">
+			<span>入门中心</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a href="javascript:;" target="_blank" hotrep="document.sidebar.relation.faq">
+			<span>常见问题中心</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a href="developer.html" target="_blank" hotrep="document.sidebar.relation.developer">
+			<span>云+社区</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a href="javascript:;" target="_blank" hotrep="document.sidebar.relation.txyxy">
+			<span>在线学习中心</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a class="doc-aside-qcr-wrap" href="javascript:;" hotrep="document.sidebar.relation.sjglyzy">
+				<span>手机管理云资源</span>
+				<i class="doc-aside-qcr"></i>
+				<div class="c-bubble  c-bubble-bottom">
+					<div class="c-bubble-inner">
+						<div class="doc-aside-qcr-img"></div>
+						<p>微信扫一扫</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="aside-links-item">
+			<a href="connect.html" target="_blank" hotrep="document.sidebar.relation.connect">
+			<span>联系我们</span>
+			<i class="c-icon-links"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+		
+	</div>
+</div>
+
+
+<div class="side-nav-down-box J-productNavBox" style="top: 93px; display: none;">
+	<div class="side-nav-down-box-scroll-inner">
+		
+		<div class="p-all-bar">
+			<div class="p-all-search J-doc-popnav-search">
+				<input type="text" class="c-search-input J-doc-popnav-search-input">
+				<button class="c-search-btn">查询</button>
+				<ul class="p-all-search-list c-scrollbar J-doc-popnav-search-list" style="display: none;"></ul>
+			</div>
+			
+			<div class="nav-all-event">
+				<div class="nav-all-event-con">
+					<ul class="nav-all-event-list">
+						
+						<li class="nav-all-event-item">
+							<a href="javascript:;" hotrep="doc.sidebar.popnav.suggest.faq.domain-register">
+								网站注册
+							</a>
+						</li>
+						
+						<li class="nav-all-event-item">
+							<a href="javascript:;" hotrep="doc.sidebar.popnav.suggest.faq.beian">
+								备案
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<ul class="qc-grids">
+	
+	<li class="qc-unit-1-4 qc-unit-md-1-2">
+		
+		<dl class="nav-down-menu">
+			<dt>计算</dt>
+			
+			<dd>
+				<a title="云服务器" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cvm" data-parent-title="计算">
+				云服务器
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="GPU 云服务器" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.gpu" data-parent-title="计算">
+				GPU 云服务器
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="FPGA 云服务器" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.fpga" data-parent-title="计算">
+				FPGA 云服务器
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="专用宿主机" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cdh" data-parent-title="计算">
+				专用宿主机
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="黑石物理服务器1.0" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cpm" data-parent-title="计算">
+				黑石物理服务器1.0
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="容器服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tke" data-parent-title="计算">
+				容器服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="容器实例服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cis" data-parent-title="计算">
+				容器实例服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="弹性伸缩" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.as" data-parent-title="计算">
+				弹性伸缩
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="批量计算" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.Batch" data-parent-title="计算">
+				批量计算
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="边缘计算机器" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ecm" data-parent-title="计算">
+				边缘计算机器
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>存储</dt>
+			
+			<dd>
+				<a title="对象存储" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cos" data-parent-title="存储">
+				对象存储
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="文件存储" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cfs" data-parent-title="存储">
+				文件存储
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="归档存储" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cas" data-parent-title="存储">
+				归档存储
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云 HDFS" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.chdfs" data-parent-title="存储">
+				云 HDFS
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="存储网关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.csg" data-parent-title="存储">
+				存储网关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云硬盘" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cbs" data-parent-title="存储">
+				云硬盘
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据迁移" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cdm" data-parent-title="存储">
+				云数据迁移
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="日志服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cls" data-parent-title="存储">
+				日志服务
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>数据库</dt>
+			
+			<dd>
+				<a title="云数据库 MySQL" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cdb" data-parent-title="数据库">
+				云数据库 MySQL
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 CynosDB" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.CynosDB" data-parent-title="数据库">
+				云数据库 CynosDB
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 MariaDB" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tdsql" data-parent-title="数据库">
+				云数据库 MariaDB
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 SQL Server" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sqlserver" data-parent-title="数据库">
+				云数据库 SQL Server
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 PostgreSQL" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.PostgreSQL" data-parent-title="数据库">
+				云数据库 PostgreSQL
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="分布式数据库 TDSQL" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dcdb" data-parent-title="数据库">
+				分布式数据库 TDSQL
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据库一体机 TData" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.TData" data-parent-title="数据库">
+				数据库一体机 TData
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 Redis" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.crs" data-parent-title="数据库">
+				云数据库 Redis
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 MongoDB" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cmongo" data-parent-title="数据库">
+				云数据库 MongoDB
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据库 Memcached" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.memcached" data-parent-title="数据库">
+				云数据库 Memcached
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="时序数据库 CTSDB" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ctsdb" data-parent-title="数据库">
+				时序数据库 CTSDB
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="游戏数据库 TcaplusDB" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.TcaplusDB" data-parent-title="数据库">
+				游戏数据库 TcaplusDB
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据库智能管家 DBbrain" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dbbrain" data-parent-title="数据库">
+				数据库智能管家 DBbrain
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据传输服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dts" data-parent-title="数据库">
+				数据传输服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据库专家服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.des" data-parent-title="数据库">
+				数据库专家服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="分布式HTAP数据库 TBase" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbase" data-parent-title="数据库">
+				分布式HTAP数据库 TBase
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据库审计" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sjksj" data-parent-title="数据库">
+				数据库审计
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>CDN 与加速</dt>
+			
+			<dd>
+				<a title="内容分发网络" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cdn" data-parent-title="CDN 与加速">
+				内容分发网络
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="海外加速" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.gcd" data-parent-title="CDN 与加速">
+				海外加速
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="全站加速网络" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ecdn" data-parent-title="CDN 与加速">
+				全站加速网络
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="全球应用加速" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.gaap" data-parent-title="CDN 与加速">
+				全球应用加速
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>Serverless</dt>
+			
+			<dd>
+				<a title="云函数" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.scf" data-parent-title="Serverless">
+				云函数
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="Serverless Framework" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sf" data-parent-title="Serverless">
+				Serverless Framework
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>移动开发</dt>
+			
+			<dd>
+				<a title="云开发" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tcb" data-parent-title="移动开发">
+				云开发
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>中间件</dt>
+			
+			<dd>
+				<a title="消息队列 CMQ" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cmq" data-parent-title="中间件">
+				消息队列 CMQ
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="消息队列 CKafka" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.CKafka" data-parent-title="中间件">
+				消息队列 CKafka
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="API 网关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.apigateway" data-parent-title="中间件">
+				API 网关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯微服务平台 TSF" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tsf" data-parent-title="中间件">
+				腾讯微服务平台 TSF
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯 Kona" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tkjdk" data-parent-title="中间件">
+				腾讯 Kona
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>数据处理</dt>
+			
+			<dd>
+				<a title="数据万象" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ci" data-parent-title="数据处理">
+				数据万象
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="双螺旋" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dh" data-parent-title="数据处理">
+				双螺旋
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>量子技术</dt>
+			
+			<dd>
+				<a title="抗量子签名服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.pqss" data-parent-title="量子技术">
+				抗量子签名服务
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>区块链</dt>
+			
+			<dd>
+				<a title="TBaaS" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbaas" data-parent-title="区块链">
+				TBaaS
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="动产质押区块链登记系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbpr" data-parent-title="区块链">
+				动产质押区块链登记系统
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>物联网</dt>
+			
+			<dd>
+				<a title="物联网通信" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.lothub" data-parent-title="物联网">
+				物联网通信
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联网设备身份认证" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.iottid" data-parent-title="物联网">
+				物联网设备身份认证
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联卡" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.lotlink" data-parent-title="物联网">
+				物联卡
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="LPWA 物联网络" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.lpwa" data-parent-title="物联网">
+				LPWA 物联网络
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联网开发平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.iot" data-parent-title="物联网">
+				物联网开发平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯物联网终端操作系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tos-tiny" data-parent-title="物联网">
+				腾讯物联网终端操作系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联网边缘智能数据处理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.iot-eidp" data-parent-title="物联网">
+				物联网边缘智能数据处理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联网边缘计算平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.iecp" data-parent-title="物联网">
+				物联网边缘计算平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="物联网智能视频服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.iot-video" data-parent-title="物联网">
+				物联网智能视频服务
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>企业应用</dt>
+			
+			<dd>
+				<a title="智慧会务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tcc" data-parent-title="企业应用">
+				智慧会务
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>办公协同</dt>
+			
+			<dd>
+				<a title="云投屏" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tcd" data-parent-title="办公协同">
+				云投屏
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯会议" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tm" data-parent-title="办公协同">
+				腾讯会议
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯文档企业版" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tde" data-parent-title="办公协同">
+				腾讯文档企业版
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="TAPD 敏捷项目管理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tapd" data-parent-title="办公协同">
+				TAPD 敏捷项目管理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯HR助手" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.hrm" data-parent-title="办公协同">
+				腾讯HR助手
+				</a>
+			</dd>
+			
+		</dl>
+		
+	</li>
+	
+	<li class="qc-unit-1-4 qc-unit-md-1-2">
+		
+		<dl class="nav-down-menu">
+			<dt>网络</dt>
+			
+			<dd>
+				<a title="负载均衡" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.clb" data-parent-title="网络">
+				负载均衡
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="私有网络" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.vpc" data-parent-title="网络">
+				私有网络
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="专线接入" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dc" data-parent-title="网络">
+				专线接入
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云联网" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ccn" data-parent-title="网络">
+				云联网
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="弹性网卡" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.eni" data-parent-title="网络">
+				弹性网卡
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="NAT 网关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.nat" data-parent-title="网络">
+				NAT 网关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="对等连接" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.pc" data-parent-title="网络">
+				对等连接
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="VPN 连接" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.vpn" data-parent-title="网络">
+				VPN 连接
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="网络流日志" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.fl" data-parent-title="网络">
+				网络流日志
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="Anycast 公网加速" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.aia" data-parent-title="网络">
+				Anycast 公网加速
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="共享带宽包" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.bwp" data-parent-title="网络">
+				共享带宽包
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="弹性公网 IPv6" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.eipv6" data-parent-title="网络">
+				弹性公网 IPv6
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>视频服务</dt>
+			
+			<dd>
+				<a title="实时音视频" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.h5" data-parent-title="视频服务">
+				实时音视频
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云直播" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.lvb" data-parent-title="视频服务">
+				云直播
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云点播" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.vod" data-parent-title="视频服务">
+				云点播
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="视频处理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mps" data-parent-title="视频服务">
+				视频处理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="移动直播 SDK" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mlvb" data-parent-title="视频服务">
+				移动直播 SDK
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="短视频 SDK" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ugsv" data-parent-title="视频服务">
+				短视频 SDK
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="播放器 SDK" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.player" data-parent-title="视频服务">
+				播放器 SDK
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="美颜特效 SDK" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.x-magic" data-parent-title="视频服务">
+				美颜特效 SDK
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="短视频结构化分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.svsa" data-parent-title="视频服务">
+				短视频结构化分析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯云剪" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cme" data-parent-title="视频服务">
+				腾讯云剪
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>网络安全</dt>
+			
+			<dd>
+				<a title="DDoS 基础防护" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ddos-basic" data-parent-title="网络安全">
+				DDoS 基础防护
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="DDoS 高防包" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ddos-bgp" data-parent-title="网络安全">
+				DDoS 高防包
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="DDoS 高防 IP" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ddos-bgpip" data-parent-title="网络安全">
+				DDoS 高防 IP
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="DDoS 高防 IP 专业版" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ddos-bgpippro" data-parent-title="网络安全">
+				DDoS 高防 IP 专业版
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云防火墙" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cfw" data-parent-title="网络安全">
+				云防火墙
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="网络入侵防护系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.PSG" data-parent-title="网络安全">
+				网络入侵防护系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="样本智能分析平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.habo" data-parent-title="网络安全">
+				样本智能分析平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="高级威胁检测系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.yje" data-parent-title="网络安全">
+				高级威胁检测系统
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>终端安全</dt>
+			
+			<dd>
+				<a title="主机安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.hs" data-parent-title="终端安全">
+				主机安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="反病毒引擎" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tav" data-parent-title="终端安全">
+				反病毒引擎
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="终端安全管理系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tepm" data-parent-title="终端安全">
+				终端安全管理系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="零信任无边界访问控制系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ZTAC" data-parent-title="终端安全">
+				零信任无边界访问控制系统
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>数据安全</dt>
+			
+			<dd>
+				<a title="堡垒机" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cds-dasb" data-parent-title="数据安全">
+				堡垒机
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据安全审计" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.DSAudit" data-parent-title="数据安全">
+				数据安全审计
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="敏感数据处理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dmask" data-parent-title="数据安全">
+				敏感数据处理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据安全治理中心" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.dsgc" data-parent-title="数据安全">
+				数据安全治理中心
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云加密机" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cloudhsm" data-parent-title="数据安全">
+				云加密机
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="密钥管理系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.kms" data-parent-title="数据安全">
+				密钥管理系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="凭据管理系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ssm" data-parent-title="数据安全">
+				凭据管理系统
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>业务安全</dt>
+			
+			<dd>
+				<a title="借贷反欺诈" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.af" data-parent-title="业务安全">
+				借贷反欺诈
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="保险反欺诈" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.baoxain" data-parent-title="业务安全">
+				保险反欺诈
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="定制建模" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cmodel" data-parent-title="业务安全">
+				定制建模
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="风控平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.rcp" data-parent-title="业务安全">
+				风控平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="验证码" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.captcha" data-parent-title="业务安全">
+				验证码
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="天御业务安全防护" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tianyu" data-parent-title="业务安全">
+				天御业务安全防护
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="营销风控" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mrm" data-parent-title="业务安全">
+				营销风控
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="图片内容安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ims" data-parent-title="业务安全">
+				图片内容安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="文本内容安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tms" data-parent-title="业务安全">
+				文本内容安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="营销号码安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.smpn" data-parent-title="业务安全">
+				营销号码安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="业务风险情报" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.bri" data-parent-title="业务安全">
+				业务风险情报
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>安全服务</dt>
+			
+			<dd>
+				<a title="专家服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.es" data-parent-title="安全服务">
+				专家服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="高级威胁追溯系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.antu" data-parent-title="安全服务">
+				高级威胁追溯系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="威胁情报云查服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tics" data-parent-title="安全服务">
+				威胁情报云查服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="网络资产风险监测系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.narms" data-parent-title="安全服务">
+				网络资产风险监测系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="公共互联网威胁量化评估" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.anmai" data-parent-title="安全服务">
+				公共互联网威胁量化评估
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>安全管理</dt>
+			
+			<dd>
+				<a title="安全运营中心" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ssa" data-parent-title="安全管理">
+				安全运营中心
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="安全运营中心（私有云）" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.yjn" data-parent-title="安全管理">
+				安全运营中心（私有云）
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>应用安全</dt>
+			
+			<dd>
+				<a title="Web 应用防火墙" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.waf" data-parent-title="应用安全">
+				Web 应用防火墙
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="应用级智能网关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.SAG" data-parent-title="应用安全">
+				应用级智能网关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="漏洞扫描服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cws" data-parent-title="应用安全">
+				漏洞扫描服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="移动应用安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ms" data-parent-title="应用安全">
+				移动应用安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="手游安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mtp" data-parent-title="应用安全">
+				手游安全
+				</a>
+			</dd>
+			
+		</dl>
+		
+	</li>
+	
+	<li class="qc-unit-1-4 qc-unit-md-1-2">
+		
+		<dl class="nav-down-menu">
+			<dt>人脸识别</dt>
+			
+			<dd>
+				<a title="人脸识别" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.FaceRecognition" data-parent-title="人脸识别">
+				人脸识别
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="人脸融合" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.facefusion" data-parent-title="人脸识别">
+				人脸融合
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="人脸核身" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.faceid" data-parent-title="人脸识别">
+				人脸核身
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="人脸支付" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.frp" data-parent-title="人脸识别">
+				人脸支付
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>人体识别</dt>
+			
+			<dd>
+				<a title="手势识别" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.gr" data-parent-title="人体识别">
+				手势识别
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>文字识别</dt>
+			
+			<dd>
+				<a title="文字识别" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ocr" data-parent-title="文字识别">
+				文字识别
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>图像识别</dt>
+			
+			<dd>
+				<a title="图像分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tiia" data-parent-title="图像识别">
+				图像分析
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>语音技术</dt>
+			
+			<dd>
+				<a title="语音合成" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.语音合成简介" data-parent-title="语音技术">
+				语音合成
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="语音识别" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.asr" data-parent-title="语音技术">
+				语音识别
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>AI 平台服务</dt>
+			
+			<dd>
+				<a title="智能钛机器学习平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ti" data-parent-title="AI 平台服务">
+				智能钛机器学习平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="智能钛工业 AI 平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ti-insight" data-parent-title="AI 平台服务">
+				智能钛工业 AI 平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="智能钛弹性模型服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ti-ems" data-parent-title="AI 平台服务">
+				智能钛弹性模型服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="人工智能服务平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.timatrix" data-parent-title="AI 平台服务">
+				人工智能服务平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯智能对话平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbp" data-parent-title="AI 平台服务">
+				腾讯智能对话平台
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>自然语言处理</dt>
+			
+			<dd>
+				<a title="自然语言处理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.nlp" data-parent-title="自然语言处理">
+				自然语言处理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="机器翻译" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tmt" data-parent-title="自然语言处理">
+				机器翻译
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯知识图谱" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.skg" data-parent-title="自然语言处理">
+				腾讯知识图谱
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>智能机器人</dt>
+			
+			<dd>
+				<a title="腾讯云小微" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.xiaowei" data-parent-title="智能机器人">
+				腾讯云小微
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="智能硬件 AI 语音助手" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ihava" data-parent-title="智能机器人">
+				智能硬件 AI 语音助手
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>云智大数据平台</dt>
+			
+			<dd>
+				<a title="大数据处理套件" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbds" data-parent-title="云智大数据平台">
+				大数据处理套件
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="弹性 MapReduce" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.emr" data-parent-title="云智大数据平台">
+				弹性 MapReduce
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云数据仓库套件 Sparkling" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sparkling" data-parent-title="云智大数据平台">
+				云数据仓库套件 Sparkling
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="Elasticsearch Service" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ES" data-parent-title="云智大数据平台">
+				Elasticsearch Service
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="Snova 数据仓库" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.Snova" data-parent-title="云智大数据平台">
+				Snova 数据仓库
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="流计算 Oceanus" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.scs" data-parent-title="云智大数据平台">
+				流计算 Oceanus
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>云智大数据可视化</dt>
+			
+			<dd>
+				<a title="商业智能分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.bi" data-parent-title="云智大数据可视化">
+				商业智能分析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯云图" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cdv" data-parent-title="云智大数据可视化">
+				腾讯云图
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>云智大数据应用</dt>
+			
+			<dd>
+				<a title="智能推荐" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ir" data-parent-title="云智大数据应用">
+				智能推荐
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="智能选址" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ss" data-parent-title="云智大数据应用">
+				智能选址
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯云搜" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tcs" data-parent-title="云智大数据应用">
+				腾讯云搜
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯文智公众趋势分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.POA" data-parent-title="云智大数据应用">
+				腾讯文智公众趋势分析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="企业画像" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ep" data-parent-title="云智大数据应用">
+				企业画像
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯增长平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tgp" data-parent-title="云智大数据应用">
+				腾讯增长平台
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>云资源管理</dt>
+			
+			<dd>
+				<a title="腾讯云助手" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.txy" data-parent-title="云资源管理">
+				腾讯云助手
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="API 文档" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.api" data-parent-title="云资源管理">
+				API 文档
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="SDK 文档" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sdk" data-parent-title="云资源管理">
+				SDK 文档
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="命令行工具" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cli" data-parent-title="云资源管理">
+				命令行工具
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="标签" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.bq" data-parent-title="云资源管理">
+				标签
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>管理与审计</dt>
+			
+			<dd>
+				<a title="访问管理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cam" data-parent-title="管理与审计">
+				访问管理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云审计" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ca" data-parent-title="管理与审计">
+				云审计
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="账号威胁发现" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.atd" data-parent-title="管理与审计">
+				账号威胁发现
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="企业组织" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.qyzz" data-parent-title="管理与审计">
+				企业组织
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="商业流程服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.bpaas" data-parent-title="管理与审计">
+				商业流程服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="身份管理服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.idaas" data-parent-title="管理与审计">
+				身份管理服务
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>监控与运维</dt>
+			
+			<dd>
+				<a title="云监控" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cm" data-parent-title="监控与运维">
+				云监控
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="自定义监控" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ccm" data-parent-title="监控与运维">
+				自定义监控
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云拨测" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cat" data-parent-title="监控与运维">
+				云拨测
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="迁移服务平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.qianyi" data-parent-title="监控与运维">
+				迁移服务平台
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>开发者工具</dt>
+			
+			<dd>
+				<a title="代码托管" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-cr" data-parent-title="开发者工具">
+				代码托管
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="项目管理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-pm" data-parent-title="开发者工具">
+				项目管理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="测试管理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-tm" data-parent-title="开发者工具">
+				测试管理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="持续集成" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-ci" data-parent-title="开发者工具">
+				持续集成
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="制品库" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-ar" data-parent-title="开发者工具">
+				制品库
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="持续部署" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.coding-cd" data-parent-title="开发者工具">
+				持续部署
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="压测大师" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.lm" data-parent-title="开发者工具">
+				压测大师
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="标准兼容测试" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mgct" data-parent-title="开发者工具">
+				标准兼容测试
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="专家兼容测试" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ect" data-parent-title="开发者工具">
+				专家兼容测试
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="远程调试" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.rd" data-parent-title="开发者工具">
+				远程调试
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="手游安全测试" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sr" data-parent-title="开发者工具">
+				手游安全测试
+				</a>
+			</dd>
+			
+		</dl>
+		
+	</li>
+	
+	<li class="qc-unit-1-4 qc-unit-md-1-2">
+		
+		<dl class="nav-down-menu">
+			<dt>域名与网站</dt>
+			
+			<dd>
+				<a title="域名注册" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.domains" data-parent-title="域名与网站">
+				域名注册
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云解析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cns" data-parent-title="域名与网站">
+				云解析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="网站备案" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ba" data-parent-title="域名与网站">
+				网站备案
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="SSL 证书" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ssl" data-parent-title="域名与网站">
+				SSL 证书
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="证书监控 SSLPod" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sslpod" data-parent-title="域名与网站">
+				证书监控 SSLPod
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="移动解析 HttpDNS" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.HttpDNS" data-parent-title="域名与网站">
+				移动解析 HttpDNS
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>云通信</dt>
+			
+			<dd>
+				<a title="即时通信 IM" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.im" data-parent-title="云通信">
+				即时通信 IM
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="短信" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sms" data-parent-title="云通信">
+				短信
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="语音消息" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.vms" data-parent-title="云通信">
+				语音消息
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="号码保护" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.npp" data-parent-title="云通信">
+				号码保护
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>企业通信</dt>
+			
+			<dd>
+				<a title="云呼叫中心" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ccc" data-parent-title="企业通信">
+				云呼叫中心
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>金融服务</dt>
+			
+			<dd>
+				<a title="金融联络机器人" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cr" data-parent-title="金融服务">
+				金融联络机器人
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯计费" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.midas" data-parent-title="金融服务">
+				腾讯计费
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="企业收付平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.cpdp" data-parent-title="金融服务">
+				企业收付平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="金融资源聚合平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.solar" data-parent-title="金融服务">
+				金融资源聚合平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="移动金融开发平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tmf" data-parent-title="金融服务">
+				移动金融开发平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="云缴费平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.clifepay " data-parent-title="金融服务">
+				云缴费平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="金融专有云开发测试平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.fpcrdtp" data-parent-title="金融服务">
+				金融专有云开发测试平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="供应链金融" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tscf" data-parent-title="金融服务">
+				供应链金融
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>游戏服务</dt>
+			
+			<dd>
+				<a title="小游戏联机对战引擎" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mgobe" data-parent-title="游戏服务">
+				小游戏联机对战引擎
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="游戏多媒体引擎" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.gme" data-parent-title="游戏服务">
+				游戏多媒体引擎
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="智营网优" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ino" data-parent-title="游戏服务">
+				智营网优
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>教育服务</dt>
+			
+			<dd>
+				<a title="智聆口语评测" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.soe" data-parent-title="教育服务">
+				智聆口语评测
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数学作业批改" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.hcm" data-parent-title="教育服务">
+				数学作业批改
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="英文作文批改" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ecc" data-parent-title="教育服务">
+				英文作文批改
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="一站式教学练平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tlab" data-parent-title="教育服务">
+				一站式教学练平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="题目结构化归档" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.psa" data-parent-title="教育服务">
+				题目结构化归档
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="互动白板" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tiw" data-parent-title="教育服务">
+				互动白板
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>零售服务</dt>
+			
+			<dd>
+				<a title="腾讯优客" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tli" data-parent-title="零售服务">
+				腾讯优客
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>移动服务</dt>
+			
+			<dd>
+				<a title="腾讯移动分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.mta" data-parent-title="移动服务">
+				腾讯移动分析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯移动推送" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tpns" data-parent-title="移动服务">
+				腾讯移动推送
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯客户端性能分析" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.qapm" data-parent-title="移动服务">
+				腾讯客户端性能分析
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="企鹅竞速" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.pr" data-parent-title="移动服务">
+				企鹅竞速
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="正版曲库直通车" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ame" data-parent-title="移动服务">
+				正版曲库直通车
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>建筑服务</dt>
+			
+			<dd>
+				<a title="腾讯智慧建筑管理平台" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.weiling" data-parent-title="建筑服务">
+				腾讯智慧建筑管理平台
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯智慧建筑运营系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.weilingview" data-parent-title="建筑服务">
+				腾讯智慧建筑运营系统
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯智慧建筑 AI 能效" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.weilingenergy" data-parent-title="建筑服务">
+				腾讯智慧建筑 AI 能效
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯一码通" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.ymt" data-parent-title="建筑服务">
+				腾讯一码通
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>政务服务</dt>
+			
+			<dd>
+				<a title="智慧党建" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.spb" data-parent-title="政务服务">
+				智慧党建
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="腾讯数字农村" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tdc" data-parent-title="政务服务">
+				腾讯数字农村
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>汽车服务</dt>
+			
+			<dd>
+				<a title="网约车系统" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.chs" data-parent-title="汽车服务">
+				网约车系统
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>管理与支持</dt>
+			
+			<dd>
+				<a title="云市场" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.fuwushichang" data-parent-title="管理与支持">
+				云市场
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="认证信息" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.identification" data-parent-title="管理与支持">
+				认证信息
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="购买指导" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.buyguide" data-parent-title="管理与支持">
+				购买指导
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="计费相关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.billing" data-parent-title="管理与支持">
+				计费相关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="账号相关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.account" data-parent-title="管理与支持">
+				账号相关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="控制台相关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.console" data-parent-title="管理与支持">
+				控制台相关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="实验室相关" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.laboratory" data-parent-title="管理与支持">
+				实验室相关
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="政策与规范" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.policy" data-parent-title="管理与支持">
+				政策与规范
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="渠道合作伙伴" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.aqudao" data-parent-title="管理与支持">
+				渠道合作伙伴
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="联系我们" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.contactus" data-parent-title="管理与支持">
+				联系我们
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="护航服务" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.expert-support" data-parent-title="管理与支持">
+				护航服务
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="服务计划" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.sp" data-parent-title="管理与支持">
+				服务计划
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="词汇表" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.glossary" data-parent-title="管理与支持">
+				词汇表
+				</a>
+			</dd>
+			
+		</dl>
+		
+		<dl class="nav-down-menu">
+			<dt>解决方案</dt>
+			
+			<dd>
+				<a title="金融云" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.finance" data-parent-title="解决方案">
+				金融云
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="游戏" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.game" data-parent-title="解决方案">
+				游戏
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="微信云支付" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.qcloudpay" data-parent-title="解决方案">
+				微信云支付
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="视频" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.vs" data-parent-title="解决方案">
+				视频
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="电商" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.e-commerce" data-parent-title="解决方案">
+				电商
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数据迁移" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.data-migration" data-parent-title="解决方案">
+				数据迁移
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="直播安全" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.live-security" data-parent-title="解决方案">
+				直播安全
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="在线教育互动课堂" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tic" data-parent-title="解决方案">
+				在线教育互动课堂
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="品牌保护" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.phishing" data-parent-title="解决方案">
+				品牌保护
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="数字版权管理" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.drm" data-parent-title="解决方案">
+				数字版权管理
+				</a>
+			</dd>
+			
+			<dd>
+				<a title="商业直播" class="J-popnav-product-item" href="javascript:;" hotrep="document.detail.nav.product.tbl" data-parent-title="解决方案">
+				商业直播
+				</a>
+			</dd>
+			
+		</dl>
+		
+	</li>
+	
+</ul>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+<div class="qcc-footer-s footer-pc J-qc-footer" data-type="cn_zh">
+	<div class="c-footer-inner">
+		<div class="c-footer-blogroll-main">
+			<nav class="c-footer-blogroll-links copyright">
+				<span class="slide">Copyright © 2013<script>new Date().getFullYear()>2013&&document.write("-"+new Date().getFullYear());</script> Tencent Cloud. All Rights Reserved.<span>&nbsp;腾讯云&nbsp;版权所有</span></span>
+				<br>
+				<a href="javascript:;" target="_blank" hotrep="hp.footer.bottom.beian" class="slide slide-ct">京公网安备 11010802017518</a>
+				<a href="javascript:;" target="_blank" hotrep="hp.footer.bottom.miitbeian" class="slide slide-ct">京ICP备11018762号</a>
+			</nav>
+		</div>
+		<div class="c-footer-blogroll-extra">
+			<div class="c-footer-select J-qcRegionSelector">
+				<a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i>中国站</a>
+				<div class="c-footer-dropdown J-qcFooterRegionList">
+					<ul class="c-footer-dropdown-menu">
+						<li class="actived"><a class="J-qcRegionOption" data-region="cn_zh" href="javascript:;">中文</a> </li>
+						<li class=""><a class="J-qcRegionOption" data-region="intl" href="javascript:;">International</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="qcc_footer" class="footer-mobile">
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+</div>
+
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012085456, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "B1-T2p-nJL";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+
+<script src="static/js/react.16.8.6.min.js"></script>
+<script src="static/js/react-dom.16.8.6.min.js"></script>
+
+<script src="static/js/api.js"></script>
+		<script src="static/js/sticky-kit.5a7aa8afc35f165aa923-.js"></script>
+		<script src="static/js/clipboard.min.js"></script>
+		<script src="static/js/noRefresh.2cc3852f36b2bdc94bf7-3.js"></script>
+		
+    <script src="static/js/document-feedback.7c01938b50.js"></script>
+
+
+		<script src="static/js/index.ff9b3df41a6e001c2c03-31536.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>云资源管理-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="云资源管理-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(1.000000, 4.000000)" fill="#00A4FF">
+            <g id="Group-13">
+                <rect id="Rectangle-57" x="0" y="0" width="2" height="24"></rect>
+                <rect id="Rectangle-57-Copy" x="28" y="0" width="2" height="24"></rect>
+                <rect id="Rectangle-58" x="0" y="0" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy-2" x="0" y="22" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy" x="24" y="0" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy-3" x="24" y="22" width="6" height="2"></rect>
+            </g>
+            <path d="M12.998235,14.9148148 L14.9965112,14.8317961 C14.9988354,14.8877399 15,14.9438167 15,15 L13,15 C13,14.971501 12.9994103,14.9431031 12.998235,14.9148148 Z M23,15 C23,17.209139 21.209139,19 19,19 L19,17 C20.1045695,17 21,16.1045695 21,15 C21,13.8954305 20.1045695,13 19,13 C18.971501,13 18.9431031,13.0005897 18.9148148,13.001765 L17.5682035,13.0577101 L17.905039,11.7527068 C17.9678527,11.5093474 18,11.2572358 18,11 C18,9.34314575 16.6568542,8 15,8 C13.3431458,8 12,9.34314575 12,11 C12,11.2572358 12.0321473,11.5093474 12.094961,11.7527068 L12.4317965,13.0577101 L11.0851852,13.001765 C11.0568969,13.0005897 11.028499,13 11,13 C9.8954305,13 9,13.8954305 9,15 C9,16.1045695 9.8954305,17 11,17 L11,19 C8.790861,19 7,17.209139 7,15 C7,13.1356012 8.27553801,11.5691204 10.0015533,11.125618 C10.0005185,11.0838099 10,11.0419348 10,11 C10,8.23857625 12.2385763,6 15,6 C17.7614237,6 20,8.23857625 20,11 C20,11.0419348 19.9994815,11.0838099 19.9984467,11.125618 C21.724462,11.5691204 23,13.1356012 23,15 Z M17,15 L15,15 C15,14.9438167 15.0011646,14.8877399 15.0034888,14.8317961 L17.001765,14.9148148 C17.0005897,14.9431031 17,14.971501 17,15 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            <rect id="Rectangle-65" x="11" y="17" width="2" height="2"></rect>
+            <rect id="Rectangle-65-Copy" x="17" y="17" width="2" height="2"></rect>
+            <rect id="Rectangle-66" x="12" y="14" width="6" height="2"></rect>
+            <rect id="Rectangle-66-Copy" x="14" y="17" width="2" height="2"></rect>
+        </g>
+    </g>
+</svg>

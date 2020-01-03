@@ -1,0 +1,47 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="100.959" y="12.984" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect x="100.959" y="8.984" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect x="100.959" y="16.984" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect x="100.959" y="20.984" width="15" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <polygon points="114.164 13.729 110.607 17.514 109.083 18.083 109.549 16.519 113.089 12.734 114.164 13.729" style="fill: none;clip-rule: evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect x="113.751" y="11.599" width="1.466" height="1.466" transform="translate(26.086 86.119) rotate(-46)" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect x="93" y="4.002" width="2" height="24" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect x="121" y="4.002" width="2" height="24" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <rect x="93" y="4.002" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-10">
+      <rect x="93" y="26.002" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-11">
+      <rect x="117" y="4.002" width="6" height="2" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-12">
+      <rect x="117" y="26.002" width="6" height="2" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>信息流</title>
+  <polygon points="9.39 6.171 6.022 2.861 2.695 6.143 1.291 4.719 6.019 0.055 10.792 4.745 9.39 6.171" style="fill: #00a4ff"/>
+  <polygon points="26.02 31.955 21.291 27.292 22.695 25.868 26.021 29.148 29.39 25.839 30.792 27.265 26.02 31.955" style="fill: #00a4ff"/>
+  <polygon points="24.979 30 26.979 30 26.979 0.021 10 0.021 10 2.021 24.979 2.021 24.979 30" style="fill: #00a4ff"/>
+  <polygon points="22 30.021 6.979 30.021 6.979 2 4.979 2 4.979 32.021 22 32.021 22 30.021" style="fill: #00a4ff"/>
+  <rect x="10.021" y="11.021" width="12" height="2" style="fill: #00a4ff"/>
+  <rect x="10.021" y="19.021" width="12" height="2" style="fill: #00a4ff"/>
+</svg>

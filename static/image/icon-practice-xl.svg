@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>云上实践</title>
+    <desc>Created with Sketch.</desc>
+    <g id="云上实践" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1541159461412-48x48" transform="translate(1.000000, 5.000000)">
+            <rect id="Rectangle-23" stroke="#334966" stroke-width="2" x="0" y="0" width="46" height="38"></rect>
+            <path d="M14,31 C10.1340068,31 7,27.8659932 7,24 C7,20.1340068 10.1340068,17 14,17 C14.0965182,17 14.1925801,17.0019534 14.2881485,17.0058229 C15.1468327,14.1113422 17.8268511,12 21,12 C24.8659932,12 28,15.1340068 28,19 C28,19.0277177 27.9998389,19.0553978 27.9995176,19.0830394 C28.3248781,19.0284269 28.6591193,19 29,19 C32.3137085,19 35,21.6862915 35,25 C35,28.3137085 32.3137085,31 29,31 C28.6592878,31 28.3252085,30.9716012 28,30.9170416 L28,31 L14,31 Z" id="Combined-Shape-Copy" fill="#00A4FF" fill-rule="nonzero"></path>
+            <polygon id="Combined-Shape" fill="#334966" fill-rule="nonzero" points="33 11 33 7 35 7 35 11 39 11 39 13 35 13 35 17 33 17 33 13 29 13 29 11"></polygon>
+        </g>
+    </g>
+</svg>

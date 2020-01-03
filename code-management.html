@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>代码管理 &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='任务管理' href='bbe5a1aee786.html'>
+<link rel='next' title='文件管理' href='file-management.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6484'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Fcode-management">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fdoc%2Fcode-management&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6484 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="quick-start.html" title="View all posts in 快速入门">
+                        <span itemprop="name">快速入门</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="代码管理">
+                        <span itemprop="name">代码管理</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6484" class="post-6484 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-quick-start ht_kb_tag-doc" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				代码管理			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/doc/code-management" rel="bookmark" itemprop="url"><time datetime="2018-12-20" itemprop="datePublished">2018年12月20日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/chenhang" title="chenhang" rel="me" itemprop="author">chenhang</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/quick-start" rel="tag">快速入门</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 代码浏览</a><ul><li><a href="#i-2"><span class="toc_number toc_depth_2">1.1</span> 提交历史</a></li><li><a href="#i-3"><span class="toc_number toc_depth_2">1.2</span> 提交详情</a></li><li><a href="#i-4"><span class="toc_number toc_depth_2">1.3</span> 代码行级对比</a></li><li><a href="#i-5"><span class="toc_number toc_depth_2">1.4</span> 代码左右对比</a></li><li><a href="#i-6"><span class="toc_number toc_depth_2">1.5</span> 高级选项</a></li><li><a href="#i-7"><span class="toc_number toc_depth_2">1.6</span> 收起&amp;展开</a></li><li><a href="#_LineNote"><span class="toc_number toc_depth_2">1.7</span> 代码行级评论 LineNote</a></li><li><a href="#i-8"><span class="toc_number toc_depth_2">1.8</span> 代码文件新建/上传</a></li><li><a href="#i-9"><span class="toc_number toc_depth_2">1.9</span> 寻找文件</a></li><li><a href="#i-10"><span class="toc_number toc_depth_2">1.10</span> 下载</a></li></ul></li><li><a href="#i-11"><span class="toc_number toc_depth_1">2</span> 分支管理</a><ul><li><a href="#i-12"><span class="toc_number toc_depth_2">2.1</span> 新建分支</a></li><li><a href="#i-13"><span class="toc_number toc_depth_2">2.2</span> 设置默认分支</a></li><li><a href="#i-14"><span class="toc_number toc_depth_2">2.3</span> 设置保护分支</a></li><li><a href="#i-15"><span class="toc_number toc_depth_2">2.4</span> 分支管理员</a></li><li><a href="#Force_Push"><span class="toc_number toc_depth_2">2.5</span> 允许&amp;禁止 Force Push</a></li></ul></li><li><a href="#i-16"><span class="toc_number toc_depth_1">3</span> 发布管理</a><ul><li><a href="#i-17"><span class="toc_number toc_depth_2">3.1</span> 版本发布</a></li><li><a href="#i-18"><span class="toc_number toc_depth_2">3.2</span> 标签功能</a></li></ul></li><li><a href="#i-19"><span class="toc_number toc_depth_1">4</span> 版本对比</a></li><li><a href="#i-20"><span class="toc_number toc_depth_1">5</span> 合并请求</a><ul><li><a href="#_MR"><span class="toc_number toc_depth_2">5.1</span> 通过命令行创建 MR</a></li><li><a href="#Merge_Request"><span class="toc_number toc_depth_2">5.2</span> 『Merge Request』 中的代码评审</a></li><li><a href="#i-21"><span class="toc_number toc_depth_2">5.3</span> 使用『#』符号引用资源</a></li><li><a href="#i-22"><span class="toc_number toc_depth_2">5.4</span> 代码行级比对</a></li></ul></li><li><a href="#i-23"><span class="toc_number toc_depth_1">6</span> 项目网络</a></li><li><a href="#Pages"><span class="toc_number toc_depth_1">7</span> Pages服务</a><ul><li><a href="#_Pages"><span class="toc_number toc_depth_2">7.1</span> 创建静态 Pages 示例</a></li><li><a href="#_coding-pages"><span class="toc_number toc_depth_2">7.2</span> 选择部署来源为 coding-pages 分支</a></li><li><a href="#_HTTPS"><span class="toc_number toc_depth_2">7.3</span> 强制 HTTPS 访问</a></li><li><a href="#_Coding_Pages"><span class="toc_number toc_depth_2">7.4</span> 删除 Coding Pages 部署的静态网站</a></li></ul></li></ul></div>
+<h1 class="entry-title" id="%e4%bb%a3%e7%a0%81%e6%b5%8f%e8%a7%88"><span id="i">代码浏览</span></h1>
+<p>进入项目后，点击 代码 —&gt;代码浏览，进入代码浏览页面。</p>
+<p><img src="static/picture/bf072fc6-e583-40a9-8ad1-af49d58f.png"></p>
+<h2 id="%e6%8f%90%e4%ba%a4%e5%8e%86%e5%8f%b2" id="%e6%8f%90%e4%ba%a4%e5%8e%86%e5%8f%b2"><span id="i-2"><strong><span id="i-2">提交历史</span></strong></span></h2>
+<p>点击提交历史按钮，默认进入 master 分支的提交历史，提交历史按照日期倒序排列。可切换 master 为其他分支，查看其他分支的提交历史。可从当前页面进入某个代码提交详情或代码版本。</p>
+<p><img class="" src="static/picture/abe285ec-9f4b-4290-87ef-9143969c.png" width="436" height="126"></p>
+<h2 id="%e6%8f%90%e4%ba%a4%e8%af%a6%e6%83%85" id="%e6%8f%90%e4%ba%a4%e8%af%a6%e6%83%85"><span id="i-3"><strong><span id="i-3">提交详情</span></strong></span></h2>
+<p>点击提交地址，进入提交详情。页面上方显示该提交基本信息，下方显示代码文件的提交改动信息。用户可发布代码行级评论。</p>
+<p><img src="static/picture/bae5c736-97ac-4356-8bb4-46e18bb8.png"></p>
+<h2 id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e5%af%b9%e6%af%94" id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e5%af%b9%e6%af%94"><span id="i-4"><strong><span id="i-4">代</span></strong><strong><span id="i-4">码行级对比</span></strong></span></h2>
+<p>普通模式下，代码文件中会显示该提交改动信息，按照单个文件显示具体的提交改动。每个文件内会显示具体的行级增删修改信息。其中，绿色代表增加，红色代码减少。</p>
+<p><img src="static/picture/a6047da4-00c4-4cdf-81df-21b12800.png"></p>
+<h2 id="%e4%bb%a3%e7%a0%81%e5%b7%a6%e5%8f%b3%e5%af%b9%e6%af%94" id="%e4%bb%a3%e7%a0%81%e5%b7%a6%e5%8f%b3%e5%af%b9%e6%af%94"><span id="i-5"><strong><span id="i-5">代码左右对比</span></strong></span></h2>
+<p>点击左右模式，代码行级对比由普通模式切换为左右模式。用户可清晰地看出当前代码改了哪一行，修改了什么。</p>
+<p><img src="static/picture/64e50b74-1c62-4edf-bddf-5f4375a7.png"></p>
+<div class="cuk-editor cuk-editor-preview-enabled stage-lite editor" tabindex="0" data-reactid="101">
+<h2 id="%e9%ab%98%e7%ba%a7%e9%80%89%e9%a1%b9" class="cuk-editor-footbar" data-reactid="116" id="%e9%ab%98%e7%ba%a7%e9%80%89%e9%a1%b9"><span id="i-6"><strong><span id="i-6">高级选项</span></strong></span></h2>
+<p>高级选项默认开启显示制表符、行内对比、代码高亮，如果您不需要此项功能，可以点击绿色小红点开关关闭。</p>
+<p><img src="static/picture/c40e86fd-c053-447c-94d8-737e2af9.png"></p>
+<h2 id="%e6%94%b6%e8%b5%b7%e5%b1%95%e5%bc%80" class="cuk-editor-footbar" data-reactid="116" id="%e6%94%b6%e8%b5%b7%e5%b1%95%e5%bc%80"><span id="i-7"><strong><span id="i-7">收起&amp;展开</span></strong></span></h2>
+<p>用户进入提交详情页，当改动文件数较少时，默认全部展开，当改动文件数较多时，默认全部收起。用户可点击文件名，单独展开或者收起单个文件，或者点击右侧全部展开和全部收起按钮，展开或收起全部文件对比。</p>
+<p><img src="static/picture/8b172b81-caa9-4831-9959-bc4e48f5.png"></p>
+</div>
+<footer data-jsx-ext="24039075635" data-reactid="316">
+<h2 id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e8%af%84%e8%ae%ba-linenote" class="topics" data-jsx-ext="24039075635" data-reactid="317" id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e8%af%84%e8%ae%ba-linenote"><span id="_LineNote"><strong><span id="_LineNote">代码行级评论 LineNote</span></strong></span></h2>
+<p>hover 代码文件中的某一行，界面会显示出 + 号，点击即可针对该代码行发起评论。评论提交后，该代码改动提交者将会收到您的评论通知，当他回复评论后，您将收到评论通知。由此，开发者可通过代码行级评论就某一行代码进行讨论交流。</p>
+<p><img src="static/picture/fc0899e8-f3b3-4b4f-afbe-374258e6.png"></p>
+</footer>
+<h2 id="%e4%bb%a3%e7%a0%81%e6%96%87%e4%bb%b6%e6%96%b0%e5%bb%ba-%e4%b8%8a%e4%bc%a0" id="%e4%bb%a3%e7%a0%81%e6%96%87%e4%bb%b6%e6%96%b0%e5%bb%ba%e4%b8%8a%e4%bc%a0"><span id="i-8"><strong><span id="i-10">代码文件新建/上传</span></strong></span></h2>
+<p>点击新建或上传文件按钮，即可为当前分支新增一个一级目录代码文件，需要填写文件名、文件内容、文件提交信息。其中上传文件支持所有文件格式，单个文件不超过 20 M。</p>
+<p><img src="static/picture/6eca63df-ccff-4d5b-9d02-85d23446.png"></p>
+<p>此处还可以勾选 为这次提交创建一个<strong>新分支</strong>，并发起一个合并请求 选项，系统会自动以当前分支为基点创建一个新分支，并自动向当前分支提交合并请求。</p>
+<p><img src="static/picture/d108dcd4-cf9c-445b-8cb1-012806e3.png"></p>
+<h2 id="%e5%af%bb%e6%89%be%e6%96%87%e4%bb%b6" id="%e5%af%bb%e6%89%be%e6%96%87%e4%bb%b6"><span id="i-9"><strong><span id="i-11">寻找文件</span></strong></span></h2>
+<p>点击寻找文件按钮，输入需要寻找的关键字对文件列表进行过滤。 使用 ↑ 和 ↓ 来选择文件， 按Enter查看文件内容。 或按Esc 退出寻找文件。</p>
+<p><img src="static/picture/39be0367-cf74-4555-b2cb-5879ef8a.png"></p>
+<h2 id="%e4%b8%8b%e8%bd%bd" id="%e4%b8%8b%e8%bd%bd"><span id="i-10"><strong><span id="i-12">下载</span></strong></span></h2>
+<p>点击下载按钮，系统会自动以 企业域名-项目名-分支名.zip 下载当前分支对应的 Git 仓库版本。</p>
+<p><img src="static/picture/74730398-34bd-4a31-a925-0a5b54fb.png"></p>
+<footer data-jsx-ext="24039075635" data-reactid="316">
+<h1 id="%e6%96%b0%e5%bb%ba%e5%88%86%e6%94%af" class="topics" data-jsx-ext="24039075635" data-reactid="317" id="%e5%88%86%e6%94%af%e7%ae%a1%e7%90%86"><span id="i-11"><span id="i-2">分支管理</span></span></h1>
+<h2 id="%e6%96%b0%e5%bb%ba%e5%88%86%e6%94%af"><span id="i-12"><strong>新建分支</strong></span></h2>
+</footer>
+<p>点击新建分支按钮，在弹窗中输入新的分支名，并输入分支起点——分支、标签、commit id 均可，若不填写，默认以 master 分支为起点。</p>
+<p><img src="static/picture/9d6d7bd8-9c8f-4cdd-86d5-3ca50f6a.png"></p>
+<h2 id="%e8%ae%be%e7%bd%ae%e9%bb%98%e8%ae%a4%e5%88%86%e6%94%af" id="%e8%ae%be%e7%bd%ae%e9%bb%98%e8%ae%a4%e5%88%86%e6%94%af"><span id="i-13"><strong><span id="i-4">设置默认分支</span></strong></span></h2>
+<p>项目管理员点击设置/修改默认分支按钮，在弹窗中选中目标分支并提交，即可修改默认分支。</p>
+<p><img src="static/picture/1bf12ae8-cfb0-4e4e-8fa4-2d0dbe65.png"></p>
+<h2 id="%e8%ae%be%e7%bd%ae%e4%bf%9d%e6%8a%a4%e5%88%86%e6%94%af" id="%e8%ae%be%e7%bd%ae%e4%bf%9d%e6%8a%a4%e5%88%86%e6%94%af"><span id="i-14"><strong><span id="i-5">设置保护分支</span></strong></span></h2>
+<p>『保护分支』是 CODING 针对 Git 中有关代码权限开发的一个功能，阅读之前，请先了解分支的基本概念和用法，详情见 <a href="git-branch.html">Git 分支管理</a>。简而言之，保护分支就是将特定的分支保护起来，防止被破坏。</p>
+<p>项目管理员点击分支最右侧的 … 图标，点击设置保护分支，在弹窗中进行设置。</p>
+<p><img src="static/picture/bee32f87-f472-4293-828d-3d8c903a.png"></p>
+<p>开启保护分支后，该分支在分支列表中将以绿色盾牌为标志。成员修改保护分支时需先新建一个分支进行修改， 然后创建合并请求并邀请其他成员评审代码。 其他成员「允许合并」后可自行合并分支。</p>
+<p><img class="alignnone size-medium" src="static/picture/962dde28-9c35-4a1a-9bfe-2ca97b2e.png" width="1595" height="671"></p>
+<div class="adminInfo">
+<h2 id="%e5%88%86%e6%94%af%e7%ae%a1%e7%90%86%e5%91%98" id="%e5%88%86%e6%94%af%e7%ae%a1%e7%90%86%e5%91%98"><span id="i-15"><strong><span id="i-6">分支管理员</span></strong></span></h2>
+<p>分支管理员为可选项。 添加分支管理员后， 所有合并请求需分支管理员「允许合并」。 分支管理员默认也受保护分支限制， 需创建合并请求修改分支。若将其设置为「允许直接 Push」，分支管理员则可以直接修改分支。</p>
+<p>若成员没有权限（即保护分支的非分支管理员） push 至该分支，当其尝试 push 至该分支的时候，会得到如下错误提示：</p>
+</div>
+<p><img src="static/picture/bf94efb5-a604-4bf5-9e8a-fd9837fb.png" alt="图片"></p>
+<p>所以，当你看到这个错误提示的时候，就知道是因为没有该保护分支权限而导致 push 失败了。</p>
+<h2 id="%e5%85%81%e8%ae%b8%e7%a6%81%e6%ad%a2-force-push" id="%e5%85%81%e8%ae%b8%e7%a6%81%e6%ad%a2-force-push"><span id="Force_Push"><strong><span id="Force_Push">允许&amp;禁止 Force Push</span></strong></span></h2>
+<p>项目管理员点击分支最右侧的 【 … 】图标 ，点击设置保护分支，在弹窗中进行设置开启或关闭允许 Force Push。</p>
+<p>当对 Git 仓库某分支开启禁止 Force Push 的选项后，服务器会对推送至这个分支的更新做 『快进模式检查』（FastForwarded Update Check）。如果不是以 『快进模式（ FastForwarded ）』更新，则会被服务器拒绝更新，以防误操作导致丢失代码历史，会在命令行提示如下错误：</p>
+<p><img src="static/picture/29f7366d-a114-456c-84e7-b9b21b23.png" alt="img"></p>
+<h1 id="%e5%8f%91%e5%b8%83%e7%ae%a1%e7%90%86"><span id="i-16">发布管理</span></h1>
+<h2 id="%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83"><span id="i-17"><strong>版本发布</strong></span></h2>
+<p>进入『代码』—&gt;『发布管理 』</p>
+<p><img class="" src="static/picture/b4986ab0-fd94-4fb7-a637-2c8c0ece.png" width="728" height="486"></p>
+<p>选择新建版本发布—&gt;创建版本发布，填写标签版本，版本发布标题，支持所有文件格式，单个文件不能超过100M，可以设定为预发布。</p>
+<h2 id="%e6%a0%87%e7%ad%be%e5%8a%9f%e8%83%bd"><span id="i-18"><img src="static/picture/e15e9b0a-2fec-4227-a5d5-47f31587.png"><strong>标签功能</strong></span></h2>
+<p>进入『代码』—&gt;『标签 』。</p>
+<p><img class="" src="static/picture/3800367f-918b-4b13-b15a-970b2620.png" width="693" height="462"></p>
+<p><img src="static/picture/534f516a-b68e-4638-99a7-c5b279e1.png"></p>
+<p>选择标签—&gt;新建标签，填写标签版本，标签说明。</p>
+<p><img class="" src="static/picture/7fc39d59-917f-4c93-a256-1967e16a.png" width="456" height="454"></p>
+<h1 id="%e7%89%88%e6%9c%ac%e5%af%b9%e6%af%94"><span id="i-19">版本对比</span></h1>
+<p>选择新版本对比，选择要对比的分支，可以选择提交记录和查看文件改动。</p>
+<p><img src="static/picture/a977e016-0dab-4a73-b77f-bb14684e.png"></p>
+<p>选择新建合并请求，输入合并请求标题和描述内容，可以添加评审者、标签和关注者。</p>
+<p><img src="static/picture/da605e47-2d70-4aed-9c5e-d0c9bf07.png"></p>
+<h1 id="%e5%90%88%e5%b9%b6%e8%af%b7%e6%b1%82"><span id="i-20">合并请求</span></h1>
+<p>版本对比之后创建合并请求跳转到合并请求控制台，可以查看之前创建的请求的动态、提交记录、文件改动、评审者、标签和关注者等信息，也可以再为此次合并请求添加评论。</p>
+<h2 id="%e9%80%9a%e8%bf%87%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%88%9b%e5%bb%ba-mr" id="%e9%80%9a%e8%bf%87%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%88%9b%e5%bb%ba-mr"><span id="_MR"><strong><span id="_MR">通过命令行创建 MR</span></strong></span></h2>
+<ul>
+<li>push 到 mr/master/branch_name 分支即可自动创建远端分支并提交 MR（合并入 master ），如$ git push origin Feature-X:mr/master/Feature-X</li>
+<li>自动创建的使用最后一个『commit message』作为标题和内容</li>
+<li>自动解析『commit message』中 @ 的人，自动加成评审者，自动# 加为关联资源</li>
+<li>自动创建出来的新的分支，只能由创建者再次『push』到这个分支，也允许『Force push』</li>
+</ul>
+<h2 id="%e3%80%8emerge-request%e3%80%8f-%e4%b8%ad%e7%9a%84%e4%bb%a3%e7%a0%81%e8%af%84%e5%ae%a1" id="%e3%80%8emerge-request%e3%80%8f-%e4%b8%ad%e7%9a%84%e4%bb%a3%e7%a0%81%e8%af%84%e5%ae%a1"><span id="Merge_Request"><strong><span id="Merge_Request">『Merge Request』 中的代码评审</span></strong></span></h2>
+<p>『Merge Request』可以进行代码评审。『Merge Request』的发起者，可以在创建 『Merge Request』 的时候选择邀请项目内的其他成员来评审此 『Merge Request』。</p>
+<p>也可以在 『Merge Request』 被创建后，在 『Merge Request』 的右侧选择添加或取消评审者。</p>
+<p><img class="alignnone size-medium" src="static/picture/e9cdcb72-2c0a-4fc0-b68c-0b143cbb.png" width="1623" height="560"></p>
+<p>项目内所有拥有代码访问权限的成员都可以对未合并的 『Merge Request』进行评审。 评审的内容包括：</p>
+<ul>
+<li>直接评论 『Merge Request』；</li>
+<li>针对 『Merge Request』 的文件改动中的某一行代码进行评论；<br>
+<img class="alignnone size-medium" src="static/picture/8a29adbc-611d-4457-9a43-c06c2ec3.png" width="1599" height="754"></li>
+</ul>
+<p>非 『Merge Request』 发起人可以对此 『Merge Request』 进行『+1』操作 ，『+1』自己的会出现在『Merge Request』右侧评审者中</p>
+<p><img class="alignnone size-medium" src="static/picture/eb149e00-524b-4bab-bdb2-fd24b59a.png" width="1361" height="588"></p>
+<p>当 『Merge Request』 的发起者不具备目标分支的编辑权限时，拥有目标分支编辑权限的用户，可以对此 『Merge Request』 进行授权操作。授权后，『Merge Request』 的发起人，可自行合并此 『Merge Request』。</p>
+<h2 id="%e4%bd%bf%e7%94%a8%e3%80%8e%e3%80%8f%e7%ac%a6%e5%8f%b7%e5%bc%95%e7%94%a8%e8%b5%84%e6%ba%90" id="%e4%bd%bf%e7%94%a8%e3%80%8e%e3%80%8f%e7%ac%a6%e5%8f%b7%e5%bc%95%e7%94%a8%e8%b5%84%e6%ba%90"><span id="i-21"><strong><span id="i-11">使用『#』符号引用资源</span></strong></span></h2>
+<p>每个任务，讨论，MR 也有一个独特的引用 ID， 并通过『#ID』被引用到项目内其它地方。 项目内支持 Markdown 编辑器的地方都支持『#』自动提示(任务描述、讨论、合并请求描述等)，并引用相应资源。</p>
+<ul>
+<li>讨论</li>
+</ul>
+<p><img class="alignnone size-medium" src="static/picture/d43d6aa2-31a8-4222-8145-c90e5471.png" width="1583" height="750"></p>
+<ul>
+<li>『Merge Request』</li>
+</ul>
+<h2 id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e6%af%94%e5%af%b9" id="%e4%bb%a3%e7%a0%81%e8%a1%8c%e7%ba%a7%e6%af%94%e5%af%b9"><span id="i-22"><strong><span id="i-12">代码行级比对</span></strong></span></h2>
+<p>代码行级比对( Line Notes ) 是 腾讯云开发者平台开发的可以针对代码的『diff』进行行级别的评论功能，支持 Markdown 语法，可以方便的用来进行『Code Review』。 你可以在代码『commit』页面，以及合并请求( MR  ) 页面使用该功能。</p>
+<p>选择合并分支后，会有删除源分支，Fast-Forward模式合并选项，可根据自己需求选择。</p>
+<p><img src="static/picture/8e3f2085-963b-4892-9383-cd09f1c5.png"></p>
+<p>&nbsp;</p>
+<p>点击合并请求后可以查看到创建的合并请求记录；也可在合并请求中查看具体信息，如：目标分支、发起者、分类标签、评审者、更新时间等。点击新建合并请求后会跳转到版本对比控制台。</p>
+<p><img src="static/picture/4aa76048-9e95-4f21-ac45-6d88de8a.png"></p>
+<h1 id="%e9%a1%b9%e7%9b%ae%e7%bd%91%e7%bb%9c"><span id="i-23">项目网络</span></h1>
+<p>选择项目网络，可以查看到之前对于此项目的一些合并，修改操作网络图。</p>
+<p><img src="static/picture/c8315f89-4d3f-419e-a113-b81d0a29.png"></p>
+<h1 id="coding-pages%e4%bb%8b%e7%bb%8d" id="pages%e6%9c%8d%e5%8a%a1"><span id="Pages"><span id="Coding_Pages">Pages服务</span></span></h1>
+<p class="ng-scope">静态 Coding Pages 允许的部署分支来源为<span class="td-span md-focus" contenteditable="true"><span spellcheck="false">master</span> 分支和<span spellcheck="false">coding-pages</span> 分支，默认部署来源是<span spellcheck="false">master</span> 分支，用户可在设置里更改部署来源。部署成功后后可通过&lt;user_name&gt;.coding.me／&lt;project_name&gt;<br>
+形式的 URL 访问静态 Pages。</span></p>
+<h2 id="%e5%88%9b%e5%bb%ba%e9%9d%99%e6%80%81-pages-%e7%a4%ba%e4%be%8b" id="%e5%88%9b%e5%bb%ba%e9%9d%99%e6%80%81-pages-%e7%a4%ba%e4%be%8b"><span id="_Pages"><span id="_Pages">创建静态 Pages 示例</span></span></h2>
+<ol>
+<li>创建一个新项目。下文<code>&lt;user_name&gt;</code> 指您本人的用户名（非昵称），<code>&lt;project_name&gt;</code> 指您创建的项目名称</li>
+<li>使用<span class="td-span md-focus" contenteditable="true"><span spellcheck="false">master</span> 分支</span>向仓库根目录添加测试用的 index.html 文件
+<pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Coding Pages&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello Coding!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</li>
+<li>进入项目里『代码』页面，点击『一键开启静态 Pages』 ，稍等片刻即可部署成功。用户可通过<code>&lt;user_name&gt;.coding.me／&lt;project_name&gt;</code>形式的 URL 访问您的网站。​<img class="alignnone size-medium" src="static/picture/b6ed24b1-9f6f-4152-ae07-eb94f9ec.png" width="1036" height="874">​<br>
+​<img class="alignnone size-medium" src="static/picture/72d5534a-54ae-4dc5-8f5d-7215f3f8.png" width="1614" height="459">​</li>
+</ol>
+<p><strong>注意：Coding Pages 成功部署后您的网站可被公开访问，私有项目也是如此。</strong></p>
+<h2 id="%e9%80%89%e6%8b%a9%e9%83%a8%e7%bd%b2%e6%9d%a5%e6%ba%90%e4%b8%ba-coding-pages-%e5%88%86%e6%94%af" id="%e9%80%89%e6%8b%a9%e9%83%a8%e7%bd%b2%e6%9d%a5%e6%ba%90%e4%b8%ba-coding-pages-%e5%88%86%e6%94%af"><span id="_coding-pages"><span id="_coding-pages">选择部署来源为 coding-pages 分支</span></span></h2>
+<ol>
+<li>在 Pages 服务页面点击左边设置按钮进入设置页面<img class="alignnone size-medium" src="static/picture/fe38eb80-e805-41c6-b8f6-a5f954d0.png" width="1299" height="838"></li>
+<li>选择部署来源为<span class="td-span md-focus" contenteditable="true"><span spellcheck="false">master</span> 分支，点击『部署』按钮，稍等片刻即可部署成功</span><img src="static/picture/cc3a0123-a8e8-477f-aca9-b1347377.jpg">​</li>
+</ol>
+<blockquote><p>静态 Pages 有部署次数限制，每小时可以部署 10 次。</p></blockquote>
+<h2 id="%e5%bc%ba%e5%88%b6-https-%e8%ae%bf%e9%97%ae" id="%e5%bc%ba%e5%88%b6-https-%e8%ae%bf%e9%97%ae"><span id="_HTTPS"><span id="_HTTPS">强制 HTTPS 访问</span></span></h2>
+<p>打开『Pages 服务』设置中的『强制 HTTPS 访问』开关即可开启 HTTPS 访问。</p>
+<p><img src="static/picture/dee54915-f5cf-474d-b14d-6fb1f8bc.png" alt="图片"></p>
+<p>所有的 CODING Pages 都可以开启强制 HTTPS 访问，开启强制 HTTPS 访问后，网站内引用资源的 URL 需以 <code>https://</code> 开头，避免引用资源加载失败。</p>
+<h2 id="%e5%88%a0%e9%99%a4-coding-pages-%e9%83%a8%e7%bd%b2%e7%9a%84%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99" id="%e5%88%a0%e9%99%a4-coding-pages-%e9%83%a8%e7%bd%b2%e7%9a%84%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99"><span id="_Coding_Pages"><span id="_Coding_Pages">删除 Coding Pages 部署的静态网站</span></span></h2>
+<p>当您需要删除部署网站的时候，请直接删除 Coding Pages 部署来源中所选的分支，网站会被即刻删除。</p>
+<p>&nbsp;</p>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="account-management.html" title="账户管理">账户管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    5480</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="wiki-management.html" title="Wiki管理">Wiki管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    5948</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="file-management.html" title="文件管理">文件管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    8421</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="bbe5a1aee786.html" title="任务管理">任务管理</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    18212</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="safe.html" title="安全保障">安全保障</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    3935</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="cloud-studio1.html" title="Cloud Studio">Cloud Studio</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    8366</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

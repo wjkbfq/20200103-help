@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone 8 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iPhone-8-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, 1.000000)">
+            <polygon id="Polygon" fill="#00A4FF" points="24 9 37.8564065 17 37.8564065 33 24 41 10.1435935 33 10.1435935 17"></polygon>
+            <path d="M24,1.15470054 L14.6076952,6.57735027 L14.6076952,17.4226497 L24,22.8452995 L33.3923048,17.4226497 L33.3923048,6.57735027 L24,1.15470054 Z" id="Polygon" stroke="#334966" stroke-width="2"></path>
+            <path d="M12,23.1547005 L2.60769515,28.5773503 L2.60769515,39.4226497 L12,44.8452995 L21.3923048,39.4226497 L21.3923048,28.5773503 L12,23.1547005 Z" id="Polygon-Copy" stroke="#334966" stroke-width="2"></path>
+            <path d="M36,23.1547005 L26.6076952,28.5773503 L26.6076952,39.4226497 L36,44.8452995 L45.3923048,39.4226497 L45.3923048,28.5773503 L36,23.1547005 Z" id="Polygon-Copy-2" stroke="#334966" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

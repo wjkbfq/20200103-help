@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>主机安全-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="主机安全-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#7C848E" fill-rule="nonzero">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape"></path>
+            <rect id="Rectangle-path" x="2" y="9" width="24" height="2"></rect>
+            <polygon id="Rectangle-path" points="4 5 11 5 11 7 4 7"></polygon>
+            <polygon id="Rectangle-path" points="4 13 11 13 11 15 4 15"></polygon>
+            <rect id="Rectangle-path" x="1" y="17" width="24" height="2"></rect>
+        </g>
+    </g>
+</svg>

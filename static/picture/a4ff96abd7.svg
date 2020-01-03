@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>登录保护-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="登录保护-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(3.000000, 2.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M24,6 L24,15.2 C24,15.2 24,17.5 22.6,20 C20.8,23.4 17.5,25.7 13,26.9 C2.3,24.3 2,15.6 2,15.2 L2,2 L22,2 L24,2 L26,2 L26,0 L0,0 L0,15.2 C0,15.2 0.1,26 13,29 C25.9,26 26,15.2 26,15.2 L26,6 L24,6 Z" id="Shape"></path>
+        </g>
+        <path d="M14,16 L16,16 L16,18 L14,18 C12.346,18 11,19.346 11,21 L9,21 C9,18.239 11.239,16 14,16 Z M16,13 C17.1045695,13 18,12.1045695 18,11 C18,9.8954305 17.1045695,9 16,9 C14.8954305,9 14,9.8954305 14,11 C14,12.1045695 14.8954305,13 16,13 Z M16,15 C13.790861,15 12,13.209139 12,11 C12,8.790861 13.790861,7 16,7 C18.209139,7 20,8.790861 20,11 C20,13.209139 18.209139,15 16,15 Z M18.8284271,18.9497475 L22.363961,15.4142136 L23.7781746,16.8284271 L18.8284271,21.7781746 L16,18.9497475 L17.4142136,17.5355339 L18.8284271,18.9497475 Z" id="Combined-Shape" fill="#00A4FF"></path>
+    </g>
+</svg>

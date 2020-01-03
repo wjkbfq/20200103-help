@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>32备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="32备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组备份" transform="translate(0.000000, 2.000000)">
+            <g id="编组-4" fill="#00A4FF" fill-rule="nonzero">
+                <g id="Group-7备份">
+                    <circle id="Oval" cx="2" cy="2" r="2"></circle>
+                    <circle id="Oval-Copy" cx="30" cy="26" r="2"></circle>
+                    <rect id="Rectangle" x="1" y="8" width="2" height="18"></rect>
+                    <rect id="Rectangle-Copy-3" x="29" y="1" width="2" height="19"></rect>
+                    <rect id="Rectangle" x="1" y="25" width="29" height="2"></rect>
+                    <rect id="Rectangle-Copy-2" x="1.33333333" y="1" width="28.6666667" height="2"></rect>
+                </g>
+            </g>
+            <rect id="矩形" stroke="#00A4FF" stroke-width="2" x="7" y="7" width="19" height="14"></rect>
+            <rect id="矩形" stroke="#00A4FF" stroke-width="2" x="11" y="12" width="2" height="1"></rect>
+            <path d="M16,12 L23,12" id="路径-6" stroke="#00A4FF" stroke-width="2"></path>
+            <path d="M10,16 L23,16" id="路径-6备份" stroke="#00A4FF" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

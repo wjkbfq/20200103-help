@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>国内短信-4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="国内短信产品页" transform="translate(-1401.000000, -2578.000000)">
+            <g id="国内短信-4" transform="translate(1402.000000, 2579.000000)">
+                <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="23" cy="23" r="23"></circle>
+                <path d="M11,29 L23,23 L35,29 L23,35 L11,29 Z M23,32.763932 L30.527864,29 L23,25.236068 L15.472136,29 L23,32.763932 Z" id="Rectangle-40-Copy-2" fill="#334966" fill-rule="nonzero"></path>
+                <polygon id="Rectangle-40-Copy" fill="#00A4FF" fill-rule="nonzero" points="11 23 23 17 35 23 23 29"></polygon>
+                <path d="M11,17 L23,11 L35,17 L23,23 L11,17 Z M23,20.763932 L30.527864,17 L23,13.236068 L15.472136,17 L23,20.763932 Z" id="Rectangle-40" fill="#334966" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

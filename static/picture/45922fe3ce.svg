@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>管理与审计-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="管理与审计-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(1.000000, 4.000000)" fill="#00A4FF">
+            <g id="Group-13">
+                <rect id="Rectangle-57" x="0" y="0" width="2" height="24"></rect>
+                <rect id="Rectangle-57-Copy" x="28" y="0" width="2" height="24"></rect>
+                <rect id="Rectangle-58" x="0" y="0" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy-2" x="0" y="22" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy" x="24" y="0" width="6" height="2"></rect>
+                <rect id="Rectangle-58-Copy-3" x="24" y="22" width="6" height="2"></rect>
+            </g>
+        </g>
+        <polygon id="Path" fill="#00A4FF" points="8 13 14 13 14 11 8 11"></polygon>
+        <polygon id="Path" fill="#00A4FF" points="8 18 14 18 14 16 8 16"></polygon>
+        <polygon id="Path" fill="#00A4FF" points="23 21 8 21 8 23 23 23"></polygon>
+        <polygon id="Rectangle-81" fill="#00A4FF" transform="translate(24.353553, 17.353553) rotate(45.000000) translate(-24.353553, -17.353553) " points="22.0251263 16.3535534 26.6819805 16.3535534 26.6819805 18.3535534 22.0251263 18.3535534"></polygon>
+        <path d="M20.5,18 C18.0147186,18 16,15.9852814 16,13.5 C16,11.0147186 18.0147186,9 20.5,9 C22.9852814,9 25,11.0147186 25,13.5 C25,15.9852814 22.9852814,18 20.5,18 Z M20.5,16 C21.8807119,16 23,14.8807119 23,13.5 C23,12.1192881 21.8807119,11 20.5,11 C19.1192881,11 18,12.1192881 18,13.5 C18,14.8807119 19.1192881,16 20.5,16 Z" id="Oval-41" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

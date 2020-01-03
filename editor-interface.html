@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="https://dev.tencent.com/help/xmlrpc.php">
+        <title>编辑器界面介绍 &#8211; 腾讯云开发者平台帮助中心</title>
+
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; Feed" href="https://dev.tencent.com/help/feed">
+<link rel="alternate" type="application/rss+xml" title="腾讯云开发者平台帮助中心 &raquo; 评论Feed" href="https://dev.tencent.com/help/comments/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev.tencent.com\/help\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='static/css/screen.min-1509.css' type='text/css' media='all'>
+<link rel='stylesheet' id='ht-theme-style-css' href='static/css/style-4.8.12.css' type='text/css' media='all'>
+<style id='ht-theme-style-inline-css' type='text/css'>
+a, a:visited, .bbp-author-name { color: #32a3cb; } a:hover { color: #32a3cb; } #site-header { background: #2e97bd; } @media screen and (max-width: 768px) { #nav-primary-menu { background: #2e97bd; } } #site-header, #site-header a, #site-header a:visited, #site-header a:hover, #nav-primary button { color:#ffffff; } #page-header { background-image: linear-gradient(0deg, #91BBFF 0%, #4989FB 100%);; } #page-header, #page-header a, #page-header a:visited, #page-header a:hover, #page-header #page-header-title { color:#ffffff; } #page-header #page-header-tagline { color:rgba(255,255,255,0.9); } #ht-site-container.ht-layout-boxed { max-width: 1200px; box-shadow: 0 0 55px rgba(0,0,0,0.15); } #homepage-features .hf-block i { color: #32a3cb; } .hkb_widget_exit__btn { background: #212B3A; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; line-height: 20px; }
+</style>
+<link rel='stylesheet' id='ht-kb-css' href='static/css/ht-kb-4.8.12.css' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='static/css/font-awesome.min-4.8.12.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='static/js/jquery-migrate.min-1.4.1.js'></script>
+<link rel='https://api.w.org/' href='https://dev.tencent.com/help/wp-json/'>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev.tencent.com/help/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev.tencent.com/help/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='外观、缩进等偏好设置' href='preferences.html'>
+<link rel='next' title='代码编辑区使用指南' href='editor-usage.html'>
+<meta name="generator" content="WordPress 4.8.12">
+<link rel="canonical" href="">
+<link rel='shortlink' href='https://dev.tencent.com/help/?p=6202'>
+<link rel="alternate" type="application/json+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Feditor-interface">
+<link rel="alternate" type="text/xml+oembed" href="https://dev.tencent.com/help/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.tencent.com%2Fhelp%2Fcloud-studio%2Feditor-interface&#038;format=xml">
+<meta name="generator" content="HelpGuru Knowledge Base v3.0.0">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<!--[if lt IE 9]><script src="static/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="static/js/selectivizr-min.js"></script><![endif]-->
+
+
+<meta name="msapplication-TileImage" content="https://help-assets.codehub.cn/tencent/2018/09/cropped-cloud.png">
+		<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+.hkb-subcats__cat .hkb-article-list{
+display:none
+}
+
+
+.hkb-subcats .hkb-subcats__cat:before{
+content:none
+}
+.hkb-subcats .hkb-subcats__cat{
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 8px;
+padding-bottom: 20px;
+}
+
+
+.hkb-subcats{
+margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    padding-left: 28px;
+}
+
+.hkb-subcats > li{
+margin-bottom:0px;
+}		</style>
+	        
+    </head>
+<body class="ht_kb-template-default single single-ht_kb postid-6202 single-format-standard ht-kb chrome" itemtype="http://schema.org/WebPage" itemscope="itemscope">
+<style>
+html.header-expanded {
+  overflow: hidden;
+}
+.header-container {
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
+.header-container .header-nav {
+  height: 40px;
+  align-items: center;
+  background: #2b303b;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}
+.header-container .header-nav.active {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+.header-container .header-nav .item {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header-container .header-nav .item.active {
+  color: #00a4ff;
+}
+.header-container .header-content {
+  height: 60px;
+  padding: 0 30px;
+  background: #2b303b;
+  position: relative;
+  z-index: 1001;
+}
+.header-container .header-content .header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-container .header-content .header-body .left-zone {
+  position: relative;
+  top: 1px;
+}
+.header-container .logo img {
+  height: 24px;
+  width: 176px;
+}
+.header-container .logo, .header-container .icon, .header-container .nav {
+  display: inline-block;
+}
+.header-container .nav .nav-item {
+  float: left;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+.header-container .nav .nav-item span, .header-container .nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.header-container .login-zone {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-container .icon {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.header-container .icon i {
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-container .icon i:last-of-type {
+  margin-bottom: 0;
+}
+.header-container .icon-hide {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+.header-container .icon-hide i {
+  display: inline-block;
+  height: 4px;
+  width: 18px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 1px;
+}
+.header-container .icon-hide i:last-of-type {
+  transform: rotate(45deg);
+}
+.header-container .login-zone {
+  display: flex;
+}
+.header-container .login-zone .avatar {
+  display: none;
+}
+.header-container .login-zone .register a, .header-container .login-zone .login a {
+  color: #fff;
+  text-decoration: unset;
+}
+.header-container .login-zone .register a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-container .login-zone .register a::after {
+  content: ' ';
+  height: 14px;
+  background-color: #fff;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: default;
+}
+.header-container .login-zone .register .button {
+  background: #06f;
+  color: #fff;
+}
+.header-container .login-zone .login .button {
+  background: #ebeff5;
+  color: #000;
+}
+.header-container .login-zone .avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.header-container .icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.header-container .icon .close, .header-container .icon .more {
+  display: none;
+}
+.header-container .icon .close.show, .header-container .icon .more.show {
+  display: inherit;
+}
+.header-container.logged-in .login-zone .register, .header-container.logged-in .login-zone .login {
+  display: none !important;
+}
+.header-container.logged-in .login-zone .avatar {
+  display: inline-block !important;
+}
+.header-container.login-checked .login-zone .register, .header-container.login-checked .login-zone .login {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px !important;
+  }
+  .header-container .nav, .header-container .login-zone {
+    display: none;
+  }
+  .header-container .header-content {
+    padding: 0 1rem;
+  }
+  .header-container .icon {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header-content {
+    height: 60px !important;
+  }
+  .header-content .header-body .left-zone {
+    height: 21px;
+  }
+  .header-content .header-body .left-zone .logo img {
+    height: 20px;
+    width: 147px;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #15171a;
+}
+.mobile-header .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-header .icon i {
+  width: 3px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mobile-header .icon .left {
+  transform: rotate(45deg);
+}
+.mobile-header .icon .right {
+  transform: rotate(-45deg);
+}
+.mobile-header .nav {
+  display: block;
+  padding-top: 60px;
+  color: #fff;
+}
+.mobile-header .nav .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: 0 1px 0 0 #3d404b;
+  font-size: 16px;
+  width: 100%;
+}
+.mobile-header .nav .nav-item .grey {
+  opacity: 0.5;
+}
+.mobile-header .nav .nav-item.nav-out {
+  box-shadow: none;
+  height: auto;
+  line-height: 1.5;
+}
+.mobile-header .nav .nav-item.nav-avatar {
+  margin: 20px 0 0 20px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+}
+.mobile-header .nav .nav-item.nav-avatar img {
+  height: 100%;
+  width: 100%;
+}
+.mobile-header .nav .nav-item a {
+  color: #fff;
+}
+.mobile-header .nav .nav-item a.sub {
+  padding-left: 30px;
+}
+.drop-down-wrap {
+  position: relative;
+}
+.drop-down-wrap:hover .drop-down-container {
+  display: block;
+}
+.drop-down-wrap .drop-down-container {
+  display: none;
+  top: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.drop-down-wrap .drop-down-container .drop-down {
+  font-size: 12px;
+  color: #202d40;
+  border: 1px solid #f5f6f8;
+  width: 140px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fff;
+  position: relative;
+}
+.drop-down-wrap .drop-down-container .drop-down:after {
+  content: ' ';
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+.drop-down-wrap .drop-down-container .drop-down .item {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: left !important;
+}
+.drop-down-wrap .drop-down-container .drop-down .item a {
+  color: #202d40;
+}
+.drop-down-wrap .drop-down-container .drop-down .item:hover {
+  background-color: #f5f7fa;
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  margin-right: 30px;
+}
+.line-spin-fade-loader {
+  transform: scale(0.4);
+  position: relative;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.63636px;
+  left: 13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.63636px;
+  left: -13.63636px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  background-color: #279fcf;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+.loading-btn .line-spin-fade-loader > div {
+  background-color: #fff;
+}
+
+</style>
+<header class="header-container clearfix">
+    <div class="header-content">
+        <div class="header-body">
+            <div class="left-zone">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/picture/cd329f9b-3c29-4485-a061-af401cab.png" srcset="static/picture/114dd24b-7ac5-45ce-8af7-3c741a15.png 2x">
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item drop-down-wrap">
+                        <span>产品</span>
+                        <div class="drop-down-container">
+                          <div class="drop-down">
+                                <div class="item">
+                                    <a href="production.html" target="_blank">
+                                        CODING 个人版
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="index1.html" target="_blank">
+                                        Cloud Studio
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
+                                        CODING 企业版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="help.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- #ht-site-container -->
+<div id="ht-site-container" class="clearfix ht-layout-fullwidth">
+
+    <!-- #header -->
+<!--    <header id="site-header" class="clearfix" role="banner" itemtype="http://schema.org/WPHeader" itemscope="itemscope">
+    <div class="ht-container clearfix">-->
+
+    <!-- #logo -->
+<!--    <div id="logo">
+        <a title="" href="">
+            <img alt="" src="" />
+                                    <h1 class="site-title" itemprop="headline"></h1>
+                        </a>
+    </div>-->
+    <!-- /#logo -->
+
+    <!-- /#header -->
+<!-- #page-header -->
+<style>
+
+#page-header {
+    height: 400px;
+    background-image: linear-gradient(-196.74378039254296deg, #0C1425 0%, #24314A 58.02%, #2B3C62 100%) !important;
+    padding: 0 !important;
+    text-alg
+}
+#page-header  .page-header-container {
+    background-image: url("static/image/444d6995-d015-492b-9341-549f5b29.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header  #page-header-title {
+    font-size: 46px;
+    line-height: unset !important;
+    height: unset !important;
+    padding-bottom: 10px;
+}
+#page-header .hkb-site-search {
+    display: inline-block;
+}
+#page-header .fa-search {
+    left: 17px !important;
+}
+@media only screen and (max-width: 414px) {
+    #page-header .page-header-container {
+        background-size: auto;
+    }
+    #page-header #page-header-title {
+        line-height: 1.4 !important;
+    }
+    #page-header .fa-search {
+        left: 29px !important;
+    }
+}
+</style>
+<section id="page-header" class="clearfix">
+<div class="page-header-container">
+    <div class="ht-container">
+        <h1 id="page-header-title">
+            腾讯云开发者平台帮助文档
+        </h1>
+    	
+        <form class="hkb-site-search" style="position: relative;" method="get" action="https://dev.tencent.com/help/">
+        <span class="fa fa-search" style="font-size: 14px;color: #323A45;position: absolute;top: 18px;left: 295px;"></span>
+        <label class="hkb-screen-reader-text" for="s">Search For</label>
+        <input class="hkb-site-search__field" type="text" value="" placeholder="请输入你的疑问" style="padding-left: 38px;" name="s" autocomplete="off">
+        <input type="hidden" name="ht-kb-search" value="1">
+        <input type="hidden" name="lang" value="">
+<!--         <button class="hkb-site-search__button" type="submit"><span>搜索</span></button>
+ -->    </form>
+    </div>
+</div>
+</section>
+<!-- /#page-header -->
+
+<!-- #page-header-breadcrumbs -->
+<section id="page-header-breadcrumbs" class="clearfix">
+<div class="ht-container">
+		
+
+<!-- .hkb-breadcrumbs -->
+            <ol class="hkb-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="help.html" title="首页">
+                        <span itemprop="name">首页</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="cloud-studio.html" title="View all posts in Cloud Studio">
+                        <span itemprop="name">Cloud Studio</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>               
+                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="" title="编辑器界面介绍">
+                        <span itemprop="name">编辑器界面介绍</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>               
+                    </ol>
+    <!-- /.hkb-breadcrumbs -->
+</div>
+</section>
+<!-- /#page-header -->
+<!-- #primary -->
+<div id="primary" class="sidebar-left clearfix"> 
+<div class="ht-container">
+
+<!-- #content -->
+<main id="content" role="main" itemscope="itemscope" itemprop="mainContentOfPage">
+<!-- #ht-kb -->
+<div id="hkb" class="hkb-template-single">
+
+	
+		<article id="post-6202" class="post-6202 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-cloud-studio" itemtype="http://schema.org/CreativeWork" itemscope="itemscope">
+
+		<!-- .entry-header -->
+		<header class="entry-header">
+
+		
+			<h1 class="entry-title" itemprop="headline">
+				编辑器界面介绍			</h1>
+
+<!--			<ul class="hkb-entry-meta clearfix">
+
+				<li class="hkb-em-date"> 
+				    <span>Created</span>
+				    <a href="https://dev.tencent.com/help/cloud-studio/editor-interface" rel="bookmark" itemprop="url"><time datetime="2018-10-15" itemprop="datePublished">2018年10月15日</time></a>
+				</li>
+				<li class="ht-kb-em-author">
+					<span>Author</span>
+					<a class="url fn n" href="https://dev.tencent.com/help/author/lijun" title="李, 俊" rel="me" itemprop="author">李, 俊</a>
+				</li>
+									<li class="ht-kb-em-category">
+					    <span>Category</span>
+					     <a href="https://dev.tencent.com/help/doc/cloud-studio" rel="tag">Cloud Studio</a>					</li>
+								
+			</ul>
+-->
+
+				    
+		</header>
+		<!-- /.entry-header --> 
+
+			<div class="hkb-entry-content">
+
+					<!-- .hkb-article__content -->
+<div class="hkb-article__content entry-content" itemprop="text">
+    <div id="toc_container" class="no_bullets"><p class="toc_title">文章内容</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> 顶部菜单栏</a></li><li><a href="#i-2"><span class="toc_number toc_depth_1">2</span> 文件目录区</a></li><li><a href="#i-3"><span class="toc_number toc_depth_1">3</span> 代码编辑区</a></li><li><a href="#i-4"><span class="toc_number toc_depth_1">4</span> 功能区</a></li><li><a href="#i-5"><span class="toc_number toc_depth_1">5</span> 底部操作区</a></li><li><a href="#i-6"><span class="toc_number toc_depth_1">6</span> 状态区</a></li></ul></div>
+<div class="markdown-here-wrapper" data-md-url="https://dev.tencent.com/help/wp-admin/post.php?post=6202&amp;action=edit">
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">编辑器即每个工作空间的工作界面，这是是 Cloud Studio 的主要操作界面，几乎所有的操作都在这里进行。一个工作区间包含 6 个部分：顶部菜单栏、文件目录区、代码编辑区、功能区、底部操作区和状态区，下面我们将逐一介绍。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/9dc361b8-4330-496a-bf0d-7011b766.jpg" alt="图片"></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e9%a1%b6%e9%83%a8%e8%8f%9c%e5%8d%95%e6%a0%8f"><span id="i">顶部菜单栏</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">顶部菜单栏包含 Cloud Studio 的一些常用操作，如编辑器设置、文件操作、编辑操作、版本控制等等。在右侧还有腾讯云开发者平台的工作台入口。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/0da198ce-b226-4741-8690-653ccd1c.jpg" alt=""></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95%e5%8c%ba"><span id="i-2">文件目录区</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">文件目录区用于展示文件目录结构、当前操作文件路径，同时还包含一些常见文件操作，如上传、下载、重命名等等。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/f40a6bdd-6050-4e99-b51f-7604ac1c.jpg" alt=""></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e4%bb%a3%e7%a0%81%e7%bc%96%e8%be%91%e5%8c%ba"><span id="i-3">代码编辑区</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">代码编辑区即编写代码的区域，它支持所有主流语法高亮，同时支持 Java、HTML、TS、JS 的自动补全，对于 Markdown 和 HTML 文件还支持实时预览。代码编辑区支持多文件横向、纵向排列，你可以随意拖动位置来排列它们。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/2c5b50c8-6126-40d4-bd4e-0b8f75ff.jpg" alt=""></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e5%8a%9f%e8%83%bd%e5%8c%ba"><span id="i-4">功能区</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">功能区是一些 Cloud Studio 特有的功能操作区，如运行环境、协同编辑、访问链接等。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/1a687896-fca6-47f5-a199-f6a3a6e2.jpg" alt=""></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e5%ba%95%e9%83%a8%e6%93%8d%e4%bd%9c%e5%8c%ba"><span id="i-5">底部操作区</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">提供终端、调试日志、项目网络等展示或操作区域，我们最常用的是终端窗口。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/ce895330-a6d9-4fab-811c-998ba73d.jpg" alt=""></p>
+<h2 id="-" style="margin: 1.3em 0px 1em; line-height: 1.6; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;" id="%e7%8a%b6%e6%80%81%e5%8c%ba"><span id="i-6">状态区</span></h2>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;">底部操作区显示当前工作空间的一些基本信息，如 workspace key、当前编辑位置、文件编码、语言、Git 仓库信息等，你也可以在这里切换编码、文件类型等。</p>
+<p style="font-size: 15px; color: #333333; margin: 0px 0px 1.2em !important;"><img style="padding: 10px; border: 1px solid #f3f3f3;" src="static/picture/2b63aee2-8245-433b-92e9-41592736.jpg" alt=""></p>
+<div style="height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; font-size: 0em; padding: 0; margin: 0;" title="MDH:PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEt
+b2Zmc2V0LWtleT0iZm4waTItMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJm
+bjBpMi0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZm4waTItMC0wIj7nvJbovpHlmajljbPm
+r4/kuKrlt6XkvZznqbrpl7TnmoTlt6XkvZznlYzpnaLvvIzov5nmmK/mmK8gQ2xvdWQgU3R1ZGlv
+IOeahOS4u+imgeaTjeS9nOeVjOmdou+8jOWHoOS5juaJgOacieeahOaTjeS9nOmDveWcqOi/memH
+jOi/m+ihjOOAguS4gOS4quW3peS9nOWMuumXtOWMheWQqyA2IOS4qumDqOWIhu+8mumhtumDqOiP
+nOWNleagj+OAgeaWh+S7tuebruW9leWMuuOAgeS7o+eggee8lui+keWMuuOAgeWKn+iDveWMuuOA
+geW6lemDqOaTjeS9nOWMuuWSjOeKtuaAgeWMuu+8jOS4i+mdouaIkeS7rOWwhumAkOS4gOS7i+e7
+jeOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRh
+dGEtZWRpdG9yPSI0azJvbCIgZGF0YS1vZmZzZXQta2V5PSJiOHRqai0wLTAiPjxkaXYgY2xhc3M9
+InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQt
+bHRyIiBkYXRhLW9mZnNldC1rZXk9ImI4dGpqLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJi
+OHRqai0wLTAiPiZuYnNwOzwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxv
+Y2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIgZGF0YS1vZmZzZXQta2V5PSIyb3Q4MC0wLTAi
+PjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRT
+dHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9IjJvdDgwLTAtMCI+PHNwYW4gZGF0YS1v
+ZmZzZXQta2V5PSIyb3Q4MC0wLTAiPiFb5Zu+54mHXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJv
+ZHVjdGlvbi1wcC5jb2RlaHViLmNuLzlkYzM2MWI4LTQzMzAtNDk2YS1iZjBkLTcwMTFiNzY2MjAy
+OC5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIg
+ZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9ImVhbXE2LTAtMCI+PGRpdiBjbGFz
+cz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iZWFtcTYtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9
+ImVhbXE2LTAtMCI+Jm5ic3A7PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1i
+bG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9IjRxYWd2LTAt
+MCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFm
+dFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iNHFhZ3YtMC0wIj48c3BhbiBkYXRh
+LW9mZnNldC1rZXk9IjRxYWd2LTAtMCI+IyMg6aG26YOo6I+c5Y2V5qCPPC9zcGFuPjwvZGl2Pjwv
+ZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBk
+YXRhLW9mZnNldC1rZXk9ImFiazNtLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVE
+ZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtl
+eT0iYWJrM20tMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImFiazNtLTAtMCI+6aG26YOo6I+c
+5Y2V5qCP5YyF5ZCrIENsb3VkIFN0dWRpbyDnmoTkuIDkupvluLjnlKjmk43kvZzvvIzlpoLnvJbo
+vpHlmajorr7nva7jgIHmlofku7bmk43kvZzjgIHnvJbovpHmk43kvZzjgIHniYjmnKzmjqfliLbn
+rYnnrYnjgILlnKjlj7Pkvqfov5jmnInohb7orq/kupHlvIDlj5HogIXlubPlj7DnmoTlt6XkvZzl
+j7DlhaXlj6PjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0
+cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iZDE1NGktMC0wIj48ZGl2
+IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVE
+ZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJkMTU0aS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0
+LWtleT0iZDE1NGktMC0wIj4mbmJzcDs8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBk
+YXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iNXFm
+YmEtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI1cWZiYS0wLTAiPjxzcGFu
+IGRhdGEtb2Zmc2V0LWtleT0iNXFmYmEtMC0wIj4hW10oaHR0cHM6Ly9kbi1jb2RpbmctbmV0LXBy
+b2R1Y3Rpb24tcHAuY29kZWh1Yi5jbi8wZGExOThjZS1iMjI2LTQ3NDEtODY5MC02NTNjY2QxY2Zi
+ZTQuanBnKTwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUi
+IGRhdGEtZWRpdG9yPSI0azJvbCIgZGF0YS1vZmZzZXQta2V5PSJlazhsZS0wLTAiPjxkaXYgY2xh
+c3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImVrOGxlLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5
+PSJlazhsZS0wLTAiPiZuYnNwOzwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEt
+YmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIgZGF0YS1vZmZzZXQta2V5PSJkanFzci0w
+LTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJh
+ZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9ImRqcXNyLTAtMCI+PHNwYW4gZGF0
+YS1vZmZzZXQta2V5PSJkanFzci0wLTAiPiMjIOaWh+S7tuebruW9leWMujwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIg
+ZGF0YS1vZmZzZXQta2V5PSJmcWtxLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVE
+ZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtl
+eT0iZnFrcS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iZnFrcS0wLTAiPuaWh+S7tuebruW9
+leWMuueUqOS6juWxleekuuaWh+S7tuebruW9lee7k+aehOOAgeW9k+WJjeaTjeS9nOaWh+S7tui3
+r+W+hO+8jOWQjOaXtui/mOWMheWQq+S4gOS6m+W4uOingeaWh+S7tuaTjeS9nO+8jOWmguS4iuS8
+oOOAgeS4i+i9veOAgemHjeWRveWQjeetieetieOAgjwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNs
+YXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIgZGF0YS1vZmZzZXQt
+a2V5PSI5dmQ3OC0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9j
+ayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9Ijl2ZDc4LTAt
+MCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI5dmQ3OC0wLTAiPiZuYnNwOzwvc3Bhbj48L2Rpdj48
+L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIg
+ZGF0YS1vZmZzZXQta2V5PSI3cjhkai0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1r
+ZXk9IjdyOGRqLTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSI3cjhkai0wLTAiPiFbXShodHRw
+czovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHViLmNuL2Y0MGE2YmRkLTYwNTAt
+NGU5OS1iNTFmLTc2MDRhYzFjNmE3ZS5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9
+IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9
+IjhiMXEwLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1
+YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iOGIxcTAtMC0wIj48
+c3BhbiBkYXRhLW9mZnNldC1rZXk9IjhiMXEwLTAtMCI+Jm5ic3A7PC9zcGFuPjwvZGl2PjwvZGl2
+PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRh
+LW9mZnNldC1rZXk9IjJucjdwLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZh
+dWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0i
+Mm5yN3AtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjJucjdwLTAtMCI+IyMg5Luj56CB57yW
+6L6R5Yy6PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIg
+ZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9Ijg5YzEzLTAtMCI+PGRpdiBjbGFz
+cz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVs
+dC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iODljMTMtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9
+Ijg5YzEzLTAtMCI+5Luj56CB57yW6L6R5Yy65Y2z57yW5YaZ5Luj56CB55qE5Yy65Z+f77yM5a6D
+5pSv5oyB5omA5pyJ5Li75rWB6K+t5rOV6auY5Lqu77yM5ZCM5pe25pSv5oyBIEphdmHjgIFIVE1M
+44CBVFPjgIFKUyDnmoToh6rliqjooaXlhajvvIzlr7nkuo4gTWFya2Rvd24g5ZKMIEhUTUwg5paH
+5Lu26L+Y5pSv5oyB5a6e5pe26aKE6KeI44CC5Luj56CB57yW6L6R5Yy65pSv5oyB5aSa5paH5Lu2
+5qiq5ZCR44CB57q15ZCR5o6S5YiX77yM5L2g5Y+v5Lul6ZqP5oSP5ouW5Yqo5L2N572u5p2l5o6S
+5YiX5a6D5Lus44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0i
+dHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9IjFhNjIwLTAtMCI+PGRp
+diBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iMWE2MjAtMC0wIj48c3BhbiBkYXRhLW9mZnNl
+dC1rZXk9IjFhNjIwLTAtMCI+Jm5ic3A7PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIg
+ZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9Ijhv
+M2p1LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1Ymxp
+Yy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iOG8zanUtMC0wIj48c3Bh
+biBkYXRhLW9mZnNldC1rZXk9IjhvM2p1LTAtMCI+IVtdKGh0dHBzOi8vZG4tY29kaW5nLW5ldC1w
+cm9kdWN0aW9uLXBwLmNvZGVodWIuY24vMmM1YjUwYzgtNjEyNi00MGQ0LWJkNGUtMGI4Zjc1ZmYz
+NzAyLmpwZyk8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVl
+IiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iN2ZlMmktMC0wIj48ZGl2IGNs
+YXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZh
+dWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI3ZmUyaS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtl
+eT0iN2ZlMmktMC0wIj4mbmJzcDs8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRh
+LWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iMmRyOHAt
+MC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURy
+YWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSIyZHI4cC0wLTAiPjxzcGFuIGRh
+dGEtb2Zmc2V0LWtleT0iMmRyOHAtMC0wIj4jIyDlip/og73ljLo8L3NwYW4+PC9kaXY+PC9kaXY+
+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEt
+b2Zmc2V0LWtleT0iNW5mM3UtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI1
+bmYzdS0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iNW5mM3UtMC0wIj7lip/og73ljLrmmK/k
+uIDkupsgQ2xvdWQgU3R1ZGlvIOeJueacieeahOWKn+iDveaTjeS9nOWMuu+8jOWmgui/kOihjOeO
+r+Wig+OAgeWNj+WQjOe8lui+keOAgeiuv+mXrumTvuaOpeetieOAgjwvc3Bhbj48L2Rpdj48L2Rp
+dj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJvbCIgZGF0
+YS1vZmZzZXQta2V5PSJhbmdkdC0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1EcmFmdFN0eWxlRGVm
+YXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9
+ImFuZ2R0LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSJhbmdkdC0wLTAiPiZuYnNwOzwvc3Bh
+bj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9y
+PSI0azJvbCIgZGF0YS1vZmZzZXQta2V5PSIzbzNoNS0wLTAiPjxkaXYgY2xhc3M9InB1YmxpYy1E
+cmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtbHRyIiBkYXRh
+LW9mZnNldC1rZXk9IjNvM2g1LTAtMCI+PHNwYW4gZGF0YS1vZmZzZXQta2V5PSIzbzNoNS0wLTAi
+PiFbXShodHRwczovL2RuLWNvZGluZy1uZXQtcHJvZHVjdGlvbi1wcC5jb2RlaHViLmNuLzFhNjg3
+ODk2LWZjYTYtNDdmNS1hMTk5LWY2YTNhNmUyOTdiYy5qcGcpPC9zcGFuPjwvZGl2PjwvZGl2Pjxk
+aXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9m
+ZnNldC1rZXk9ImJndmc0LTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0
+LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iYmd2
+ZzQtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9ImJndmc0LTAtMCI+Jm5ic3A7PC9zcGFuPjwv
+ZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRr
+Mm9sIiBkYXRhLW9mZnNldC1rZXk9IjhvM3VxLTAtMCI+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0
+U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zm
+c2V0LWtleT0iOG8zdXEtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9IjhvM3VxLTAtMCI+IyMg
+5bqV6YOo5pON5L2c5Yy6PC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9j
+az0idHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9IjU4NTdnLTAtMCI+
+PGRpdiBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0
+eWxlRGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iNTg1N2ctMC0wIj48c3BhbiBkYXRhLW9m
+ZnNldC1rZXk9IjU4NTdnLTAtMCI+5o+Q5L6b57uI56uv44CB6LCD6K+V5pel5b+X44CB6aG555uu
+572R57uc562J5bGV56S65oiW5pON5L2c5Yy65Z+f77yM5oiR5Lus5pyA5bi455So55qE5piv57uI
+56uv56qX5Y+j44CCPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9IiIgZGF0YS1ibG9jaz0i
+dHJ1ZSIgZGF0YS1lZGl0b3I9IjRrMm9sIiBkYXRhLW9mZnNldC1rZXk9ImNtZDQ3LTAtMCI+PGRp
+diBjbGFzcz0icHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWJsb2NrIHB1YmxpYy1EcmFmdFN0eWxl
+RGVmYXVsdC1sdHIiIGRhdGEtb2Zmc2V0LWtleT0iY21kNDctMC0wIj48c3BhbiBkYXRhLW9mZnNl
+dC1rZXk9ImNtZDQ3LTAtMCI+IVtdKGh0dHBzOi8vZG4tY29kaW5nLW5ldC1wcm9kdWN0aW9uLXBw
+LmNvZGVodWIuY24vY2U4OTUzMzAtYTZkOS00ZmFiLTgxMWMtOTk4YmE3M2QwYTg1LmpwZyk8L3Nw
+YW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRv
+cj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iMzBmZDQtMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMt
+RHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0
+YS1vZmZzZXQta2V5PSIzMGZkNC0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0iMzBmZDQtMC0w
+Ij4mbmJzcDs8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVl
+IiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0ic2htdC0wLTAiPjxkaXYgY2xh
+c3M9InB1YmxpYy1EcmFmdFN0eWxlRGVmYXVsdC1ibG9jayBwdWJsaWMtRHJhZnRTdHlsZURlZmF1
+bHQtbHRyIiBkYXRhLW9mZnNldC1rZXk9InNobXQtMC0wIj48c3BhbiBkYXRhLW9mZnNldC1rZXk9
+InNobXQtMC0wIj4jIyDnirbmgIHljLo8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBk
+YXRhLWJsb2NrPSJ0cnVlIiBkYXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iZmts
+MHItMC0wIj48ZGl2IGNsYXNzPSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGlj
+LURyYWZ0U3R5bGVEZWZhdWx0LWx0ciIgZGF0YS1vZmZzZXQta2V5PSJma2wwci0wLTAiPjxzcGFu
+IGRhdGEtb2Zmc2V0LWtleT0iZmtsMHItMC0wIj7lupXpg6jmk43kvZzljLrmmL7npLrlvZPliY3l
+t6XkvZznqbrpl7TnmoTkuIDkupvln7rmnKzkv6Hmga/vvIzlpoIgd29ya3NwYWNlIGtleeOAgeW9
+k+WJjee8lui+keS9jee9ruOAgeaWh+S7tue8lueggeOAgeivreiogOOAgUdpdCDku5PlupPkv6Hm
+ga/nrYnvvIzkvaDkuZ/lj6/ku6XlnKjov5nph4zliIfmjaLnvJbnoIHjgIHmlofku7bnsbvlnovn
+rYnjgII8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iIiBkYXRhLWJsb2NrPSJ0cnVlIiBk
+YXRhLWVkaXRvcj0iNGsyb2wiIGRhdGEtb2Zmc2V0LWtleT0iNGtydWotMC0wIj48ZGl2IGNsYXNz
+PSJwdWJsaWMtRHJhZnRTdHlsZURlZmF1bHQtYmxvY2sgcHVibGljLURyYWZ0U3R5bGVEZWZhdWx0
+LWx0ciIgZGF0YS1vZmZzZXQta2V5PSI0a3J1ai0wLTAiPjxzcGFuIGRhdGEtb2Zmc2V0LWtleT0i
+NGtydWotMC0wIj4hW10oaHR0cHM6Ly9kbi1jb2RpbmctbmV0LXByb2R1Y3Rpb24tcHAuY29kZWh1
+Yi5jbi8yYjYzYWVlMi04MjQ1LTQzM2ItOTJlOS00MTU5MjczNjU1ZjEuanBnKTwvc3Bhbj48L2Rp
+dj48L2Rpdj48ZGl2IGNsYXNzPSIiIGRhdGEtYmxvY2s9InRydWUiIGRhdGEtZWRpdG9yPSI0azJv
+bCIgZGF0YS1vZmZzZXQta2V5PSI2b2E5bi0wLTAiPiZuYnNwOzxicj48L2Rpdj4=">​</div>
+</div>
+</div>
+<!-- /.hkb-article__content -->
+
+
+					
+
+
+					 
+
+					
+			</div>			
+
+		</article>
+
+		
+		
+
+<!-- .hkb-article__related -->
+    <section class="hkb-article-related" class="clearfix">
+        <h3 class="hkb-article-related__title">相关文章</h3>
+        <ul class="hkb-article-list">
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="search.html" title="全文搜索功能介绍">全文搜索功能介绍</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    2142</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="faq1.html" title="Cloud Studio 常见问题">Cloud Studio 常见问题</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    9781</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy-static.html" title="使用一键部署搭建静态网站">使用一键部署搭建静态网站</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    11698</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="access-link.html" title="使用访问链接演示你的应用">使用访问链接演示你的应用</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    17878</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="plugins1.html" title="Cloud Studio 插件介绍">Cloud Studio 插件介绍</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    7346</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+        
+            <li class="xianguanwenzhang hkb-article-list__format-standard">
+                <a href="one-click-deploy.html" title="一键部署使用指南">一键部署使用指南</a>
+                     <!-- .hkb-meta -->
+    <ul class="hkb-meta">
+
+                            <li class="hkb-meta__views">
+    31851</li>                        
+    </ul>
+    <!-- /.hkb-meta -->
+            </li>
+
+                </ul>
+    </section>
+<!-- /.hkb-article__related -->
+
+
+		
+	
+</div><!-- /#ht-kb -->
+</main>
+<!-- /#content -->
+
+
+<!-- #sidebar -->
+<aside id="sidebar" role="complementary" itemtype="http://schema.org/WPSideBar" itemscope="itemscope">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><a href="quick-start.html"><img src="static/picture/beaa7550-1350-4c46-b12d-52414125.png" class="help-banner"></a>
+<a href="safe.html"><img src="static/picture/27b960ca-cad4-426f-9b70-48940704.png" class="help-banner"></a>
+
+
+<style>
+.help-banner{
+width:100%;
+}
+#sidebar .widget#custom_html-5{
+padding:0px;
+}
+#sidebar .widget#custom_html-5 a{
+display:block;
+line-height:0px;
+}
+</style>
+
+</div></section><section id="ht-kb-categories-widget-4" class="widget hkb_widget_categories clearfix"><h4 class="widget-title">帮助文档目录</h4><ul class="hkb_category_widget__category_list">	<li class="cat-item cat-item-60"><a href="quick-start.html">快速入门</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="faq.html">常见问题</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="git-2.html">Git帮助手册</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="cloud-studio.html">Cloud Studio</a>
+</li>
+</ul></section><section id="ht-kb-exit-widget-3" class="widget hkb_widget_exit clearfix"><h4 class="widget-title">依然找不到解决办法？</h4><div class="hkb_widget_exit__content">点击下方链接提交反馈</div><a class="hkb_widget_exit__btn" href="javascript:;" target="_blank">提交反馈</a></section></aside>
+<!-- /#sidebar -->
+
+
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- /#primary -->
+
+<!-- #site-footer-widgets -->
+<section id="site-footer-widgets" style="display: none;">
+<div class="ht-container">
+
+
+</div>
+</section>
+<!-- /#site-footer-widgets -->
+<style>
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.footer-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f2530;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer-container .nav {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+}
+.footer-container .nav .item {
+  font-size: 14px;
+  margin-right: 40px;
+  text-decoration: unset;
+  color: #fff;
+}
+.footer-container .right {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-container .items {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+.footer-container .items a {
+  color: #fff;
+  text-decoration: unset;
+}
+@media only screen and (max-width: 414px) {
+  .footer-container {
+    height: 200px;
+  }
+  .footer-container .nav {
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-container .nav .first-row {
+    margin-bottom: 10px;
+  }
+  .footer-container .nav .first-row a {
+    margin-right: 0;
+  }
+  .footer-container .nav .second-row {
+    margin-bottom: 20px;
+  }
+  .footer-container .nav .second-row a {
+    margin-right: 10px;
+  }
+  .footer-container .nav .second-row a:last-of-type {
+    margin-right: 0;
+  }
+  .footer-container .nav .item {
+    font-size: 14px;
+  }
+  .footer-container .items {
+    margin-bottom: 12px;
+  }
+}
+
+
+</style>
+
+<!-- #site-footer -->
+<footer class="footer-container">
+    <div class="nav">
+        <div class="first-row">
+            <a href="help.html" target="_blank" class="item">
+                文档帮助
+            </a>
+            <a href="index2.html" class="item" target="_blank">
+                腾讯云官网
+            </a>
+        </div>
+        <div class="second-row">
+
+            <a href="developer.html" class="item" target="_blank">
+                腾讯云+社区
+            </a>
+            <a href="about.html" target="_blank" class="item">
+                关于我们
+            </a>
+            <a href="javascript:;" class="item" target="_blank" style="margin-right: 0">
+                在线反馈
+            </a>
+        </div>
+    </div>
+    <div class="items"><a href="privacy.html" target="_blank">隐私策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="terms.html" target="_blank">服务条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="security.html" target="_blank">安全策略</a></div>
+    <div class="right">
+        Copyright © 2013-2019 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;粤B2-20090059
+    </div>
+</footer>
+<!-- /#site-footer -->
+
+<script type='text/javascript' src='static/js/jquery.livesearch-4.8.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/dev.tencent.com\/help\/?ajax=1&ht-kb-search=1&s=","focusSearchBox":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/hkb-livesearch-js-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/front.min-1509.js'></script>
+<script type='text/javascript' src='static/js/functions-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/jquery-picture-min-4.8.12.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min-4.8.12.js'></script>
+
+</div>
+<!-- /#site-container -->
+</body>
+</html>

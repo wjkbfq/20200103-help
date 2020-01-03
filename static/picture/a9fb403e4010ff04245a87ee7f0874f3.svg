@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>上云迁移-48x48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="上云迁移-48x48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-7" stroke="#334966" stroke-width="2" cx="24" cy="24" r="23"></circle>
+        <path d="M17,29 C13.1340068,29 10,25.8659932 10,22 C10,18.1340068 13.1340068,15 17,15 C17.0965182,15 17.1925801,15.0019534 17.2881485,15.0058229 C18.1468327,12.1113422 20.8268511,10 24,10 C27.8659932,10 31,13.1340068 31,17 C31,17.0277177 30.9998389,17.0553978 30.9995176,17.0830394 C31.3248781,17.0284269 31.6591193,17 32,17 C35.3137085,17 38,19.6862915 38,23 C38,26.3137085 35.3137085,29 32,29 C31.6592878,29 31.3252085,28.9716012 31,28.9170416 L31,29 L17,29 Z" id="Combined-Shape" fill="#00A4FF"></path>
+        <path d="M23,22.2666667 L19.5,26 L18,24.4 L24,18 L30,24.4 L28.5,26 L25,22.2666667 L25,38 L23,38 L23,22.2666667 Z" id="Combined-Shape" fill="#334966"></path>
+    </g>
+</svg>

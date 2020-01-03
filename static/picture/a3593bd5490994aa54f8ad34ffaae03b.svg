@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>AI 平台服务</title>
+    <desc>Created with Sketch.</desc>
+    <g id="AI-平台服务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+        <g id="49c567fd630096014990ad36df52552f" transform="translate(1.000000, 1.000000)" fill="#00A4FF" fill-rule="nonzero">
+            <path d="M2,2 L2,12 L12,12 L12,2 L2,2 Z M0,0 L14,0 L14,14 L0,14 L0,0 Z M6,4 L6,6 L4,6 L4,4 L6,4 Z M4,8 L6,8 L6,10 L4,10 L4,8 Z M8,4 L10,4 L10,6 L8,6 L8,4 Z M8,8 L10,8 L10,10 L8,10 L8,8 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>微服务与微计算</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="微服务与微计算" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="微服务微计算" transform="translate(8.000000, 12.000000)" stroke="#00A4FF" stroke-width="2">
+            <g id="Group-13">
+                <polyline id="Path-5" points="4 0 0 3.86741023 4 8"></polyline>
+                <polyline id="Path-5-Copy" transform="translate(14.000000, 4.000000) scale(-1, 1) translate(-14.000000, -4.000000) " points="16 0 12 3.86741023 16 8"></polyline>
+                <path d="M8.75864745,1.32363918 L6.66666667,7.58333333" id="Line-8" stroke-linecap="square"></path>
+            </g>
+        </g>
+        <path d="M2,29 L0,29 L0,5 L0,3 L9,3 L9,5 L2,5 L2,27 L9,27 L9,29 L2,29 Z" id="Combined-Shape" fill="#00A4FF"></path>
+        <path d="M25,29 L23,29 L23,5 L23,3 L32,3 L32,5 L25,5 L25,27 L32,27 L32,29 L25,29 Z" id="Combined-Shape-Copy" fill="#00A4FF" transform="translate(27.500000, 16.000000) scale(-1, 1) translate(-27.500000, -16.000000) "></path>
+    </g>
+</svg>

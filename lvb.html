@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>标准直播_原云直播 - 腾讯云</title>
+    <meta name="keywords" content="标准直播,云直播,秀场直播,企业直播,广电媒体,LVB">
+    <meta name="description" content="标准直播（Live Video Broadcasting，LVB）依托腾讯多年的音视频技术平台，以及全球海量加速节点和领先的音视频 AI 技术，为开发者提供专业、稳定的直播推流、转码、分发及播放服务，全面满足低延迟、超高画质、大并发访问量的要求。 ">
+    <meta name="format-detection" content="telephone=no">
+	
+	
+	
+	
+	<script>document.domain = 'cloud.tencent.com';</script>
+
+    
+
+
+<link rel="stylesheet" href="static/css/global-201911291451-31536000_201.css">
+<link rel="stylesheet" href="static/css/global-components-31536000_20180.css">
+
+
+
+
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="static/css/doc-20199190004-86400.css">
+<link rel="stylesheet" href="static/css/product-20199251649-86400.css">
+<link rel="stylesheet" href="static/css/p-calc-86400.css">
+
+
+    
+   <link rel="stylesheet" href="static/css/product-lvb.css">
+    
+</head>
+<body>
+
+
+
+   <!--[if lt IE 9]>
+<script src="static/js/updateTips-31536000_201902181234.js"></script>
+<![endif]-->    <script> window.ISABSOLUTEHEADER = false;
+    window.ISMOBILE = false; </script> <div id="navigationBar" data-type="cn_zh" class="c-nav-wrap c-nav c-nav-air-sub" data-style="air"> <div class="c-nav-mod c-nav-mod-pc "> <div id="qcTopNavFstLevel" class="c-nav-top" data-nohome="1"> <div class="c-nav-logo-wrap"> <a id="qcLeftNavSwitcher" href="javascript:;" class="c-nav-all-trigger" hotrep="hp.header.trigger" aria-haspopup="true" aria-expanded="false" role="button" aria-controls="qcLeftNavSwitcher"> <i class="c-nav-all-trigger-icon"></i> <span class="c-nav-all-trigger-text">菜单</span> </a> <i class="c-nav-top-divider"></i> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> </div> <div class="c-nav-top-operation"> <div class="c-nav-top-ctrl"> <div class="c-nav-top-links"> <a href="ba.html" hotrep="hp.header.ba" class="link-item">备案</a> <a href="index6.html" hotrep="hp.header.console" class="link-item">控制台</a> </div> </div> </div> </div> <div id="qcTopNavSndLevel" class="c-nav-bottom"> <div id="qcTopNavMain" class="c-nav-bm-categories c-nav-bm-categories-collapse"> <div class="c-nav-list-wrap J-qcTopNavListWrapper"> <ul class="c-nav-list J-qcTopNavList"> <li class="presentation J-qcTopNavItem" data-id="act" data-action="link" data-title="最新活动" style="display: inline-block"><a role="button" href="home.html" hotrep="hp.header.act">最新活动<i class="c-nav-hot-icon"></i></a> </li> <li class="presentation J-qcTopNavItem" data-id="product" data-action="expand" data-title="产品"> <a role="button" href="product.html" hotrep="hp.header.product" aria-haspopup="true" aria-expanded="false" aria-controls="qcTopNavSheetWrapper"> 产品 </a> </li> <li class="presentation J-qcTopNavItem" data-id="solution" data-action="expand" data-title="解决方案"> <a role="button" href="overview.html" hotrep="hp.header.solution"> 解决方案 </a> </li> <li class="presentation J-qcTopNavItem" data-id="price" data-action="link" data-title="定价"> <a role="button" href="price.html" hotrep="hp.header.price"> 定价 </a> </li> <li class="presentation J-qcTopNavItem" data-id="document" data-action="link" data-title="文档"> <a role="button" href="product1.html" hotrep="hp.header.document"> 文档 </a> </li> <li class="presentation J-qcTopNavItem" data-id="market" data-action="expand" data-title="云市场"> <a role="button" href="index7.html" hotrep="hp.header.market"> 云市场 </a> </li> <li class="presentation J-qcTopNavItem" data-id="developer" data-action="expand" data-title="开发者"> <a role="button" href="javascript:;" hotrep="hp.header.developer"> 开发者 </a> </li> <li class="presentation J-qcTopNavItem" data-id="resource" data-action="expand" data-title="支持"> <a role="button" href="javascript:;" hotrep="hp.header.resource"> 支持 </a> </li> <li class="presentation J-qcTopNavItem" data-id="cooperate" data-action="expand" data-title="合作与生态"> <a role="button" href="javascript:;" hotrep="hp.header.cooperate"> 合作与生态 </a> </li> <li class="presentation J-qcTopNavItem" data-id="customer" data-action="link" data-title="客户"> <a role="button" href="customer.html" hotrep="hp.header.customer"> 客户 </a> </li> <li class="presentation more J-qcTopNavMore" tabindex="-1" style="display: none"> <div class="c-nav-dropdown-btn J-qcTopNavMoreItem" hotrep="hp.header.more"> <a href="javascript:;" class="c-nav-dropdown-btn-inner"> <span class="nav-dropdown-btn-txt">更多</span> </a> <div class="c-bubble c-bubble-top J-qcTopNavDropdownWrapper" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list"> <ul class="J-qcTopNavDropdown"> </ul> </div> </div> </div> </div> </div> </div> </li> </ul> </div> <div class="top-nav-sheet-wrapper" id="qcTopNavSndLevelSheetContainer"></div> <a href="javascript:;" hotrep="hp.header.nav.snd.more" class="c-nav-list-more J-qcTopNavListMore"></a> </div> <div id="qcTopNavSndOpera" class="c-nav-bm-right"> <a href="login.html" hotrep="hp.pc.topnav.login" rel="nofollow" class="c-nav-bm-text-btn J-qcTopNavBtnLogin" style="display: none">登录</a><a href="register1.html" hotrep="hp.pc.topnav.register" style="display: none" rel="nofollow" class="nav-register-btn c-btn J-qcTopNavBtnRegister">免费注册</a> <div class="c-nav-dropdown-btn nav-bm-user-btn J-qcTopNavProfile" style="display: none"> <a href="developer1.html" hotrep="hp.header.profile" class="c-nav-dropdown-btn-inner" aria-expanded="false" aria-haspopup="true" role="button" aria-label="个人中心"> <span class="nav-dropdown-btn-txt"> <i class="c-nav-icon-user"></i> </span> <i class="nav-status-dot" tabindex="-1"></i> </a> <div class="c-bubble c-bubble-top nav-user-bubble J-qcTopNavProfileDropdown" style="display:none"> <div class="c-bubble-inner"> <div class="nav-dropdown-mini"> <div class="dropdown-mini-inner dropdown-mini-data"> <div class="dropdown-mini-list"> <ul> <li class="dropdown-mini-item"><a class="mini-item-nickname" tabindex="-1"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"> <div class="dropdown-mini-item-inner"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a> <a href="voucher.html" class="item-aside J-qcTopNavUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券</a></div> </li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none"></span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display:none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="navigationBarM" class="c-nav-wrap-m c-nav"> <div class="c-nav-mod c-nav-mod-m"> <div id="qcTopNavMOpera" class="c-nav-inner"> <a class="c-nav-bg-logo" href="index5.html" hotrep="hp.header.hp"> <i>腾讯云</i> </a> <div class="c-nav-right"> <a class="c-nav-m-btn J-qcTopNavMSearchOpen" href="javascript:"> <i class="c-nav-icon-search-m"></i> </a> <a class="c-nav-m-btn J-qcTopNavProfile" href="javascript:"> <i class="c-nav-icon-user-m"></i> </a> <span class="c-nav-r-btn J-qcTopNavMMenu"> <span></span> <span></span> <span></span> </span> </div> </div> <div id="qcTopNavMUserProfile" class="c-nav-m-user" style="display: none"> <ul> <li class="dropdown-mini-item" style="display: none"><a href="javascript:;" hotrep="hp.header.profile.nickname" class="mini-item-nickname"> 昵称：<span class="mini-item-num J-qcTopNavNickname"></span> </a></li> <li class="dropdown-mini-item"><a href="developer1.html" hotrep="hp.header.profile.developer">账号信息</a></li> <li class="dropdown-mini-item"><a href="account.html" hotrep="hp.header.profile.account">费用中心</a></li> <li class="dropdown-mini-item"><a href="voucher.html" class="J-qcTopNavMUserVoucher" hotrep="hp.header.profile.account" style="display:none">代金券 <span class="nav-status-num J-qcTopNavMUserVoucherNum"></span></a></li> <li class="dropdown-mini-item"><a href="unread.html" hotrep="hp.header.profile.message"> 未读消息 <span class="nav-status-num J-qcTopNavUserMsg" style="display: none">0</span> </a></li> <li class="dropdown-mini-item"><a href="workorder.html" hotrep="hp.header.profile.workorder">我的工单</a></li> <li class="dropdown-mini-item J-qcTopNavBtnLogoutWrapper" style="display: none"><a href="javascript:;" class="J-qcTopNavBtnLogout" hotrep="hp.header.profile.logout">退出</a> </li> <li class="dropdown-mini-item"><a class="c-nav-m-text-week" href="tel:95716">联系客服：95716</a> </li> </ul> <div class="c-nav-m-dropdown-btn c-grid J-topNavfooter" style="display: block" data-type="not-login"> <div class="c-g-12"><a role="button" href="javascript:;" class="c-btn J-doRegistryBtn">免费注册</a></div> <div class="c-g-12"><a href="javascript:;" class="c-btn c-btn-hole-week J-doLoginBtn">登录</a></div> </div> <div class="c-nav-m-footer J-topNavfooter" style="display: block" data-type="has-login"> <div class="c-nav-m-qr-code"><img src="static/picture/QRcode.png"> </div> <p class="c-nav-m-text-item c-nav-m-text-week">长按识别或截图保存</p> <p class="c-nav-m-text-item c-nav-m-text-week">关注公众号，移动管理云服务</p></div> </div> <div id="qcTopNavMSearch" class="c-top-searchbar search-out" style="display: none"> <div class="c-top-searchbar-inner"> <div class="c-top-searchbar-box" role="combobox"> <form action="."> <div class="c-searchbar-ctrl"><a href="javascript:;" class="search-btn J-qcBtnDoSearch" hotrep="hp.header.dosearch"><i class="nav-search-icon"></i></a> <input type="search" class="search-ipt J-qcIptSearch" placeholder="请输入你要搜索的关键词" aria-autocomplete="list" autocomplete="on" aria-owns="search-list"></div> </form> <span class="sr-only" aria-live="polite">0个推荐</span> <div class="nav-dropdown-mini" tabindex="-1"> <div class="dropdown-mini-inner dropdown-mini-lang"> <div class="dropdown-mini-list J-qcSearchBoxHotWordWrapper"><h3 class="dropdown-mini-list-tit"> 热门搜索</h3> <textarea class="J-qcSearchData" style="display:none">                            { "hotWords": ["域名注册", "微信小程序", "云服务器", "短信", "网站备案", "SSL证书", "直播", "HTTP", "数据库MySQL", "虚拟主机" ], "max": 5 }
+                    </textarea> <ul class="J-qcSearchBoxHotWordList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="SSL证书">SSL证书</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="数据库MySQL">数据库MySQL</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="域名注册">域名注册</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="直播">直播</a> </li> <li role="option" class="dropdown-mini-item J-qcSearchBoxHotWordItem"><a tabindex="-1" href="javascript:;" hotrep="" data-keyword="云服务器">云服务器</a> </li> </ul> </div> <div class="dropdown-mini-list J-qcSearchBoxResultWrapper" style="display: none"> <ul id="search-list" class="J-qcSearchBoxResultList" role="listbox"> <li role="option" class="dropdown-mini-item J-qcSearchBoxResultItem"><a tabindex="-1" href="javascript:;" hotrep=""></a> </li> </ul> </div> </div> </div> </div> </div> </div> <div id="qcTopNavMMenu" class="c-nav-m-wrap search-out" style="display: none"> <div class="c-nav-m-menu lang"> <div class="m-tit-level-1 J-qcMenuTitle"><a href="javascript:;"><i class="c-nav-icon-global"></i> <span>地区</span></a></div> <div class="m-menu-ctrl J-qcMenuList" style="display: none"> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="cn"><a href="javascript:;">中国站</a> </div> <div class="m-tit-level-2 J-qcMenuTitle" data-action="lang" data-lang="intl"><a href="javascript:;">International</a> </div> </div> </div> <div class="c-nav-m-footer" style="display: block"> <div class="c-nav-m-footer-list"> <ul> <li class="footer-list-item"><a href="index7.html" hotrep="hp.mobile.topnav.market">云市场</a></li> <li class="footer-list-item"><a href="developer.html" hotrep="hp.mobile.topnav.developer">云+社区</a></li> <li class="footer-list-item"><a href="free.html" hotrep="hp.mobile.topnav.free">免费套餐</a></li> <li class="footer-list-item"><a href="index6.html" hotrep="hp.mobile.topnav.console">登入控制台 <i class="nav-icon-links"></i></a></li> <li class="footer-list-item"><a href="login.html" hotrep="hp.mobile.topnav.login" rel="nofollow" class="J-qcTopNavBtnLogin">登录</a></li> <li class="footer-list-item"><a href="register1.html" hotrep="hp.mobile.topnav.register" rel="nofollow" class="J-qcTopNavBtnRegister">注册</a></li> <li class="footer-list-item"><a href="connect.html" hotrep="hp.mobile.topnav.connect">联系我们</a></li> <li class="footer-list-item"><a href="ask.html" hotrep="hp.mobile.topnav.ask">快速问答</a></li> </ul> </div> </div> </div> </div> </div> 
+
+<script>window.__language = 'zh'</script>
+
+
+<div class="p-ceiling-nav c-nav c-nav-mod c-nav-white J-pdNavTop">
+	<div class="c-nav-bottom">
+		<a href="javascript:;" class="c-nav-all-trigger J-pdAllProduct" hotrep="hp.header.trigger" role="button"><i class="c-nav-all-trigger-icon"></i><span>全部产品</span></a>
+		<i class="c-nav-bottom-divider"></i>
+		<div class="c-nav-bm-categories J-top-nav-product">
+			<ul class="c-nav-list">
+				
+				<li class="presentation J-qcTopNavItem curr-p" style="display: inline-block;">
+					<a role="button" href="" hotrep="product.lvb.overview.top.navigation.overview">
+						标准直播 LVB 
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.lvb.overview.top.navigation.details">
+						产品详细信息
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.lvb.overview.top.navigation.pricing">
+						定价
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.lvb.overview.top.navigation.getting-started">
+						入门
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.lvb.overview.top.navigation.faqs">
+						常见问题
+					</a>
+				</li>
+				
+				<li class="presentation J-qcTopNavItem " style="display: inline-block;">
+					<a role="button" href="javascript:;" hotrep="product.lvb.overview.top.navigation.developer">
+						文档与资源
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+			<div class="c-nav-bm-right">
+				<div class="c-nav-bm-btns">
+					
+					<a href="javascript:;" class="c-nav-bm-btn c-btn" hotrep="product.lvb.overview.top.nav.btn1">
+						立即使用
+					</a>
+					
+
+					
+					
+						<a href="javascript:;" class="c-btn c-nav-bm-btn-hole" hotrep="product.lvb.overview.top.nav.btn2">
+							立即选购
+						</a>
+					
+					
+					
+					
+				</div>
+			</div>
+		
+	</div>
+	<!--下拉菜单-->
+	<div class="" style="padding-left: 0px; left: 10px; top: 46px; display: none;">
+	</div>
+</div>
+
+
+
+<div class="product-body J-mainContent">
+
+
+
+
+<div class="c-hero-section vast J-pdBanner ">
+    
+    <div class="c-hero-section-inner">
+        <div class="c-hero-section-ct">
+			
+			<div class="p-index-nav">
+				
+				<div class="p-index-nav-back">
+					<a href="css.html">云直播</a>
+				</div>
+				
+
+				
+				<div class="p-index-nav-btn J-pdSiblingChecker">
+					<div class="p-index-nav-btn-inner">标准直播 LVB</div>
+					<div class="p-index-nav-list J-pdSiblingList" style="display: none;">
+						<div class="p-index-nav-list-inner c-scrollbar">
+						
+						
+						<div class="p-index-nav-item actived"><a href="">标准直播</a></div>
+						
+						
+						
+						<div class="p-index-nav-item"><a href="javascript:;">慢直播（直播监控）</a></div>
+						
+						
+						
+						<div class="p-index-nav-item"><a href="javascript:;">快直播（超低延迟直播）</a></div>
+						
+						
+						</div>
+					</div>
+				</div>
+				
+
+				
+			</div>
+			
+
+            <h1 class="c-hero-section-tit">
+                标准直播 LVB
+            </h1>
+            <div class="c-hero-section-des">
+                <p class="pc-mod">提供专业、稳定、快速的直播接入和分发服务</p>
+				<p class="m-mod">专业稳定快速的直播接入和分发服务</p>
+            </div>
+            
+            <div class="c-hero-section-btn">
+                <a role="button" href="javascript:;" class="c-btn default  J-pdBannerBtn1" hotrep="product.lvb.overview.banner.btn1">
+                    立即使用
+                </a>
+
+                
+                    
+                    <a href="javascript:;" class="c-btn p-weak-btn" hotrep="product.lvb.overview.banner.btn2">立即选购</a>
+                    
+                
+                    
+                
+
+				
+
+            </div>
+            
+
+			
+
+                
+        </div>
+        <div class="c-hero-icon-mod" style="background-image: url(static/image/2b5baefd6e5bfd300d688127243b3e1c.png)">
+			
+		</div>
+    </div>
+    
+</div>
+
+
+<div class="p-tab-mod J-pdPageNav ">
+    <div class="c-tab-cross">
+        <div class="c-tab-hd J-navWrapper">
+            <div class="c-tab-scroll J-navScroller">
+                <ul role="navigation" class="c-tab-ctrl J-navList">
+                    
+                    <li class="c-tab-simple J-navItem actived" data-type="overview">
+                        <a href="" hotrep="product.lvb.overview.navigation.overview">
+                            
+                            <span class="c-tab-tit">标准直播 LVB 概览</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="details">
+                        <a href="javascript:;" hotrep="product.lvb.overview.navigation.details">
+                            
+                            <span class="c-tab-tit">产品详细信息</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="pricing">
+                        <a href="javascript:;" hotrep="product.lvb.overview.navigation.pricing">
+                            
+                            <span class="c-tab-tit">定价</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="getting-started">
+                        <a href="javascript:;" hotrep="product.lvb.overview.navigation.getting-started">
+                            
+                            <span class="c-tab-tit">入门</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="faqs">
+                        <a href="javascript:;" hotrep="product.lvb.overview.navigation.faqs">
+                            
+                            <span class="c-tab-tit">常见问题</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="c-tab-simple J-navItem " data-type="developer">
+                        <a href="javascript:;" hotrep="product.lvb.overview.navigation.developer">
+                            
+                            <span class="c-tab-tit">文档与资源</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div aria-hidden="true" class="c-tab-btns J-navHandlerWrapper" style="display: none;">
+                <a href="javascript:;" class="J-navHandler prev" data-action="prev" hotrep="product.lvb.overview.banner.prev">上一页</a>
+                <a href="javascript:;" class="J-navHandler next" data-action="next" hotrep="product.lvb.overview.banner.next">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="J-subContent">
+
+    
+
+        
+
+		<div class="c-section c-p-y-short about-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="about-mod-con">
+                <div class="c-media-horiz about-intro">
+                    
+                    <div class="c-media-img">
+                        <img src="static/picture/5ba9e8104420a0e8aa04d34dc4f4593d.svg" alt="">
+                    </div>
+                    
+                    <div class="c-media-body">
+                        <h4 class="c-media-heading">
+                            
+                           标准直播 LVB 简介
+                        </h4>
+                        <p class="c-media-info">
+                            标准直播（Live Video Broadcasting，LVB）依托腾讯多年的音视频技术平台，以及全球海量加速节点和领先的音视频 AI 技术，为开发者提供专业、稳定的直播推流、转码、分发及播放服务，全面满足低延迟、超高画质、大并发访问量的要求。&nbsp;
+                        </p>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+                <div class="about-event">
+                    <div class="about-event-tit">
+                        活动 &amp; 公告
+                    </div>
+                    <div class="about-event-con">
+                        <ul>
+                            
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.lvb.overview.about.activity.1">
+                                    【产品体验】域名租赁功能上线，有效解决域名备案难题，低至1元/天 >>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.lvb.overview.about.activity.2">
+                                    【移动直播】移动直播SDK，9.8元体验连麦互通！>>
+                                    
+                                </a>
+                            </li>
+                             
+                            <li class="about-event-item">
+                                <i class="p-icon-position"></i>
+                                <a target="_blank" href="javascript:;" rel="nofollow" hotrep="product.lvb.overview.about.activity.3">
+                                    【组合特惠】视频云优选特惠，流量包低至0.12元/GB,更有高达900元代金券等你领！>>
+                                    
+                                </a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="about-mod-aside">
+                <div class="about-video">
+                    <div class="c-thumbnail-item d-card-hover">
+                            
+                            <a class="c-thumbnail-card J-pdMediaItem" href="javascript:;" data-media="https://cloud.tencent.com/developer/edu/quick-play/1524-10672" target="_blank" hotrep="product.lvb.overview.about.aside.media">
+                                
+                            <div class="c-thumbnail-img">
+                                <img src="static/picture/image.png" alt="">
+                                <div class="c-thumbnail-img-ctrl">
+                                    <div class="c-thumbnail-tips">操作视频</div>
+                                    <h3 class="c-thumbnail-tit">标准直播使用入门</h3>
+                                </div>
+                            </div>
+                            <div class="c-thumbnail-status-bar">
+                                
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-play-icon"></i>
+                                    <span class="c-thumbnail-status-txt">视频</span>
+                                </div>
+                                <div class="c-thumbnail-status-ctrl">
+                                    <i class="c-thumbnail-time-icon"></i>
+                                    <span class="c-thumbnail-status-txt">07:21</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+<div class="c-section J-pdBuyCardSection c-p-y-tall home-selling-mod">
+    <div class="c-section-inner">
+        <a id="section-buy" class="p-href-mod"></a>
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">推荐购买</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="d-selling-card-wrap">
+                <div class="d-selling-card-list item-4">
+
+                    
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">直播100G流量包</h3>
+                                    
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList">
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                约100人同时在线观看标清（1Mbps）直播2小时
+                                            </li>
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                有效期自购买之日一年内
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-price">
+                                    <div class="d-selling-card-price-now">
+                                        <span class="d-selling-card-price-num">25</span>
+                                        <span class="d-selling-card-price-unit">元</span>
+                                    </div>
+                                    <div class="d-selling-card-price-origin">
+                                        <del>
+                                            <span class="d-selling-card-price-num"></span>
+                                            <span class="d-selling-card-price-unit"></span>
+                                        </del>
+                                    </div>
+                                </div>
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn c-btn-hole" hotrep="product.lvb.buycard.list.btn0">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">直播500G流量包</h3>
+                                    
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList">
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                约500人同时在线观看标清（1Mbps）直播2小时
+                                            </li>
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                有效期自购买之日一年内
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-price">
+                                    <div class="d-selling-card-price-now">
+                                        <span class="d-selling-card-price-num">118</span>
+                                        <span class="d-selling-card-price-unit">元</span>
+                                    </div>
+                                    <div class="d-selling-card-price-origin">
+                                        <del>
+                                            <span class="d-selling-card-price-num"></span>
+                                            <span class="d-selling-card-price-unit"></span>
+                                        </del>
+                                    </div>
+                                </div>
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn c-btn-hole" hotrep="product.lvb.buycard.list.btn1">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">直播5TB流量包</h3>
+                                    
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList">
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                约500人同时在线观看高清（2Mbps）直播12小时
+                                            </li>
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                有效期自购买之日一年内
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-price">
+                                    <div class="d-selling-card-price-now">
+                                        <span class="d-selling-card-price-num">1086</span>
+                                        <span class="d-selling-card-price-unit">元</span>
+                                    </div>
+                                    <div class="d-selling-card-price-origin">
+                                        <del>
+                                            <span class="d-selling-card-price-num"></span>
+                                            <span class="d-selling-card-price-unit"></span>
+                                        </del>
+                                    </div>
+                                </div>
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn c-btn-hole" hotrep="product.lvb.buycard.list.btn2">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-selling-card d-selling-card-vertical">
+                        <div class="d-selling-card-inner">
+                            <div class="d-selling-card-main">
+                                <div class="d-selling-card-hd">
+                                    <h3 class="d-selling-card-tit">直播10TB流量包</h3>
+                                    
+                                </div>
+                                <div class="d-selling-card-bd">
+                                    <div class="d-selling-card-param" style="height: auto;">
+                                        <ul class="d-selling-card-param-list J-pdBuyCardList">
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                约1000人同时在线观看高清（2Mbps）直播12小时
+                                            </li>
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                赠送1年移动直播 SDK 使用权
+                                            </li>
+                                            
+                                            <li class="d-selling-card-param-item">
+                                                有效期自购买之日一年内
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-selling-card-buy">
+                                <div class="d-selling-card-price">
+                                    <div class="d-selling-card-price-now">
+                                        <span class="d-selling-card-price-num">2172</span>
+                                        <span class="d-selling-card-price-unit">元</span>
+                                    </div>
+                                    <div class="d-selling-card-price-origin">
+                                        <del>
+                                            <span class="d-selling-card-price-num"></span>
+                                            <span class="d-selling-card-price-unit"></span>
+                                        </del>
+                                    </div>
+                                </div>
+                                <div class="d-selling-card-button-wrap">
+                                    <a href="javascript:;" class="c-btn c-btn-hole" hotrep="product.lvb.buycard.list.btn3">
+                                        立即购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall function-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">腾讯云 LVB 的特性</h3>
+        </div>
+        <div class="c-section-bd">
+            <div role="list" class="c-grid function-list J-section2List">
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/453d6f512a62b18b4b37391bf48a9a44.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                功能完善
+                            </h4>
+                            <p class="c-media-info">
+                                支持 HLS/RTMP 推流等多种直播源接入，支持多终端适配，上行码率自适应；具备集美颜、音频处理技术、首屏秒开、低卡顿率、录屏直播、清晰度无缝切换等功能，满足客户多种场景需求；全平台播放，支持客户定制开发。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/1ab8ed548f9603e0aba2bd018f9c77ca.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                全球加速
+                            </h4>
+                            <p class="c-media-info">
+                                全国布局 CDN 加速节点超过1100多个，覆盖电信、联通、移动以及长宽、广电等十几家中小型运营商；海外布局200多个 CDN 加速节点，覆盖北美、欧洲、东南亚等50多个国家和地区，支持 CDN 加速业务无缝出海。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/90e6769ecc0d3e12f65e1bdfc6a0fc0d.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                专业视频处理
+                            </h4>
+                            <p class="c-media-info">
+                                针对海量多媒体数据，提供的云端转码和音视频处理服务。可将音视频文件转码为适合在 OTT、PC 或移动端播放的格式，并进行截取封面、剪辑、鉴黄、加密等操作。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/be13c8f2be6be9e25d056fba007fb3d9.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                安全防盗
+                            </h4>
+                            <p class="c-media-info">
+                                通过&nbsp;IP 黑白名单、referer 黑白名单、HTTPS 安全加速以及 URL 加密等多种直播加密技术，达到全方位检测和防护，杜绝盗播行为。提供更专业的数字版权管理解决方案（DRM）全面保护您的视频安全。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/99be35ad0f0a255956a7f5bda3991b71.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                智能学习 
+                            </h4>
+                            <p class="c-media-info">
+                                通过 AI 智能识别技术，可智能学习和分析图片影像的内容、颜色和场景等，让机器替代人工进行图像识别和审核，实现语音识别、广告识别、智能鉴黄、智能字幕、无意义场景识别等功能。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div role="listitem" class="c-g-8 J-section2Item">
+                    <div class="c-media">
+                        <div class="c-media-img">
+                            <img class="ico64" src="static/picture/d118244e8db3026b851a0a42b0f75c09.svg" alt="">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                数据统计分析
+                            </h4>
+                            <p class="c-media-info">
+                                基于大数据分析，覆盖各类行业的不同场景，实时把控推流质量、定位播放问题；对带宽、流量、请求数、并发连接数等数据进行实时监测，并提供详细的统计结果，助力用户业务拓展。
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">应用场景</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive J-tabWrapper" data-curr-panel="kem2289h4l">
+                <ul>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem actived" data-title="游戏直播" data-target="kem2289h4l" style="display: inline-block;">
+                        <a href="javascript:;" id="tab_kem2289h4l" role="tab" hotrep="product.lvb.overview.scene.1.tab" tabindex="0" aria-selected="true" aria-controls="kem2289h4l">
+                            <span class="c-tab-tit">游戏直播</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem" data-title="秀场直播" data-target="g5ezhl6ia6b" style="display: inline-block;">
+                        <a href="javascript:;" id="tab_g5ezhl6ia6b" role="tab" hotrep="product.lvb.overview.scene.2.tab" tabindex="-1" aria-selected="false" aria-controls="g5ezhl6ia6b">
+                            <span class="c-tab-tit">秀场直播</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem" data-title=" 在线教育" data-target="ltdgn53irn" style="display: inline-block;">
+                        <a href="javascript:;" id="tab_ltdgn53irn" role="tab" hotrep="product.lvb.overview.scene.3.tab" tabindex="-1" aria-selected="false" aria-controls="ltdgn53irn">
+                            <span class="c-tab-tit"> 在线教育</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem" data-title="广电新媒体" data-target="6l0av5dojyc" style="display: inline-block;">
+                        <a href="javascript:;" id="tab_6l0av5dojyc" role="tab" hotrep="product.lvb.overview.scene.4.tab" tabindex="-1" aria-selected="false" aria-controls="6l0av5dojyc">
+                            <span class="c-tab-tit">广电新媒体</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabItem" data-title="电商直播" data-target="uzzhwujq8ta" style="display: inline-block;">
+                        <a href="javascript:;" id="tab_uzzhwujq8ta" role="tab" hotrep="product.lvb.overview.scene.5.tab" tabindex="-1" aria-selected="false" aria-controls="uzzhwujq8ta">
+                            <span class="c-tab-tit">电商直播</span>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation" class="c-tab-simple J-tabMore" style="display: none;">
+                        <a href="javascript:;" role="tab" hotrep="product.lvb.overview.scene.more.tab" tabindex="-1" aria-selected="false" aria-controls="more">
+                            <span class="c-tab-tit">更多</span>
+                            <i class="c-icon-triangle-down"></i>
+                        </a>
+                        <div class="pn-subtab-dropdown-menu J-subDropdown" style="display: none">
+                            <ul class="J-subDropdownList">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_kem2289h4l" data-panel="kem2289h4l" style="display: block;">
+                    <div class="J-mTabItem c-tab-m-tit actived" data-target="kem2289h4l" hotrep="product..overview.scene.1.tab">
+                        游戏直播
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="display:block">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播为游戏直播平台提供上行加速、高质量转码和加速分发等服务，移动直播 SDK 和直播服务互通可帮助游戏直播平台快速建立直播能力，助力游戏平台实现低延时低卡顿的全网直播。<br><img src="static/picture/cc925479784e832e54f0f076e63096fb.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_g5ezhl6ia6b" data-panel="g5ezhl6ia6b" style="display: none;">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="g5ezhl6ia6b" hotrep="product..overview.scene.2.tab">
+                        秀场直播
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播为秀场直播提供直播秒开、色彩滤镜、手动曝光等功能，快速上手，开启即用，提高直播人气，活跃直播气氛。<br><img src="static/picture/9633bb89a49ef3f2615c737babb4e8cb.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_ltdgn53irn" data-panel="ltdgn53irn" style="display: none;">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="ltdgn53irn" hotrep="product..overview.scene.3.tab">
+                         在线教育
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播为在线教育客户提供便捷的一站式服务。通过灵活的控制台、API 方式上传拉取教学视频，更有播放器密码、动态 URL 防盗链两大安全功能，保护用户精心制作的教学内容万无一失。提供全面开放播放器接口，便于用户自定义限时播放、禁止拖拽等各类教学功能。<br><img src="static/picture/703985c9b2c1c71720ae97fc7c2c10c6.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_6l0av5dojyc" data-panel="6l0av5dojyc" style="display: none;">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="6l0av5dojyc" hotrep="product..overview.scene.4.tab">
+                        广电新媒体
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播为在广电新媒体行业提供完善的视频直播服务，新闻类、媒体类和综艺类等专业直播服务平台可快速接入，以实现传统媒体向互联网媒体的低门槛转型。<br><img src="static/picture/b0e4015f9691a503414fc5b6ccdf5023.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="c-tab-panel J-tabPanel" role="tabpanel" aria-labelledby="tab_uzzhwujq8ta" data-panel="uzzhwujq8ta" style="display: none;">
+                    <div class="J-mTabItem c-tab-m-tit " data-target="uzzhwujq8ta" hotrep="product..overview.scene.5.tab">
+                        电商直播
+                    </div>
+                    <div class="c-tab-panel-mod J-tabInnerPanel" style="">
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播助力电商平台发展，使商家更加全面地传递了商品信息，促进用户的有效决策，降低营销成本，增加成交量。<br><img src="static/picture/e18c8b5162fe6a5d818d698f3ccd9702.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="lvb-demo-exp">
+                        <div class="platform-title">
+                            <h2 class="lvb-demo-desc">您可以通过Demo快速了解直播，选择适合的方式亲身体验</h2>
+                        </div>
+                        <div class="platform-card">
+                            <div class="platform-card-inner">
+                                <div class="platform-item">
+                                    <div class="card-rect">
+                                        <div class="card-hd">
+                                            <a href="##"><img class="view" src="static/picture/img-wechat.png"></a>
+                                        </div>
+                                        <div class="card-bd">
+                                            <div class="card-title">
+                                                微信端
+                                            </div>
+                                            <div class="card-desc">
+                                                微信扫码进入小程序<br>点击&nbsp;“手机直播”&nbsp;新建直播间
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="platform-item">
+                                    <div class="card-rect">
+                                        <div class="card-hd">
+                                            <a href="##"><img class="view" src="static/picture/img-ios.png"></a>
+                                        </div>
+                                        <div class="card-bd">
+                                            <div class="card-title">
+                                                iOS端
+                                            </div>
+                                            <div class="card-desc">
+                                                可通过 iOS 端移动设备扫描下载体验
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="platform-item">
+                                    <div class="card-rect">
+                                        <div class="card-hd">
+                                            <a href="##"><img class="view" src="static/picture/img-andorid.png"></a>
+                                        </div>
+                                        <div class="card-bd">
+                                            <div class="card-title">
+                                                Android端
+                                            </div>
+                                            <div class="card-desc">
+                                                可通过 Android 端移动设备扫描下载
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-lvb-demo-exp">
+                            <div class="platform-title">
+                                <h2 class="lvb-demo-desc">扫码体验</h2>
+                            </div>
+                            <div class="lvb-wxapp">
+                                <img class="view" src="static/picture/img-wechat.png">
+                                <p class="text">长按保存后打开微信识别<br>点击&nbsp;“手机直播”&nbsp;新建直播间</p>
+                            </div>
+                        </div>
+                    </div></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="c-section c-p-y-tall scenario-mod">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">产品架构</h3>
+        </div>
+        <div class="c-section-bd">
+
+            <div class="c-tab-normal c-tab-responsive no-tab no-title">
+
+                
+                <div class="c-tab-panel" style="display:block">
+                    <div class="c-tab-panel-mod" style="display:block">
+                        
+                        <div class="d-wrap">
+                            <div class="d-mod">
+                                <p>腾讯云标准直播将通过推流 SDK 推流的直播流进行直播转码、智能处理、视频分发，再通过 CDN 分发节点分发到终端播放 SDK，为观众播放高清低延时的内容；直播录制配合云点播系统的视频存储，借助超级播放器完成直播视频的时移回看；同时也可以通过 API 接口在客户系统完成直播活动进行管理，并查询相关统计数据。<br><img src="static/picture/1c855d5b17cc01da0bbe90696173a2e8.svg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="c-section c-p-y-tall step-history-mod J-pdDynamic" data-column-num="4" data-visible-idx="2">
+     
+    <a id="news" class="p-href-mod"></a>
+    
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">产品动态</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="p-step-history-wrap finish J-pdDynamicHisWrap">
+                <div style="overflow-x: hidden; padding: 0 4px;">
+
+                
+                <div class="p-step-history-list pc-show-block J-pdDynamicListInner list-4" style="transition: transform 0.5s;white-space: nowrap;-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);-ms-transform: translateX(-50%);-o-transform: translateX(-50%);transform: translateX(-50%);">
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-04-22
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                功能优化
+                            </div>
+                            <div class="p-step-history-content">
+                                日志管理，含实时日志分析和日志下载<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-05-29
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                功能优化
+                            </div>
+                            <div class="p-step-history-content">
+                                接入标签管理，支持对直播域名设置标签<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-06-14
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                功能优化
+                            </div>
+                            <div class="p-step-history-content">
+                                接入云监控，支持通过云监控进行流量/带宽/在线人数的监控告警； 统计分析支持海外分区统计<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-07-18
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                支持自定义源站<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-12-19		
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox" data-link="https://buy.cloud.tencent.com/price/lvb/calculator">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                价格计算器发布<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="white-space: normal;" class="p-step-history-item J-pdDynamicItem">
+                        <div class="p-step-history-date">
+                            2019-12-25
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox" data-link="https://buy.cloud.tencent.com/live?type=rent">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                域名租赁功能发布	<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                   <div class="p-step-history-list m-show-block">
+                    
+                    <div class="p-step-history-item">
+                        <div class="p-step-history-date">
+                            2019-12-25
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox" data-link="https://buy.cloud.tencent.com/live?type=rent">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                域名租赁功能发布	<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-step-history-item">
+                        <div class="p-step-history-date">
+                            2019-12-19		
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox" data-link="https://buy.cloud.tencent.com/price/lvb/calculator">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                价格计算器发布<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-step-history-item">
+                        <div class="p-step-history-date">
+                            2019-07-18
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                新功能发布
+                            </div>
+                            <div class="p-step-history-content">
+                                支持自定义源站<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-step-history-item">
+                        <div class="p-step-history-date">
+                            2019-06-14
+                        </div>
+                        <div class="p-step-history-modify">
+                            <i class="p-step-history-dot"></i>
+                            <i class="p-step-history-line"></i>
+                        </div>
+                        <div class="p-step-history-box J-pdDynamicItemBox">
+                            <div class="p-step-history-title">
+                                功能优化
+                            </div>
+                            <div class="p-step-history-content">
+                                接入云监控，支持通过云监控进行流量/带宽/在线人数的监控告警； 统计分析支持海外分区统计<i class="icon-step-arrows"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn-prev J-pdDynamicMove" data-action="pre"><i class="arrows-left"></i></a>
+                <a href="javascript:;" class="btn-next disabled J-pdDynamicMove" data-action="next"><i class="arrows-right"></i></a>
+                <i class="last-dot pc-show-block"></i>
+            </div>
+            
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall customer-mod J-cardWrapper">
+    <div class="c-section-inner">
+        <div class="c-section-hd">
+            <h3 class="c-section-tit">客户案例</h3>
+        </div>
+        <div class="c-section-bd">
+            <div class="p-customer-case c-grid">
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.lvb.overview.customer.1">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/27be3264a3fc7940b45184443abf786c.png" alt="斗鱼TV ">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                斗鱼TV 
+                                <span>弹幕式视频直播分享网站 </span>
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云标准直播为斗鱼 TV 提供直播服务，解决转码、鉴权、防盗链、数据统计和转推等需求，确保非法盗链请求被拒绝，以保障观众流畅清晰的观看体验。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.lvb.overview.customer.2">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/e0e63bcb9ff3e781ea5e23f98350e44b.png" alt="bilibili">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                bilibili
+                                <span>ACG 相关的弹幕视频分享网站 </span>
+                            </h4>
+                            <p class="c-media-info">
+                                Bilibili 基于腾讯视频云直播平台，进行海量高清节目的推流和播放，使用鉴黄功能以保障网站的安全，采用录制功能对精彩内容进行录制和回看。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="c-g-8 J-cardItem">
+                    <a class="c-media-horiz " href="javascript:;" hotrep="product.lvb.overview.customer.3">
+                        <div class="c-media-img">
+                            <img class="ico32" src="static/picture/8323f14206b8bfb7b87a87c533053b1d.png" alt="快手">
+                        </div>
+                        <div class="c-media-body">
+                            <h4 class="c-media-heading">
+                                快手
+                                <span>短视频应用 </span>
+                            </h4>
+                            <p class="c-media-info">
+                                腾讯云标准直播为快手提供全面的直播服务，保证主播端视频内容可快速转码及处理，加速上传、精准分发、流畅观看，提升快手的用户体验。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="p-customer-more">
+                <div class="p-customer-more-inner">
+                    <div class="customer-more-tit">
+                        <em>更多案例</em>
+                    </div>
+                    <div class="customer-more-con">
+                        <div class="customer-more-list">
+                            <ul>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.1">
+                                        <img src="static/picture/1039d163b3843536267c7ae5f13d887b.png" alt="蘑菇街">
+                                        <img src="static/picture/1039d163b3843536267c7ae5f13d887b.png" alt="蘑菇街">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.2">
+                                        <img src="static/picture/e489cf8cb7eeded3ee256b968a4c4a98.png" alt="聚美">
+                                        <img src="static/picture/e489cf8cb7eeded3ee256b968a4c4a98.png" alt="聚美">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.3">
+                                        <img src="static/picture/6ab1a0700bf3dfe222717adf571be84c.png" alt="富途证券">
+                                        <img src="static/picture/6ab1a0700bf3dfe222717adf571be84c.png" alt="富途证券">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.4">
+                                        <img src="static/picture/c98ca1d8fb7964eecb72da19bed1968c.png" alt="liveme">
+                                        <img src="static/picture/c98ca1d8fb7964eecb72da19bed1968c.png" alt="liveme">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.5">
+                                        <img src="static/picture/b9c7b2c85062224355b149584dc0e2ee.png" alt="趣头条">
+                                        <img src="static/picture/b9c7b2c85062224355b149584dc0e2ee.png" alt="趣头条">
+                                    </a>
+                                </li>
+                                
+                                <li class="customer-more-item ">
+                                    <a href="javascript:;" target="_blank" hotrep="product.lvb.overview.customer.more.6">
+                                        <img src="static/picture/9066da14276ff6a5669640d26bfb7088.png" alt="企鹅电竞">
+                                        <img src="static/picture/9066da14276ff6a5669640d26bfb7088.png" alt="企鹅电竞">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div><div class="c-section c-p-y-tall home-contact-mod">
+    <div class="c-section-inner">
+        <div class="c-section-bd">
+            <div class="home-recommend-wrap">
+                <h4 class="home-recommend-tit">开始使用腾讯云标准直播</h4>
+                <div class="home-recommend-con">
+                    <p>按照我们的<a href="javascript:;"> </a><a href="javascript:;">快速入门</a>，只需点几次鼠标，即可</p>
+<p>创建您的首个腾讯云标准直播实例。</p>
+                    <div class="home-use-btn-wrap">
+                        <a href="javascript:;" class="c-btn home-use-btn" hotrep="product.lvb.overview.guide.btn">
+                           开始使用
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-wrap">
+                <h4 class="home-contact-tit">联系我们</h4>
+                <div class="home-contact-con">
+                    <p>我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。</p>
+                    <div class="home-contact-btn-wrap">
+                        <a href="connect.html" class="c-btn  c-btn-hole home-contact-btn" hotrep="product.lvb.overview.guide.rightBtn">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+</div>
+
+<script>
+
+    var G_pageOptions = {
+        productSlug: 'lvb',
+        pageSlug: 'overview'
+    };
+
+</script>
+
+<script src="static/js/api.js"></script>
+<script src="static/js/loader.js"></script>
+<script>window.__CDN_DOMAIN = 'imgcache.qq.com'</script>
+<script>window.__wxMfaQrcodeMode = 'weapp'</script>
+
+
+
+	
+	 <div class="qc-footer c-footer J-qc-footer" data-type="cn_zh">
+	<textarea style="display:none" class="element-for-seo">  <div class="c-footer-service">
+    <div class="c-footer-inner">
+        <ul class="c-footer-service-list">
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#refund" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.2">
+                    <span class="icon icon-2"></span>
+                    <span class="term">5天内无理由退款</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#filing" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.3">
+                    <span class="icon icon-3"></span>
+                    <span class="term">免费备案</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-plan#enterprise" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.4">
+                    <span class="icon icon-4"></span>
+                    <span class="term">1V1大客户服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cloud.tencent.com/act/event/service-protection#serviceTime" rel="nofollow" class="c-footer-service-item" hotrep="hp.header.adventage.5">
+                    <span class="icon icon-5"></span>
+                    <span class="term">7x24小时服务</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="c-footer-website">
+    <div class="c-footer-inner">
+        <ul class="c-grid c-footer-website-columns J-qcFooterNav">
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">腾讯云计算</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product" hotrep="hp.footer.navigation.compute.chanpin">产品</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/" hotrep="hp.footer.navigation.compute.yunshichang">云市场</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/customer/game?start=1" hotrep="hp.footer.navigation.compute.kehuanli">客户案例</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/events" hotrep="hp.footer.navigation.compute.fabutai">产品发布台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/product/ba?from=qcloudProductBa" hotrep="hp.footer.navigation.compute.beian">网站备案</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/363" hotrep="hp.footer.navigation.compute.renzhengxinxi">认证信息</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/2007" hotrep="hp.footer.navigation.compute.xukezheng">许可证说明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/product/301/11470" hotrep="hp.footer.navigation.compute.shengming">隐私声明</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/about" hotrep="hp.footer.navigation.compute.guanyu">关于我们</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">解决方案</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/video" hotrep="hp.footer.navigation.solution.shipin">视频</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/game" hotrep="hp.footer.navigation.solution.youxi">游戏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/finance" hotrep="hp.footer.navigation.solution.jinrong">金融</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/e-commerce" hotrep="hp.footer.navigation.solution.dianshang">电商</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://market.cloud.tencent.com/website/solution?purchasesource=201911-flow-solution" hotrep="hp.footer.navigation.solution.wangzhan">网站</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/bigdata" hotrep="hp.footer.navigation.solution.dashuju">大数据</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/face-recognition" hotrep="hp.footer.navigation.solution.renlianheshen">人脸核身</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/education" hotrep="hp.footer.navigation.solution.zaixianjiaoyu">在线教育</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.navigation.solution.xiaochengxu">微信小程序</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/solution/wx-video" hotrep="hp.footer.navigation.solution.xiaochengxuyinshipin">微信小程序音视频</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">资源与社区</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/free" hotrep="hp.footer.navigation.resource.mianfei">免费套餐</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/guide" hotrep="hp.footer.navigation.resource.rumen">入门中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://buy.cloud.tencent.com/price" hotrep="hp.footer.navigation.resource.dingjia">定价中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/document/developer-resource" hotrep="hp.footer.navigation.resource.ziyuan">资源中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/edu/learning?ADTAG=gw.bott" hotrep="hp.footer.navigation.resource.edu">在线学习中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer" hotrep="hp.footer.navigation.resource.shequ">云+社区</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/column" hotrep="hp.footer.navigation.resource.zhuanlan">专栏</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/ask" hotrep="hp.footer.navigation.resource.wenda">问答</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/salon" hotrep="hp.footer.navigation.resource.salon">沙龙</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">合作与生态</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://partners.cloud.tencent.com/" hotrep="hp.footer.navigation.cooperate.huoban">合作伙伴</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/partner" hotrep="hp.footer.navigation.cooperate.partner">合作伙伴学院</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/partner/cps" hotrep="hp.footer.navigation.cooperate.tuiguang">推广奖励</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/benefit" hotrep="hp.footer.navigation.cooperate.gongyi">云+公益</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.navigation.cooperate.xiaoyuan">云+校园</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/plan" hotrep="hp.footer.navigation.cooperate.chuangye">云+创业</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/developer/summit/2018-guangzhou" hotrep="hp.footer.navigation.cooperate.fenghui">“云+未来”峰会</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/start.html" hotrep="hp.footer.navigation.cooperate.yunqi_chanye">云启产业计划</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/innovationbase.html" hotrep="hp.footer.navigation.cooperate.innovationbase">腾讯云启创新基地</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="c-g-5 xs-24">
+                <div class="c-footer-website-group J-qcFooterNavColumn">
+                    <h3 class="c-footer-website-title J-qcFooterNavColumnTitle">
+                        <a href="javascript:;">管理与支持</a>
+                    </h3>
+
+                    <ul class="c-footer-website-list J-qcFooterNavColumnList">
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/announce" hotrep="hp.footer.navigation.support.announce">公告</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/" hotrep="hp.footer.navigation.support.kongzhitai">控制台</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/account/renewal" hotrep="hp.footer.navigation.support.xufei">续费管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/cam" hotrep="hp.footer.navigation.support.fangwen">访问管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/services/security" hotrep="hp.footer.navigation.support.security">安全中心</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://console.cloud.tencent.com/workorder" hotrep="hp.footer.navigation.support.gongdan">工单管理</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://cloud.tencent.com/act/event/connect-service" hotrep="hp.footer.navigation.support.lianxiwomen">联系我们</a>
+                        </li>
+                        
+
+                        
+                        <li id="h_cs_list">
+                            <a class="feedback" href="javascript:;" hotrep="hp.footer.service.suggest">产品咨询与投诉</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="c-footer-copyright">
+            <ul class="c-footer-share-links">
+                <li class="J-qcFooterWXIcon">
+                    <div class="c-footer-bubble-wrap">
+                        <a href="javascript:;" title="微信" hotrep="hp.footer.sns.wx"><i class="icon wechat"></i></a>
+                        <div class="c-footer-share-bubble J-qcFooterWXBubble" style="z-index: 0">
+                            <div class="c-footer-share-bubble-inner">
+                                <div class="bubble-qr no-pd">
+                                    <img src="//imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/footer/wechat-assistant-qr.jpg" alt="">
+                                </div>
+                                <p class="bubble-cnt">关注公众号，移动管理云服务</p>
+                                <p class="bubble-cnt mobile">长按识别或截图保存<br>关注公众号，移动管理云服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://weibo.com/qcloud2014" target="_blank" title="微博" hotrep="hp.footer.sns.weibo"><i class="icon weibo"></i></a></li>
+                <li><a href="https://www.facebook.com/TencentCloud/" target="_blank" title="facebook" hotrep="hp.footer.sns.fb"><i class="icon facebook"></i></a></li>
+            </ul>
+
+            <div class="c-hidden c-visible-xs mobile-part">
+				<a href="tel:95716" class="c-btn" hotrep="hp.footer.mobile.tel">购买咨询：95716 转 1</a>
+				<a class="c-footer-tel-m" hotrep="hp.footer.mobile.connect" href="//cloud.tencent.com/about/connect">联系我们</a>
+                <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="https://intl.cloud.tencent.com" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+
+            <p class="c-footer-copyright-text">
+                <span>Copyright © 2013 - 2020</span>
+                <span>Tencent Cloud. All Rights Reserved.</span>
+                <span>腾讯云 版权所有</span>
+            </p>
+
+            <div class="c-hidden-xs pc-part">
+                <a href="tel:95716" class="c-btn" hotrep="hp.footer.tel">购买咨询：95716 转 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="c-footer-recommend">
+	<div class="c-footer-inner">
+		<div class="c-footer-recommend-rows">
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门产品</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://dnspod.cloud.tencent.com/" hotrep="hp.footer.recommend.rmcp.ymzc">域名注册</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cvm" hotrep="hp.footer.recommend.rmcp.cvm">云服务器</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/tbaas" hotrep="hp.footer.recommend.rmcp.tbaas">区块链技术</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/mq" hotrep="hp.footer.recommend.rmcp.mq">消息队列</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/dsa" hotrep="hp.footer.recommend.rmcp.dsa">网络加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb-overview" hotrep="hp.footer.recommend.rmcp.cdb-overview">关系型数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cns" hotrep="hp.footer.recommend.rmcp.ymjx">域名解析</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cos" hotrep="hp.footer.recommend.rmcp.cos">云存储</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdh" hotrep="hp.footer.recommend.rmcp.cdh">宿主机</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">热门推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/FaceRecognition" hotrep="hp.footer.recommend.rmtj.FaceRecognition">人脸识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.rmtj.ba">网站备案</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/yuntu" hotrep="hp.footer.recommend.rmtj.yuntu">数据可视化</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdn-scd" hotrep="hp.footer.recommend.rmtj.cdn-scd">CDN 加速</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vts" hotrep="hp.footer.recommend.rmtj.vts">视频转码</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.rmtj.ocr">图片文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cdb" hotrep="hp.footer.recommend.rmtj.cdb">MySQL 数据库</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/symantecssl" hotrep="hp.footer.recommend.rmtj.symantecssl">SSL 证书</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/asr" hotrep="hp.footer.recommend.rmtj.asr">语音识别</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="c-footer-recommend-cell">
+				<h3 class="c-footer-recommend-tit">更多推荐</h3>
+				<div class="c-footer-recommend-list-wrap">
+					<ul class="c-footer-recommend-list">
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/data_protection" hotrep="hp.footer.recommend.gdtj.data_protection">数据安全</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/act/campus" hotrep="hp.footer.recommend.gdtj.campus">学生机</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/sms" hotrep="hp.footer.recommend.gdtj.sms">短信群发平台</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ocr" hotrep="hp.footer.recommend.gdtj.ocr">文字识别</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/vod" hotrep="hp.footer.recommend.gdtj.vod">视频点播</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cds-audit" hotrep="hp.footer.recommend.gdtj.cds-audit">数据安全审计</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/solution/la" hotrep="hp.footer.recommend.gdtj.la">小程序开发</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/cat" hotrep="hp.footer.recommend.gdtj.cat">网站监控</a></li>
+						
+						<li class="c-footer-recommend-item"><a class="c-footer-recommend-link" href="https://cloud.tencent.com/product/ba" hotrep="hp.footer.recommend.gdtj.ba">域名备案</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	</textarea>
+	<div class="c-footer-blogroll">
+    <div class="c-footer-inner">
+        <div class="c-footer-blogroll-main">
+            <nav class="c-footer-blogroll-links">
+                <a href="javascript:;" target="_blank" class="icon-tc"><span class="visually-hidden">tencent</span></a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.open">腾讯开放平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.iot">QQ物联</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.dnspod">DNSPod</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.mp">微信公众平台</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.youtu">腾讯优图</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.lanjing">腾讯蓝鲸</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.qidian">腾讯企点</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.weiyun">腾讯微云</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.docs">腾讯文档</a>
+                
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide" hotrep="hp.footer.flink.friendlink">友情链接</a>
+                
+                <hr class="c-footer-blogroll-links-separate">
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.beian">京公网安备 11010802017518</a>
+                <a href="javascript:;" target="_blank" rel="nofollow" class="slide slide-ct" hotrep="hp.footer.bottom.miitbeian">粤B2-20090059-1</a>
+				<span class="slide slide-ct">域名注册服务机构批复文号：京信信管发〔2018〕156号</span>
+				<span class="slide slide-ct">代理域名注册服务机构：新网数码</span>
+            </nav>
+        </div>
+
+        <div class="c-footer-blogroll-extra">
+            <div class="c-footer-select J-qcRegionSelector">
+    <a href="javascript:;" class="c-footer-select-trigger J-qcRegionTrigger"><i class="icon"></i><span class="J-qcFooterRegion">中国站</span></a>
+
+    <div class="c-footer-dropdown J-qcFooterRegionList">
+        <ul class="c-footer-dropdown-menu">
+            <li class="actived"><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="cn_zh" hotrep="hp.footer.region.cn">中国站</a></li>
+            <li><a href="javascript:;" class="J-qcRegionOption J-qcFooterSwitcher" data-region="intl" hotrep="hp.footer.region.intl">International</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>  
+
+<script src="static/js/polyfill.6.26.min-31536000.js"></script>
+<script type="text/javascript" src="static/js/_imgcache_qq_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_cloud_tencent_com_idc.js" async=""></script>
+<script type="text/javascript" src="static/js/_www_qcloud_com_idc.js" async=""></script>
+<script>
+	window.getCurrServerTime = (function(s, c) {return function(){return +new Date()+s-c;}})(1578012101061, +new Date());
+	window.__enableReport = true;
+	window.lifeId = "rkgTTpW3kU";
+	window.lifeStart = getCurrServerTime();
+</script>
+<script src="static/js/insight-client.985ac73c2.js"></script>
+<script>
+	try {
+		if (typeof window.Insight === 'object') {
+			Insight.install({
+				app: 'qcmain',
+				lid: window.lifeId,
+				born: window.lifeStart,
+				time: window.getCurrServerTime,
+				shouldReportEvent: function () {
+					return window.__enableReport && document.cookie.search('disableInsight=1') === -1;
+				}
+			});
+		}
+	} catch(e) {
+		console.warn('官网监控初始化失败');
+	}
+</script>
+<script src="static/js/base.34f5dd3c3fbe18b0feb1-315360.js"></script>
+<script src="static/js/deps.460f5d5d2076352ae9ca-315360.js"></script>
+<script>
+	try {
+		for(var key in localStorage) {
+			if (localStorage.hasOwnProperty(key) && key.indexOf('qcmain/js') === 0) {
+				localStorage.removeItem(key);
+			}
+		}
+	} catch (e) {}
+</script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/index.v2.2f51f5ae7bb82d9f23bc-31.js"></script>
+
+
+
+
+</body>
+</html>

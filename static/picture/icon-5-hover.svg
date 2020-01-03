@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>社交沟通-hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="社交沟通-hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-36" transform="translate(0.000000, 2.000000)">
+            <path d="M0.5,0.5 L0.5,7.5 L6.19104057,7.5 L8.0038362,9.12206942 L9.85910945,7.5 L11.5,7.5 L11.5,0.5 L0.5,0.5 Z" id="矩形-copy-87" stroke="#00A4FF" fill="#FFFFFF" transform="translate(6.000000, 4.894789) scale(-1, 1) translate(-6.000000, -4.894789) "></path>
+            <rect id="矩形-copy-88" fill="#00A4FF" opacity="0.298874628" x="2" y="2" width="7" height="4"></rect>
+            <path d="M5.5,2.5 L5.5,9.5 L10.1910406,9.5 L12.0038362,11.1220694 L13.8591095,9.5 L15.5,9.5 L15.5,2.5 L5.5,2.5 Z" id="矩形" stroke="#00A4FF" fill="#FFFFFF"></path>
+            <rect id="矩形" fill="#00A4FF" opacity="0.298874628" x="7" y="4" width="7" height="4"></rect>
+        </g>
+    </g>
+</svg>

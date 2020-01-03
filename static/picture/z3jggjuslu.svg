@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="19px" viewBox="0 0 32 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>实时音视频</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-455.000000, -129.000000)">
+            <g id="视频服务" transform="translate(83.000000, 121.000000)">
+                <g id="实时音视频" transform="translate(372.000000, 1.000000)">
+                    <g id="Group-25" transform="translate(0.000000, 7.000000)" fill="#00A4FF">
+                        <rect id="Rectangle-142" x="0" y="0" width="2" height="19"></rect>
+                        <rect id="Rectangle-142-Copy" x="21" y="0" width="2" height="19"></rect>
+                        <path d="M26,11.6625093 L30,13.5255743 L30,13.5245931 L30,6.14235361 L26,8.00645859 L26,11.6625093 Z M24,12.9382369 L24,10.7309768 L24,8.93851108 L24,6.73179085 L32,3 L32,5.21030112 L32,14.4571068 L32,16.6699768 L24,12.9382369 Z" id="Combined-Shape"></path>
+                        <rect id="Rectangle-143" x="0" y="0" width="23" height="2"></rect>
+                        <rect id="Rectangle-143-Copy" x="0" y="17" width="23" height="2"></rect>
+                    </g>
+                    <circle id="Oval-73" stroke="#00A4FF" stroke-width="2" cx="9" cy="14" r="2"></circle>
+                    <circle id="Oval-73-Copy" stroke="#00A4FF" stroke-width="2" cx="15.5" cy="15.5" r="1.5"></circle>
+                    <path d="M5,22 C5,20.3431458 6.4326888,19 8.2,19 L9.8,19 C11.5673112,19 13,20.3431458 13,22" id="Rectangle-42" stroke="#00A4FF" stroke-width="2"></path>
+                    <path d="M14.2,21.0000151 L14.2,19 L15.8,19 C17.5847128,19 19.1671844,20.0716536 19.7592966,21.6623926 C19.8017057,21.7763267 19.8386447,21.8920454 19.8700068,22.0092768 C19.8701235,22.0096871 17.7082321,22.0044252 17.7078985,22.0038985 C17.3250776,21.3995133 16.6086395,21.0000151 15.8,21.0000151 L14.2,21.0000151 Z" id="Rectangle-42-Copy" fill="#00A4FF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

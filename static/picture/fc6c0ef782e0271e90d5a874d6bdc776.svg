@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="48px" viewBox="0 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>违法检测</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片内容安全" transform="translate(-307.000000, -518.000000)">
+            <g id="违法检测" transform="translate(307.000000, 518.000000)">
+                <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+                <polygon id="路径" fill="#344966" fill-rule="nonzero" transform="translate(27.207013, 25.996160) rotate(45.000000) translate(-27.207013, -25.996160) " points="29.4032224 18.1485267 31.3059888 16.2457604 23.1080367 16.1639861 23.1080367 35.8283334 25.1080367 35.8283334 25.1080367 18.1639861"></polygon>
+                <polyline id="路径复制" stroke="#334966" stroke-width="2" transform="translate(15.156854, 28.414756) rotate(45.000000) translate(-15.156854, -28.414756) " points="10.863961 33.8442297 10.863961 22.9852814 19.449747 22.9852814"></polyline>
+                <circle id="椭圆形" stroke="#334966" stroke-width="2" cx="16" cy="13.5" r="2.5"></circle>
+                <polygon id="三角形" stroke="#334966" stroke-width="2" fill="#00A4FF" points="36.3974609 27 46.9030679 44.2891846 45.5222098 47 24.0944763 47 23 44.2891846 33.6029053 27"></polygon>
+                <rect id="矩形" fill="#FFFFFF" x="34" y="33" width="2" height="7"></rect>
+                <rect id="矩形复制" fill="#FFFFFF" x="34" y="41" width="2" height="2"></rect>
+                <path d="M4,40.9238281 L18,40.9238281 L17,42.9238281 L2,42.9238281 L2,12 L4,12 L4,40.9238281 Z M46,3.92382812 L1.04345703,3.92382812 L1.04345703,1.92382812 L48,1.92382812 L48,34.9873047 L46,32.9873047 L46,3.92382812 Z" id="形状" fill="#334966" fill-rule="nonzero"></path>
+                <circle id="椭圆形" fill="#334966" cx="3" cy="3" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

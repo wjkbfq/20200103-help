@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>消息列队 CMQ-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="消息列队-CMQ-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" transform="translate(2.000000, 2.000000)" fill="#7C848E">
+            <path d="M15.1428571,18.5732178 L19.1281169,22.1615619 L17.5986755,23.8601786 L14.2634664,20.8571429 L7.14285714,20.8571429 L4.85714286,20.8571429 L4.85714286,14 L7.14285714,14 L7.14285714,18.5714286 L15.1428571,18.5714286 L15.1428571,18.5732178 Z M23.1428571,16.2857143 L23.1428571,18.5714286 L23.1428571,20.8571429 L19.7142857,20.8571429 L19.7142857,18.5714286 L20.8571429,18.5714286 L20.8571429,16.2857143 L9.42857143,16.2857143 L9.42857143,14 L9.43082478,14 L9.42857143,13.9974974 L10.6950635,12.8571429 L4.85714286,12.8571429 L4.85714286,10.5714286 L4.85714286,6 L6,6 L23.1428571,6 L23.1428571,8.28571429 L23.1428571,12.8571429 L20.8571429,12.8571429 L20.8571429,8.28571429 L7.14285714,8.28571429 L7.14285714,10.5714286 L18.5714286,10.5714286 L18.5714286,12.8571429 L17.2989183,14 L23.1428571,14 L23.1428571,16.2857143 Z M14.1110099,12.8571429 L12.8417384,14 L13.8769255,14 L15.1461969,12.8571429 L14.1110099,12.8571429 Z" id="Combined-Shape"></path>
+            <rect id="Rectangle-path" x="4" y="0" width="24" height="2"></rect>
+            <rect id="Rectangle-path" x="0" y="4" width="2" height="15"></rect>
+            <polygon id="Shape" points="4 0 0 4 2 5 5 2"></polygon>
+            <rect id="Rectangle-path" x="4" y="26" width="20" height="2"></rect>
+            <rect id="Rectangle-path" x="0" y="19" width="2" height="5"></rect>
+            <rect id="Rectangle-path" x="26" y="5" width="2" height="19"></rect>
+            <polygon id="Shape" points="4 28 0 24 2 23 5 26"></polygon>
+            <polygon id="Shape" points="24 28 28 24 26 23 23 26"></polygon>
+        </g>
+    </g>
+</svg>

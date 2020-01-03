@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <title>画板 1</title>
+  <g>
+    <path d="M14,10H34V38H14Zm2,2V36H32V12Z" style="fill: #334966"/>
+    <rect x="18" y="14" width="12" height="8" style="fill: #00a4ff"/>
+    <rect x="18" y="24" width="12" height="2" style="fill: #00a4ff"/>
+    <rect x="18" y="28" width="12" height="2" style="fill: #00a4ff"/>
+    <rect x="18" y="32" width="12" height="2" style="fill: #00a4ff"/>
+  </g>
+  <path d="M4.8,34.752l5.058.562L5.673,39.5A24,24,0,0,1,39.5,5.673l-1.419,1.42A22,22,0,0,0,4.8,34.752Zm38.4-21.5-5.058-.562L42.327,8.5A24,24,0,0,1,8.5,42.327l1.419-1.42A22,22,0,0,0,43.2,13.248Z" style="fill: #334966"/>
+</svg>

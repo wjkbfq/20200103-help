@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>关键词实时过滤</title>
+    <desc>Created with Sketch.</desc>
+    <g id="关键词实时过滤" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M46,17 L46,6 L2,6 L2,42 C20.6666667,42 30,42 30,42 C30,42 30,42.6666667 30,44 L0,44 L0,4 L48,4 L48,17 L46,17 Z" id="Combined-Shape" fill="#334966"></path>
+        <rect id="Rectangle" fill="#334966" x="0" y="12" width="48" height="2"></rect>
+        <rect id="Rectangle-2" fill="#334966" x="38" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-2-Copy-2" fill="#334966" x="34" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-2-Copy" fill="#334966" x="42" y="8" width="2" height="2"></rect>
+        <rect id="Rectangle-4" fill="#00A4FF" x="7" y="21" width="12" height="2"></rect>
+        <rect id="Rectangle-4-Copy" fill="#00A4FF" x="7" y="27" width="12" height="2"></rect>
+        <rect id="Rectangle-4-Copy-2" fill="#00A4FF" x="7" y="33" width="12" height="2"></rect>
+        <polygon id="Rectangle-91" fill="#00A4FF" points="26 21 44 21 44 25 36 32 34 32 26 25"></polygon>
+        <path d="M46,44 L44,44 L44,42 L46,42 L46,32 L48,30 L48,44 L46,44 Z" id="Combined-Shape" fill="#334966"></path>
+        <path d="M27,22 L27,25.5462318 L35,32.5462318 L35,43 L39,43 L39,32.5462318 L47,25.5462318 L47,22 L27,22 Z" id="Rectangle-91" stroke="#334966" stroke-width="2"></path>
+    </g>
+</svg>

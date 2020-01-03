@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>智能医学影像</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="智能医学影像" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="医学智慧影像" transform="translate(0.000000, 5.000000)">
+            <path d="M0.99,0.99 L0.99,21.01 L25.01,21.01 L25.01,0.99 L0.99,0.99 Z" id="Rectangle-5" stroke="#00A4FF" stroke-width="1.98"></path>
+            <path d="M24.99,8.53900216 L24.99,13.3393061 L31.01,17.9853899 L31.01,3.98917285 L24.99,8.53900216 Z" id="Rectangle-6" stroke="#00A4FF" stroke-width="1.98"></path>
+            <rect id="Rectangle-7" fill="#00A4FF" x="12" y="6" width="2" height="10"></rect>
+            <rect id="Rectangle-8" fill="#00A4FF" x="8" y="10" width="10" height="2"></rect>
+        </g>
+    </g>
+</svg>

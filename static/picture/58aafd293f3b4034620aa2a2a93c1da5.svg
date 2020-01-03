@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>移动服务-32px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="移动服务-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="image-3" transform="translate(5.000000, 1.000000)" fill="#888888">
+            <path d="M9,24 L13,24 L13,22 L9,22 L9,24 Z M22,24 L22,0 L0,0 L0,30 L22,30 L22,28 L20,28 L2,28 L2,2 L20,2 L20,24 L22,24 Z M10,13 L10,15 L12,15 L12,13 L10,13 Z M14.7,10.7 C13.8,9.7 12.5,9 11,9 C9.5,9 8.2,9.7 7.3,10.7 L8.8,12 C9.3,11.4 10.1,11 11,11 C11.9,11 12.7,11.4 13.2,12 L14.7,10.7 Z M16.2,9.3 L17.7,8 C16.1,6.2 13.7,5 11,5 C8.3,5 6,6.2 4.3,8 L5.8,9.3 C7.1,7.9 8.9,7 11,7 C13.1,7 14.9,7.9 16.2,9.3 Z" id="XMLID_52_"></path>
+        </g>
+    </g>
+</svg>
